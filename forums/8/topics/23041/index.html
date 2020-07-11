@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Java Network Programming</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['8']).setTargeting('topic', ['23041']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['8']).setTargeting('topic', ['23041']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['8']).setTargeting('topic', ['23041']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['8']).setTargeting('topic', ['23041']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/8/'>Chit Chat</a>
+      <h1>Java Network Programming</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/8/topics/23041/2/'>Next</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>amorphous</div>
+              <time class='date' datetime='2002-06-28T09:56:30+00:00'>28 Jun 02, 09:56</time>
+            </div>
+            <div class='col-md body'>Hi all,<br>Just wonder if any of you know how to transfer file from server to client application using JDK 1.3.1? Do we use sockets to establish connection and later use writeByte() from the DataOutputStream? Or is there a simpler and more effective way to do it? Like using datagram or stuff like that?<br><br>puzzled <img src="/images/emoticons/classic/icon_sad.gif" alt="Sad" title="Sad"><br>Sorry to post this kind of tech questions here. It's because "Computer Lab" and "Help me Techie" are like ghost towns.</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>moose</div>
+              <time class='date' datetime='2002-06-28T10:26:19+00:00'>28 Jun 02, 10:26</time>
+            </div>
+            <div class='col-md body'>Try www.hardwarezone.com , heehe <img src="/images/emoticons/classic/icon_biggrin.gif" alt="Very Happy" title="Very Happy"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2002-06-28T11:03:39+00:00'>28 Jun 02, 11:03</time>
+            </div>
+            <div class='col-md body'>[B]Just wonder if any of you know how to transfer file from server to client application using JDK 1.3.1? Do we use sockets to establish connection and later use writeByte() from the DataOutputStream? [/B]<br><br>Yup that's the way to do it in Java. Passing of raw bytes across a established connection. It maybe tedious but definitely not as tedious as doing it using C++ socket <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"><br><br>[B]Or is there a simpler and more effective way to do it? Like using datagram or stuff like that? [/B]<br><br>Usually the simpler way is to use classes built by others but internally they will use the same API call. They just encapsulate those low level details to make it easier for you to call them. Hunt around for 'good souls' out in the Internet who will build classes say FTPconnect, FTPsend etc and release free for public consumption? <img src="/images/emoticons/classic/icon_smile.gif" alt="Smile" title="Smile"><br><br>Remember FTP, SMTP etc are just protocols but their underlying transport mechanism is still TCP/IP which is essentially 'talk' via Socket both in C++, Java.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Illegal Operation</div>
+              <time class='date' datetime='2002-06-28T11:34:37+00:00'>28 Jun 02, 11:34</time>
+            </div>
+            <div class='col-md body'>If you use just the J2SE SDK only this is the only way to do it. writeobject/writebyte will transfer an amount of data from the client to the server, but it wouldn't transfer a lot.<br><br>So say if you have something like 2 meg to transfer from the server to the client, you have to transfer several times. TCP is good for this because a connection is maintained between client and server throughout the whole transfer process. So you simply just write the program to split 2 meg to around 4 packs of 500bytes. Then have the client request for them 4 times.<br><br>At the end of the transfer, just join everything together. There is an issue here. Because 1) the packets might be lost on the way. 2)It is inefficient to transfer/request/transfer/request because half the time, the server will be sitting idle and waiting for the client to ask for something.<br><br>The issue is resolved here. http://www.ce.chalmers.se/~fcela/javis/tcp_slidwin.html<br><br>You can write the program to implement the sliding window algorithm. Actually no. Someone must have already written it elsewhere...if this isn't a school assignment u can search around the net for it.<br><br>Or if you are allowed, use the HTTP Post library from the J2EE servlet library. That will simplify the problem altogether.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2002-06-28T11:43:13+00:00'>28 Jun 02, 11:43</time>
+            </div>
+            <div class='col-md body'>[B]Or if you are allowed, use the HTTP Post library from the J2EE servlet library. That will simplify the problem altogether. [/B]<br><br>The above is assuming the program written is 'Web-enabled'. We have to understand in the IT programming world, not all programs are 'Web enabled', there are still those traditional client-server programs that are not 'Web enabled' so they will not be using HTTP at all.<br><br>For example, heard of CORBA? Well IIOP is the protocal use instead.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Illegal Operation</div>
+              <time class='date' datetime='2002-06-28T11:58:24+00:00'>28 Jun 02, 11:58</time>
+            </div>
+            <div class='col-md body'>If it isn't, then u got to do the writeobject/writebyte approach by breaking up the file into little pieces and transfer them bit by bit<br><br>For efficiency, thread the process so that the server can send to several client concurrently. And use the sliding window approach mentioned if you do not want the server to idle.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sukoru</div>
+              <time class='date' datetime='2002-06-28T12:02:56+00:00'>28 Jun 02, 12:02</time>
+            </div>
+            <div class='col-md body'>yawn~~</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Desert Fox</div>
+              <time class='date' datetime='2002-06-28T14:40:35+00:00'>28 Jun 02, 14:40</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by sukoru:</div><div class="quote_body">yawn~~</div></blockquote>I thought u you are expert in programming? How come not offering help and yawning here?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>cosmologist</div>
+              <time class='date' datetime='2002-06-28T14:50:47+00:00'>28 Jun 02, 14:50</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by sukoru:</div><div class="quote_body">yawn~~</div></blockquote>i agree with desertFox lol, contribute somethin instead of yawning lar.. i been to your websites, all either filled with loading errors or the login function is down or worst its non-existant lol.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>amorphous</div>
+              <time class='date' datetime='2002-06-28T16:41:14+00:00'>28 Jun 02, 16:41</time>
+            </div>
+            <div class='col-md body'><span class="large">Thank you to cosmologist, illegal operation and sohguanh. The files that are transferred are normally very small (&lt;500k) and the server and client resides in the same computer (cheap skate, right?  <img src="/images/emoticons/classic/icon_smile.gif" alt="Smile" title="Smile"> ).<br><br>I managed to do the transfer already. But I don't know how to solve the java.io.FilePermission exception. Is there any way to allow applets to write a file? Or is there any temporary location that the applet is allowed to write and read from? I tried using the applet to write a file in the same directory as the applet and also using an applet to call up an Java application to write a file but to no avail. Only way I know of is to change the applet to an application but that's out of question 'cuz applet is one of the requirements. jialat siah...  <img src="/images/emoticons/classic/icon_cry.gif" alt="Crying or Very sad" title="Crying or Very sad"> </span></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Illegal Operation</div>
+              <time class='date' datetime='2002-06-29T00:30:52+00:00'>29 Jun 02, 00:30</time>
+            </div>
+            <div class='col-md body'>It is not possible for applet to write to files because that's the natural restrictions of applets.<br><br>Maybe there might be ways to work around this problem. For stuffs that applets cannot do like writing files, running programs, it is possible to work around it by letting the applet work as a trigger instead, like to start a backend java program to do what it cannot do.<br><br>Can you post the software specifications for this thingy you are developing? There must be some ways to do it...</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Illegal Operation</div>
+              <time class='date' datetime='2002-06-29T00:44:12+00:00'>29 Jun 02, 00:44</time>
+            </div>
+            <div class='col-md body'>I found this here. Maybe it will help u.<br>http://java.sun.com/sfaq/#read<br><br>How do I let an applet write a file?<br>Applets loaded into a Java-enabled browser can't write files.<br><br>Sun's appletviewer allows applets to write files that are named on the access control list for writing. The access control list for writing is empty by default.<br><br>You can allow applets to write to your /tmp directory by setting the acl.write property in your ~/.hotjava/properties file:<br><br>acl.write=/tmp<br><br>You can allow applets to write to a particular file by naming it explicitly:<br>acl.write=/home/me/somedir/somefile<br><br>Use : to separate entries:<br>acl.write=/tmp:/home/me/somedir/somefile<br><br>Bear in mind that if you open up your file system for writing by applets, there is no way to limit the amount of disk space an applet might use.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>greengoblin</div>
+              <time class='date' datetime='2002-06-29T01:51:58+00:00'>29 Jun 02, 01:51</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by cosmologist:</div><div class="quote_body"><blockquote>Originally posted by sukoru:<br>[b]yawn~~</blockquote></div></blockquote>i agree with desertFox lol, contribute somethin instead of yawning lar.. i been to your websites, all either filled with loading errors or the login function is down or worst its non-existant lol. [/b]He IS a "hacker" you know  <img src="/images/emoticons/classic/icon_twisted.gif" alt="Twisted Evil" title="Twisted Evil"> . Maybe he "hacks" his own webpage for a living  <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>amorphous</div>
+              <time class='date' datetime='2002-06-29T11:50:45+00:00'>29 Jun 02, 11:50</time>
+            </div>
+            <div class='col-md body'><span class="large">Long zhong Gum siahz!!! Didn't know that I would get so much help.  <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz">  One of the specification of my project is that the applet must be able to run in Java-enabled browser regardless of whether they're using Java plug-in or JVM. So I guess I cannot create files liao.<br><br>Initially thought that applet executed locally are "trusted" and should have more privileges than applets downloaded from the Internet. But it doesn't seem to be true.  <img src="/images/emoticons/classic/icon_cry.gif" alt="Crying or Very sad" title="Crying or Very sad"><br><br>I've tried using Java applets to trigger Java application to do the writing of files. Since the application is triggered by applet, the access rights are inherited by the application. (Scratched my heard for the whole morning figuring it out)<br><br>Thanks for the implication, Illegal Operation. The only way to workabout it is to send each byte from server to client and decode straight away. Sorry. Forgot to state the specifications.<br><br>My applet should be able to retrieve encoded image files from server, save to server, decode encoded image files and display them on screen.<br><br>What I'm worried is that when you readUnsignedByte, the range is 0 - 255; when you readByte, the range is -128 - 127. When we readUnsignedByte and later use writeByte to send to client, will the value be altered in way??<br><br>Last but not least, don't blame sukoru for yawning. Maybe he don't understand the topic. Cheers guyz..  <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"> </span></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>amorphous</div>
+              <time class='date' datetime='2002-06-29T11:51:22+00:00'>29 Jun 02, 11:51</time>
+            </div>
+            <div class='col-md body'>as above</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2002-06-29T12:20:26+00:00'>29 Jun 02, 12:20</time>
+            </div>
+            <div class='col-md body'><strong>What I'm worried is that when you readUnsignedByte, the range is 0 - 255; when you readByte, the range is -128 - 127. When we readUnsignedByte and later use writeByte to send to client, will the value be altered in way??<br></strong><br><br>I think you need to test it out to verify it and I have strong feeling your worry is very real indeed. Once a value gets out of range, a garbage or random value or even weird behavoir will happen. What about big endian and small endian problem if you are transferring across a Windows and Unix platform?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Illegal Operation</div>
+              <time class='date' datetime='2002-06-29T13:24:49+00:00'>29 Jun 02, 13:24</time>
+            </div>
+            <div class='col-md body'>You mentioned about saving to server? Can you elaborate on this one?<br><br>The first bit of a signed byte is the sign. Unless u are intepreting numbers out of the byte, it shouldn't matter. Heehee.. are we on the same track?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>amorphous</div>
+              <time class='date' datetime='2002-06-29T21:16:40+00:00'>29 Jun 02, 21:16</time>
+            </div>
+            <div class='col-md body'><span class="large">Hi,<br>Couldn't get in earlier on because I was directly to another page. Something wrong with the DNS at hardwarezone side I suppose.<br><br>Sorry illegal operation, I don't understand what do you mean by out of byte. I was just worried that when I readUnsignedByte and later use writeByte to the client side, the value may changed into garbage because of different ranges of signed and unsigned byte. But I've scroll through the API documentations and found that you can only writeByte but not unsignedByte. Still trying on that. Hope nothing bad happens. Thankzz</span></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Illegal Operation</div>
+              <time class='date' datetime='2002-06-29T21:40:38+00:00'>29 Jun 02, 21:40</time>
+            </div>
+            <div class='col-md body'>It shouldn't matter because sign and unsign is an issue only when you are representing numbers I think...</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Silenthunter</div>
+              <time class='date' datetime='2002-06-29T23:45:10+00:00'>29 Jun 02, 23:45</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by amorphous:</div><div class="quote_body"><span class="large"><br>My applet should be able to retrieve encoded image files from server, save to server, decode encoded image files and display them on screen.<br></span></div></blockquote>Hi, Just came in guys. Dunno if I'm out of point but your images are stored on the server right? If so, why done you just encapsulate youe image into an object via the server side application and call a method to display from the applets via RMI or CORBA (just as wat sohguanh said earlier)?? Eh......am I out of point or talking rubbish? I learning also   <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"> .<br><br>BTW: which poly you from?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>amorphous</div>
+              <time class='date' datetime='2002-06-30T00:25:41+00:00'>30 Jun 02, 00:25</time>
+            </div>
+            <div class='col-md body'>Sorry, not polytechnic project. I cannot use CORBA. Must be pure Java. Don't know what's RMI. The server is not a real one. It's just a Java application and is not web-enabled. But that problem is solved already. Thankz for all the help.<br><br>Currently figuring out how to use swing. Heard from a lot of people that swing's UI is easier to implement. Or is there a way to implement tabs without using swing?? Jialat. I'm not good in Java. The Java swing is making my head 'swing'.<br><br><blockquote><div class="quote_from">Originally posted by Silenthunter:</div><div class="quote_body"><blockquote>Originally posted by amorphous:<br>[b]<span class="large"><br>My applet should be able to retrieve encoded image files from server, save to server, decode encoded image files and display them on screen.<br></span></blockquote></div></blockquote>Hi, Just came in guys. Dunno if I'm out of point but your images are stored on the server right? If so, why done you just encapsulate youe image into an object via the server side application and call a method to display from the applets via RMI or CORBA (just as wat sohguanh said earlier)?? Eh......am I out of point or talking rubbish? I learning also   <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"> .<br><br>BTW: which poly you from?[/b]</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>moose</div>
+              <time class='date' datetime='2002-06-30T02:08:17+00:00'>30 Jun 02, 02:08</time>
+            </div>
+            <div class='col-md body'>RMI = Remote Method Invocation,ehehe <img src="/images/emoticons/classic/icon_biggrin.gif" alt="Very Happy" title="Very Happy"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>amorphous</div>
+              <time class='date' datetime='2002-06-30T11:16:31+00:00'>30 Jun 02, 11:16</time>
+            </div>
+            <div class='col-md body'><span class="large">moose,<br>I've checked out what RMI was. I'm not trying to invoke methods on an object in another Java virtual machine. RMI seems to be more like remote services such as terminal server, pcAnywhere or Citrix. I don't have much knowledge about it and don't know if it can work for me but thanks anyway.  <img src="/images/emoticons/classic/icon_smile.gif" alt="Smile" title="Smile"> </span></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sleepy</div>
+              <time class='date' datetime='2002-06-30T12:38:26+00:00'>30 Jun 02, 12:38</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by greengoblin:</div><div class="quote_body"><blockquote>Originally posted by cosmologist:<br>[b][quote]Originally posted by sukoru:<br>[b]yawn~~</blockquote></div></blockquote>i agree with desertFox lol, contribute somethin instead of yawning lar.. i been to your websites, all either filled with loading errors or the login function is down or worst its non-existant lol. [/b]He IS a "hacker" you know  <img src="/images/emoticons/classic/icon_twisted.gif" alt="Twisted Evil" title="Twisted Evil"> . Maybe he "hacks" his own webpage for a living  <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"> [/b][/quote]<br>maybe he say wrong, should be 'tio hacked'</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>FireIce</div>
+              <time class='date' datetime='2002-06-30T12:48:26+00:00'>30 Jun 02, 12:48</time>
+            </div>
+            <div class='col-md body'>uuuhhhhmmm...<br><br>i change my mind about taking programming this sem......<br><br><img src="/images/emoticons/classic/icon_confused.gif" alt="Confused" title="Confused">  <img src="/images/emoticons/classic/icon_confused.gif" alt="Confused" title="Confused">  <img src="/images/emoticons/classic/icon_confused.gif" alt="Confused" title="Confused"></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/8/topics/23041/2/'>Next</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>C problem!! need help!!!</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['8']).setTargeting('topic', ['98503']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['8']).setTargeting('topic', ['98503']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['8']).setTargeting('topic', ['98503']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['8']).setTargeting('topic', ['98503']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/8/'>Chit Chat</a>
+      <h1>C problem!! need help!!!</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>the.raven</div>
+              <time class='date' datetime='2004-10-18T12:27:34+00:00'>18 Oct 04, 12:27</time>
+            </div>
+            <div class='col-md body'>I am supposed to write a program that that when a user input an integer, the program will tell whether the integer is one of the following numbers<br><br>F0 = 0<br>F1 = 1<br>F2 = 1<br>F3 = 2<br>F4 = 3<br>F5 = 5<br>F6 = 8<br>etc etc<br><br>where each number is the previous 2 numbers add together.<br><br>the program will say like "7 is not among these numbers" when the user enter 7 or "8 is the 6th in the sequence" when the user enters 8.<br><br>I tried using for loop to do it, I tried to put a loop inside another loop and one loop is for increments of the F and another is to calculate the number but I got stuck at how to calculate the number. try very long already still cannot, how to do ah?</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SibeiSuayKia</div>
+              <time class='date' datetime='2004-10-18T12:44:29+00:00'>18 Oct 04, 12:44</time>
+            </div>
+            <div class='col-md body'>c b probleM?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LeftBallBigger</div>
+              <time class='date' datetime='2004-10-18T12:51:58+00:00'>18 Oct 04, 12:51</time>
+            </div>
+            <div class='col-md body'><strong>If I understand correctly you r writing aprogram for Fibonacci numbers.(?)<br>Fibonaci numbers are numbers which are the sum of the preceeding two numbers.<br><br>Don't know if this is in the context of your program but Hope This Helps- </strong><br><br>Calculating the next Fibonacci number directly<br>Suppose we have evaluated Fib(100) and we want to know the next value: Fib(101). Do we have to use Binet's formula again? Well we could do, of course, but here is a short-cut.<br><br>There is also a formula that, given one Fibonacci number, returns the next Fibonacci number directly, calculating it in terms only of the previous value (ie not needing the value before as well).<br>F(n+1) = round( F(n) Phi )<br>The round function applies to a number (whole or decimal) and changes it to an integer.<br><br>* round(x) means "the integer nearest to x".<br>* If we apply it to a number ending with Â·5 then we will round up<br>eg round(3.5) is 4.<br>* If we apply the round function to a value which is already a whole number then it does not change it.<br><br>An example<br>Here's an example of our "next Fibonacci" formula using a small value of n:<br>Since F(4)=3 then<br>F(5)<br>= round( 3 Phi )<br>= round( 3x1Â·618... )<br>= round( 4Â·854... )<br>= 5 which is correct!<br>But there's a problem....<br>F(1)=1 and the next Fibonacci number is F(2)=1.<br>ALSO, F(2)=1 but the next Fibonacci number is F(3)=2.<br>But we cannot have two different values for "the next Fibonacci number after 1"!<br>If we put F(n)=1 in the formula, we have round(1 x Phi), or the nearest integer to Phi = 1.618..., which is 2.<br>So we cannot apply this formula when n is 1 (and you can check that it also fails if n is 0).<br>So we have an important restriction on the formula above: the formula only applies when n is bigger than 1.<br><br>F(n+1) = round( F(n) Phi )    for all n &gt; 1<br>Proving that this formula is correct<br>You can easily evaluate F(2) from F(1)=1 and F(3) from F(2)=2 by this formula and see that they give F(2)=3 and F(3)=5. Then, if you are familiar with proof by induction you can show that, supposing the formula is true for F(n-1) and F(n) then it must also be true for F(n+1) by showing that adding the formula's expressions for F(n) and F(n-1) gives the formula's expression for F(n+1).<br><br>Other ways of proving it involve results about recurrence relations and how to solve them, which are very like solving differential equations, except that they deal with integer values not real number values. This is often included in university level courses on Pure or Discrete Mathematics.<br><br>[ For the university level mathematician, there is an interesting HAKMEM note on a fast way of computing Fibonacci numbers and its applications.]<br>Detecting when N is a Fibonacci Number<br>Given a number N it is not easy to spot if it is a Fibonacci number or not.<br>Is there a simple test to see if N is a Fibonacci number?<br>I Gessel solved this in 1972 with a surprisingly simple test.<br>N is a Fibonacci number if and only if 5 N2 + 4 or 5 N2 Â– 4 is a square number.<br>For instance,<br><br>* 3 is a Fibonacci number since 5x32+4 is 49 which is 72<br>* 5 is a Fibonacci number since 5x52Â–4 is 121 which is 112<br>* 4 is not a Fibonacci number since neither 5x42+4=84 nor 5x42Â–4=76 are pefect squares.<br><br>It is easy to test if a whole number is square on a calculator by taking its square root and checking that it has nothing after the decimal point.<br>In a computer programming language, take the square root, round it to the nearest integer and then square the result. If this is the same as the original whole number then the original was a perfect square.<br><br>To detect which Fibonacci number it is, that is, to find the index number i for which n = Fib(i), we can use the approximate version of Binet's formula from above:<br>Fib(i) = round( Phii/√5 )<br>If n is Fib(i), then n√5 is approximately Phii<br>Taking LOGS (to base 10) of both sides gives:<br>LOG(n √5) = LOG( Phii) and using the log rules we have:<br>LOG(n) + LOG(5)/2 = i LOG(Phi) so that<br>i = (LOG(n) + LOG(5)/2)/LOG(PHI)<br>Since our formula was approximate, then rounding this value to the nearest integer should be sufficient to give the real (whole number) index i for which Fib(i)=n.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>meander</div>
+              <time class='date' datetime='2004-10-18T12:55:05+00:00'>18 Oct 04, 12:55</time>
+            </div>
+            <div class='col-md body'>wah another programming related qn ..<br><br>A suggestion :<br><br>create a function to calculate and return the next number in the sequence. Place the function in a do-while loop. Terminate loop if input no equal or smaller than returned no.<br><br>If your input no is larger than the returned no, run function again.<br>If input no is equal to returned no, it's in the sequence.<br>If input no is smaller than returned no, it's not inside the sequence.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sillyme</div>
+              <time class='date' datetime='2004-10-18T12:58:40+00:00'>18 Oct 04, 12:58</time>
+            </div>
+            <div class='col-md body'>so i assume Fx is predetermined? or Fx is calculated after user enters a number?<br>what is the limit to x?<br><br>if Fx is is predetermined, and x is limited to 100. then a generic loop can be (forgot exact syntax)<br><br>int f(100);<br>f(0)=0;<br>for x=0, x&lt;100, x++<br>f(x)=x+f(x);<br><br>ask user for input<br>then compare against fx<br>for x=0,x&lt;100,x++<br>{<br>if f(x)=input<br>printf "yes it in the sequence"<br>else<br>printf "not in sequence"<br>}<br><br>something like this lah.. can't remember the exact syntaxfor C<br><br>those with fresh C knowledge, pls verify <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>notime</div>
+              <time class='date' datetime='2004-10-18T13:59:11+00:00'>18 Oct 04, 13:59</time>
+            </div>
+            <div class='col-md body'>If iI understand the question correctly,<br><br>f[0]=0; f[1]=1;x=1;<br>while (f[x]&lt; = user_input)<br>{<br>x++;<br>f[x] = f[x-2]+f[x-1];<br>}<br><br>x--;<br><br>if (f[x] = user_input)<br>// your seq number is x, so do a printf here;<br>else<br>// cannot find...<br><br>Obviously, this code will only give F1 (should be F1 and F2) when the user input is 1. You can easily fix this.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>meander</div>
+              <time class='date' datetime='2004-10-18T15:24:31+00:00'>18 Oct 04, 15:24</time>
+            </div>
+            <div class='col-md body'>I just saw LeftBallBigger's post and realised that he's right. This is the fibonacci system. To solve it, code a recursive function.<br><br><span style="color: darkblue;">// function to return a fibonacci number given n</span><br>int fib (int n)<br>{<br>if (n &lt;= 1) return n;<br>else return fib(n-1) + fib(n-2);<br>}<br><br>now in the main function you run a loop<br><br><span style="color: darkblue;">//main</span><br>int i=0, temp, user_input;<br><span style="color: darkblue;">// interface code please DIY</span><br>do {<br>temp = fib(i);<br>i++;<br>} while (temp &lt; user_input);<br><br>if (temp == user_input) <span style="color: darkblue;">//number is in fibonacci series</span><br>if (temp &gt; user_input) <span style="color: darkblue;">// number is NOT in fibonacci series</span></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>12qwaszx</div>
+              <time class='date' datetime='2004-10-18T21:32:20+00:00'>18 Oct 04, 21:32</time>
+            </div>
+            <div class='col-md body'>hehe, if cal fibonacci num, i suggest you try a recursive algorithm, not iterative algorithm...  <img src="/images/emoticons/classic/icon_idea.gif" alt="Idea" title="Idea"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>the.raven</div>
+              <time class='date' datetime='2004-10-19T08:02:33+00:00'>19 Oct 04, 08:02</time>
+            </div>
+            <div class='col-md body'>haha I made the program liaoz, without using any library functions. I'm 1337</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

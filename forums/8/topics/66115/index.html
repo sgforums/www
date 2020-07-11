@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>HELP! Problem with Ms Access Form linked to Ms SQL Database!</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['8']).setTargeting('topic', ['66115']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['8']).setTargeting('topic', ['66115']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['8']).setTargeting('topic', ['66115']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['8']).setTargeting('topic', ['66115']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/8/'>Chit Chat</a>
+      <h1>HELP! Problem with Ms Access Form linked to Ms SQL Database!</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>www</div>
+              <time class='date' datetime='2004-01-05T16:37:41+00:00'>5 Jan 04, 16:37</time>
+            </div>
+            <div class='col-md body'><strong><span style="font-style: italic;">yes, i have posted this problem in other technical forums but have yet to receive any advices.. no harm trying out here anyway...</span></strong><br><br>would appreciate if any of you can help with this problem.<br><br>I am having this form on employees' particular, which was created on Ms Access 2000. However, the tables are linked to Ms SQL 2000 via ODBC.<br><br>The form is displayed using Dataview, with a checkbox on every employee's record to specify their employment type, be it full-time or part-time.<br><br>The problem I am facing is that whenever I tried to check or uncheck on the respective checkbox, I am prompted with an ODBC failed error message, followed by:<br><br><strong>[Microsoft][ODBC SQL Server Driver][SQL Server]Update permission denied on object 'tblEmployee', database 'ABCCompany', owner 'dbo'. (#229)</strong><br><br>apparently, it is a permission issue. I tried to grant the respective users with the necessary permissions, to the extend of giving them administrator rights but to no avail..<br><br><span style="color: red;">and to make things more complicated, it works prefectly fine on the computer I logged on to!</span><br><br>as such, I granted them with the exact security configuration I have but the error is still there.<br><br>can someone advise on what are the workarounds for this sorta problem?<br><br>many thanks!<br><br><strong><span style="font-style: italic;">as long as its not crappy stuff, i would appreciate all sorta advices. having a giant mind block over here, any sensible suggestion could just lead me to the solution..</span></strong></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Illegal Operation</div>
+              <time class='date' datetime='2004-01-05T22:31:59+00:00'>5 Jan 04, 22:31</time>
+            </div>
+            <div class='col-md body'>Can you copy and paste the connection string codes and the ODBC settings here?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>www</div>
+              <time class='date' datetime='2004-01-06T08:11:54+00:00'>6 Jan 04, 08:11</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Illegal Operation:</div><div class="quote_body">Can you copy and paste the connection string codes and the ODBC settings here?</div></blockquote>thanks but there is no connection string involved here, which is a luxury I cannot have.<br><br>Ms Access plays the role of a front end.<br>Ms SQL contains all the source tables.<br><br>the relationship here is Ms Access containing linked tables to Ms SQL via ODBC.<br><br>as far as Ms Access is concern, those linked tables are as good as local. reading the information in those tables are never an issue. the error only occurs when one tries to update the data.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Illegal Operation</div>
+              <time class='date' datetime='2004-01-06T08:52:07+00:00'>6 Jan 04, 08:52</time>
+            </div>
+            <div class='col-md body'>Is your username 'sa' ?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>www</div>
+              <time class='date' datetime='2004-01-06T08:56:45+00:00'>6 Jan 04, 08:56</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Illegal Operation:</div><div class="quote_body">Is your username 'sa' ?</div></blockquote>nope, because I am using Windows Authentication for security verification, meaning permissions are set with respect to their domain names and/or window logon usernames.<br><br>furthermore, I cannot let the operating users have the "sa" account, considering that they can only conduct insertion and updating of data.<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Illegal Operation</div>
+              <time class='date' datetime='2004-01-06T19:53:48+00:00'>6 Jan 04, 19:53</time>
+            </div>
+            <div class='col-md body'>&gt;&gt;&gt;and to make things more complicated, it works prefectly fine on the computer I logged on to!<br><br>You mean it works on the client machine with the Access frontend but not on the server machine running both Access and MSSQL?<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>www</div>
+              <time class='date' datetime='2004-01-06T23:23:13+00:00'>6 Jan 04, 23:23</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Illegal Operation:</div><div class="quote_body">&gt;&gt;&gt;and to make things more complicated, it works prefectly fine on the computer I logged on to!<br><br>You mean it works on the client machine with the Access frontend but not on the server machine running both Access and MSSQL?<br></div></blockquote><strong>new findings</strong><br><br>the problem occurs only when the username/workgroup (under the specified domain) is granted with anything less than <strong>Database System Administrator</strong> rights.<br><br>in another word, there will be no problem if I grant the group of users as System Administrator in MS SQL. if I take away the System Administrator role from them, but give them <strong>whatever</strong> update and access rights, the problem will arises again.<br><br>which is not the exact solution as defeat the purpose of using Ms SQL as the data source.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sunny6110</div>
+              <time class='date' datetime='2004-01-06T23:50:48+00:00'>6 Jan 04, 23:50</time>
+            </div>
+            <div class='col-md body'>how to deal wif special chars like &lt;&gt; {} [] | \ ^ ? how come I can't format my text the html way here...?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Illegal Operation</div>
+              <time class='date' datetime='2004-01-07T00:23:27+00:00'>7 Jan 04, 00:23</time>
+            </div>
+            <div class='col-md body'>Suggest that you set up the SQL Server instance to authenticate using mixed mode.<br><br>In mixed mode, you can choose between using NT server authentication or SQL Server authentication when connecting to it. I prefer SQL Server authentication because you can set the database user in the database itself.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>www</div>
+              <time class='date' datetime='2004-01-07T01:26:39+00:00'>7 Jan 04, 01:26</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Illegal Operation:</div><div class="quote_body">Suggest that you set up the SQL Server instance to authenticate using mixed mode.<br><br>In mixed mode, you can choose between using NT server authentication or SQL Server authentication when connecting to it. I prefer SQL Server authentication because you can set the database user in the database itself. </div></blockquote>correct me if i am wrong.<br><br>odbc can support only either Windows OR SQL authentication. To have both in place, your frontend has to be designed and developed using programmable tools like visual basic/asp and etc.<br><br>the frontend is currently done up using MS Access form, which blindly read from the linked tables thru odbc. i guess if odbc (like how i described above) can only support either one mode, it will perform operation via that single mode.<br><br>unless i start changing the code, which i doubt i should, for political reason.<br><br>nevertheless, thanks for the suggestion. i see if i can work anything from what you have suggested.<br><br>i guess after all these hiccups, i have streamline my considerations and objectives to:<br>1. remain the Ms Access Form as how it is as possible.<br>2. allow the Ms Access Form to perform update and insert via odbc only by playing with the configuration on the Ms SQL side.<br>3. granting users with System Administrator role is not an option.<br><br>with that, if you can think of any idea to achieve the above, do let me know.<br><br>gracias.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>www</div>
+              <time class='date' datetime='2004-01-07T01:34:51+00:00'>7 Jan 04, 01:34</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by sunny6110:</div><div class="quote_body">how to deal wif special chars like &lt;&gt; {} [] | \ ^ ? how come I can't format my text the html way here...?</div></blockquote>u mean something like ?<br><br>INSERT INTO tblEmp<br>(emp_name)<br>VALUES     ('!@#$%^&amp;*()')<br><br>it works fine.</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Unix uniq command</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['8']).setTargeting('topic', ['177618']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['8']).setTargeting('topic', ['177618']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['8']).setTargeting('topic', ['177618']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['8']).setTargeting('topic', ['177618']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/8/'>Chit Chat</a>
+      <h1>Unix uniq command</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2006-02-09T14:40:31+00:00'>9 Feb 06, 14:40</time>
+            </div>
+            <div class='col-md body'>Sorry no response in IT Support and Tech Corner forum so come here post. Need help in below.<br><br>I have a problem. I need to use Unix uniq command to remove duplicating lines but with an extra twist.<br><br>Example<br>1 apple a<br>2 apple b<br>3 orange c<br>4 orange d<br>....<br><br>I wanna the command to consider the middle field only (i.e apple, orange) to do removing of duplicates. But it seem uniq is treating the whole line to do comparison when remove duplicates. Any idea how?<br><br>Dun ask me use M$ Excel as the command is supposed to be in a Unix script to be executed on commandline by data centre operators in a Unix environment.<br><br>TIA</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Fatum</div>
+              <time class='date' datetime='2006-02-09T14:48:58+00:00'>9 Feb 06, 14:48</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by sohguanh:</div><div class="quote_body">Sorry no response in IT Support and Tech Corner forum so come here post. Need help in below.<br><br>I have a problem. I need to use Unix uniq command to remove duplicating lines but with an extra twist.<br><br>Example<br>1 apple a<br>2 apple b<br>3 orange c<br>4 orange d<br>....<br><br>I wanna the command to consider the middle field only (i.e apple, orange) to do removing of duplicates. But it seem uniq is treating the whole line to do comparison when remove duplicates. Any idea how?<br><br>Dun ask me use M$ Excel as the command is supposed to be in a Unix script to be executed on commandline by data centre operators in a Unix environment.<br><br>TIA </div></blockquote>you mean you're actually writing a shellscript to parse a text file or something bro ? ....<br><br>if it's a shellscript you're writing, you can try parsing the middle field with regular expressions, then work on from there ...<br><br>tell me if it works ...  <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2006-02-09T14:53:52+00:00'>9 Feb 06, 14:53</time>
+            </div>
+            <div class='col-md body'><strong>if it's a shellscript you're writing, you can try parsing the middle field with regular expressions, then work on from there ...</strong><br><br>Do you mean by first parsing the middle field and then do the uniq command? I wan performance and hence I tot of using juz a single uniq command to do it. If all fails I guess I must use two commands and pipe them together.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>launtpc</div>
+              <time class='date' datetime='2006-02-09T15:01:14+00:00'>9 Feb 06, 15:01</time>
+            </div>
+            <div class='col-md body'>I just logged in and saw your thread, but the problem is that I don't program in Unix... only VB6... sorry.  <img src="/images/emoticons/classic/icon_sad.gif" alt="Sad" title="Sad"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Fatum</div>
+              <time class='date' datetime='2006-02-09T15:03:22+00:00'>9 Feb 06, 15:03</time>
+            </div>
+            <div class='col-md body'><blockquote>Originally posted by sohguanh:<br><strong>[b]if it's a shellscript you're writing, you can try parsing the middle field with regular expressions, then work on from there ...</strong><br><br>Do you mean by first parsing the middle field and then do the uniq command? I wan performance and hence I tot of using juz a single uniq command to do it. If all fails I guess I must use two commands and pipe them together.[/b]</blockquote>yes, that's what I meant, if you're just parsing a simple text file then you can filter out all the unneccessary bits then pipe the output to uniq ... and frankly, i don't think there's much difference performance wise ....<br><br>I just "man uniq" .... not very helpful there .... let me know if my idea works yah ... <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"><br><br>(ahhhh ... hang on ... you may want to tinker around with -f or -s  ....  <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"> )</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Fatum</div>
+              <time class='date' datetime='2006-02-09T15:11:54+00:00'>9 Feb 06, 15:11</time>
+            </div>
+            <div class='col-md body'><br>bro ... got the answer ...<br><br>you go uniq -f 1 [input file] [outputfile] , where 1 is the first field of each input line<br><br>i did a little experiment, cat &gt;&gt; test.txt  a whole string of text, seperated by white space ....<br><br>and yes, it filters out the first token ....<br><br>cheers ! ...  <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2006-02-09T15:17:15+00:00'>9 Feb 06, 15:17</time>
+            </div>
+            <div class='col-md body'><strong>(ahhhh ... hang on ... you may want to tinker around with -f or -s .... Razz )</strong><br><br>I just check the -f  option is is always skip the FIRST  fields so it means it cannot skip selected fields like say 1st and 3rd field during comparison for removing duplicates <img src="/images/emoticons/classic/icon_sad.gif" alt="Sad" title="Sad"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2006-02-09T15:22:33+00:00'>9 Feb 06, 15:22</time>
+            </div>
+            <div class='col-md body'><strong>and yes, it filters out the first token .... </strong><br><br>Correct but what I want is to filter out the first and the third token when doing comparison. So "1 apple a" should be same as "2 apple b"  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Fatum</div>
+              <time class='date' datetime='2006-02-09T15:26:46+00:00'>9 Feb 06, 15:26</time>
+            </div>
+            <div class='col-md body'><blockquote>Originally posted by sohguanh:<br><strong>[b]and yes, it filters out the first token .... </strong><br><br>Correct but what I want is to filter out the first and the third token when doing comparison. So "1 apple a" should be same as "2 apple b"  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> [/b]</blockquote>so you just want the middle token eh ? ...<br><br>well ... a dirty hack would be to simply parse the output file again with -f 3 again lor ...  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"><br><br>"uniq -f 1 [input file] | uniq -f 3 " .....  <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2006-02-09T15:35:39+00:00'>9 Feb 06, 15:35</time>
+            </div>
+            <div class='col-md body'><strong>"uniq -f 1 [input file] | uniq -f 3 " .....</strong><br><br>Errrr.... do you actually execute those commands you recommend? Do you have a linux or unix accessible to you? I tried yours and it does not work. I will try to post my working solution later assuming I do in two or more commands  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Fatum</div>
+              <time class='date' datetime='2006-02-09T15:38:06+00:00'>9 Feb 06, 15:38</time>
+            </div>
+            <div class='col-md body'><blockquote>Originally posted by sohguanh:<br><strong>[b]"uniq -f 1 [input file] | uniq -f 3 " .....</strong><br><br>Errrr.... do you actually execute those commands you recommend? Do you have a linux or unix accessible to you? I tried yours and it does not work. I will try to post my working solution later assuming I do in two or more commands  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> [/b]</blockquote>i did it on my apple terminal and it works ....<br><br>should be no problem leh ... try again and see ? ... the above command outputs to standard out ... maybe you try piping to your desired output file and cat it and see how ? ...</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Fatum</div>
+              <time class='date' datetime='2006-02-09T15:51:56+00:00'>9 Feb 06, 15:51</time>
+            </div>
+            <div class='col-md body'><br>ah ... I see what you mean ... the output doesn't seem to be correct ...<br><br>sorry bro ... that i couldn't be much help ... but post the solution up yah ... i'd like to take a look at the final shellscript ..  <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>one-niner</div>
+              <time class='date' datetime='2006-02-09T15:54:18+00:00'>9 Feb 06, 15:54</time>
+            </div>
+            <div class='col-md body'>cannot use AWK ?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Fatum</div>
+              <time class='date' datetime='2006-02-09T16:16:04+00:00'>9 Feb 06, 16:16</time>
+            </div>
+            <div class='col-md body'><br>bro ...<br><br>i just couldn't put this down ... re-read the man again ...<br><br>the reason it's not working is cos the -f option ignores the first "x" number of fields, so -f 3 ignores the entire line, instead of ignoring the third token instead  ...<br><br>hope this helps you with your solution ... good luck</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2006-02-09T16:45:36+00:00'>9 Feb 06, 16:45</time>
+            </div>
+            <div class='col-md body'><strong>the reason it's not working is cos the -f option ignores the first "x" number of fields, so -f 3 ignores the entire line, instead of ignoring the third token instead ...</strong><br><br>I think I did mention in my earlier post I did say the FIRST "x" number of fields..<br><br>anyway me gotta it all work out but i uses 3 process of which 2 is awk maybe someone can help me tune it further to 2? The input file is called a.txt<br><br>Contents of a.txt<br>1 apple a<br>2 apple b<br>3 orange c<br>4 orange d<br>5 pear e<br>6 pear f<br><br>Result is<br>1 apple a<br>3 orange c<br>5 pear e<br><br><div>code:<pre><br>awk -F " " '{print $1" "$3" "$2;}' a.txt|uniq -f 2| \<br>awk -F " " '{print $1" "$3" "$2;}'<br></pre></div></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>one-niner</div>
+              <time class='date' datetime='2006-02-09T17:14:41+00:00'>9 Feb 06, 17:14</time>
+            </div>
+            <div class='col-md body'>hey sorry guys<br><br>given a certain string [11to200]<br><br>how can i grab out the 11 and 200 to do a comparision based on a certain value being passed in ??<br><br>I need to test conditions where a certain return codes maps to a certain number or range ...similar to one above .</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2006-02-09T17:52:05+00:00'>9 Feb 06, 17:52</time>
+            </div>
+            <div class='col-md body'><strong>given a certain string [11to200]<br><br>how can i grab out the 11 and 200 to do a comparision based on a certain value being passed in ??</strong><br><br>You should give an example of what is the input and what you want the output to look like. Then it is clearer cuz by describing in english sentence sometimes ppl can misinterpret especially for english lousy ppl like me  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>one-niner</div>
+              <time class='date' datetime='2006-02-09T18:22:31+00:00'>9 Feb 06, 18:22</time>
+            </div>
+            <div class='col-md body'><blockquote>Originally posted by sohguanh:<br><strong>[b]given a certain string [11to200]<br><br>how can i grab out the 11 and 200 to do a comparision based on a certain value being passed in ??</strong><br><br>You should give an example of what is the input and what you want the output to look like. Then it is clearer cuz by describing in english sentence sometimes ppl can misinterpret especially for english lousy ppl like me  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> [/b]</blockquote>okay cause i got an INI file which requires me to map specfic values to user defined ranges similarly above<br><br>so lets say<br><br>criticalerror=[11to20],69<br>warningerror=[200to234]<br><br>given a control script that execute a sub sciript and returns 18,the control script has to map the return code 18 to a critical error which is bounded by the range [11to20]<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>12qwaszx</div>
+              <time class='date' datetime='2006-02-09T18:38:12+00:00'>9 Feb 06, 18:38</time>
+            </div>
+            <div class='col-md body'># New variables<br><br><strong>set UHOMEDIR=`(cat /etc/passwd | awk -F":" '{print $6}')`</strong><br><strong>set SORTED_UHOMEDIR=`echo $UHOMEDIR | tr " " "\n" | sort -b -t" " -u`</strong><br><br>i written something similar<br><br>the above will take the 6th field from /etc/passwd<br>and then sort with the unique entries<br>hope it helps</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

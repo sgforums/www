@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>SQL HELP!</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['8']).setTargeting('topic', ['201774']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['8']).setTargeting('topic', ['201774']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['8']).setTargeting('topic', ['201774']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['8']).setTargeting('topic', ['201774']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/8/'>Chit Chat</a>
+      <h1>SQL HELP!</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Ayukat</div>
+              <time class='date' datetime='2006-07-25T02:47:49+00:00'>25 Jul 06, 02:47</time>
+            </div>
+            <div class='col-md body'>I want to to insert some values into a database using MS Access.<br><br>And I wanna keep the auto generated Primary Key, the ID Field..<br><br>Problem is this way I can't do an insert without altering the ID column... help!!!! How to insert... yet dun touch the ID column?</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2006-07-25T07:17:41+00:00'>25 Jul 06, 07:17</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Ayukat:</div><div class="quote_body">I want to to insert some values into a database using MS Access.<br><br>And I wanna keep the auto generated Primary Key, the ID Field..<br><br>Problem is this way I can't do an insert without altering the ID column... help!!!! How to insert... yet dun touch the ID column?</div></blockquote>sounds very cheem....cannot just insert at the end of the database and then retrieve it with conditions?<br><br>something like SELECT field1 WHERE condition1 is valid.<br><br>anyway....if U are looking for syntax help....can download the pdf manual from <a href="http://dev.mysql.com/doc/" rel="nofollow">http://dev.mysql.com/doc/</a><br><br>I am not too familiar with SQL in MS Access...but my understanding is that MS SQL and mySQL syntax are the same so U should have no problems with using the pdf manual.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MCY</div>
+              <time class='date' datetime='2006-07-25T08:26:30+00:00'>25 Jul 06, 08:26</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Ayukat:</div><div class="quote_body">I want to to insert some values into a database using MS Access.<br><br>And I wanna keep the auto generated Primary Key, the ID Field..<br><br>Problem is this way I can't do an insert without altering the ID column... help!!!! How to insert... yet dun touch the ID column?</div></blockquote>If your ID Field is Primary Key, make sure you select under the Index part "Yes (Duplicates OK)".<br><br>It seems rather strange cause usually for primary keys we don't allow duplicates so that each record will be unique but in your situation I would say your ID field will not be your Primary key (unless you combine with another field to make it unique)</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>cannonprinter</div>
+              <time class='date' datetime='2006-07-25T08:42:29+00:00'>25 Jul 06, 08:42</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Ayukat:</div><div class="quote_body">I want to to insert some values into a database using MS Access.<br><br>And I wanna keep the auto generated Primary Key, the ID Field..<br><br>Problem is this way I can't do an insert without altering the ID column... help!!!! How to insert... yet dun touch the ID column?</div></blockquote>U already keep ur ID field as a primary key and u set it to <strong>auto generated </strong>already. what for u need to alter the ID column while inserting values into it?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MCY</div>
+              <time class='date' datetime='2006-07-25T09:11:46+00:00'>25 Jul 06, 09:11</time>
+            </div>
+            <div class='col-md body'><blockquote>Originally posted by cannonprinter:<br><strong><br><br>U already keep ur ID field as a primary key and u set it to [b]auto generated </strong>already. what for u need to alter the ID column while inserting values into it? [/b]</blockquote>My guess is that he wants to keep the ID field same as the previous record.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>new_b</div>
+              <time class='date' datetime='2006-07-25T09:28:46+00:00'>25 Jul 06, 09:28</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from"><br>U already keep ur ID field as a primary key and u set it to auto generated already. what for u need to alter the ID column while inserting values into it?<br>[/quote]<br><br>indeed? when u write insert statement it will auto generarte the ID for u...<br><br>[quote]<br>Originally posted by MCY:</div><div class="quote_body">My guess is that he wants to keep the ID field same as the previous record.</div></blockquote>If tht is the case y dont you add another column to keep the ID field?<br><br>btw..you could always ask in other developer forums like<br>sgdotnet.org or google it..<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Ayukat</div>
+              <time class='date' datetime='2006-07-25T09:59:18+00:00'>25 Jul 06, 09:59</time>
+            </div>
+            <div class='col-md body'>How to say ar?<br><br>Lets say I insert a row into a database, and to do tat correctly I need to also insert the ID (which is the primary key that is auto generated.).<br><br>INSERT INTO Blahblah Values ( 1, "Blahblah" ) &lt;- I need to insert the Primary Key ID too (which is 1), if not cannot insert.<br><br>But I want the database Access to auto generate out the ID ( I dun wan to insert it manually ), while inserting a new row.<br><br>I am using VB.NET, n if I do an INSERT on a table tat contains column[ID, Data]<br><br>I can do use INSERT INTO Blahblah Vales ( 'Data' ) becoz it will not tally with the columns in the database, but I want the ID to auto generate itself using access, I dun wan to insert it manually...<br><br>I nid to keep every single ID unique.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-07-25T10:06:29+00:00'>25 Jul 06, 10:06</time>
+            </div>
+            <div class='col-md body'>For MS Access, you can change the settings to auto generate it, since it's the primary key.<br><br>For MySQL, an example below.<br><br><div>code:<pre>(<br>CUSTOMER_ID INTEGER AUTO INCREMENT,<br>PRIMARY KEY(CUSTOMER_ID),<br>);<br></pre></div><br><br>This statement will make it auto increase every time you insert a new entry.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MCY</div>
+              <time class='date' datetime='2006-07-25T10:12:53+00:00'>25 Jul 06, 10:12</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Ayukat:</div><div class="quote_body">How to say ar?<br><br>Lets say I insert a row into a database, and to do tat correctly I need to also insert the ID (which is the primary key that is auto generated.).<br><br>INSERT INTO Blahblah Values ( 1, "Blahblah" ) &lt;- I need to insert the Primary Key ID too (which is 1), if not cannot insert.<br><br>But I want the database Access to auto generate out the ID ( I dun wan to insert it manually ), while inserting a new row.<br><br>I am using VB.NET, n if I do an INSERT on a table tat contains column[ID, Data]<br><br>I can do use INSERT INTO Blahblah Vales ( 'Data' ) becoz it will not tally with the columns in the database, but I want the ID to auto generate itself using access, I dun wan to insert it manually...<br><br>I nid to keep every single ID unique.</div></blockquote>Now I get what you mean...<br>If your ID column is created as auto increment then you can ignore the ID field when adding new records. That is ...<br>INSERT INTO Blahblah (description) Values ("Blahblah" ) &lt;- less the ID field<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>berll</div>
+              <time class='date' datetime='2006-07-25T17:31:54+00:00'>25 Jul 06, 17:31</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">For MS Access, you can change the settings to auto generate it, since it's the primary key.<br><br>For MySQL, an example below.<br><br><div>code:<pre>(<br>CUSTOMER_ID INTEGER AUTO INCREMENT,<br>PRIMARY KEY(CUSTOMER_ID),<br>);<br></pre></div><br><br>This statement will make it auto increase every time you insert a new entry.</div></blockquote>or u can also use this in sql<br><br>CREATE SEQUENCE CUSTOMER_ID<br>INCREMENT BY 1<br>START WITH 10<br>MAXVALUE 99<br>NOCACHE<br>NOCYCLE;<br><br>INSERT INTO Customer VALUES<br>(CUSTOMER_ID.NEXTVAL)<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>R3SsH|n</div>
+              <time class='date' datetime='2006-07-25T17:34:51+00:00'>25 Jul 06, 17:34</time>
+            </div>
+            <div class='col-md body'>re-create the table that you need...think of all the attributes and conditions you want it to have beforehand...</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2006-07-25T17:52:48+00:00'>25 Jul 06, 17:52</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by berll:</div><div class="quote_body">or u can also use this in sql<br><br>CREATE SEQUENCE CUSTOMER_ID<br>INCREMENT BY 1<br>START WITH 10<br>MAXVALUE 99<br>NOCACHE<br>NOCYCLE;<br><br>INSERT INTO Customer VALUES<br>(CUSTOMER_ID.NEXTVAL)<br><br></div></blockquote>Above seem to be Oracle syntax. AFAIK, not all SQL extension are supoprted by all databases. For MS Access I dunno if above is acceptable syntax. Maybe it is so gotta juz execute and see how  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>berll</div>
+              <time class='date' datetime='2006-07-25T18:02:20+00:00'>25 Jul 06, 18:02</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by sohguanh:</div><div class="quote_body">Above seem to be Oracle syntax. AFAIK, not all SQL extension are supoprted by all databases. For MS Access I dunno if above is acceptable syntax. Maybe it is so gotta juz execute and see how  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> </div></blockquote>yah i know, thats y i say use in <strong>sql</strong> <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>just providing more alternatives for him  <img src="/images/emoticons/classic/icon_biggrin.gif" alt="Very Happy" title="Very Happy"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-07-25T23:04:34+00:00'>25 Jul 06, 23:04</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by berll:</div><div class="quote_body">or u can also use this in sql<br><br>CREATE SEQUENCE CUSTOMER_ID<br>INCREMENT BY 1<br>START WITH 10<br>MAXVALUE 99<br>NOCACHE<br>NOCYCLE;<br><br>INSERT INTO Customer VALUES<br>(CUSTOMER_ID.NEXTVAL)<br><br></div></blockquote>No see this kind of codes before...</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2006-07-25T23:25:02+00:00'>25 Jul 06, 23:25</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">No see this kind of codes before... </div></blockquote>Those are proprietary database product syntax called Oracle if I'm not wrong  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-07-25T23:29:07+00:00'>25 Jul 06, 23:29</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by sohguanh:</div><div class="quote_body">Those are proprietary database product syntax called Oracle if I'm not wrong  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> </div></blockquote>No wonder. School also never use, they don't teach it either. Only Microsoft SQL and MySQL. MS Access is we go and play ourselves one.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>sohguanh</div>
+              <time class='date' datetime='2006-07-25T23:43:51+00:00'>25 Jul 06, 23:43</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">No wonder. School also never use, they don't teach it either. Only Microsoft SQL and MySQL. MS Access is we go and play ourselves one. </div></blockquote>Oracle very expensive lar. M$ Access and MySQL much cheaper for teaching purposes  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-07-25T23:45:48+00:00'>25 Jul 06, 23:45</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by sohguanh:</div><div class="quote_body">Oracle very expensive lar. M$ Access and MySQL much cheaper for teaching purposes  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> </div></blockquote>I see. Haha, not all my teachers are skilled in Oracle either, so not possible to have such a class.  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>meltz</div>
+              <time class='date' datetime='2006-07-25T23:59:10+00:00'>25 Jul 06, 23:59</time>
+            </div>
+            <div class='col-md body'>dont know this is what u want anot ...<br><br>create yr table first (MS access)<br><br>ID field .. set as primary key ,auto increment, no duplicate<br><br>SQL code<br><br>insert ( ' ', 'name', age); ... etc<br><br>the ' ' is for the ID ... each row u insert .. the id in the table will auto increase by 1</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>
