@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Need advice - mail server is being used to relay spam emails</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['283974']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['283974']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['283974']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['283974']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Need advice - mail server is being used to relay spam emails</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>patgoh</div>
+              <time class='date' datetime='2007-10-05T20:53:39+00:00'>5 Oct 07, 20:53</time>
+            </div>
+            <div class='col-md body'>Hi all,<br><br>I am running my own webhosting Manager, hosting my own sites.  Using Cpanel.<br><br>Recently, my mail server is being used to relay spam emails.  i.e. my email a/c is being used to spam thousands of emails.  So, I become the spammer.<br><br>Anyone knows how to fix this problem ?<br><br>I have changed the mail setting of all my email a/c of domain/subdomain to :fail: instead of :blackhole". thus prevent incoming spam emails.<br><br>Now my big problem is how to prevent outgoing spam emails from my mail server.<br><br>All advice greatly appreciated.<br><br>Best Regards,<br>patgoh <img src="/images/emoticons/classic/icon_smile.gif" alt="Smile" title="Smile"><br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-10-05T21:13:43+00:00'>5 Oct 07, 21:13</time>
+            </div>
+            <div class='col-md body'>If you suspect that, better check your server logs for signs of being hacked in. Look out for multiple tries to log in to a certain account.<br><br>Also check your server for odd scripts.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Jason</div>
+              <time class='date' datetime='2007-10-05T21:24:13+00:00'>5 Oct 07, 21:24</time>
+            </div>
+            <div class='col-md body'>I am not familiar with the specifics of cpanel but a quick search for 'cpanel open mail relay' threw this up:<br><br>http://help.godaddy.com/article.php?article_id=1456&amp;topic_id=211#exim<br><br>To set the default mail behavior to :fail:, you will want to execute the following command through SSH:<br>echo "defaultmailaction=fail" &gt;&gt; /var/cpanel/cpanel.config<br><br>Good luck!</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>patgoh</div>
+              <time class='date' datetime='2007-10-05T21:37:31+00:00'>5 Oct 07, 21:37</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">If you suspect that, better check your server logs for signs of being hacked in. Look out for multiple tries to log in to a certain account.<br><br>Also check your server for odd scripts.</div></blockquote>Hi ndmmxiaomayi,<br><br>Thanks for the quick reply.<br><br>In fact I am seeing many hacking attempts when i see the logs.  Some trying a few thousand times, using many different user ID.<br><br>I had tried to check the IP address and warned some of the IP owners, so far nobody responded and also there are just too many of the hackers trying to hack my server.<br><br>I have given up on this as I dont know what action to take.<br><br>Best Regards,<br>Patgoh<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2007-10-05T21:44:02+00:00'>5 Oct 07, 21:44</time>
+            </div>
+            <div class='col-md body'>U can refer the hacking problem to the Singapore Police if the IP is local.Hacking is a crime under the Computer Misuse Act.If the IP address are foreign,u can refer to the respective country's Police.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>patgoh</div>
+              <time class='date' datetime='2007-10-05T21:45:16+00:00'>5 Oct 07, 21:45</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Jason:</div><div class="quote_body">I am not familiar with the specifics of cpanel but a quick search for 'cpanel open mail relay' threw this up:<br><br>http://help.godaddy.com/article.php?article_id=1456&amp;topic_id=211#exim<br><br>To set the default mail behavior to :fail:, you will want to execute the following command through SSH:<br>echo "defaultmailaction=fail" &gt;&gt; /var/cpanel/cpanel.config<br><br>Good luck!</div></blockquote>Hi Jason,<br><br>Thank you very much for the link.  This link is very useful.<br><br>Best Regards,<br>Patgoh</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>patgoh</div>
+              <time class='date' datetime='2007-10-05T21:55:01+00:00'>5 Oct 07, 21:55</time>
+            </div>
+            <div class='col-md body'>Hi ceecookie,<br><br>It is very hard to trace and track down the hacker.  They are very smart.  The IP address captured by your server log is usually hackjacked sites.(not their own)<br><br>They hacked into other's website and make use of other's site to hack others.<br><br>One of my sites was once being used to phishing paypal site.  I was being reported and threatened with actions.<br><br>Upon receiving the complaint, I checked my File Manager and found some suspicious files.  So I immediately deleted them and apologised to them.<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-10-05T22:01:27+00:00'>5 Oct 07, 22:01</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by patgoh:</div><div class="quote_body">Hi ndmmxiaomayi,<br><br>Thanks for the quick reply.<br><br>In fact I am seeing many hacking attempts when i see the logs.  Some trying a few thousand times, using many different user ID.<br><br>I had tried to check the IP address and warned some of the IP owners, so far nobody responded and also there are just too many of the hackers trying to hack my server.<br><br>I have given up on this as I dont know what action to take.<br><br>Best Regards,<br>Patgoh<br></div></blockquote>Hi patgoh,<br><br>You can email the ISP.<br><br>Do a WHOIS of of their IP address and email the relevant ISP.<br><br>There will be an abuse email address, usually something like this:<br><br>abuse@example.com<br><br>I can help you contact another admin who will be able to help you if you need more help.<br><br>If you are using Linux servers, a WHOIS can be done easily.<br><br>whois IP address from the Command Prompt aka Terminal aka Bash.<br><br>If you need more details, do a dig.<br><br>dig IP address<br><br>Or to get some details, try:<br><br>dig -x IP address / server name</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>hiphop2009</div>
+              <time class='date' datetime='2007-10-05T23:31:48+00:00'>5 Oct 07, 23:31</time>
+            </div>
+            <div class='col-md body'>oh my god jason posted here!</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yiha093</div>
+              <time class='date' datetime='2007-10-05T23:35:20+00:00'>5 Oct 07, 23:35</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by hiphop2009:</div><div class="quote_body">oh my god jason posted here!</div></blockquote>x2x2  <img src="/images/emoticons/classic/icon_eek.gif" alt="Shocked" title="Shocked"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-10-06T00:43:16+00:00'>6 Oct 07, 00:43</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by hiphop2009:</div><div class="quote_body">oh my god jason posted here!</div></blockquote>It's not the first time he posted here already.  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-10-06T02:01:56+00:00'>6 Oct 07, 02:01</time>
+            </div>
+            <div class='col-md body'>By the way patgoh, if you have a Gmail account, look up one of the security groups and join it.<br><br>Then post your question there. You will be able to get better help there as there are some security experts there.<br><br>Also try join Security Focus mailing lists, there are some good help there.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>patgoh</div>
+              <time class='date' datetime='2007-10-06T11:42:34+00:00'>6 Oct 07, 11:42</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">By the way patgoh, if you have a Gmail account, look up one of the security groups and join it.<br><br>Then post your question there. You will be able to get better help there as there are some security experts there.<br><br>Also try join Security Focus mailing lists, there are some good help there.</div></blockquote>OK, would do so.<br><br>Thanks your valuable advice.<br><br>patgoh</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

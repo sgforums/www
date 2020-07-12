@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Problem in attaching javascript into main frame</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['201100']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['201100']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['201100']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['201100']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Problem in attaching javascript into main frame</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>er_liang89</div>
+              <time class='date' datetime='2006-07-20T22:46:15+00:00'>20 Jul 06, 22:46</time>
+            </div>
+            <div class='col-md body'><span style="color: red;">I have the following javascript:</span><br><br>// JavaScript Document<br><br>&lt;br /&gt;function clock(){var date=new Date()&lt;br /&gt;var year=date.getYear()&lt;br /&gt;var month=date.getMonth()&lt;br /&gt;var day=date.getDate()&lt;br /&gt;var hour=date.getHours()&lt;br /&gt;var minute=date.getMinutes()&lt;br /&gt;var second=date.getSeconds()&lt;br /&gt;var months=new Array("","January","February","March","April","May","June","July","August","September","October","November","Decemberzz")&lt;br /&gt;var monthname=months[month]&lt;br /&gt;if(hour&gt;12){hour=hour&lt;br /&gt;}&lt;br /&gt;if(minute&lt;10){minute="0"+minute&lt;br /&gt;}&lt;br /&gt;if(second&lt;10){second="0"+second&lt;br /&gt;}&lt;br /&gt;document.title="Welcome! - "+monthname+" "+day+", "+year+" - "+hour+":"+minute+":"+second&lt;br /&gt;setTimeout("clock()",1000)&lt;br /&gt;}//--&gt;function scrollit_r2l(seed)&lt;br /&gt;{&lt;br /&gt;var m1 = "Welcome to IT/AVA/Film";&lt;br /&gt;var m2 = " ";&lt;br /&gt;var m3 = "Updates: Please refer to the duties column for more information!";&lt;br /&gt;var m4 = "Thank You for visiting!";&lt;br /&gt;var m5 = "Have A Nice Day!";&lt;br /&gt;var msg=m1+m2+m4+m2+m5;&lt;br /&gt;var d = new Date()&lt;br /&gt;var h = d.getHours()&lt;br /&gt;if (h &lt; 12) var out = "Good morning! ";&lt;br /&gt;else if (h &lt; 17) var out = "Good afternoon! ";&lt;br /&gt;else if (h &lt; 24) var out = "Good evening! ";&lt;br /&gt;var c = 1;&lt;br /&gt;if (seed &gt; 100) {&lt;br /&gt;seed--;&lt;br /&gt;var cmd="scrollit_r2l(" + seed + ")";&lt;br /&gt;timerTwo=window.setTimeout(cmd,100);&lt;br /&gt;}&lt;br /&gt;else if (seed &lt;= 100 &amp;&amp; seed &gt; 0) {&lt;br /&gt;for (c=0 ; c &lt; seed ; c++) {&lt;br /&gt;out+=" ";&lt;br /&gt;}&lt;br /&gt;out+=msg;&lt;br /&gt;seed--;&lt;br /&gt;var cmd="scrollit_r2l(" + seed + ")";&lt;br /&gt;window.status=out;&lt;br /&gt;timerTwo=window.setTimeout(cmd,100);&lt;br /&gt;}&lt;br /&gt;else if (seed &lt;= 0) {&lt;br /&gt;if (-seed &lt; msg.length) {&lt;br /&gt;out+=msg.substring(-seed,msg.length);&lt;br /&gt;seed--;&lt;br /&gt;var cmd="scrollit_r2l(" + seed + ")";&lt;br /&gt;window.status=out;&lt;br /&gt;timerTwo=window.setTimeout(cmd,100);&lt;br /&gt;}&lt;br /&gt;else {&lt;br /&gt;window.status=" ";&lt;br /&gt;timerTwo=window.setTimeout("scrollit_r2l(100)",75);&lt;br /&gt;}&lt;br /&gt;}&lt;br /&gt;}&lt;br /&gt;<br><br><br><br><br><span style="color: red;">And I wish to attach to my index page:</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&lt;br /&gt;&lt;body&gt;&lt;br /&gt;&lt;/body&gt;<br><br><br><span style="color: red;">But when I attach the script into the page, it does not work.<br><br>I have tried and attach the script into a page without any frames, and the script works.<br><br>Can anyone assist me to attach the script into my index page so that it can work?<br><br>Millions of thanks  <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"> </span></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-07-20T22:50:05+00:00'>20 Jul 06, 22:50</time>
+            </div>
+            <div class='col-md body'>Save the script in the same folder as your index page.<br><br>Put in this code in between  and  tags:<br><br><br><br>To make it show, put this code in between the  and  tags:<br><br>time() since June 1 2006.<br><br>Change June 1 2006 to the correct date.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>er_liang89</div>
+              <time class='date' datetime='2006-07-20T22:55:51+00:00'>20 Jul 06, 22:55</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">Save the script in the same folder as your index page.<br><br>Put in this code in between  and  tags:<br><br><br><br>To make it show, put this code in between the  and  tags:<br><br>time() since June 1 2006.<br><br>Change June 1 2006 to the correct date.</div></blockquote>doesn't work <img src="/images/emoticons/classic/icon_cry.gif" alt="Crying or Very sad" title="Crying or Very sad"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>er_liang89</div>
+              <time class='date' datetime='2006-07-20T23:01:32+00:00'>20 Jul 06, 23:01</time>
+            </div>
+            <div class='col-md body'>or is there any other way that i can do away with the frames but maintain the same structure?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-07-20T23:06:25+00:00'>20 Jul 06, 23:06</time>
+            </div>
+            <div class='col-md body'>Haha, I see your codes very weird leh...<br><br>Write this part and save as *.js (change * to a file name)<br><br>function time() {<br>// Enter the month, day, and year below you want to use as<br>// the starting point for the date calculation<br>var amonth = 9<br>var aday = 11<br>var ayear = 2001<br><br>var x = new Date()<br>var dyear<br>var dmonth<br>var dday<br>var tyear = x.getFullYear()<br>var tmonth = x.getMonth()+1<br>var tday = x.getDate()<br>var y=1<br>var mm=1<br>var d=1<br>var a2=0<br>var a1=0<br>var f=28<br><br>if ((tyear/4)-parseInt(tyear/4)==0) {<br>f=29<br>}<br><br>m = new Array(31, f, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)<br><br>dyear = tyear-(ayear)<br><br>dmonth = tmonth-amonth<br>if (dmonth&lt;0) {<br>dmonth = dmonth+12<br>dyear--<br>}<br><br>dday = tday-aday<br>if (dday&lt;0) {<br>var ma = amonth+tmonth<br>if (ma&gt;12) {ma = ma-12}<br>if (ma=0) {ma = ma+12}<br>dday = dday+m[ma]<br>dmonth--<br>}<br><br>if (dyear==0) {y=0}<br>if (dmonth==0) {mm=0}<br>if (dday==0) {d=0}<br>if ((y==1) &amp;&amp; (mm==1)) {a1=1}<br>if ((y==1) &amp;&amp; (d==1)) {a1=1}<br>if ((mm==1) &amp;&amp; (d==1)) {a2=1}<br>if (y==1){<br>document.write(+dyear+" Years") }<br>if ((a1==1) &amp;&amp; (a2==0)) {document.write(" and ")}<br>if ((a1==1) &amp;&amp; (a2==1)) {document.write(", ")}<br>if (mm==1){<br>document.write(dmonth+" Months")<br>}<br>if (a2==1) {document.write(", and ")}<br>if (d==1){<br>document.write(+dday+" Days")<br>}<br><br>Next, write this part:<br><br><br><br>time() since September 11, 2001<br><br><br><br><br><br>Edit: I write wrongly....  <img src="/images/emoticons/classic/icon_redface.gif" alt="Embarassed" title="Embarassed"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-07-20T23:07:39+00:00'>20 Jul 06, 23:07</time>
+            </div>
+            <div class='col-md body'>Click on Quote to see my codes properly...</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>er_liang89</div>
+              <time class='date' datetime='2006-07-22T12:18:34+00:00'>22 Jul 06, 12:18</time>
+            </div>
+            <div class='col-md body'>ya, the codes are indeed quite weird, cos I have put combined 3 javascripts into 1.<br><br>by the way, I have solved the problem already. Just need to add the code:<br><br>timerONE=window.setTimeout('scrollit_r2l(100)',500); clock()<br><br>together with the frameset rows to become this<br><br><br><br>instead of<br><br><br><br>thanks for your help anyway.  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

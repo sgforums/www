@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Java Swing Calculator help!!</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['318271']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['318271']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['318271']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['318271']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Java Swing Calculator help!!</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>leehexin</div>
+              <time class='date' datetime='2008-05-21T21:09:48+00:00'>21 May 08, 21:09</time>
+            </div>
+            <div class='col-md body'>
+              <p>Plz help me with my codes...<br><br>i making a calculator using java but it cant works... i plan to include the % and sqrt Function to my calculator but it wont work.. <br><br>plz correct my codes..</p>
+              <p>the codes is listed here</p>
+              <p><a href="http://forums.hardwarezone.com.sg/showthread.php?t=1969362">http://forums.hardwarezone.com.sg/showthread.php?t=1969362</a></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2008-05-21T22:06:01+00:00'>21 May 08, 22:06</time>
+            </div>
+            <div class='col-md body'><p>I recognize that nick... LOL</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SoulDivine</div>
+              <time class='date' datetime='2008-05-22T03:06:00+00:00'>22 May 08, 03:06</time>
+            </div>
+            <div class='col-md body'><p>import java.lang.*;<br>import java.awt.event.*;<br><br>private void ButtonActionPerformed(java.awt.event.ActionEvent event)<br>{<br>    String tmp = event.getActionCommand(); // Returns the command string associated with this action.<br>    try <br>    {<br>        String c=String.valueOf(Integer.parseInt(tmp)); // Returns the string representation of the int argument<br>        if ( c.compareTo("0")==0) // if c equal to "0" <br>        {<br>            if (v.length()&gt;0) // if c equal to "0" AND v.length greater than 0<br>            {<br>                v = v.concat(c); // v = v + "0"<br>            }<br>        }<br>        else<br>        {<br>            v = v.concat(c); // v = v + c<br>        }<br>    } <br>    catch (NumberFormatException ex) // this section will not be executed unless line 6 creates a NumberFormatException<br>    {<br>        if (tmp.compareTo(".")==0) // if tmp is equal "." <br>        {<br>            if (!(v.contains("."))) // if v does not have "."  <br>            {<br>                if (v.length()&gt;0) // if v does not have "." AND v.length greater than 0<br>                {                    <br>                    v = v.concat(tmp); // v = v + "."<br>                }<br>                else // if v does not have "." AND v.length is equal 0<br>                {<br>                    v = "0".concat(tmp); // v = "0" + "." <br>                }<br>            }<br>        } <br>        else if (tmp.compareTo("C")==0) // if tmp is equal "C"<br>        {<br>            v=""; // v is null<br>        } <br>        else if (tmp.compareTo("+/-")==0) // if tmp is equal "+/-" <br>        {<br>            if ( v.charAt(0)=='-' ) // if tmp is equal "+/-" AND v first char is equal "-"<br>            {<br>                v = v.substring(1); // removes the "-" from string<br>            } <br>            else // if tmp is equal "+/-" AND v first char is not equal "-" <br>            {<br>                v = "-".concat(v); // v = "-" + v <br>            }<br>        }<br>        else if (tmp.compareTo("=")==0) // if tmp is equal "="<br>        {<br>            double a = Double.parseDouble(m);<br>            double b = Double.parseDouble(v);<br>            if(op.compareTo("+")==0) // if op is addition <br>            {<br>                v = String.valueOf(a+b);<br>            }<br>            else if (op.compareTo("-")==0) // if op is subtraction<br>            {<br>                v = String.valueOf(a-b);<br>            }<br>            else if (op.compareTo("*")==0) // if op is multiplication<br>            {<br>                v = String.valueOf(a*b);<br>            }<br>            else if (op.compareTo("/")==0) // if op is division<br>            {<br>                v = String.valueOf(a/b);<br>            }<br>            else if (op.compareTo("%")==0) // if op is percentage<br>            {<br>                v = String.valueOf(a/100); // MISTAKE-&gt;percentage should be (a*(b/100))<br>            }<br>            m = ""; m is null<br>            op = ""; op is null<br>        }<br>        else if (tmp.compareTo("BackSpace")==0) // if tmp is equal "BackSpace"<br>        {<br>            if (v.length()&gt;0) // if tmp is equal "BackSpace" AND v.length greater than 0<br>            {<br>                v = v.substring(0,(v.length()-1)); // removes the right most digit<br>            }<br>        } <br>        else // if tmp is not equal "." AND not "C" AND not "+/-" AND not "=" <br>        {<br>            m=v; <br>            v=""; v is null <br>            op=tmp;<br>        }<br>    }<br>    jTextField1.setText(v); // always show v in textbox<br>}</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SoulDivine</div>
+              <time class='date' datetime='2008-05-22T03:13:19+00:00'>22 May 08, 03:13</time>
+            </div>
+            <div class='col-md body'><p>Anyway, I cant help much due to lack of information. You only show us a single method instead of the entire class.</p></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

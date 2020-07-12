@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>website blocking</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['286142']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['286142']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['286142']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['286142']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>website blocking</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Kinokuniya</div>
+              <time class='date' datetime='2007-10-17T03:43:36+00:00'>17 Oct 07, 03:43</time>
+            </div>
+            <div class='col-md body'>i want to block some websites so that users of this computer will not be able to access them.<br><br>how do i do this?</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-10-17T11:53:13+00:00'>17 Oct 07, 11:53</time>
+            </div>
+            <div class='col-md body'>One of the simplest way is to edit the "hosts" file in a folder within "system32", typically "C:\WINDOWS\system32\drivers\etc". This is commonly used in ad-blocking programs as well.<br><br>Open the file in Notepad. There are some instructions in the file to guide you in editing it. Basically, to block a website, say "example.com", I would point it to 127.0.0.1 by adding a new line "127.0.0.1 example.com".<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-10-17T16:01:51+00:00'>17 Oct 07, 16:01</time>
+            </div>
+            <div class='col-md body'>HOSTS file for any operating systems. Note that the HOSTS file only worked well in IE.<br><br><a href="http://www.mvps.org/winhelp2002/hosts.htm" rel="nofollow">http://www.mvps.org/winhelp2002/hosts.htm</a><br><br>For Firefox, there's an addon known as Blocksite.<br><br>For those using Linux, the inbuilt firewall can be used to block certain websites as well.<br><br>1. Start IPTables first. <strong>sudo service iptables start</strong> or <strong>su service iptables start</strong> or <strong>sudo su service iptables start</strong>, depending on your Linux distro.<br><br>2. Then add in the website you want to block:<br><br>iptables -A INPUT -s  -i  -d   -p TCP -j DROP<br><br>If you don't know your network card interface, use the ifconfig command for wired connections and iwconfig command for wireless. It will list your interface. The one with the correct internal IP address (not loopback IP address aka 127.0.0.1) will be your network card interface. Usually is eth0 or eth1<br><br>If you use a third party firewall, some can be configured to block websites. Check their manuals.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2007-10-17T16:29:24+00:00'>17 Oct 07, 16:29</time>
+            </div>
+            <div class='col-md body'>If you are using Avast antivirus, can also use its URL blocking function.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-10-17T23:30:17+00:00'>17 Oct 07, 23:30</time>
+            </div>
+            <div class='col-md body'><blockquote>Originally posted by ndmmxiaomayi:<br><strong>HOSTS file for any operating systems. Note that the HOSTS file only worked well in IE.<br><br><a href="http://www.mvps.org/winhelp2002/hosts.htm" rel="nofollow">http://www.mvps.org/winhelp2002/hosts.htm</a><br><br>For Firefox, there's an addon known as Blocksite.<br><br>For those using Linux, the inbuilt firewall can be used to block certain websites as well.<br><br>1. Start IPTables first. [b]sudo service iptables start</strong> or <strong>su service iptables start</strong> or <strong>sudo su service iptables start</strong>, depending on your Linux distro.<br><br>2. Then add in the website you want to block:<br><br>iptables -A INPUT -s  -i  -d   -p TCP -j DROP<br><br>If you don't know your network card interface, use the ifconfig command for wired connections and iwconfig command for wireless. It will list your interface. The one with the correct internal IP address (not loopback IP address aka 127.0.0.1) will be your network card interface. Usually is eth0 or eth1<br><br>If you use a third party firewall, some can be configured to block websites. Check their manuals.[/b]</blockquote>Oh. I thought a hosts file only exist in MS. Time to jump out of the well.<br><br>But anyway, not just IE, any other browsers and applications that require Internet connectivity goes through the hosts file as well. Everytime a domain name require resolving (which basically means translating "example.com" to "123.123.123.123", for example), Windows reads the hosts file first before sending a request to a DNS server to translate the domain name, results of which get cached.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-10-18T00:10:17+00:00'>18 Oct 07, 00:10</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">Oh. I thought a hosts file only exist in MS. Time to jump out of the well.<br><br>But anyway, not just IE, any other browsers and applications that require Internet connectivity goes through the hosts file as well. Everytime a domain name require resolving (which basically means translating "example.com" to "123.123.123.123", for example), Windows reads the hosts file first before sending a request to a DNS server to translate the domain name, results of which get cached.<br></div></blockquote>You are right. I just realized that I've forgotten one part.<br><br>HOSTS file for Windows works best with IE. I have no idea why.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Kinokuniya</div>
+              <time class='date' datetime='2007-11-09T21:11:03+00:00'>9 Nov 07, 21:11</time>
+            </div>
+            <div class='col-md body'>Works well enough for me. <img src="/images/emoticons/classic/icon_cool.gif" alt="Cool" title="Cool"><br><br>Many thanks!</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-11-10T03:45:20+00:00'>10 Nov 07, 03:45</time>
+            </div>
+            <div class='col-md body'>What took you so long to reply?  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

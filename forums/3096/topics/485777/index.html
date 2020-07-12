@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>ASP.NET Configuration</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['3096']).setTargeting('topic', ['485777']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['3096']).setTargeting('topic', ['485777']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['3096']).setTargeting('topic', ['485777']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['3096']).setTargeting('topic', ['485777']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/3096/'>Programming - Java &amp; C#</a>
+      <h1>ASP.NET Configuration</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>The Code</div>
+              <time class='date' datetime='2014-07-18T16:01:21+00:00'>18 Jul 14, 16:01</time>
+            </div>
+            <div class='col-md body'>
+              <p> </p>
+              <p><span style="line-height: 115%; color: #7e0000; font-size: 24pt;"><span style="font-family: Calibri;">WINDOWS/.NET DEVELOPER</span></span></p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 54pt;"><span style="font-family: Calibri;">ASP.NET Configuration</span></span></p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 22pt;"><span style="font-family: Calibri;">Machine-specific <span> </span>configuration files are a start</span></span></p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 16pt;"><span style="font-family: Calibri;">DOUGLAS REILLY</span></span></p>
+              <p> </p>
+              <p><span style="line-height: 115%; color: #002060; font-size: 68pt;"><span style="font-family: Calibri;">W</span></span>hen it was first introduced, a nice ASP.NET feature was the standard way for configuring applications. In all application - and certainly ASP.NET ones - you will alway need to configure certain aspects of the application.</p>
+              <p>   In classic ASP, you used an application event handler in the Global.asa file to set application-level variables. While this was fine when you first approached the application, there was a learning curve as you conflgured applications in slightly different ways. ASP.NET lets you use the appSettings section of the Web.Config file. In Listing One, the add tag has attributes key and value. This example shows some of the common uses - storing an application and facility name and connection string. Another good example of a string that can be stored in a configuration file is a URL to be used by a web service, which might be reasonably different in development versus production. While all of these examples are clearly string values, it is not that difficult to take string values like "true" and "false" and parse them into a boot value or to do the same with numbers or dates. Retrieving a value is simple as well. In C#, you would do this:</p>
+              <p>using System.Configuration; <br>string strCn=    <br>         ConfigurationSettings.AppSettings<br>                ["CnStr"].ToString();</p>
+              <p>   This is an acceptable way to get configuration settings and works well in a number of scenarios. However, there are situations where using the Web.Conftg file is not convenient. For instance, whenever you change the Web.Config file, the application resets. So if you have a configuration setting that needs to change periodically, making the changes on live sites can be problematic. In many respects, this is a good thing, as it ensures that changes in Web.Config take effect immediately. Many settings in Web.Config really do require that the application be restarted; however, many of the changes in appSettings do not require an application restart (though having changes reflected immediately is also a nice feature).</p>
+              <p>   Next, there is the issue of deploying the application. On more than one occasion, when an application I am working on moves from development to staging to production servers, the wrong configuration information moves to the wrong server, and the application breaks. While for many application updates, you can simply deploy all files except the Web.Config file, on occasion, you will need to add values to the Web.Config; even if the value is the same for all servers, you cannot simply copy files over, as there are other server-specific setting already in the Web.Config. I have a client where I must do application deployments without ever having any access to the production server. Deploying change might mean requiring the webmaster of your production site to edit the Web.Config manually. This does not work out well much of the time.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 17pt;"><span style="font-family: Calibri;">A Configuration Solution</span></span></p>
+              <p> </p>
+              <p>So while the standard ASP.NET Configuration handling is better than in Classtc ASP there are still some problems. One solution I've found that resolves all the problems just mentioned is to use machine-specific configuratton files that can be mapped into a DataSet as required, then cached to avoid constantly hitting the filesystem.</p>
+              <p>   My solution uses a configuration file named for the machine. Thus, my home workstation named "Xeon," would use Xeon.Config'. To handle the simplest case, I also have a default configuration file, not surprisingly named "Default.Config." The only scenario where this solution is awkward is when you have a dozen or so production machine on a web farm, and each needs an identical copy of the configuration file appropriately named. In practice, my solution to this is to allow Default.Config to act as the file for use by the production servers on the web farm, and specify individual configuration files on development and staging servers. Seldom are there web farms of development and staging servers.</p>
+              <p>   The Visual Studio .NET 2003 Solution (available electronically : <a href="http://www.ddj.com/">http://www.ddj.com</a>) contain three projects. The first is ConsoleApplication1. This is an application I created simply to take a database schema I wanted to use and stream it from a DataSet to an XML file and then back to the DataSet when needed. Listing Two is the Create script for the table I wanted to mirror in a DataSet. I decided that a 50-character Key would be long enough, and allowed 255 characters for the Value to handle the longest connection string I could imagine. Once I added a couple of sample value to the table, I ran Listing Three in the ConsoleApplication1 application to create a sample configuration file. This created a file named Default.Config in the c:\work folder. Obviously, to use this code, you should change the connection string and the path to the file to be created. Once created, I hand modified the resulting file slightly to end up with a file that looked like Listing Four. This XML is a bit more verbose than the appSettings section of the Web.Config, but I consider it a reasonable trade off to ensure that the file can be read into a DataSet.</p>
+              <p>   My next step was to create a new project as a class library. I called this project "ConfigurationLib," and added a single source file, ConfigurationClass.cs; see Listing Five.</p>
+              <p>   I declared a number of class instance variables, including m_Context of type HttpContext, which lets the class know details about the current request inside the class instance. I use the HttpContext to access the cache as well as to use MapPath(). Another instance variable (exposed publicly as a Read Only property) is the bool variable m_HitFile. This is used for letting my feedback know whether the actual underlying file was read on a given request. Generally, this is not important to know; however, for demonstrating the class, it is a good thing. Finally, there is a constant string c_CacheKeyName, which is used as an index into the Cache collection. Placing key names like this in a constant ensures the same name is used throughout. I use the key name "ConfigurationCache_DDJ," which is unlikely to cause a name collision.</p>
+              <p>   There is a single constructor that takes an HttpContext object. The constructor simply sets the required member variables and returns.</p>
+              <p>   The whole reason for this class is to get values, so not surprisingly, the first public method is named GetValue(). Using a getter, rather than using an operator overload, is a decision made to ensure that the library is usable by any .NET-compliant system. GetValue() first retrieves a DataSet containing the configuration information by calling GetConfigDataset() This is where most of the work of the class is done.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 17pt;"><span style="font-family: Calibri;">Using the Cache</span></span></p>
+              <p> </p>
+              <p>One of the most important performance improvements in ASP.NET is the ability to cache objects for later use. Caching in ASP.NET can be done declaratively for entire pages, page fragments (User Controls), as well as programmatically for any arbitrary object. Caching is most useful for scenario where a page or page fragment or some other object is expensive (in terms of processing time) to generate, and can reasonably be reused. An item in cache is kept in cache until a specified expiration time, or based upon a change to a file on disk. The next version of ASP.NET will support cache dependencies that are based upon changes in a database. One thing to remember about the cache is that when you place an item in cache with a time or file dependency, the cache item can be cleared from the cache at any time when there is memory pressure. In this respect, the cache is like a smart Application object, where the least recently used items can be purged if the system needs the memory for other purposes. Note also that the cache, unlike session state, cannot be scaled across multiple servers. This is not a bad thing, in this case, because we want the configuration information to be machine specific.</p>
+              <p>   Initially, I used a timed dependency when inserting items into the cache, but eventually realized that using a file cache dependency was a better option. By doing this, I read the configuration file into a DataSet and placed the DataSet into the cache, so that when the configuration file is modified, the database will be cleared from the cache and signal that the program needs to reread the file. The code involved is code that is very often done slightly incorrectly. First, the correct code to check whether an item is in the cache is Listing Six. Listing Seven is an alternate way to do this (and one that introduces a subtle bug). This code looks similar, but introduces a problem. What happens if between the if Statement and the assignment and use of the ds variable the file changes, or for some other reason the item is removed from the cache? The answer is, "nothing good." I have seen the incorrect pattern used in both production applications as well as a number of books. You should also probably serialize the refill of the cache, so that you do not have two thread simultaneouly filling the cache. In this example, no harm is really done if two threads are filling the cache at the same rime, and while reading in the configuration file may be a little slow, it is not slow enough to justify the additional overhead.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 17pt;"><span style="font-family: Calibri;">The Rest of the Code</span></span></p>
+              <p> </p>
+              <p class="MsoNormal" style="margin: 0cm 0cm 10pt;">If the cache does not contain the DataSet identified by c_CacheKeyName, then the cache needs to be refilled. Listing Eight does this. In this code, I initially get the machine name to use in finding the machine-specific configuration file. When l first Wrote this code, I was using the name as provided as SERVER_NAME in the Request.ServerVariables collection. The problem with using the SERVER_NAME is that a site can often be reached using a number of URLs. For instance, my machine is named "Xeon," and I can reach my test site for this program as either <a href="http://xeon/ConfigurationTest/WebForm1.aspx">http://xeon/ConfigurationTest/WebForm1.aspx</a> or as <a href="http://localhost/ConfigurationTest/WebForm1.aspx">http://localhost/ConfigurationTest/WebForm1.aspx</a>. For my purposes, this is not ideal. Instead I use Environment.MachineName, which returns the same name no matter how you reach the site. Of course, if you have multiple web sites on your machine(multiple WWWroots), each reached using a different DNS name, perhaps using the SERVER_NAME would be better for you.</p>
+              <p>   Once I have the machine name, I look for a configuration file, using the static Exists method on the File object. If the machine-specific file exists, I pass that filename into ConfigToDs(). Otherwise, I check for Default.Config and pass that filename to ConfigToDs(). The heart of ConfigToDs() is:</p>
+              <p>ds.ReadXml(ConfigurationFilename); <br>this.m_ Context.Cache.Insert   <br>       (ConfigurationClass.c_CacheKeyName, <br>              ds,new CacheDependency            <br>                          (ConfigurationFilename));</p>
+              <p>   Once the DataSet is filled by reading the configuration file, I insert the DataSet into the cache. Here I use Insert rather than Add, because Add fails if the item already exists in the cache. I am interested in the object always being added into the cache, even overwriting an existing value. The last parameter passed to Insert is a new CacheDependency object, which causes the cache to expire whenever the named file changes.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 17pt;"><span style="font-family: Calibri;">Using the ConfigurationClass</span></span></p>
+              <p> </p>
+              <p>When you need to use the ConfigurationClass in a web application, you need to place the DLL created in the ConfigurationLib project into the bin folder of the Web Application, and then if using Visual Studio .NET, add a reference to the web project. The ConfigurationTest project is set up to use the ConfigurationClass. The Page_Load() of WebForm1.aspx contains Listing Nine. When first run, the page should look like Figure 1. Subsequent runs (until the configuration file is modified or the cached DataSet is cleared for some other reason, or when the application is reset) will show false for "Hit file?" for each of the values.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 17pt;"><span style="font-family: Calibri;">Possible Enhancements</span></span></p>
+              <p> </p>
+              <p>There are a number of possible enhancements you might make to this class. One thing I discovered in testing is that if you first have a Default.Config file available, and you add the correct machine-specific file to the folder, it will not be read unless you then touch Default.Config. In a production system, it might be convenient to have a method that would simply clear the DataSet from the cache so that the class discovers the new file.</p>
+              <p>   In some situations, it might be better to have configuration files located in a folder other than the default folder. For such situations, it might be reasonable to create a Web.Config entry to point to the ConfigurationFolder. It might also be useful to have read/write access to the set of configuration options, though I would argue that for items that need convenient read/write access, you should place them in a database. The ideal items for this configuration class are things that don't change too often and that cannot reasonably be placed in a database, such as a connection string.</p>
+              <p>   Finally, having typesafe getter methods might be nice. Given a GetBoolValue(), your client calling code would be relieved of the need to parse the string value to get a Boolean value.</p>
+              <p><br>WebForm1</p>
+              <p>Key=Another different Value Hit file? True<br>Key2=Value2 Hit file? False</p>
+              <p><strong>Figure 1</strong>: Running the program</p>
+              <p><br><strong>Listing One</strong></p>
+              <p>&lt;appSettings&gt; <br>    &lt;add key="ApplicationName" value="DDJ ASP.NET Configuration" /&gt;<br>    &lt;add key="Facility" value="DDJ" /&gt;<br>    &lt;add key="ShortAppName" value="Hospital List" /&gt; <br>    &lt;add key="CnStr"<br>value="Server=xeon;database=ConfigurationDb; User ID=User; Pwd=password" /&gt;</p>
+              <p>&lt;/appSettings&gt;</p>
+              <p><strong>Listing Two</strong></p>
+              <p>CREATE TABLE [dbo] . [ConfigurationInfo]   {<br>[Key] [nvarchar] (5Ø) NOT NULL ,<br>[Value] [nvarchar (255) NOT NULL<br>) ON [PRIMARY]<br>GO<br>ALTER TABLE [dbo]. [ConfigurationInfo] WITH NOCHECK ADD<br>CONSTRAINT [PK_ConfigurationInfo] PRIMARY KEY CLUSTERED<br>(<br>     [Key]<br>) ON [PRIMARY]</p>
+              <p>GO</p>
+              <p><strong>Listing Three</strong></p>
+              <p>SqlConnection cn=new<br>SqlConnection ("Server=xeon: database=ConfigurationDB;<br> User ID=User ; Pwd=password");</p>
+              <p>cn.Open();<br>try<br>{ <br>   SqlCommand cmd=new SqlCommand("SELECT [key]. [value]<br>                                          FROM ConfigurationInfo" ,cn);<br>   SqlDataAdapter da=new SqlDataAdapter(cmd):<br>   Data.Set ds=new DataSet () ;<br>   da.Fill (ds, "ConfigruationInfo") :<br>   ds . WriteXml("c:\\work\\Default.Config");<br>}</p>
+              <p>finally<br>{<br>    cn.Close():<br>}</p>
+              <p><strong>Listing Four</strong></p>
+              <p>&lt;?xml version="1.Ø" standalone="yes"?&gt;<br>&lt;Configuration&gt;<br>&lt;Configruationlnfo&gt;<br>&lt;key&gt;Key&lt;/key&gt;<br>&lt;value&gt;Yet Another different Value from Default&lt;/value&gt;<br>&lt;/ConfigruationInfo&gt;<br>&lt;Configruationinfo&gt;<br>&lt;key&gt;Key2&lt;/key&gt;<br>&lt;value&gt;Value2&lt;/value&gt;<br>&lt;/ConfigruationInfo&gt;<br>&lt;/Configuration&gt;</p>
+              <p><strong>Listing Five</strong></p>
+              <p>using System<br>using System.Data;<br>using System.IO;<br>using System.Web.Caching;<br>using System.Web;<br>using System.Xml;</p>
+              <p>namespace ConfigurationLib</p>
+              <p>   { <br>      /// &lt;summary&gt;<br>      /// &lt;summary description for class1 .<br>      /// &lt;/summary&gt;</p>
+              <p>      public class ConfigurationClass<br>      {<br>         private System.Web.HttpContext m_Context ;<br>         private bool m_HitFile;<br>         private const string c_CacheKeyName="ConfigurationCache_DDJ";</p>
+              <p>         public bool HitFile<br>      {<br>         get [ return this.m_HitFile; ]<br>      }<br>         public ConfigurationClass(System.Web.HttpContext CurrentContext)<br>      {<br>         this.m_HitFile=true;<br>         this.m_Context=CurrentContext;<br>      }<br>         public string GetValue(string key)<br>      {<br>         string ret=string.Empty;<br>         string FilterExpression=string.Format("key='[Ø]'", key);<br>         DataSet ds=this.GetConfigDataset();<br>         DataRow[] dr=ds.Tables[Ø] .Select(FilterExpression);<br>         if ( dr.Length&gt;Ø )<br>      {<br>         ret=dr[Ø]["Value"].ToString();<br>      }<br>            return ret;<br>   }    <br>      private DataSet ConfigToDs(string ConfigurationFilename)<br>   {<br>          DataSet ds= new DataSet();<br>          try<br>          {<br>             ds.ReadXml(ConfigurationFilename); <br>             this.m_Context.Cache.Insert(ConfigurationClass.c_CacheKeyName,<br>                ds, new CacheDependency (ConfigurationFilename));<br>          }<br>          catch<br>          {<br>             //Ignore...<br>          }<br>          return ds;<br>   }<br>      private DataSet GetConfigDataset()<br>      {<br>         DataSet ds=null;<br>         this.m_HitFile=false;<br>         ds=(DataSet)m_Context.Cache[c_CacheKeyName];<br>         if ( (ds==null) ) <br>         {<br>           this .m_HitFile=true;<br>           string MachineName=System.Environment.MachineName;<br>           string ConfigurationFileName=<br>               m_Context.Server.MapPath(MachineName + " .Confign") ;</p>
+              <p>           if ( File.Exists(ConfigurationFileName) <br>         {<br>                ds=ConfigToDs(ConfigurationFileName);<br>         }<br>           else<br>         {<br>                ConfigurationFileName=<br>                   m.Context.Server.MapPath("Default.Config");<br>                if ( File.Exists (ConfigurationFileName) ) <br>         {<br>                     ds=ConfigToDs(ConfigurationFileName);<br>         }<br>       }<br>     }<br>    return ds;<br>    }<br>   }<br> }</p>
+              <p><strong>Listing Six</strong></p>
+              <p>ds= (DataSet)m_Context.Cache [c_CacheKeyName];<br>if ( (ds==null) ) <br>( // Refill the cache... )<br>  // Use the Cache element</p>
+              <p><strong>Listing Seven</strong></p>
+              <p>  // INCORRECT CODE !<br>  if ( (m.Context.Cache[c_CacheKeyName]==null) )<br>   { // Refill the cache... }<br>   ds= (DataSet)m.Context.Cache [c_CacheKeyName];<br>   // Use the Cache element</p>
+              <p><strong>Listing Eight</strong></p>
+              <p>string MachineName=System.Environment.MachineName;<br>string Conhgurat1onFileName=<br>    m_Context.Server.MapPath(MachineName + ".Config");<br>if ( File.Exists(ConfigurationFileName) ) <br>{<br>    ds=ConfigToDs(ConfigurationFileName);<br>}<br>else<br>{<br>   ConfigurationFileName=m_Context .Server.MapPath("Default.Config");<br>   if ( File.Exists(ConfigurationFileName) )<br>   {<br>      ds=ConfigToDs (ConfigurationFileName);<br>   }<br>}</p>
+              <p><strong>Listing Nine</strong></p>
+              <p>ConfigurationClass c=new ConfigurationClass(HttpContext.Current);<br>string Value=c.GetValue("Key");<br>Response.Write("Key=" + Value + " Hit file? " + c.HitFile.ToString() );<br>Value=c.GetValue("Key2");<br>Response.Write("&lt;br&gt;Key2:=" + Value + " Hit file? " + c.HitFile.ToString() );</p>
+              <p> </p>
+              <p>Douglas is the author of Designing Microsoft ASP.NET Applications and owner of Access Microsystems. Doug can be reached at <a href="mailto:doug@accessmicrosystems.com">doug@accessmicrosystems.com</a>.</p>
+              <p> </p>
+              <p>Dr Dobb's Journal #374, July 2005, Pg Pg 74-77</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

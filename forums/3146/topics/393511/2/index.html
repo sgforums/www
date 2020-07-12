@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>openBVE latest releases</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['3146']).setTargeting('topic', ['393511']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['3146']).setTargeting('topic', ['393511']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['3146']).setTargeting('topic', ['393511']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['3146']).setTargeting('topic', ['393511']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/3146/'>BVE Singapore</a>
+      <h1>openBVE latest releases</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/3146/topics/393511/'>Prev</a>
+        <a class='page-link' href='/forums/3146/topics/393511/3/'>Next</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-07-03T21:52:45+00:00'>3 Jul 10, 21:52</time>
+            </div>
+            <div class='col-md body'>
+              <p><strong><span style="text-decoration: underline;">openBVE development version 1.2.6.105 has been released</span></strong></p>
+                  <p>...on Friday, 2 June 2010.</p>
+                  <p><strong>Changelog: </strong></p>
+                  <div class="quote_body">
+                  <p>
+                  <table border="0">
+                  <tbody>
+                  <tr>
+                  <td style="background-image: url(/forums/3146/topics/common/gradient_24.png);"><span style="color: #888888;"> v1.2.6.105 (2010-07-02)  </span></td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0">
+                  <tbody>
+                  <tr style="height: 4px;">
+                  <td> </td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Simulation</strong></span><br>Superelevation is now simulated. In previous versions, the train would simply roll around its z-axis, while now, one wheel is actually elevated on banked curves.</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Simulation</strong></span><br>The cant interpolation algorithm has been rewritten to make use of monotone cubic interpolation. This makes the train tilt on banked curves much more smoothly than before, when linear interpolation was used.</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Simulation</strong></span><br>The simulation of track inaccuracy has been overhauled. Aside from the previous horizontal and vertical offsets, cant is now irregular as well and lets the train shake to the sides. If the level of track accuracy changes from one block to the next, interpolation is now used, where before, the axles could make sudden jumps.</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Simulation</strong></span><br>The fly-by cameras now focus on the front car of the nearest train. Previously, the fly-by cameras would only focus on the player's train and shifted focus from the front car to the rear car on approach.</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Simulation</strong></span><br>Custom timetables that can be set up by route developers are now available in all trains. Previously, only trains where custom timetables were explicitly enabled could show them. For trains which explicitly support custom timetables, the timetables are shown as part of the 3D scenery (just as before), while for non-supported trains, they are shown as part of the UI overlay (and then can be scrolled using Shift+Up and Shift+Down just as with the default timetables). <strong>Note: This feature may be partly removed again for v1.2.7!</strong></td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Interface</strong></span><br>Keys and joystick buttons now employ key repeat, meaning that holding down a key or button will trigger the associated event multiple times until the key or button is released again. The default delay and repetition intervals are 500 and 100 milliseconds, respectively, and can be customized in the <em>options.cfg</em> file.</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Developing routes</strong></span><br>The new Options.CantBehavior command allows to change the way cant works in the Track.Curve command. The default behavior is that cant is unsigned, i.e. the sign is ignored and the superelevation is always towards the curve center, and that cant cannot be applied on straight track. The new behavior is that cant is signed, i.e. inward banking or outward banking can explicitly be set up, and that cant can also be applied on straight track.</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Developing routes</strong></span><br>The Train.Timetable command now accepts files that are relative to the Object folder in addition to the previous model of interpreting files relative to the current train's folder. <strong>Note: This feature may be removed again for v1.2.7!</strong></td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Developing objects</strong></span><br>Animated objects can now show the timetable as set up by CSV/RW routes. See the <em>SpecialTexture</em> parameter in the documentation for the <em>[Object]</em> section. This allows to integrate the custom timetable as part of the 3D cab geometry.</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Developing trains</strong></span><br>The [DigitalGauge] section in the panel2.cfg was previously confined to angles that did not span across the 6 o'clock position, i.e. angles between -180 and 180 degrees. This limitation has been overcome now due to a rewrite of the code that creates the individual triangles that make up the LED square.</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Sound</strong></span><br>When a train starts from standstill or when the camera is moved in sound range of a train, all run sounds of all cars start playing simultaneously. This leads to an undesired echo effect. To counteract this effect, track positions are assigned at which the run sounds start playing from the start, thus asynchronizing the car run sounds again. This is not done regularly, but only when considered necessary.</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Bugfix</strong></span><br>Cant was ignored on curves if the <em>CantInMillimeters</em> parameter in <em>Track.Curve</em> was a single character in length.</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <table border="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                  <td valign="top">â—�</td>
+                  <td> </td>
+                  <td><span style="color: #ff0000;"><strong>Bugfix</strong></span><br>Some animated objects would stop being updated if jumping backward in time, for example when using the <em>Jump to Station</em> command.</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  </p>
+                  </div>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-07-07T23:17:36+00:00'>7 Jul 10, 23:17</time>
+            </div>
+            <div class='col-md body'>
+              <p><strong><span style="text-decoration: underline;">openBVE development branch release 1.2.6.106 has been released.</span></strong></p>
+              <p>The only change is a small modification in the LED code.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-07-11T21:33:33+00:00'>11 Jul 10, 21:33</time>
+            </div>
+            <div class='col-md body'>
+              <p> <strong style="font-style: normal; font-weight: bold; "><span style="text-decoration: underline;">openBVE stable release 1.2.7.0 has been released.</span></strong></p>
+              <div><span style="font-style: normal; ">Please head <a href="http://openbve.trainsimcentral.co.uk/releasenotes.html">here</a> for the <a href="http://openbve.trainsimcentral.co.uk/releasenotes.html">release notes</a>, or click <a href="http://openbve.trainsimcentral.co.uk/downloads_stable_confirm.html">here</a> to download the <a href="http://openbve.trainsimcentral.co.uk/changelog.html">latest version</a>.</span></div>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Boylush</div>
+              <time class='date' datetime='2010-07-13T15:40:14+00:00'>13 Jul 10, 15:40</time>
+            </div>
+            <div class='col-md body'><p>------------------------Deleted-----------------</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS7322B</div>
+              <time class='date' datetime='2010-07-14T21:14:49+00:00'>14 Jul 10, 21:14</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Boylush:</div>
+              <div class="quote_body">
+              <p>------------------------Deleted-----------------</p>
+              </div>
+              </blockquote>
+              <p>Hi. Welcome to Singapore BVE Forums. Please introduce yourself at the Introductions thread. Thanks!</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-08-02T21:28:36+00:00'>2 Aug 10, 21:28</time>
+            </div>
+            <div class='col-md body'>
+              <p><strong><span style="text-decoration: underline;">openBVE 1.2.7.2 updated 31 July 2010</span></strong></p>
+              <p>â—�   Simulation<br>The AI has been fine-tuned. It should stop gentler at stations now, being less prone to overrun than before. Also, it dynamically adapts its preferred driving speed depending on whether it is early or late at stations. Finally, the AI now stops in front of the preceding train, useful for tram scenarios or other scenarios where multiple trains are allowed to be within the same block. <br>â—�   Simulation<br>When using the Jump to Station command, any previously derailed train will now be on the tracks again, not just the player's train. <br>â—�   Interface<br>In the main menu, the train selection box now shows the Browse tab on startup, not the Route default tab. <br>â—�   Interface<br>The lamps for the built-in ATS and ATC were previously not shown for panel.animated cabs. This was intentional in order to move cab developers to show the lamps as part of the cab itself. However, for consistency reasons, the lamps are now shown for all cabs, regardless of the underlying file format. <br>â—�   Bugfix<br>Negative track positions in CSV/RW routes could crash the game (and RouteViewer, too). They are now reported as errors.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-08-08T13:07:42+00:00'>8 Aug 10, 13:07</time>
+            </div>
+            <div class='col-md body'>
+              <p><strong><span style="text-decoration: underline;">openBVE 1.2.7.3 released. </span></strong></p>
+              <p>â—�   Bugfix<br>The AI should adapt its preferred driving speed depending on earliness or lateness at stations since v1.2.7.2, but did not incorporate its timetable offset (for non-player trains). This would lead to the preceding train to drive slower after every station stop until it matched the player's train's timetable.</p>
+              <p>â—�   Bugfix<br>The AI would not usually decelerate if overspeeding, but just cruise at its current (over)speed.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS7322B</div>
+              <time class='date' datetime='2010-08-08T23:04:06+00:00'>8 Aug 10, 23:04</time>
+            </div>
+            <div class='col-md body'><p>I never rely on A.I. Even with this improvement.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-08-08T23:45:34+00:00'>8 Aug 10, 23:45</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by SBS7322B:</div>
+              <div class="quote_body">
+              <p>I never rely on A.I. Even with this improvement.</p>
+              </div>
+              </blockquote>
+              <p>Harbourvale Line relies on A.I.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS7322B</div>
+              <time class='date' datetime='2010-08-09T13:54:31+00:00'>9 Aug 10, 13:54</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by yellowflip999:</div>
+              <div class="quote_body">
+              <p>Harbourvale Line relies on A.I.</p>
+              </div>
+              </blockquote>
+              <p>Because there's something called Route.RunInterval in the route file.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>AqilM</div>
+              <time class='date' datetime='2010-08-12T14:53:30+00:00'>12 Aug 10, 14:53</time>
+            </div>
+            <div class='col-md body'><p>Um whitch one is better openbve or bve 4?</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bryanwee1</div>
+              <time class='date' datetime='2010-08-12T15:08:49+00:00'>12 Aug 10, 15:08</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by AqilM:</div>
+              <div class="quote_body">
+              <p>Um whitch one is better openbve or bve 4?</p>
+              </div>
+              </blockquote>
+              <p>I'll recommend openBVE.</p>
+              <ul>
+              <li>openBVE supports animation</li>
+              <li>You can view the train exterior/interior in openBVE</li>
+              <li>I dun think there is some other points (Moderators please correct me if i am wrong)<br></li>
+              </ul>
+              <p>openBVE or BVE4 is personnal choice. But I will say openBVE is better</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-08-13T21:18:16+00:00'>13 Aug 10, 21:18</time>
+            </div>
+            <div class='col-md body'><p>Developers here develop for openBVE...</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS7322B</div>
+              <time class='date' datetime='2010-08-14T00:12:19+00:00'>14 Aug 10, 00:12</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by joeyfjj:</div>
+              <div class="quote_body">
+              <p>Developers here develop for openBVE...</p>
+              </div>
+              </blockquote>
+              <p>openBVE has more features and is more versatile. Developers here are planning to use functions that doesn't really support BVE4......</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>willis_chong</div>
+              <time class='date' datetime='2010-08-31T07:10:15+00:00'>31 Aug 10, 07:10</time>
+            </div>
+            <div class='col-md body'>
+              <p><strong><span style="text-decoration: underline;">openBVE 1.2.7.4 released - 29 August 2010</span></strong></p>
+              <p>â—�	 	Bugfix<br>The renderer could crash when trying to render a string with characters outside the BMP (i.e. codepoints between 0x10000 and 0x10FFFF).</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS7322B</div>
+              <time class='date' datetime='2010-09-12T00:19:51+00:00'>12 Sep 10, 00:19</time>
+            </div>
+            <div class='col-md body'>
+              <p><strong>openBVE v1.2.7.100 (2010-09-11) released. </strong><br><span style="color: #ff0000;">Development version - advanced users only</span></p>
+              <p>â—�   Bugfix<br>Plugins could receive beacon types -3 or -2 when passing Track.Pattern commands. This was unintentional. Plugins no longer receive data from this command.</p>
+              <p>â—�   Renderer<br>Reorganized the renderer so that static opaque scenery is now rendered using display lists. This should give noticable improvements in performance.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS7322B</div>
+              <time class='date' datetime='2010-09-12T09:50:13+00:00'>12 Sep 10, 09:50</time>
+            </div>
+            <div class='col-md body'><p>The renderer is awesomely fast.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SMRT/SBS Transit</div>
+              <time class='date' datetime='2010-09-12T18:27:06+00:00'>12 Sep 10, 18:27</time>
+            </div>
+            <div class='col-md body'><p>ok...just downloaded latest version...</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bryanwee1</div>
+              <time class='date' datetime='2010-09-14T17:42:39+00:00'>14 Sep 10, 17:42</time>
+            </div>
+            <div class='col-md body'>
+              <p>OMG! After i use the development version,<br><br>CGL fps (Cab View): 22 FPS. Original: 8 FPS</p>
+              <p>CGL Exterior view: 14 fps. Original: 3 FPS</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-09-14T19:03:10+00:00'>14 Sep 10, 19:03</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Bryanwee1:</div>
+              <div class="quote_body">
+              <p>OMG! After i use the development version,<br> <br> CGL fps (Cab View): 22 FPS</p>
+              <p>CGL Exterior view: 14 fps</p>
+              </div>
+              </blockquote>
+              <p>No original FPS, how to compare?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bryanwee1</div>
+              <time class='date' datetime='2010-09-14T19:19:21+00:00'>14 Sep 10, 19:19</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Samuel Lee:</div>
+              <div class="quote_body">
+              <p>No original FPS, how to compare?</p>
+              </div>
+              </blockquote>
+              <p><img src="/images/emoticons/kde-3.5.8/plain/tongue.png" alt="tongue.png"> Forget to add in. Edited.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-09-15T21:13:27+00:00'>15 Sep 10, 21:13</time>
+            </div>
+            <div class='col-md body'>
+              <p><strong>openBVE v1.2.7.102 (2010-09-15) released. </strong><br><span style="color: #ff0000;">Development version - advanced users only</span></p>
+              <p>â—�   Interface<br>In the list of problems, critical errors are now shown first, followed by normal errors and warnings.</p>
+              <p>â—�   Bugfix<br>A series of visual glitches have been fixed that were prominent in the v1.2.7.100 release.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-09-22T20:50:33+00:00'>22 Sep 10, 20:50</time>
+            </div>
+            <div class='col-md body'>
+              <p><strong>openBVE v1.2.7.103 (2010-09-19) released.</strong><br><span style="color: #ff0000;">Development version - advanced users only</span></p>
+              <p>â—�   Renderer<br>Minor changes regarding z-buffer precision and blending of transparent faces.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bryanwee1</div>
+              <time class='date' datetime='2010-09-24T18:06:32+00:00'>24 Sep 10, 18:06</time>
+            </div>
+            <div class='col-md body'>
+              <p><strong>openBVE v1.2.7.106 (2010-10-23) released<br></strong><span style="color: #ff0000;">Development version - advanced users only</span></p>
+              <ul>
+              <li>Renderer</li>
+              </ul>
+              <p>An attempt to reduce the amount of stutter that some users noticed with the new renderer.</p>
+              <p> </p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;"> </p>
+              <div style="text-align: auto;"><span style="font-family: Verdana, Arial, Helvetica, sans-serif; color: #ff0000; font-size: x-small;"><span style="border-collapse: collapse; font-size: 10px; line-height: normal;"><br></span></span></div>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Funkymark4211</div>
+              <time class='date' datetime='2010-09-24T18:22:10+00:00'>24 Sep 10, 18:22</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Bryanwee1:</div>
+              <div class="quote_body">
+              <p><strong>openBVE v1.2.7.106 (2010-10-23) released</strong></p>
+              <p style="margin: 0px 0px 1em; padding: 0px;"><span style="color: #ff0000;">Development version - advanced users
+              only</span></p>
+              <p style="margin: 0px 0px 1em; padding: 0px;"> </p>
+              <ul>
+              <li>Renderer</li>
+              </ul>
+              <p>An attempt to reduce the amount of stutter that some users
+              noticed with the new renderer.</p>
+              </div>
+              </blockquote>
+              <p>Sutter is?</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/3146/topics/393511/'>Prev</a>
+        <a class='page-link' href='/forums/3146/topics/393511/3/'>Next</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>event viewer</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['270916']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['270916']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['270916']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['270916']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>event viewer</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>khk</div>
+              <time class='date' datetime='2007-07-28T21:05:49+00:00'>28 Jul 07, 21:05</time>
+            </div>
+            <div class='col-md body'>my comp's windows xp event viewer's system event seem to has stopped logging.  the last log was at 1st jun.<br>the application one still records normally.<br><br>properties set at 'overwrite events older than 7 days'. log has reached max size of 512kb. the Event Log service is running.<br>wat's wrong w event viewer? i've some prob with my comp but can't get any info from event viewer.</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-28T23:02:36+00:00'>28 Jul 07, 23:02</time>
+            </div>
+            <div class='col-md body'>Set the options to overwrite once the log file size is above a certain limit, not every X days.<br><br>Check that all services that are dependent on it and services that Event Viewer is dependent on are running.<br><br>Next question, what file system is the OS using, as in NTFS or FAT32?<br><br>Last question, are you the administrator of the PC?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wishboy</div>
+              <time class='date' datetime='2007-07-28T23:16:51+00:00'>28 Jul 07, 23:16</time>
+            </div>
+            <div class='col-md body'>wat's the diff between NTFS and FAT32?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-28T23:57:24+00:00'>28 Jul 07, 23:57</time>
+            </div>
+            <div class='col-md body'>NTFS is New Technology File System, a type of file system developed by Microsoft and it propriety (this means it's by Windows ONLY). It's only used in Windows NT onwards (NT by the way stands for New Technology).<br><br>One main difference between NTFS and FAT32 is that NTFS is a Journaling File System. This means that data will be written to a journal first (a special area in the hard disk) before the data is written to the disk itself.<br><br>This makes recovery easier should the system crashes, by using the previous stable state of data. This also eliminates the use of Chkdsk, which is often the case in FAT32 systems if system crashes.<br><br>To illustrate the point clearly, set up two Windows XP PCs, one using NTFS, the other using FAT32.<br><br>Do a force shutdown (just turn off the power). Then turn it back on. For NTFS, you will notice that Chkdsk doesn't run on startup; Windows automatically revert it to the previous stable state. However, for FAT32, Chkdsk will run, since there's no way to check if the data has been written correctly to the hard disk.<br><br>If your system crashes too often and it's a FAT32 file system as well, you may well find it near impossible to recover without ever reformatting and reinstalling Windows.<br><br>Another major difference is the size of your partition. For FAT32, the maximum it can go is 2TB. That means if you have a huge hard disk, you probably will have lots of partitioning to do. For NTFS, it's possible to format a partition that has more than 2 TB.<br><br>Another issue is the file size. Files on FAT32 cannot go larger than 2GB. Files on NTFS can.<br><br>Disk compression is possible only in NTFS, not for FAT32, so is encryption. Notice that these 2 options are missing in FAT32 partitions.<br><br>The last issue is the OS it supports. NTFS is only supported on Windows NT and above, whereas FAT32 is supported by all OS. You can't install Windows 98 on NTFS partition, but it's possible to install Windows XP on a FAT32 partition.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>khk</div>
+              <time class='date' datetime='2007-07-29T11:47:24+00:00'>29 Jul 07, 11:47</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">Set the options to overwrite once the log file size is above a certain limit, not every X days.<br><br></div></blockquote>this worked...thanks</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

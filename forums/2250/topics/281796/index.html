@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Object-Oriented Programming</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['281796']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['281796']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['281796']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['281796']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Object-Oriented Programming</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/2250/topics/281796/2/'>Next</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2007-09-24T21:06:49+00:00'>24 Sep 07, 21:06</time>
+            </div>
+            <div class='col-md body'><div>code:<pre><br>#include <br>#include <br>#include <br>#include <br><br>class employee<br>{<br>private:<br>int nSalary;<br>char name[80];<br>int nDept;<br><br>public:<br>void SetSalary(int);<br>void PrintSalary();<br>void SetName(char *aString);<br><br>protected:<br>};//end class employee<br><br>void employee::SetSalary(int s)<br>{<br>nSalary=s;<br>}//end void employee::SetSalary<br><br>void employee:: PrintSalary()<br>{<br>cout&lt;&lt;"nSalary of "&lt;}//end void employee:: PrintSalary()<br><br>void employee::SetName(char *aString)<br>{<br>if(strlen(aString)&lt;=79)<br>{<br>strcpy(name,aString);<br>}<br>else<br>{<br>strcpy(name, "Default" );<br>}<br>}//end void employee::SetName(char *aString)<br><br>class manager:public employee //Derived class<br>{<br>private:<br>int nOffice;<br>public:<br>void SetOffice(int);<br>void PrintOffice();<br>protected:<br>};//end class manager:public employee<br><br>void manager::SetOffice(int o)<br>{<br>nOffice=o;<br>}//end void manager::SetOffice(int o)<br><br>void manager:: PrintOffice()<br>{<br>cout&lt;&lt;"nOffice of "&lt;}//end void manager:: PrintOffice()</pre></div><br><br>anyone knows how can I print out the name of the manager in the last line.<br><br>Employee is the base class,manager is the derived class.<br><br>manager.name is obviously not correct. <img src="/images/emoticons/classic/icon_cry.gif" alt="Crying or Very sad" title="Crying or Very sad"></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>caleb_chiang</div>
+              <time class='date' datetime='2007-09-24T21:11:13+00:00'>24 Sep 07, 21:11</time>
+            </div>
+            <div class='col-md body'>what language is this? <img src="/images/emoticons/classic/icon_rolleyes.gif" alt="Rolling Eyes" title="Rolling Eyes"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>eagle</div>
+              <time class='date' datetime='2007-09-24T21:11:52+00:00'>24 Sep 07, 21:11</time>
+            </div>
+            <div class='col-md body'>C++<br>as seen from cout<br><br>long time since I have touched it, so I cannot help. Sry</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>caleb_chiang</div>
+              <time class='date' datetime='2007-09-24T21:13:19+00:00'>24 Sep 07, 21:13</time>
+            </div>
+            <div class='col-md body'>Wah~ me like 10 yrs never touch C liao... no wonder can't recognise... <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-09-24T21:15:19+00:00'>24 Sep 07, 21:15</time>
+            </div>
+            <div class='col-md body'>Not trained in this language... I think Fatum may know.  <img src="/images/emoticons/classic/icon_smile.gif" alt="Smile" title="Smile"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>eagle</div>
+              <time class='date' datetime='2007-09-24T21:19:10+00:00'>24 Sep 07, 21:19</time>
+            </div>
+            <div class='col-md body'>have u tried<br><br>cout&lt;&lt;"nOffice of "&lt;<br>because I think derived class means it is still something within the manager class</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-09-24T21:55:36+00:00'>24 Sep 07, 21:55</time>
+            </div>
+            <div class='col-md body'>I guess you can try declaring the employee.name as a public variable instead, so that it can be accessed by its derived classes. But anyway, I'm not that good in OOP, so please correct me if I'm wrong.<br><br>Hence, the code should be:<br><br><div>code:<pre><br>class employee<br><br>{<br><br>private:<br><br>int nSalary;<br><br>int nDept;<br><br>public:<br><br>void SetSalary(int);<br><br>void PrintSalary();<br><br>void SetName(char *aString);<br><br>char name[80];<br><br>protected:<br><br>};//end class employee<br></pre></div></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>manyu882</div>
+              <time class='date' datetime='2007-09-24T21:57:26+00:00'>24 Sep 07, 21:57</time>
+            </div>
+            <div class='col-md body'>lol. i got A for that module. but then i forget everything liao lol.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>thoreldan</div>
+              <time class='date' datetime='2007-09-24T22:01:24+00:00'>24 Sep 07, 22:01</time>
+            </div>
+            <div class='col-md body'>havent read thru the code...<br><br>but it's bad to declare name as public<br><br>the standard way is to make a public assessor to access the name instead</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>thoreldan</div>
+              <time class='date' datetime='2007-09-24T22:03:22+00:00'>24 Sep 07, 22:03</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by thoreldan:</div><div class="quote_body">havent read thru the code...<br><br>but it's bad to declare name as public<br><br>the standard way is to make a public assessor to access the name instead</div></blockquote>u can do this<br><br>public:<br><br>char* PrintName();<br><br>-------------<br>inside just return the name lor</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-09-24T22:04:58+00:00'>24 Sep 07, 22:04</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by thoreldan:</div><div class="quote_body">havent read thru the code...<br><br>but it's bad to declare name as public<br><br>the standard way is to make a public assessor to access the name instead</div></blockquote>Hmm let me learn something here.<br><br>So you mean something like, under "public:" of the employee class, you have a method named GetName() which basically returns the private "name" property?<br><br>PS:<br>Argh you answered my question before I posted it. lol.<br>So what's so bad about making a property/var public?<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>thoreldan</div>
+              <time class='date' datetime='2007-09-24T22:06:57+00:00'>24 Sep 07, 22:06</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">Hmm let me learn something here.<br><br>So you mean something like, under "public:" of the employee class, you have a method named GetName() which basically returns the private "name" property?<br><br>PS:<br>Argh you answered my question before I posted it. lol.<br></div></blockquote>try it...see if it works</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2007-09-27T18:19:23+00:00'>27 Sep 07, 18:19</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by eagle:</div><div class="quote_body">have u tried<br><br>cout&lt;&lt;"nOffice of "&lt;<br>because I think derived class means it is still something within the manager class</div></blockquote>error C2248: 'name' : cannot access private member declared in class 'employee'</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2007-09-27T18:27:43+00:00'>27 Sep 07, 18:27</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by thoreldan:</div><div class="quote_body">try it...see if it works</div></blockquote>yup it works.thanks.<br><br>care to explain more on ur method of accessing a private member variable of a private class?<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-09-27T18:29:03+00:00'>27 Sep 07, 18:29</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Xcert:</div><div class="quote_body">error C2248: 'name' : cannot access private member declared in class 'employee'</div></blockquote>Your variable "name" in the employee class is private; it's protected. You can't access it this way. Will need to declare it as public if you want to access it.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>croco2006</div>
+              <time class='date' datetime='2007-09-27T18:29:07+00:00'>27 Sep 07, 18:29</time>
+            </div>
+            <div class='col-md body'>mi o level nia</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2007-09-27T19:55:51+00:00'>27 Sep 07, 19:55</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">Your variable "name" in the employee class is private; it's protected. You can't access it this way. Will need to declare it as public if you want to access it.</div></blockquote>yup.LatecomerX's method also works...but my problem is that "name" must be declared as private(a requirement) so I cant suka suka change it to public.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2007-09-27T19:56:47+00:00'>27 Sep 07, 19:56</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by croco2006:</div><div class="quote_body">mi o level nia</div></blockquote>nowadays primary sch learn how to program robots. <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing">  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-09-27T20:00:32+00:00'>27 Sep 07, 20:00</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Xcert:</div><div class="quote_body">yup.LatecomerX's method also works...but my problem is that "name" must be declared as private(a requirement) so I cant suka suka change it to public.</div></blockquote>Private can only access with private... as far as I know. LateComerX's method will work as well, because it's within the same class. It's not like another class is trying to access the private class.<br><br>eagle's method is actually utilizing another class to access the employee class, so it runs foul, producing an error. The error is quite easy to understand:<br><br><blockquote>'name' : cannot access private member declared in class 'employee'</blockquote></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>eagle</div>
+              <time class='date' datetime='2007-09-27T20:10:35+00:00'>27 Sep 07, 20:10</time>
+            </div>
+            <div class='col-md body'>Yep, use LateComerX's method.<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>thoreldan</div>
+              <time class='date' datetime='2007-09-27T20:31:26+00:00'>27 Sep 07, 20:31</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">Your variable "name" in the employee class is private; it's protected. You can't access it this way. Will need to declare it as public if you want to access it.</div></blockquote>always use a accessor instead...<br><br>declaring instance variable as public is very bad programming.<br><br>anyway.. private and protected can mean different thing<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-09-27T20:44:46+00:00'>27 Sep 07, 20:44</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by thoreldan:</div><div class="quote_body">always use a accessor instead...<br><br>declaring instance variable as public is very bad programming.<br><br>anyway.. private and protected can mean different thing<br><br></div></blockquote>I stand corrected. I've always used public.  <img src="/images/emoticons/classic/icon_redface.gif" alt="Embarassed" title="Embarassed"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>thoreldan</div>
+              <time class='date' datetime='2007-09-27T20:51:49+00:00'>27 Sep 07, 20:51</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">I stand corrected. I've always used public.  <img src="/images/emoticons/classic/icon_redface.gif" alt="Embarassed" title="Embarassed"> </div></blockquote><img src="/images/emoticons/classic/icon_redface.gif" alt="Embarassed" title="Embarassed"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-09-27T23:04:03+00:00'>27 Sep 07, 23:04</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by thoreldan:</div><div class="quote_body">always use a accessor instead...<br><br>declaring instance variable as public is very bad programming.<br><br>anyway.. private and protected can mean different thing<br><br></div></blockquote>Me curious here, why is it a bad programming practice to declare such vars as public?<br><br>And to mayi: in the future, please spell my username as "LatecomerX', not with the "C" capitalized. A big "C" there looks...kinda weird.  <img src="/images/emoticons/classic/icon_redface.gif" alt="Embarassed" title="Embarassed"><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-09-28T00:01:06+00:00'>28 Sep 07, 00:01</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">Me curious here, why is it a bad programming practice to declare such vars as public?<br><br>And to mayi: in the future, please spell my username as "LatecomerX', not with the "C" capitalized. A big "C" there looks...kinda weird.  <img src="/images/emoticons/classic/icon_redface.gif" alt="Embarassed" title="Embarassed"><br></div></blockquote>See wrongly.  <img src="/images/emoticons/classic/icon_redface.gif" alt="Embarassed" title="Embarassed"></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/2250/topics/281796/2/'>Next</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

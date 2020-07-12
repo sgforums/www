@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Vehicle Location System (VLS)</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['1279']).setTargeting('topic', ['65182']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['1279']).setTargeting('topic', ['65182']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['1279']).setTargeting('topic', ['65182']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['1279']).setTargeting('topic', ['65182']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/1279/'>Singapore Buses</a>
+      <h1>Vehicle Location System (VLS)</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/1279/topics/65182/2/'>Next</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>^tamago^</div>
+              <time class='date' datetime='2003-12-25T21:47:21+00:00'>25 Dec 03, 21:47</time>
+            </div>
+            <div class='col-md body'>VEHICLE LOCATION SYSTEM (VLS)<br>This feature which is disables the ez-link points reader when the bus is not at a bus stop as detected by GPS, was spotted in use on TIB544E (Svc 189) and here i bring you some insights from my observations...<br><br><span style="text-decoration: underline;">Bus on the road/just left interchange or terminal</span><br>Bus Entry Point (BEP) and Bus Exit Point (BXP) readers set to "Disabled" mode ("No Entry" logo) and does not accept card scans.<br><br><span style="text-decoration: underline;">Bus approaching bus stop (enters bus bay) as detected by GPS</span><br>First, driver's console (Integrated Driver Fare Console or IDFC) updates to current stop's fare stage. Then, BEP readers are set to "ENTRY/EXIT" mode and BXP readers are set to "EXIT" mode with fare stages updated, a while before the doors actually open.<br><br><span style="text-decoration: underline;">Rear door close</span><br>BXP readers set to "Disabled" mode.<br><br><span style="text-decoration: underline;">Front door close</span><br>BEP readers set to "ENTRY" mode for about 14 seconds before being set to "Disabled" mode.<br><br><span style="text-decoration: underline;">There are some interesting points:</span><br><br>The GPS only signals the IDFC to update to the current stop's fare stage and enable the readers only if GPS detects the bus as being <span style="color: red;">near the bus stop</span>. Thus, if it skips a bus stop, then the IDFC actually <span style="color: red;">will</span> update the fare stage and the <span style="color: red;">BEPs will be set to "ENTRY/EXIT" mode and BXPs to "EXIT" mode. Upon detection that bus is some distance away from the bus stop (about 25-50 metres away or 2-4 bus lengths), BEP is set to "ENTRY" and BXP is set to "Disabled" mode. After 14 seconds, BEP is also set to "Disabled" mode. Note that sometimes it does not detect that the bus had left the bus stop and thus sometimes BEPs and BXPs remain enabled until the next bus stop when the GPS notifies the IDFC to update fare stage and enabled readers to the correct modes.</span><br><br>If only the front door is open when bus is in bus bay, when the front door closes, BXP will be set to "Disabled" mode while BEP will be set to "ENTRY" mode for 14 seconds before being set to "Disabled" mode.<br><br>If only the rear door is open when bus is in bus bay, when the rear door closes, <span style="color: red;">BXP will be set to "Disabled" mode while BEP will be set to "ENTRY" mode for 14 seconds before being set to "Disabled" mode.<br></span><br><br>No passenger actually encountered any problems using this new system from my observations.<br><br>Anyway, this bus has no speed limiter fitted! Oh oh..<br><span style="color: red;"><br>Roll out date for TIBS AMDEP is confirmed to be on Monday, 5th Jan 2004. Others have yet to be confirmed, including KJDEP (Svc 189).<br><br>There are some bugs relating to one or two-lane roads and loop services where the GPS detects it as the bus stop in the opposite direction across the road instead if the pair of stops are too close. It has surfaced sparingly on Svc 189 on West Coast Rd. Currently the system is made more accurate with the help of an odometer to detect the distance covered by the bus, from what i heard from the driver. Now it looks like Svc 175 is in most trouble since it is a loop service and Lim Chu Kang Rd is a major problem.<br><br>Additional info: Bukit Batok Int (BBDEP) has overnight parking in additional to Yishun Int (YIDEP) for most services there except Svcs 61, 106 and 852.<br><br>Additional info: Departure times from BBI for 544E (it may change) as noted from the PM shift timesheet is 15:20, 16:42, 18:19, 19:38, 20:48 and 21:58. Last bus reaches BBI at 22:58.<br></span></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>^tamago^</div>
+              <time class='date' datetime='2003-12-25T21:47:21+00:00'>25 Dec 03, 21:47</time>
+            </div>
+            <div class='col-md body'>*duplicate post*</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>tranquilice</div>
+              <time class='date' datetime='2003-12-26T00:07:48+00:00'>26 Dec 03, 00:07</time>
+            </div>
+            <div class='col-md body'>"No <strong>Entry</strong>" mode at BXP reader?! As we all know, entry is not allowed from the rear doors. "No <strong>Exit</strong>" is more appropriate.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>foxtrot1985</div>
+              <time class='date' datetime='2003-12-26T00:16:29+00:00'>26 Dec 03, 00:16</time>
+            </div>
+            <div class='col-md body'><blockquote>Originally posted by tranquilice:<br><strong>"No [b]Entry</strong>" mode at BXP reader?! As we all know, entry is not allowed from the rear doors. "No <strong>Exit</strong>" is more appropriate.<br>[/b]</blockquote>except for boarding service 170 at singapore customs towards queen st where you can board from both entry and exit doors. Also, there were 1 or 2 exception cases where the bus captain has allowed passengers to board the bus from the exit door before when the people standing on the bus just refuse to move to the rear.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>^tamago^</div>
+              <time class='date' datetime='2003-12-26T00:27:01+00:00'>26 Dec 03, 00:27</time>
+            </div>
+            <div class='col-md body'>actually i don't know how to describe this "No Entry" mode.. it jus displays a circle with a line across the horizontal diameter.. jus like the "No Entry" red-and-white circles seen on road signages in Singapore.. u can take it as being disabled for card scans..<br><br>regarding boarding from rear doors, this is also done at Yishun Int feeder services to speed up boarding, usually on Svcs 804 and 806.. before ez-link they used mobile validators.. and it used to be so at Ang Mo Kio feeder svcs 261 and 266 with a mobile validator years ago before they shifted to the temporary interchange..</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>off_service</div>
+              <time class='date' datetime='2003-12-26T00:42:51+00:00'>26 Dec 03, 00:42</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ^tamago^:</div><div class="quote_body">actually i don't know how to describe this "No Entry" mode.. it jus displays a circle with a line across the horizontal diameter.. jus like the "No Entry" red-and-white circles seen on road signages in Singapore.. u can take it as being disabled for card scans..<br><br>regarding boarding from rear doors, this is also done at Yishun Int feeder services to speed up boarding, usually on Svcs 804 and 806.. before ez-link they used mobile validators.. and it used to be so at Ang Mo Kio feeder svcs 261 and 266 with a mobile validator years ago before they shifted to the temporary interchange..</div></blockquote>I've seen service 806 with pax boarding from the first exit using the ez-link readers. There was also once a service 962 bus was too full to allow passengers to board from front, the driver switched the exit readers to "ENTRY" so the remaining 2 pax can board from the rear.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>tranquilice</div>
+              <time class='date' datetime='2003-12-26T00:50:40+00:00'>26 Dec 03, 00:50</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ^tamago^:</div><div class="quote_body">actually i don't know how to describe this "No Entry" mode.. it jus displays a circle with a line across the horizontal diameter.. jus like the "No Entry" red-and-white circles seen on road signages in Singapore.. u can take it as being disabled for card scans</div></blockquote>You can see this circle on Changi Airport services, when the buses stop for a while at Terminal 2. Yes, it means no card scan when the circle is displayed.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS9818A</div>
+              <time class='date' datetime='2003-12-26T09:02:50+00:00'>26 Dec 03, 09:02</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by tranquilice:</div><div class="quote_body">You can see this circle on Changi Airport services, when the buses stop for a while at Terminal 2. Yes, it means no card scan when the circle is displayed.<br></div></blockquote>Correct, the circle with horizontal line. The ez-link readers are programmable to allow all sorts of actions, from entry to rear door, to banning exit, etc.<br><br>tamago, the system should update itself automatically regardless of whether the bus goes into the bus bay or not! Then, what's the point? Passengers will begin underpaying now is it thanks to the non-update, and SBST / TIBS will use it to jack up fares again!</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>^tamago^</div>
+              <time class='date' datetime='2003-12-26T09:35:10+00:00'>26 Dec 03, 09:35</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by SBS9818A:</div><div class="quote_body">tamago, the system should update itself automatically regardless of whether the bus goes into the bus bay or not! Then, what's the point? Passengers will begin underpaying now is it thanks to the non-update, and SBST / TIBS will use it to jack up fares again!</div></blockquote>i was sitting behind the driver and the IDFC was at STAGE 14.0.. then when it passed by a bus stop with bus bay along West Coast Rd very quickly the IDFC display still showed STAGE 14.0 until it stopped at the next bus bay, where the IDFC immediately updated to STAGE 15.0 and enabled the readers.. prior to that even though the fare stage is not updated, the BXPs are disabled so you can't scan..<br><br>then at Clementi Ave 2 bus stop without bus bay the readers were activated shortly as if it had reached the bus bay then left.. at this time BXPs were enabled for a short while actually..<br><br>however i do note that last time when VLS was still testing, it can actually tell the driver that "VLS is out of route" but it did not update the stages as it passed by a bus bay..</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>service_238</div>
+              <time class='date' datetime='2003-12-26T11:52:11+00:00'>26 Dec 03, 11:52</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ^tamago^:</div><div class="quote_body">before ez-link they used mobile validators.. and it used to be so at Ang Mo Kio feeder svcs 261 and 266 with a mobile validator years ago before they shifted to the temporary interchange..</div></blockquote>At TPY Int, they used it on Svc 237 and 238 at the OLD int @ Blk 189 before moving to the temp one at TP Town Park. At the temp one, I think they used it on rare occasions on Svc 238.<br><br>Let me share one of my experiences on this VLS thingy...<br><br>While analysing Svc 238 late last month, i found out that the drivers on this service need not update the fare stage whereas other services like Svc 143 or 31 requires the drivers to update the fare stages at every stop. Svc 238 doesnt have the 'no entry' sign on the ezlink readers as it doesnt serve any practical use on the service unless SBST wanna analyse where the passengers alight and board for this service.  <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>^tamago^</div>
+              <time class='date' datetime='2003-12-26T12:03:12+00:00'>26 Dec 03, 12:03</time>
+            </div>
+            <div class='col-md body'>was VLS on? to check, see the IDFC top-right corner to make sure the upper of the 2 LEDs is green not red.. the lower LED indicates green if it is air-con and red if it is NAC..<br><br>if VLS is on and feeder services follow as said, then prob it means the readers are not disabled between stops on feeders.. actually quite logical since it is flat fare..<br><br>if VLS is off then it looks just like the other feeder services, where some driver jus dun update the stage since it is redundant..</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS9818A</div>
+              <time class='date' datetime='2003-12-26T12:58:28+00:00'>26 Dec 03, 12:58</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ^tamago^:</div><div class="quote_body">was VLS on? to check, see the IDFC top-right corner to make sure the upper of the 2 LEDs is green not red.. the lower LED indicates green if it is air-con and red if it is NAC..<br><br>if VLS is on and feeder services follow as said, then prob it means the readers are not disabled between stops on feeders.. actually quite logical since it is flat fare..<br><br>if VLS is off then it looks just like the other feeder services, where some driver jus dun update the stage since it is redundant..</div></blockquote>Do agree that updating the fare stages on feeder services is redundant, AFAIK SBS 3693G has VLS installed, not sure about the rest. All my Sv. 88 3-axle VOs do.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>off_service</div>
+              <time class='date' datetime='2003-12-26T21:30:06+00:00'>26 Dec 03, 21:30</time>
+            </div>
+            <div class='col-md body'>The VLS system on TIB 593 M seems to have bug in it. The auto update of farestages sometimes begin a little earlier and after the auto update, it won't be set back to to disbled until any of the doors open and close again.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>^tamago^</div>
+              <time class='date' datetime='2003-12-27T00:12:02+00:00'>27 Dec 03, 00:12</time>
+            </div>
+            <div class='col-md body'>There are some corrections and new findings in <span style="color: red;">red</span> on the first post of this topic. And the GPS does not detect accurately if the bus is at the bus bay but rather if it is near the bus stop or not.. wat i saw (the non-updating of fare stage due to skipping on one stop) was an isolated case..<br><br><blockquote>Originally posted by off_service:<br><br>The VLS system on TIB 593 M seems to have bug in it. The auto update of farestages sometimes begin a little earlier and after the auto update, it won't be set back to to disbled until any of the doors open and close again.<br><br></blockquote>i can assure you this is normal and exactly what i saw on 544E.. the updating of fare stage is done just before the bus reaches the stop and if it skips the stop, i.e. the door(s) are not opened or closed, then it will continue for a while before it disables the BXP and sets BEP to "ENTRY" mode when it detects that it is no longer near the stop..</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>off_service</div>
+              <time class='date' datetime='2003-12-27T00:38:39+00:00'>27 Dec 03, 00:38</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ^tamago^:</div><div class="quote_body">i can assure you this is normal and exactly what i saw on 544E.. the updating of fare stage is done just before the bus reaches the stop and if it skips the stop, i.e. the door(s) are not opened or closed, then it will continue for a while before it disables the BXP and sets BEP to "ENTRY" mode when it detects that it is no longer near the stop..</div></blockquote>No. The Exit reader will NOT be disabled until any of the door open and close for TIB 593 M. The reader is enabled for well over a minute along Gambas Ave.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>^tamago^</div>
+              <time class='date' datetime='2003-12-27T12:03:36+00:00'>27 Dec 03, 12:03</time>
+            </div>
+            <div class='col-md body'>then that sounds like a bug.. Svc 962? i'll try it out soon if i'm near there..</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS9818A</div>
+              <time class='date' datetime='2003-12-27T13:38:04+00:00'>27 Dec 03, 13:38</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ^tamago^:</div><div class="quote_body">then that sounds like a bug.. Svc 962? i'll try it out soon if i'm near there..</div></blockquote>Correct, that is Sv. 962</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>xin1jun2</div>
+              <time class='date' datetime='2003-12-27T15:19:09+00:00'>27 Dec 03, 15:19</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by service_238:</div><div class="quote_body">At TPY Int, they used it on Svc 237 and 238 at the OLD int @ Blk 189 before moving to the temp one at TP Town Park. At the temp one, I think they used it on rare occasions on Svc 238.<br><br>Let me share one of my experiences on this VLS thingy...<br><br>While analysing Svc 238 late last month, i found out that the drivers on this service need not update the fare stage whereas other services like Svc 143 or 31 requires the drivers to update the fare stages at every stop. Svc 238 doesnt have the 'no entry' sign on the ezlink readers as it doesnt serve any practical use on the service unless SBST wanna analyse where the passengers alight and board for this service.  <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"> </div></blockquote>please take note that 238 has an extra  dash set on some buses eg SBS32. i dun know what that extra fitting is for..maybe part of this VLS trial.  same goes for service 54 buses. could be GPS and not VLS<br><br>ZYX<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>off_service</div>
+              <time class='date' datetime='2003-12-27T22:00:48+00:00'>27 Dec 03, 22:00</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by xin1jun2:</div><div class="quote_body">please take note that 238 has an extra  dash set on some buses eg SBS32. i dun know what that extra fitting is for..maybe part of this VLS trial.  same goes for service 54 buses. could be GPS and not VLS<br><br>ZYX<br></div></blockquote>That should be for the VLS system. Only SBST buses have them.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>service_238</div>
+              <time class='date' datetime='2003-12-27T22:12:03+00:00'>27 Dec 03, 22:12</time>
+            </div>
+            <div class='col-md body'>SBS 32 <strong>J</strong><br><br>I noticed that most or all of the 238 buses has an extra 'machine' behind the ezlink machine at the driver's seat. It is very near the windscreen. What is that thing used for?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS9818A</div>
+              <time class='date' datetime='2003-12-27T22:33:19+00:00'>27 Dec 03, 22:33</time>
+            </div>
+            <div class='col-md body'><blockquote>Originally posted by service_238:<br><strong>SBS 32 [b]J</strong><br><br>I noticed that most or all of the 238 buses has an extra 'machine' behind the ezlink machine at the driver's seat. It is very near the windscreen. What is that thing used for?[/b]</blockquote>Oh, the one on Sv. 54 and Sv. 24?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>^tamago^</div>
+              <time class='date' datetime='2003-12-27T22:54:37+00:00'>27 Dec 03, 22:54</time>
+            </div>
+            <div class='col-md body'>the beige device (some blue, esp. on Svc 54 buses) is exclusive to SBST, most probably for aiding the drivers in adhering to the schedule.. this in-house device actually beeped a few times loudly when Svc 88 buses sped too fast along TPE.. and it knows whether the doors are opened or closed, from what i had observed from the LCD display of the beige device on Svc 88.. it doesn't look like part of VLS since TIBS buses doesn't need that to operate their VLS on IDFCs.. probably the beige device includes a common GPS that VLS uses also.. for TIBS the GPS, supplied by ERG Transit Systems Australia (the one that supplied ez-link systems), is a stainless steel device fitted behind the driver's seat on O405s..</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>service_238</div>
+              <time class='date' datetime='2003-12-27T23:26:45+00:00'>27 Dec 03, 23:26</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ^tamago^:</div><div class="quote_body">the beige device (some blue, esp. on Svc 54 buses) is exclusive to SBST, most probably for aiding the drivers in adhering to the schedule.. this in-house device actually beeped a few times loudly when Svc 88 buses sped too fast along TPE.. and it knows whether the doors are opened or closed, from what i had observed from the LCD display of the beige device on Svc 88.. it doesn't look like part of VLS since TIBS buses doesn't need that to operate their VLS on IDFCs.. probably the beige device includes a common GPS that VLS uses also.. for TIBS the GPS, supplied by ERG Transit Systems Australia (the one that supplied ez-link systems), is a stainless steel device fitted behind the driver's seat on O405s..</div></blockquote>I noticed the BEEP sound when the drivers are approaching a bus stop, but not every bus stop. So i reckon it is not used to update fare stages..</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>^tamago^</div>
+              <time class='date' datetime='2003-12-28T00:03:07+00:00'>28 Dec 03, 00:03</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by service_238:</div><div class="quote_body">I noticed the BEEP sound when the drivers are approaching a bus stop, but not every bus stop. So i reckon it is not used to update fare stages..</div></blockquote>no, not that soft mid-pitch beep from the IDFC, which is sometimes inaudible.. i still have no idea what it does, since it does not follow a fixed pattern.. but buses with VLS do not have the IDFC beep and when i enquired about this soft IDFC beep from the 544E VLS bus driver he didn't know about it also..<br><br>the beep on the SBST in-house beige device is very loud and high-pitched, like volume 5 on a Nokia phone, lasting about a second..</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>off_service</div>
+              <time class='date' datetime='2004-01-06T10:10:14+00:00'>6 Jan 04, 10:10</time>
+            </div>
+            <div class='col-md body'>It seems that the VLS of any buses would have problems operating on sv 962. I wonder what is going on.<br><br>I've seen TIB 1188 T on sv 962 and the VLS is working in similar manner as the mentioned TIB 593 M.<br><br>Interesting to note that the driver of the 2 mentioned buses is the same person. <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/1279/topics/65182/2/'>Next</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

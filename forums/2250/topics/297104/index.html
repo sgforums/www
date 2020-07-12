@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Java Question</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['297104']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['297104']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['297104']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['297104']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Java Question</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Shotgun</div>
+              <time class='date' datetime='2007-12-14T01:03:32+00:00'>14 Dec 07, 01:03</time>
+            </div>
+            <div class='col-md body'>Aight... I need to either use setInt or setString for the PreparedStatement class.<br><br>Is there anyway I can check whether a string is a number/int   or is just a normal string?<br><br>In javascript, theres a function called isNaN(), where it tells a certain var is not a number.<br><br>What about java?</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>dumbdumb!</div>
+              <time class='date' datetime='2007-12-14T01:45:41+00:00'>14 Dec 07, 01:45</time>
+            </div>
+            <div class='col-md body'>hmm. in c++ i guess u can use isdigit, isalnum, isalpha.<br><br>like:<br><br>string x;<br><br>if (!isalpha(x)) then<br><br>cout&lt;&lt; "its not a string"&lt;<br>else<br><br>cout&lt;&lt;"it is a string"&lt;<br>i think java is something like this too<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Shotgun</div>
+              <time class='date' datetime='2007-12-14T01:58:53+00:00'>14 Dec 07, 01:58</time>
+            </div>
+            <div class='col-md body'>Found another way to check.  Basically using Number format exceptions to validate.  Thanks though.<br><br>Now for the bigger headache.<br><br>I've been trying to add values into a vector, and retrieve them to form my PreparedStatements' setString, setInt methods.  So far, so good i think... except that when i need to executeUpdate(), it keeps telling "java.sql.SQLException: No value specified for parameter 2"<br><br>Any case, here are the codes.  If anyone has any clues to why this is happening, feel free to reply.  Ignore the System.out.printlns, those are just for me to do my own "debugging."<br><br>public void processStrings(){<br>int size= valueStrings.size();<br>System.out.println("Size is "+size);<br>System.out.println("object at first position is"+valueStrings.elementAt(0));<br>System.out.println("object at 2nd position is"+valueStrings.elementAt(1));<br>// ListIterator list = valueStrings.listIterator();<br><br>for (int i = 0; i &lt; size; i++){<br>int j = i+1;<br>String test = ""+valueStrings.elementAt(i);<br>System.out.println("value at "+valueStrings.elementAt(i));<br>System.out.println("value of i ="+i);<br>System.out.println("value of j ="+j);<br>try {<br>int testInt = Integer.parseInt(test);<br>try {<br>pstmt.setInt(i,testInt);<br>System.out.println("setInt worked= "+testInt);<br>} catch (SQLException ex) {<br>System.out.println("setInt didnt work");<br>ex.printStackTrace();<br>}<br>} catch (NumberFormatException ex) {<br>System.out.println("Is not a number "+test);<br>try {<br>pstmt.setString(j, ""+valueStrings.elementAt(i));<br>System.out.println("setString worked= ");<br><br>} catch (SQLException ex2) {<br>System.out.println("Some error here");<br>ex.printStackTrace();<br>}//end catch ex2<br>}//end catch ex<br><br>}// end while<br><br>}<br><br>public int pExecuteUpdate(){<br>int i= 0;<br>try {<br>i = pstmt.executeUpdate();<br>System.out.println("Wtf happened here? "+i);<br>} catch (SQLException ex) {<br>System.out.println("Something bad happened here" +i);<br>ex.printStackTrace();<br>}<br>return i;<br>}<br><br>OUTPUT Of the System.out.printlns<br><br>Size is 2<br>object at first position ispassword1<br>object at 2nd position is3<br>value at password1<br>value of i =0<br>value of j =1<br>Is not a number password1<br>setString worked=<br>value at 3<br>value of i =1<br>value of j =2<br>setInt worked= 3<br>Something bad happened here0<br><br></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

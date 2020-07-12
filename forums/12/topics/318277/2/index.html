@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>question about bfs and gfs</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['12']).setTargeting('topic', ['318277']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['12']).setTargeting('topic', ['318277']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['12']).setTargeting('topic', ['318277']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['12']).setTargeting('topic', ['318277']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/12/'>Aunt Agony</a>
+      <h1>question about bfs and gfs</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/12/topics/318277/'>Prev</a>
+        <a class='page-link' href='/forums/12/topics/318277/3/'>Next</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Onslaught 182</div>
+              <time class='date' datetime='2008-05-21T23:40:05+00:00'>21 May 08, 23:40</time>
+            </div>
+            <div class='col-md body'>
+              <p>Its not that bad</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-21T23:48:05+00:00'>21 May 08, 23:48</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by wonderamazement:</div>
+              <div class="quote_body">
+              <p>shhh dun asspose me real gender leh. <img src="/images/emoticons/classic/icon_redface.gif" alt="icon_redface.gif"> i'm not war-pig leh.</p>
+              </div>
+              </blockquote>
+              <p>oops æˆ‘ä¸�æ˜¯æ•…æ„�çš„.... i just want ple to know you're a chiobu <img src="/images/emoticons/classic/icon_sad.gif" alt="icon_sad.gif"> my intention is pure and crystal clear not purposely want to sexpose you de..</p>
+              <p>but now i think your avatar speaks for yourself.. i think by lookin at ur avatar ple will know your level of beauty le <img src="/images/emoticons/classic/icon_redface.gif" alt="icon_redface.gif"></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wonderamazement</div>
+              <time class='date' datetime='2008-05-21T23:49:10+00:00'>21 May 08, 23:49</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Lorry`:</div>
+              <div class="quote_body">
+              <p>oops æˆ‘ä¸�æ˜¯æ•…æ„�çš„.... i just want ple to know you're a chiobu
+              <img src="/images/emoticons/classic/icon_sad.gif" alt="icon_sad.gif"> my intention is pure and crystal clear not
+              purposely want to sexpose you de..</p>
+              <p>but now i think your avatar speaks for yourself.. i think by
+              lookin at ur avatar ple will know your level of beauty le <img src="/images/emoticons/classic/icon_redface.gif" alt="icon_redface.gif"></p>
+              </div>
+              </blockquote>
+              <p>*blush blush. you're making me wet.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>BangHong</div>
+              <time class='date' datetime='2008-05-21T23:55:13+00:00'>21 May 08, 23:55</time>
+            </div>
+            <div class='col-md body'><p>haha, i dont believe in this... when it comes it comes lah..... But if u can flirt well, no scared no gf/bf lorh....</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-21T23:58:57+00:00'>21 May 08, 23:58</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by wonderamazement:</div>
+              <div class="quote_body">
+              <p>*blush blush. you're making me wet.</p>
+              </div>
+              </blockquote>
+              <p>so fast............................??   haiz</p>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              <p><img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>mancha</div>
+              <time class='date' datetime='2008-05-22T00:43:34+00:00'>22 May 08, 00:43</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Nikar 3:</div>
+              <div class="quote_body">
+              <p>hi all.......</p>
+              <p>from my observation, it seems almost everyone in singapore usually have a girlfriend or boyfriend during their poly (especially) and JC days, and then, their relationship last all the way into the mid-twenties and they go on to have kids etc.?</p>
+              <p>and they stay together despite obstacles like NS etc.?</p>
+              <p>is it true?</p>
+              <p>and if you don't have a bf or gf during your poly / JC days and you go on to adulthood in working life, very hard to find gf / bf?</p>
+              <p>even if got people un-attached at this time, usually it's those "dinosaurs", hags, super-nerds, war-pigs etc.</p>
+              <p>pls advise.</p>
+              </div>
+              </blockquote>
+              <p>from my observation it seems you will end up as one of those "dinosaurs", hags, super-nerds, war-pigs etc.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Alucard101</div>
+              <time class='date' datetime='2008-05-22T02:58:06+00:00'>22 May 08, 02:58</time>
+            </div>
+            <div class='col-md body'><p>Depends on your level of desperation.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Uncertain</div>
+              <time class='date' datetime='2008-05-22T08:34:49+00:00'>22 May 08, 08:34</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Nikar 3:</div>
+              <div class="quote_body">
+              <p>thanks all.....then it must be the people around me lah.....at least, almost all my friends and one of my cousin also like that......JC got gf until now he's in university and gf working.....still together......really envy people like this.</p>
+              <p>and the term "warpigs" refer to fat, big, huge, fugly, *sweaty*, dirty, rough, haggard, smelly, loud, old-fashioned girls.</p>
+              <p>those girls who are fat, big, huge, fugly but who *are not* sweaty, dirty, rough, haggard, smelly, loud or old-fashioned are NOT warpigs.</p>
+              <p>got difference one.</p>
+              <p>now, back to topic.</p>
+              </div>
+              </blockquote>
+              <p>WarPig very harsh leh... and the girl u mentioned above is very rare. The chance of u finding her is as low as striking the first group of toto.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Nikar 3</div>
+              <time class='date' datetime='2008-05-22T09:41:22+00:00'>22 May 08, 09:41</time>
+            </div>
+            <div class='col-md body'>
+              <p>^ yeah, but i see warpigs almost everyday when i go to work, on MRTs etc.</p>
+              <p>only got a couple of chio-bus.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Midlusionz</div>
+              <time class='date' datetime='2008-05-22T09:57:02+00:00'>22 May 08, 09:57</time>
+            </div>
+            <div class='col-md body'><p>Some ladies are realli attractive at age of 27 to 30 .. Maybe it's just me.. but almost all my friends gf usually dun last thru NS ..</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Tulanming</div>
+              <time class='date' datetime='2008-05-22T11:05:00+00:00'>22 May 08, 11:05</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <p><em>FireIce said:</em></p>
+              <p><em>im auntie, fat, ugly, wear nerdy specs and oni A-cup.<br>but i still got many ppl date.</em></p>
+              </blockquote>
+              <p>Hi <strong>FireIce</strong>,</p>
+              <p>I think after a while it's not the appearance; everybody is flawed in their own way. Good for you that the guys around you look beyond your appearance and date you <img src="/images/emoticons/kde-3.5.8/KMess-Cartoon/teeth.png" alt="teeth.png"></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>BangHong</div>
+              <time class='date' datetime='2008-05-22T12:40:15+00:00'>22 May 08, 12:40</time>
+            </div>
+            <div class='col-md body'><p>she is HOT ma :D</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Nikar 3</div>
+              <time class='date' datetime='2008-05-22T16:04:56+00:00'>22 May 08, 16:04</time>
+            </div>
+            <div class='col-md body'>
+              <p>hi all,</p>
+              <p>one question for you folks.....(this question only for those who have actualy flirt before....nerds need not reply)</p>
+              <p>when you guys flirt with girls, is it you flirt with every girls, including the ugly ones?<br><br>for me, i find that i totally cannot find the interest or energy to flirt with non-pretty ones, so all my flirt targets are all pretty ones.<br><br>is this normal?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-22T16:37:22+00:00'>22 May 08, 16:37</time>
+            </div>
+            <div class='col-md body'>
+              <p>you sound like male version de war-pig sia.... <img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif">  tsk tsk....</p>
+              <p><br>pretty ones of course, but for less better lookin ones depends, it is different levels of flirt....<br></p>
+              <p>not normal or abnormal, but usually we like beautiful things and that include people. <br>If you simi ple also want to chee hong, then go ahead.. u happy can liao me anything de.</p>
+              <p> </p>
+              <p> </p>
+              <p><br></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-22T16:38:38+00:00'>22 May 08, 16:38</time>
+            </div>
+            <div class='col-md body'><p>and also, cant believe u mid 20s liaos still ask these type of questions</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Gosu.</div>
+              <time class='date' datetime='2008-05-22T16:47:35+00:00'>22 May 08, 16:47</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Lorry`:</div>
+              <div class="quote_body">
+              <p>and also, cant believe u mid 20s liaos still ask these type of questions</p>
+              </div>
+              </blockquote>
+              <p><br>*Puts hand up in agreement*</p>
+              <p>Don't think relationships last through NS, unless you have a bright perspective and the girl loves you enough to scratch herself(Instead of getting someone else to scratch for her). Or you are lucky and get into a 9-5 work time and be able to check out everyday. Can't be bothered to comment on anything else.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>spycampers</div>
+              <time class='date' datetime='2008-05-22T17:32:42+00:00'>22 May 08, 17:32</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by FireIce:</div>
+              <div class="quote_body">
+              <p>im auntie, fat, ugly, wear nerdy specs and oni A-cup.<br><br>but i still got many ppl date.</p>
+              </div>
+              </blockquote>
+              <p><br>I dun believe u..</p>
+              <p>U are not auntie, fat and ugly...</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>xavier1979</div>
+              <time class='date' datetime='2008-05-22T18:09:57+00:00'>22 May 08, 18:09</time>
+            </div>
+            <div class='col-md body'>
+              <p>Things are different when you start work.</p>
+              <p>And those who last thru' poly/JC, thru' NS/uni, till marriage are rare.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>whiskers</div>
+              <time class='date' datetime='2008-05-22T19:27:00+00:00'>22 May 08, 19:27</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Nikar 3:</div>
+              <div class="quote_body">
+              <p>hi all,</p>
+              <p>one question for you folks.....(this question only for those who
+              have actualy flirt before....nerds need not reply)</p>
+              <p>when you guys flirt with girls, is it you flirt with every
+              girls, including the ugly ones?<br> <br> for me, i find that i totally cannot find the interest or energy to
+              flirt with non-pretty ones, so all my flirt targets are all pretty
+              ones.<br> <br> is this normal?</p>
+              </div>
+              </blockquote>
+              <p>Yes dude, i flirt with everyone.... Come what shape and size I all flirt....</p>
+              <p>And yes, I am a Nerd.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Q.C.Pak</div>
+              <time class='date' datetime='2008-05-22T20:20:30+00:00'>22 May 08, 20:20</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Nikar 3:</div>
+              <div class="quote_body">
+              <p> </p>
+              <p>even if got people un-attached at this time, usually it's those "dinosaurs", hags, super-nerds, war-pigs etc.</p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p><br>Small boy mentality...<img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Nikar 3</div>
+              <time class='date' datetime='2008-05-22T22:20:03+00:00'>22 May 08, 22:20</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <p>pretty ones of course, but for less better lookin ones depends, it
+                                          is different levels of flirt....</p>
+              <p>not normal or abnormal, but usually we like beautiful things and
+                                          that include people.<br> If you simi ple also want to chee hong, then go ahead.. u happy can
+                                          liao me anything de.</p>
+              </blockquote>
+              <p>thanks for your reply......but for me, i find that i totally am unable to flirt with less pretty girls......like i lose my erection, my drive, my motivation like that.</p>
+              <p>then when i see pretty girls, i suddendly become very active, like casanova like that.....flirting flirting etc.</p>
+              <p>the problem is girls always hang out in groups, and i scared if i flirt only with the pretty one(s), the others will be offended.</p>
+              <p>anyone got faced such situations before?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GHoST_18</div>
+              <time class='date' datetime='2008-05-22T22:24:32+00:00'>22 May 08, 22:24</time>
+            </div>
+            <div class='col-md body'><p><img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-22T22:31:42+00:00'>22 May 08, 22:31</time>
+            </div>
+            <div class='col-md body'><p><img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GHoST_18</div>
+              <time class='date' datetime='2008-05-22T22:35:04+00:00'>22 May 08, 22:35</time>
+            </div>
+            <div class='col-md body'>
+              <p>maybe the girls think the same way too...</p>
+              <p>flirt only with the good looking guys..</p>
+              <p><img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-22T22:54:56+00:00'>22 May 08, 22:54</time>
+            </div>
+            <div class='col-md body'>
+              <p>yah  <img src="/images/emoticons/classic/icon_twisted.gif" alt="icon_twisted.gif"></p>
+              <p>casanova sia <img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/12/topics/318277/'>Prev</a>
+        <a class='page-link' href='/forums/12/topics/318277/3/'>Next</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

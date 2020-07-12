@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Installing Linux Ubuntu on Ext HDD.</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['246807']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['246807']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['246807']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['246807']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Installing Linux Ubuntu on Ext HDD.</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2007-04-06T15:41:39+00:00'>6 Apr 07, 15:41</time>
+            </div>
+            <div class='col-md body'>How do i go on about installing Ubuntu on my ext HDD?<br>I noticed that in my BIOS i could boot from USB ext HDD,so i decided to "try" Linux on it to see how it works.I installed the Ubuntu installation file for Intel processors,specifically the file named "ubuntu-6.06.1-desktop-i386" and then burned it to a cd as the website stated.<br><br>(I assumed that there would be a menu after loading the disc that ask where to be installed)<br><br>But when i selected Boot From CD-drive/DVD-RW in my BOOT list,it didint load at all and Windows loaded instead,only to be interrupted by BSODs and "Windows didnt load properly" when i tried again and again.Seems not the way to install.<br><br>Anyone can help me to install Linux on ext HDD w/o affecting current OS on internal HDD?<br><br>mayi?</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-04-06T23:29:24+00:00'>6 Apr 07, 23:29</time>
+            </div>
+            <div class='col-md body'>I'm afraid Ubuntu doesn't have this option to boot via external devices. The only devices that work properly are flash drives.<br><br>A few distros can boot via flash drives. Xubuntu, Damn Small Linux, Puppy Linux are the few. Puppy Linux is recommended for newbies.<br><br>Since you have burned it to a CD, you have to boot via CD and installed it on a hard disk, not external ones. Windows don't support booting via external devices except the CD/DVD.<br><br>Your hard disk needs at least 3 partitions, one for Windows, one for Linux, one for Linux swap partition (aka virtual RAM in Linux). If you don't have at least 3, there are 3 options.<br><br>1st method:<br><br>1. Boot to XP CD.<br>2. Follow the prompts till you reach the partitioning.<br>3. Delete all partitions and create 3 or more new partitions.<br>4. Continue to install Windows.<br>5. Done, boot to Ubuntu CD.<br>6. When you reach the stage you need to partition, don't do anything to ext1. That's Windows.<br>7. Check all other partitions and tick Format and install.<br><br>2nd method:<br><br>1. Just boot to Ubuntu CD and use it. It won't be installed, take time to play with it.<br><br>3rd method:<br><br>1. Get a distro that supports booting from flash drives. Puppy Linux is recommended.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2007-04-07T11:48:45+00:00'>7 Apr 07, 11:48</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">I'm afraid Ubuntu doesn't have this option to boot via external devices. The only devices that work properly are flash drives.<br><br>A few distros can boot via flash drives. Xubuntu, Damn Small Linux, Puppy Linux are the few. Puppy Linux is recommended for newbies.<br><br>Since you have burned it to a CD, you have to boot via CD and installed it on a hard disk, not external ones. Windows don't support booting via external devices except the CD/DVD.<br><br>Your hard disk needs at least 3 partitions, one for Windows, one for Linux, one for Linux swap partition (aka virtual RAM in Linux). If you don't have at least 3, there are 3 options.<br><br>1st method:<br><br>1. Boot to XP CD.<br>2. Follow the prompts till you reach the partitioning.<br>3. Delete all partitions and create 3 or more new partitions.<br>4. Continue to install Windows.<br>5. Done, boot to Ubuntu CD.<br>6. When you reach the stage you need to partition, don't do anything to ext1. That's Windows.<br>7. Check all other partitions and tick Format and install.<br><br>2nd method:<br><br>1. Just boot to Ubuntu CD and use it. It won't be installed, take time to play with it.<br><br>3rd method:<br><br>1. Get a distro that supports booting from flash drives. Puppy Linux is recommended.</div></blockquote>If i want to go by 2nd method to try Linux,how do i make the CD readable?<br>Coz when i downloaded the file,i just burned it to a cd using window burner.<br>But neither my pc or laptop could boot from the Ubuntu CD,when selected in the BOOT first menu.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-04-07T11:52:56+00:00'>7 Apr 07, 11:52</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ceecookie:</div><div class="quote_body">If i want to go by 2nd method to try Linux,how do i make the CD readable?<br>Coz when i downloaded the file,i just burned it to a cd using window burner.<br>But neither my pc or laptop could boot from the Ubuntu CD,when selected in the BOOT first menu.</div></blockquote>You never burn properly...<br><br>Use <a href="http://www.snapfiles.com/get/burncdcc.html" rel="nofollow">BurnCDCC</a>. It will burn the files correctly. When done, the Ubuntu CD will automatically run, you will see some files there.</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

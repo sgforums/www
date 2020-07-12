@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>When genius failed</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['1769']).setTargeting('topic', ['133427']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['1769']).setTargeting('topic', ['133427']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['1769']).setTargeting('topic', ['133427']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['1769']).setTargeting('topic', ['133427']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/1769/'>Club 30</a>
+      <h1>When genius failed</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/1769/topics/133427/2/'>Next</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>EricDraven</div>
+              <time class='date' datetime='2005-05-22T20:40:10+00:00'>22 May 05, 20:40</time>
+            </div>
+            <div class='col-md body'>I'm stuck with a problem. Either there's no solution or I haven't got it.<br><br><span style="text-decoration: underline;">Problem</span><br>1 2 3 4 5 = 20<br><br>Insert + - x / between the numbers without changing the order of the numbers. Each sign must be used at least once and only once (no order assigned for use of the signs). Brackets can be used.<br><br>How can we get the equation to be = 20?<br>---------------------------------------------------------------------------------------------<br><br>I'm not very clever or intuitive so I'm going for a brute-force method of exhausting all possible arrangements.<br><br>First cut:<br>There can be 4x3x2x1 = 24 different permutations for the order of the 4 operators (+-x/).<br><br>A simple check would show that without using brackets, none of the 24 permutations will give a result equal to 20.<br><br>Hence, the key thing is the brackets, which, unfortunately, is so much trickier.<br><br>I don't know how to compute the total number of meaningful permutations for the order of the brackets. So I manually list them.<br><br><span style="text-decoration: underline;">One bracket</span><br>1. (1 2) 3 4 5<br>2. (1 2 3) 4 5<br>3. (1 2 3 4) 5<br>4. 1 (2 3) 4 5<br>5. 1 (2 3 4) 5<br>6. 1 (2 3 4 5)<br>7. 1 2 (3 4) 5<br>8. 1 2 (3 4 5)<br>9. 1 2 3 (4 5)<br><span style="text-decoration: underline;">Two brackets (exclusive)</span><br>10. (1 2)(3 4) 5<br>11. (1 2) 3 (4 5)<br>12. (1 2)(3 4 5)<br>13. (1 2 3)(4 5)<br>14. 1 (2 3)(4 5)<br><span style="text-decoration: underline;">Two brackets (overlapping)</span><br>15. ((1 2) 3) 4 5<br>16. (1 (2 3)) 4 5)<br>17. ((1 2) 3 4) 5<br>18. ((1 2 3) 4) 5<br>19. (1 (2 3) 4) 5<br>20. (1 2 (3 4)) 5<br>21. (1 (2 3 4)) 5<br>22. 1 ((2 3) 4) 5<br>23. 1 (2 (3 4)) 5<br>24. 1 ((2 3) 4 5)<br>25. 1 ((2 3 4) 5)<br>26. 1 (2 (3 4) 5)<br>27. 1 (2 (3 4 5))<br>28. 1 (2 3 (4 5))<br>29. 1 2 ((3 4) 5)<br>30. 1 2 (3 (4 5))<br><span style="text-decoration: underline;">Three brackets</span><br>31. (1 2)((3 4) 5)<br>32. (1 2)(3 (4 5))<br>33. ((1 2) 3)(4 5)<br>34. (1 (2 3))(4 5)<br>35. ((1 2)(3 4)) 5<br>36. 1 ((2 3)(4 5))<br>37. (((1 2) 3) 4) 5<br>38. 1 (((2 3) 4) 5)<br>39. 1 (2 (3 (4 5)))<br>40. (1 (2 (3 4))) 5<br>41. (1 ((2 3) 4)) 5<br>42. 1 ((2 (3 4)) 5)<br>43. 1 (2 ((3 4) 5))<br>44. ((1 (2 3)) 4) 5<br><br>That's all I can think of so far. If my universe of bracket permutations is complete, i.e. there can only be 24x45=1080 various ways we can arrange the 4 operators and brackets.<br><br>And so far, none of these 1080 permutations produced a result equal to 20.<br><br>There can only be two reasons:<br>1) There is no solution to this problem, i.e, can never achieve 20<br>2) My universe of bracket permutations is incomplete. Hence, here's where I need some help. Can anyone think of a <span style="font-style: italic;">meaningful</span> bracket permutation for the 5 numbers with 4 operators which I haven't thought of?</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>tare</div>
+              <time class='date' datetime='2005-05-22T21:07:58+00:00'>22 May 05, 21:07</time>
+            </div>
+            <div class='col-md body'>i see maths i..... *fainted*</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>the Bear</div>
+              <time class='date' datetime='2005-05-22T21:11:34+00:00'>22 May 05, 21:11</time>
+            </div>
+            <div class='col-md body'>the one that says the signs - + x / must be used once and once only kills it..<br><br>are there any other operators we can use? sorta like INT(X) or ABS(X) or something like that?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>AMD2004</div>
+              <time class='date' datetime='2005-05-22T21:35:21+00:00'>22 May 05, 21:35</time>
+            </div>
+            <div class='col-md body'>U said that bracket can be used.<br><br>and only once..wah.difficult sia<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>the Bear</div>
+              <time class='date' datetime='2005-05-22T21:37:04+00:00'>22 May 05, 21:37</time>
+            </div>
+            <div class='col-md body'>uhhh.. this condition:<br><br><strong>Each sign must be used at least once and only once</strong> (no order assigned for use of the signs). Brackets can be used.<br><br>so yours cannot stand...<br><br><blockquote><div class="quote_from">Originally posted by AMD2004:</div><div class="quote_body">U said that bracket can be used.<br><br>so  ( 1+2-3) + (4x5) = 20.<br><br>unless cannot use bracket. I kept it in order and i only use -,+ &amp; x.<br><br></div></blockquote></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>EricDraven</div>
+              <time class='date' datetime='2005-05-22T21:59:13+00:00'>22 May 05, 21:59</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by the Bear:</div><div class="quote_body">the one that says the signs - + x / must be used once and once only kills it..<br><br>are there any other operators we can use? sorta like INT(X) or ABS(X) or something like that?</div></blockquote>Er... no... only the 4 common operators + - x / may be used, and only once.<br><br>Everyone want to solve the main problem... how about my bracket permutation problem??? That's the key...</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>the Bear</div>
+              <time class='date' datetime='2005-05-22T22:04:19+00:00'>22 May 05, 22:04</time>
+            </div>
+            <div class='col-md body'>i may start looking at a "cheat"..<br><br>sort of like (2)(3) = 2x3 = 6</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>EricDraven</div>
+              <time class='date' datetime='2005-05-22T22:09:20+00:00'>22 May 05, 22:09</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by the Bear:</div><div class="quote_body">i may start looking at a "cheat"..<br><br>sort of like (2)(3) = 2x3 = 6</div></blockquote>That's not possible since you need an operator in between 2 numbers as each operator must be in use at least once.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>dragg</div>
+              <time class='date' datetime='2005-05-22T22:10:58+00:00'>22 May 05, 22:10</time>
+            </div>
+            <div class='col-md body'>i hate maths too.<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>the Bear</div>
+              <time class='date' datetime='2005-05-22T22:13:32+00:00'>22 May 05, 22:13</time>
+            </div>
+            <div class='col-md body'>nah.. in math, the convention is that 2(3) = 6 <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>besides, you forgot another "operator" -6 = 0 - 6 or (-1)(6) or (1)(-6) <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>math is fun <img src="/images/emoticons/classic/icon_biggrin.gif" alt="Very Happy" title="Very Happy"><br><br><blockquote><div class="quote_from">Originally posted by EricDraven:</div><div class="quote_body">That's not possible since you need an operator in between 2 numbers as each operator must be in use at least once.</div></blockquote></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>EricDraven</div>
+              <time class='date' datetime='2005-05-22T22:31:49+00:00'>22 May 05, 22:31</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by the Bear:</div><div class="quote_body">nah.. in math, the convention is that 2(3) = 6 <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>besides, you forgot another "operator" -6 = 0 - 6 or (-1)(6) or (1)(-6) <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>math is fun <img src="/images/emoticons/classic/icon_biggrin.gif" alt="Very Happy" title="Very Happy"><br><br></div></blockquote>Nope, it says insert the operators between the numbers so (4)(5) is out.<br><br>It didn't allow for 0 to be added in front or anywhere.<br><br>But I agree that (4)(-5) is probably acceptable.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>EricDraven</div>
+              <time class='date' datetime='2005-05-22T22:42:26+00:00'>22 May 05, 22:42</time>
+            </div>
+            <div class='col-md body'>The more I think about it, the more I reject (4)(-5)...  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>I think it's too cheating...</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>the Bear</div>
+              <time class='date' datetime='2005-05-22T22:44:17+00:00'>22 May 05, 22:44</time>
+            </div>
+            <div class='col-md body'>hey... we could be looking at something like Fermat's Last Theorem which just got disproved recently <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ShrodingersCat</div>
+              <time class='date' datetime='2005-05-23T00:26:55+00:00'>23 May 05, 00:26</time>
+            </div>
+            <div class='col-md body'>(1+2)/3) (4*5) = 20<br><br>err issit you can only use them once.. or you MUST use every sign once?<br><br>Ahh.. I read that MUST use every sign once.. hmm lemme try again.. *thinking*</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>the Bear</div>
+              <time class='date' datetime='2005-05-23T00:28:50+00:00'>23 May 05, 00:28</time>
+            </div>
+            <div class='col-md body'>it's the first thing i thought of.. but you omitted the (-) or minus sign...<br><br>you have to use them all once...<br><br><blockquote><div class="quote_from">Originally posted by ShrodingersCat:</div><div class="quote_body">(1+2)/3) (4*5) = 20<br><br>err issit you can only use them once.. or you MUST use every sign once?</div></blockquote></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Troy437</div>
+              <time class='date' datetime='2005-05-23T00:31:32+00:00'>23 May 05, 00:31</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by EricDraven:</div><div class="quote_body">I'm stuck with a problem. Either there's no solution or I haven't got it.<br><br><span style="text-decoration: underline;">Problem</span><br>1 2 3 4 5 = 20<br><br>...which I haven't thought of?</div></blockquote>Use forum to help solve maths question. Not a bad idea... <img src="/images/emoticons/classic/icon_cool.gif" alt="Cool" title="Cool"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>elektra</div>
+              <time class='date' datetime='2005-05-23T00:44:40+00:00'>23 May 05, 00:44</time>
+            </div>
+            <div class='col-md body'>put decimal point in between those numbers lor..<br>maybe u'll get 20  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>they say all must use once ?<br>or the x-+/ are optional and may be used once ?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>heavenscloud</div>
+              <time class='date' datetime='2005-05-23T01:40:13+00:00'>23 May 05, 01:40</time>
+            </div>
+            <div class='col-md body'>[{(1*-2)+3}/(4)(5)] to the power of -1<br><br>like tt can?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>gentlerock</div>
+              <time class='date' datetime='2005-05-23T10:28:46+00:00'>23 May 05, 10:28</time>
+            </div>
+            <div class='col-md body'>This is the only thing I can think of.....and I don't know if its legal, but if you think of it, I haven't broken any rules.<br><br>[1/ (-2+3)] [4x5]<br><br>= [1/1][4 x 5]<br><br>= 20<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LazerLordz</div>
+              <time class='date' datetime='2005-05-24T19:01:39+00:00'>24 May 05, 19:01</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by gentlerock:</div><div class="quote_body">This is the only thing I can think of.....and I don't know if its legal, but if you think of it, I haven't broken any rules.<br><br>[1/ (-2+3)] [4x5]<br><br>= [1/1][4 x 5]<br><br>= 20<br><br></div></blockquote>Intriguing.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>shinta</div>
+              <time class='date' datetime='2005-06-02T18:38:04+00:00'>2 Jun 05, 18:38</time>
+            </div>
+            <div class='col-md body'><img src="/images/emoticons/classic/icon_redface.gif" alt="Embarassed" title="Embarassed"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>the Bear</div>
+              <time class='date' datetime='2005-06-02T18:52:22+00:00'>2 Jun 05, 18:52</time>
+            </div>
+            <div class='col-md body'>the question did say you gotta insert the operators in between the numbers so i think the "cheat blank operator" of multiplication between the 2 parentheses between 3 and 4 makes the answer wrong <img src="/images/emoticons/classic/icon_razz.gif" alt="Razz" title="Razz"><br><br><blockquote><div class="quote_from">Originally posted by gentlerock:</div><div class="quote_body">This is the only thing I can think of.....and I don't know if its legal, but if you think of it, I haven't broken any rules.<br><br>[1/ (-2+3)] [4x5]<br><br>= [1/1][4 x 5]<br><br>= 20<br><br></div></blockquote></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Gazelle</div>
+              <time class='date' datetime='2005-06-02T22:17:18+00:00'>2 Jun 05, 22:17</time>
+            </div>
+            <div class='col-md body'>(1^(-2/3) x 4) (+5) = 20<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>the Bear</div>
+              <time class='date' datetime='2005-06-03T02:53:57+00:00'>3 Jun 05, 02:53</time>
+            </div>
+            <div class='col-md body'>the raising of the power as an operative won't be allowed either <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>hisoka</div>
+              <time class='date' datetime='2005-06-03T03:43:31+00:00'>3 Jun 05, 03:43</time>
+            </div>
+            <div class='col-md body'>hmm try this one<br><br>log(1^(1-2/3)) + 4*5 = 20<br><br>otherwise<br><br>()/(1-23) + 4*5 = 20<br><br>only thing is i'm not sure if () = zero since matlab gives an error for that but the calculator gives it as 0.</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/1769/topics/133427/2/'>Next</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

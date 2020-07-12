@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Normalize? help me pls</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['333244']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['333244']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['333244']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['333244']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Normalize? help me pls</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>youyayu</div>
+              <time class='date' datetime='2008-10-10T19:00:08+00:00'>10 Oct 08, 19:00</time>
+            </div>
+            <div class='col-md body'>
+              <p>UNF</p>
+              <p>Customer_Order (Customer_ID, Customer_Name, Customer_Address, Customer_Phone, Order_ID, Order_Date, Order_QTY,{Hardware_ID, Hardware_Prices, Hardware_Description, Hardware_Name, Supplier_ID, Supplier_Name, Supplier_Phone, Supplier_Address, Shipments_ID, Shipment_QTY})</p>
+              <p> </p>
+              <p>how to do?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-10-11T10:03:24+00:00'>11 Oct 08, 10:03</time>
+            </div>
+            <div class='col-md body'>
+              <p>I'm not too sure how each shipment is related to an order, so I've placed shipment_id under Orders.</p>
+              <p>Basically, what you're trying to achieve through database normalization is to reduce duplication and inconsistency of data. For example, if I created the database with only one table like the one stated in your question, and one particular customer places 42 item orders with you. So one day, he call up and says that his address has changed and this requires you to update the database. Without normalization, you will have to update every single row that contains his address, thus providing a room for inconsistency errors while updating. Normalization allows you to update just one entry (Customers table) which all of his orders, in a separate table (Orders table), refer to.</p>
+              <p>Anyway, why you learning DB normalization liao? I thought you just started in poly?</p>
+              <p> </p>
+              <p><span style="text-decoration: underline;">Customers</span><br>id<br>name<br>address<br>phone</p>
+              <p><span style="text-decoration: underline;">Orders</span><br>id<br>customer_id<br>date<br>hardware_id<br>qty<br>shipment_id</p>
+              <p><span><span><span style="text-decoration: underline;">Hardware</span><span style="text-decoration: underline;"><br></span></span>id<br>supplier_id<br>name<br>price<br>description</span></p>
+              <p><span><span style="text-decoration: underline;">Suppliers</span><br style="text-decoration: underline;">id<br>name<br>phone<br>address</span></p>
+              <p><span style="text-decoration: underline;">Shipments</span><br>id<br>qty</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>youyayu</div>
+              <time class='date' datetime='2008-10-11T13:54:25+00:00'>11 Oct 08, 13:54</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by LatecomerX:</div>
+              <div class="quote_body">
+              <p>I'm not too sure how each shipment is related to an order, so
+              I've placed shipment_id under Orders.</p>
+              <p>Basically, what you're trying to achieve through database
+              normalization is to reduce duplication and inconsistency of data.
+              For example, if I created the database with only one table like the
+              one stated in your question, and one particular customer places 42
+              item orders with you. So one day, he call up and says that his
+              address has changed and this requires you to update the database.
+              Without normalization, you will have to update every single row
+              that contains his address, thus providing a room for inconsistency
+              errors while updating. Normalization allows you to update just one
+              entry (Customers table) which all of his orders, in a separate
+              table (Orders table), refer to.</p>
+              <p>Anyway, why you learning DB normalization liao? I thought you
+              just started in poly?</p>
+              <p> </p>
+              <p><span style="text-decoration: underline;">Customers</span><br> id<br> name<br> address<br> phone</p>
+              <p><span style="text-decoration: underline;">Orders</span><br> id<br> customer_id<br> date<br> hardware_id<br> qty<br> shipment_id</p>
+              <p><span><span><span style="text-decoration: underline;">Hardware</span><span style="text-decoration: underline;"><br></span></span>id<br> supplier_id<br> name<br> price<br> description</span></p>
+              <p><span><span style="text-decoration: underline;">Suppliers</span><br style="text-decoration: underline;"> id<br> name<br> phone<br> address</span></p>
+              <p><span style="text-decoration: underline;">Shipments</span><br> id<br> qty</p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p>mi not studying in poly..</p>
+              <p>can list out the steps? i still dont' know how to do the normalization steps by steps.. can teach me? thanks alot. and about foregin/primary key. how to identify?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>youyayu</div>
+              <time class='date' datetime='2008-10-11T13:59:02+00:00'>11 Oct 08, 13:59</time>
+            </div>
+            <div class='col-md body'>
+              <p>Business rules stated that</p>
+              <p>A SUPPLIER may sent many Shipments.However each shipment must be sent by exactly one supplier</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-10-11T17:26:13+00:00'>11 Oct 08, 17:26</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by youyayu:</div>
+              <div class="quote_body">
+              <p>mi not studying in poly..</p>
+              <p>can list out the steps? i still dont' know how to do the
+              normalization steps by steps.. can teach me? thanks alot. and about
+              foregin/primary key. how to identify?</p>
+              </div>
+              </blockquote>
+              <p> </p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; ">I still don't see how a shipment is linked to an order. Are they even related in this case?</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; ">Anyway, a primary key is a unique number for each data row that identifies the entry, and a foreign key is basically a reference column to the primary key of another table.</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; ">A good example of a primary key in the database of, say, Singaporeans would be our NRIC numbers (call it sgAns). Each of these number is unique and only assigned once to one person in the entire population, thus you can identify any Singaporeans just by the NRIC number alone. Such values would then serve as a primary key in a database table.</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; ">On the other hand, we have foreign keys. When they're in a database table, they act as a constraint every time there's a new or changed entry by checking the new value in the foreign key column is found in the primary key column of another table. An example, extending the NRIC one above, would be a database table of Singaporean-owned cars and their owners (let's call it sgCars). Their owner's NRIC number can be a foreign key in sgCars, and if there's a new entry to sgCars containing a NRIC number not found in the sgAns, it would be rejected and an error will be thrown.</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; ">Note that a database table can only have one primary key, but may contain multiple foreign keys (eg. Orders table, see below). Just remember, a primary key is for identification of each data row, and a foreign key is used to filter invalid entries.</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; ">You may want to read more about these at Wikipedia:</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; "><a href="http://en.wikipedia.org/wiki/Primary_key">http://en.wikipedia.org/wiki/Primary_key</a><br><a href="http://en.wikipedia.org/wiki/Foreign_key">http://en.wikipedia.org/wiki/Foreign_key</a></p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; ">Regarding database normalization, in the simplest sense, is to breakup a table with too many columns into small, little tables to <span style="font-weight: bold;">reduce data duplication</span>, such that data of same value don't appear twice or more. For example, if you use the original database table in your first post, if the same customer places 10 orders, you would have 10 entries with his name, address and phone number appearing 10 times in total. But if you split it up to two tables, Customers and Orders, then even if that customer places 1000 orders, there would only be 1 row in the Customers table containing his name, address and phone number, with each of his orders in the Orders table referring to the customer via a foreign key "customer_id". Then just follow through and continue breaking down the tables until they can't be broken down further. Think of it as saving disk space, if that helps. Read more about it here:</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; "><a href="http://en.wikipedia.org/wiki/Database_normalization">http://en.wikipedia.org/wiki/Database_normalization</a></p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; "> </p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; ">Database:</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; "><span style="text-decoration: underline;">Customers</span><br><span style="font-weight: bold;">id</span><br>name<br>address<br>phone</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; "><span style="text-decoration: underline;">Orders</span><br><span style="font-weight: bold;">id</span><br><span style="color: #339966;">customer_id</span><br>date<br><span style="color: #339966;">hardware_id</span><br>qty<br><span style="color: #339966;">shipment_id</span></p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; "><span><span><span style="text-decoration: underline;">Hardware</span><span style="text-decoration: underline;"><br></span></span><span style="font-weight: bold;">id</span><br><span style="color: #339966;">supplier_id</span><br>name<br>price<br>description</span></p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; "><span><span style="text-decoration: underline;">Suppliers</span><br style="text-decoration: underline;"><span style="font-weight: bold;">id</span><br>name<br>phone<br>address</span></p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; "><span style="text-decoration: underline;">Shipments</span><br><span style="font-weight: bold;">id</span><br><span style="color: #339966;">supplier_id</span><br>qty</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; ">Note:<br>Primary keys are labelled in <span style="font-weight: bold;">bold</span>.<br>Foreign keys are labelled in <span style="color: #339966;">green</span>.</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1em; "> </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>youyayu</div>
+              <time class='date' datetime='2008-10-11T20:35:15+00:00'>11 Oct 08, 20:35</time>
+            </div>
+            <div class='col-md body'>
+              <p>cos<br></p>
+              <p> </p>
+              <p>Customer----Order from-----Company</p>
+              <p>Supplier ------Supply-------&gt; Company<br><br>Supplier ------- Recieve Order</p>
+              <p>Supplier -------Shipment-----&gt; Company</p>
+              <p>Company------Deliver-------&gt; Customer</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-10-12T08:44:52+00:00'>12 Oct 08, 08:44</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by youyayu:</div>
+              <div class="quote_body">
+              <p>cos</p>
+              <p> </p>
+              <p>Customer----Order from-----Company</p>
+              <p>Supplier ------Supply-------&gt; Company<br> <br> Supplier ------- Recieve Order</p>
+              <p>Supplier -------Shipment-----&gt; Company</p>
+              <p>Company------Deliver-------&gt; Customer</p>
+              </div>
+              </blockquote>
+              <p>So you mean there's two types of orders and shipments, one is between the company and the suppliers, and the other is between the company and the customers? Then you may have to separate the tables for each relationship accordingly.</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>youyayu</div>
+              <time class='date' datetime='2008-10-12T12:40:08+00:00'>12 Oct 08, 12:40</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by LatecomerX:</div>
+              <div class="quote_body">
+              <p>So you mean there's two types of orders and shipments, one is
+              between the company and the suppliers, and the other is between the
+              company and the customers? Then you may have to separate the tables
+              for each relationship accordingly.</p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p>what u mean</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-10-12T14:19:05+00:00'>12 Oct 08, 14:19</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by youyayu:</div>
+              <div class="quote_body">
+              <p>what u mean</p>
+              </div>
+              </blockquote>
+              <p><img src="http://dl.latecomerx.com/images/youyayu_db_nf.png" alt=""></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>youyayu</div>
+              <time class='date' datetime='2008-10-13T11:34:50+00:00'>13 Oct 08, 11:34</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by LatecomerX:</div>
+              <div class="quote_body">
+              <p><img src="http://dl.latecomerx.com/images/youyayu_db_nf.png" alt=""></p>
+              </div>
+              </blockquote>
+              <p>but isin'it the same... when customer sent the orders detail is the same with wad ever the company order from the supplier? the company act as the middle man</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2008-10-13T11:52:12+00:00'>13 Oct 08, 11:52</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by youyayu:</div>
+              <div class="quote_body">
+              <p>mi not studying in poly..</p>
+              <p>can list out the steps? i still dont' know how to do the normalization steps by steps.. can teach me? thanks alot. and about foregin/primary key. how to identify?</p>
+              </div>
+              </blockquote>
+              <p><br>Then why are U doing normalisation?1NF,2NF,3NF?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>youyayu</div>
+              <time class='date' datetime='2008-10-13T18:06:51+00:00'>13 Oct 08, 18:06</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Xcert:</div>
+              <div class="quote_body">
+              <p><br> Then why are U doing normalisation?1NF,2NF,3NF?</p>
+              </div>
+              </blockquote>
+              <p>er. i studying database...of cos must know la</p>
+              <p>diploma in IT</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2008-10-14T16:28:03+00:00'>14 Oct 08, 16:28</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by youyayu:</div>
+              <div class="quote_body">
+              <p>er. i studying database...of cos must know la</p>
+              <p>diploma in IT</p>
+              </div>
+              </blockquote>
+              <p><br>I see...then I hope U have,by now, found out how to identify the primary key and foreign keys(if any)...cos if U dunno...then basically no need to do liao...</p>
+              <p>in case U dunno...the very simplified explanation is</p>
+              <p>primary key - the unique field that differentiates every record</p>
+              <p>foreign key - the primary key of another table that U want to integrate into ur table.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-10-14T17:27:54+00:00'>14 Oct 08, 17:27</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by youyayu:</div>
+              <div class="quote_body">
+              <p>but isin'it the same... when customer sent the orders detail is
+              the same with wad ever the company order from the supplier? the
+              company act as the middle man</p>
+              </div>
+              </blockquote>
+              <p>No, you need separate tables since suppliers usually sell in bulk whereas customers would place orders with you for relatively small amounts of goods.</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

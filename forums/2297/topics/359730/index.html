@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>H2 mathematical induction</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2297']).setTargeting('topic', ['359730']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2297']).setTargeting('topic', ['359730']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2297']).setTargeting('topic', ['359730']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2297']).setTargeting('topic', ['359730']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2297/'>Homework Forum</a>
+      <h1>H2 mathematical induction</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wishboy</div>
+              <time class='date' datetime='2009-05-13T00:37:07+00:00'>13 May 09, 00:37</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <p>A sequence is defined by u(1) = 1 and u(n+1) = u(n) / [u(n) + 2] for all positive integers of n.</p>
+              <p>Write down the first five terms of the sequence {1/u(n)}.</p>
+              </blockquote>
+              <p>my answer: {1, 3, 5/3, 11/5, 21/11}</p>
+              <blockquote>
+              <p>Hence make a conjecture for u(n) and prove your conjecture using induction.</p>
+              </blockquote>
+              <p>this is the part where i'm stuck at. how do i go about making the conjecture?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wee_ws</div>
+              <time class='date' datetime='2009-05-13T05:56:13+00:00'>13 May 09, 05:56</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hi,</p>
+              <p>  Please check your work again.</p>
+              <p>  I got the following:</p>
+              <p>  u_2 = 1/3, so 1/u_2 = 3 = 2^2 - 1;</p>
+              <p>  u_3 = 1/7, so 1/u_3 = 7 = 2^3 - 1;</p>
+              <p>  u_4 = 1/15, so 1/u_4 = 15 = 2^4 - 1;</p>
+              <p>  u_5 = 1/31, so 1/u_5 = 31 = 2^5 - 1;</p>
+              <p>  u_6 = 1/63, so 1/u_6 = 63 = 2^6 - 1.</p>
+              <p>  Hence 1/u_n = 2^? - 1.</p>
+              <p>  The key to making a conjecture is to look at patterns. If you refer to the answers you have obtained, there does not seem to have a pattern, so you may suspect that something is not right and you ought to look back at your working.</p>
+              <p>  Thanks!</p>
+              <p>Cheers,<br>Wen Shih</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wee_ws</div>
+              <time class='date' datetime='2009-05-13T06:23:57+00:00'>13 May 09, 06:23</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hi,</p>
+              <p>  The type of conjecture we saw is one of the common types, where it can be expressed as a power of some number, where the power is related to the subscript of u.</p>
+              <p>  Suppose u_1 = 1/2, u_2 = 3/5, u_3 = 2/3, u_4 = 5/7, u_5 = 3/4. This type of conjecture involves a fraction where the numerator and the denominator are related, and they can be expressed in terms of the subscript. If we look closely at the sequence again:</p>
+              <p>  u_1 = 2/4, u_2 = 3/5, u_3 = 4/6, u_4 = 5/7, u_5 = 6/8.</p>
+              <p>  We can now see a pattern more clearly and conclude that u_n = (n + 1) / (n + 3).</p>
+              <p>  I will describe another type in my next posting. Thanks!</p>
+              <p>Cheers,<br>Wen Shih </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wishboy</div>
+              <time class='date' datetime='2009-05-13T22:02:03+00:00'>13 May 09, 22:02</time>
+            </div>
+            <div class='col-md body'>
+              <p>oh so that was where my mistake was...</p>
+              <p>thanks mr wee!</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wee_ws</div>
+              <time class='date' datetime='2009-05-15T09:04:04+00:00'>15 May 09, 09:04</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hi,</p>
+              <p>  Suppose we have a sequence that looks like this:</p>
+              <p>  u_1 = 5/3, u_2 = 1/3, u_3 = 1/7, u_4 = 5/63, u_5 = 5/99.</p>
+              <p>  We could guess that the numerator is always 5 and the denominator is a product of two factors. The two factors may also be related.</p>
+              <p>  Rewriting the sequence, we obtain</p>
+              <p>  u_1 = 5 / (1)(3),</p>
+              <p>  u_2 = 5 / (3)(5),</p>
+              <p>  u_3 = 5 / (5)(7),</p>
+              <p>  u_4 = 5 / (7)(9),</p>
+              <p>  u_5 = 5 / (9)(11).</p>
+              <p>  It is now possible for us to state the formula</p>
+              <p>  u_n = 5 / (2n - 1)(2n + 1).</p>
+              <p>  Thanks!</p>
+              <p>  P.S. It is useful to remember some results when making your conjecture:</p>
+              <p>  1. 2n is always even.</p>
+              <p>  2. (2n - 1) or (2n + 1) is always odd.</p>
+              <p>  3. (-1)^n = -1 for odd n, while (-1)^n = 1 for even n.</p>
+              <p>  4. n! = n(n - 1)(n - 2)...(3)(2)(1) or n! = n(n - 1)! equivalently.</p>
+              <p>Cheers,<br>Wen Shih</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wee_ws</div>
+              <time class='date' datetime='2009-05-15T18:51:49+00:00'>15 May 09, 18:51</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hi,</p>
+              <p>  Suppose we have this sequence:</p>
+              <p>  u_1 = (1)(1^2), u_2 = (2)(4^2), u_3 = (3)(7^2), u_4 = (4)(10^2).</p>
+              <p>  Now look at the second terms without powers, i.e. 1, 4, 7, 10. We can see an arithmetic sequence with first term 1 and common difference 3.</p>
+              <p>  Thus, we are able to make the conjecture u_r = (r) (3r - 2)^2.</p>
+              <p>  Thanks!</p>
+              <p>  P.S. It is helpful to remember AP/GP concepts when making conjectures.</p>
+              <p>Cheers,<br>Wen Shih</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

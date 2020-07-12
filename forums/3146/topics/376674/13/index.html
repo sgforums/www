@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>[(open)BVE] Questions, suggestions, and general discussions</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['3146']).setTargeting('topic', ['376674']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['3146']).setTargeting('topic', ['376674']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['3146']).setTargeting('topic', ['376674']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['3146']).setTargeting('topic', ['376674']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/3146/'>BVE Singapore</a>
+      <h1>[(open)BVE] Questions, suggestions, and general discussions</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/3146/topics/376674/12/'>Prev</a>
+        <a class='page-link' href='/forums/3146/topics/376674/14/'>Next</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-06-09T11:37:33+00:00'>9 Jun 10, 11:37</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by zidane_tiew:</div>
+              <div class="quote_body">
+              <p>How do I create my own routes? Thanks!</p>
+              </div>
+              </blockquote>
+              <p>Your tutorial is <a href="http://openbve.trainsimcentral.co.uk/develop/index.html">here</a>.</p>
+              <p> </p>
+              <p>Alternatively, read and understand the code yourself in Railway\Routes.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>FSJZ</div>
+              <time class='date' datetime='2010-06-09T12:11:56+00:00'>9 Jun 10, 12:11</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Bryanwee1:</div>
+              <div class="quote_body">
+              <p>1. That one i dunno how to explain</p>
+              <p>2.That one i also dunno how to explain but there is a solution.
+              Solution: Adjust the other rail's distance</p>
+              <p>3.The idea of crossover/converge/diverge is to adjust the track
+              distance/start a new track.</p>
+              <p>For crossovers, you have to start a new track and adjust it's
+              distance. Then when you want to end the crossover, put the command
+              : railend xx</p>
+              <p><span style="text-decoration: underline;"><strong>Example:</strong></span></p>
+              <p>0,<br> .railstart 1,0,0,1</p>
+              <p>25<br> xxxxxxxxxxx<br> .rail 1;20<br> <br> 50<br> .rail 1;40<br> .railend 1</p>
+              <p> </p>
+              <p><span style="text-decoration: underline;"><strong>For converge
+              and diverge:</strong></span></p>
+              <p>You just have to adjust the rail distance.</p>
+              <p><span style="text-decoration: underline;"><strong>Example:</strong></span></p>
+              <p>25<br> xxxxxxxxx<br> .curve -200<br> .rail 1;15</p>
+              <p>50<br> .curve 0<br> .rail 1;10</p>
+              <p>Get what I mean?</p>
+              </div>
+              </blockquote>
+              <p>Gee, thanks. But , I still need help in the "addvertex" commands. Thanks, anyway</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Operation//Overkill</div>
+              <time class='date' datetime='2010-06-10T16:30:43+00:00'>10 Jun 10, 16:30</time>
+            </div>
+            <div class='col-md body'><p>I got so much problems after re-formatting my com......... 96 files not found....... Add on : I just reinstalled OpenBVE.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Operation//Overkill</div>
+              <time class='date' datetime='2010-06-10T16:31:24+00:00'>10 Jun 10, 16:31</time>
+            </div>
+            <div class='col-md body'><p>Help????? Thanks.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-06-10T16:35:26+00:00'>10 Jun 10, 16:35</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Operation//Overkill:</div>
+              <div class="quote_body">
+              <p>Help????? Thanks.</p>
+              </div>
+              </blockquote>
+              <p>Step 1: Get openBVE for Dummies.</p>
+              <p>Step 2: Manually install newer version of trains (C751B) in Data\Trains</p>
+              <p>Step 3: Delete the EWL folder under Data\Railways\Object and Data\Railways\Route folder. You will install the EWL PSR - BGS and EWL JUR - RDH from the respective threads. Just a side note: For mine (PSR - BGS), you paste it onto OpenBVE for Dummies folder (Where your OpenBVE.exe / the place where you run openBVE is) while Veyron's EB (JUR - RDH) will be copying the 3 folders (Object, Route and Sounds) and paste / extract it under Data\Railways</p>
+              <p>Note: The EWL has used a newer objects that are <strong>BACKWARD INCOMPATIBLE</strong>. A new dummy release will be released once my PSD are done and the ad patches are ready.</p>
+              <p> </p>
+              <p>Additional notes: I have found that there will be minimally 23 errors on the EB. This is normal and it does not affect the WB. (Neither the WB adversely affects the EB since both routes are compatible with each other)</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-06-10T16:56:33+00:00'>10 Jun 10, 16:56</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Operation//Overkill:</div>
+              <div class="quote_body">
+              <p>I got so much problems after re-formatting my com......... 96
+              files not found....... Add on : I just reinstalled OpenBVE.</p>
+              </div>
+              </blockquote>
+              <p>What thing 96 files, what route are you even trying to play?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Operation//Overkill</div>
+              <time class='date' datetime='2010-06-10T17:13:40+00:00'>10 Jun 10, 17:13</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by yellowflip999:</div>
+              <div class="quote_body">
+              <p>What thing 96 files, what route are you even trying to play?</p>
+              </div>
+              </blockquote>
+              <p>NSL. JUR-BSH</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Operation//Overkill</div>
+              <time class='date' datetime='2010-06-10T17:14:36+00:00'>10 Jun 10, 17:14</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Samuel Lee:</div>
+              <div class="quote_body">
+              <p>Step 1: Get openBVE for Dummies.</p>
+              <p>Step 2: Manually install newer version of trains (C751B) in
+              Data\Trains</p>
+              <p>Step 3: Delete the EWL folder under Data\Railways\Object and
+              Data\Railways\Route folder. You will install the EWL PSR - BGS and
+              EWL JUR - RDH from the respective threads. Just a side note: For
+              mine (PSR - BGS), you paste it onto OpenBVE for Dummies folder
+              (Where your OpenBVE.exe / the place where you run openBVE is) while
+              Veyron's EB (JUR - RDH) will be copying the 3 folders (Object,
+              Route and Sounds) and paste / extract it under Data\Railways</p>
+              <p>Note: The EWL has used a newer objects that are <strong>BACKWARD
+              INCOMPATIBLE</strong>. A new dummy release will be released once my
+              PSD are done and the ad patches are ready.</p>
+              <p> </p>
+              <p>Additional notes: I have found that there will be minimally 23
+              errors on the EB. This is normal and it does not affect the WB.
+              (Neither the WB adversely affects the EB since both routes are
+              compatible with each other)</p>
+              </div>
+              </blockquote>
+              <p>Problem solved :) Thanks... Btw , The whole OpenBVE file....... 500MB++? Huge......</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Nickgoh45</div>
+              <time class='date' datetime='2010-06-10T17:20:33+00:00'>10 Jun 10, 17:20</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by FSJZ:</div>
+              <div class="quote_body">
+              <p>Gee, thanks. But , I still need help in the "addvertex" commands. Thanks, anyway</p>
+              </div>
+              </blockquote>
+              <p><br>Have you read the first page of this thread? The Soon has already posted a picture on "AddVertex" and "AddFace". Just treat that "AddVertex" as a "point".</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-06-10T17:21:11+00:00'>10 Jun 10, 17:21</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Operation//Overkill:</div>
+              <div class="quote_body">
+              <p>NSL. JUR-BSH</p>
+              </div>
+              </blockquote>
+              <p>For JUR-BSH, please download JUR-AMK first, before JUR-BSH.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-06-10T22:32:58+00:00'>10 Jun 10, 22:32</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Operation//Overkill:</div>
+              <div class="quote_body">
+              <p>Problem solved :) Thanks... Btw , The whole OpenBVE file.......
+              500MB++? Huge......</p>
+              </div>
+              </blockquote>
+              <p>As it contains a lot of trains (All trains ad are included as well, ok, some newer ones will be included in the next release) and the sounds, i can say, some of them , just 1 announcement is a few MBs, I will try to smaller the EWL size, but this route is long, so file size big is inevitable.</p>
+              <p> </p>
+              <p>Upgrade release might be available from the next one onwards.</p>
+              <p> </p>
+              <p>The dummies package is intended to solve the dependency issue, and inital way for you guys to understand the folder structure. Thats all.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Operation//Overkill</div>
+              <time class='date' datetime='2010-06-11T15:01:46+00:00'>11 Jun 10, 15:01</time>
+            </div>
+            <div class='col-md body'><p>Again , another issue......... I've just downloaded the NSL JUR-BSH and the JUR-AMK..... Tried the AMK one , it was perfectly ok....... When it comes to the BSH one...... The HHPSDs and PSDs didn't show up...... Same as the JUR-RDH issue I'm facing now.... What can be done? Thanks for yr help..... Really appreciate it..... :)</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-06-11T16:13:07+00:00'>11 Jun 10, 16:13</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Operation//Overkill:</div>
+              <div class="quote_body">
+              <p>Again , another issue......... I've just downloaded the NSL
+              JUR-BSH and the JUR-AMK..... Tried the AMK one , it was perfectly
+              ok....... When it comes to the BSH one...... The HHPSDs and PSDs
+              didn't show up...... Same as the JUR-RDH issue I'm facing now....
+              What can be done? Thanks for yr help..... Really appreciate it.....
+              :)</p>
+              </div>
+              </blockquote>
+              <p>Always extract <span style="text-decoration: underline;">finish</span> the JUR-AMK one <span style="text-decoration: underline;">first</span>, before you start to extract BSH extension.</p>
+              <p>Meaning:</p>
+              <p>Step 1: Download both</p>
+              <p>Step 2: Extract JUR-AMK</p>
+              <p>Step 3: Once done, start to extract -BSH</p>
+              <p>Step 4: Everything should appear normal.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Operation//Overkill</div>
+              <time class='date' datetime='2010-06-11T17:27:37+00:00'>11 Jun 10, 17:27</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by yellowflip999:</div>
+              <div class="quote_body">
+              <p>Always extract <span style="text-decoration: underline;">finish</span> the JUR-AMK one
+              <span style="text-decoration: underline;">first</span>, before you
+              start to extract BSH extension.</p>
+              <p>Meaning:</p>
+              <p>Step 1: Download both</p>
+              <p>Step 2: Extract JUR-AMK</p>
+              <p>Step 3: Once done, start to extract -BSH</p>
+              <p>Step 4: Everything should appear normal.</p>
+              </div>
+              </blockquote>
+              <p>What about the JUR-RDH with HHPSDs @ Jurong?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-06-11T17:35:06+00:00'>11 Jun 10, 17:35</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Operation//Overkill:</div>
+              <div class="quote_body">
+              <p>What about the JUR-RDH with HHPSDs @ Jurong?</p>
+              </div>
+              </blockquote>
+              <p>that one, as I said, delete the originial EWL folder under Railways\object and then replace with Veyron's one. Note: Just copy and overwrite with my <span style="text-decoration: underline;"><strong>PSR - BGS</strong></span> as well as these 2 are mutually compatible. Do not try to run with BDK - ALJ along with JUR - RDH or PSR - BGS with CLE - QUE as the older batches of EWL covers only BDK - ALJ and CLE - QUE which has many objects that are not used in the newer version and the newer version that are required which does not exist in older version.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Operation//Overkill</div>
+              <time class='date' datetime='2010-06-11T17:38:40+00:00'>11 Jun 10, 17:38</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Samuel Lee:</div>
+              <div class="quote_body">
+              <p>that one, as I said, delete the originial EWL folder under
+              Railways\object and then replace with Veyron's one. Note: Just copy
+              and overwrite with my <span style="text-decoration: underline;"><strong>PSR - BGS</strong></span> as
+              well as these 2 are mutually compatible. Do not try to run with BDK
+              - ALJ along with JUR - RDH or PSR - BGS with CLE - QUE as the older
+              batches of EWL covers only BDK - ALJ and CLE - QUE which has many
+              objects that are not used in the newer version and the newer
+              version that are required which does not exist in older
+              version.</p>
+              </div>
+              </blockquote>
+              <p>Wha..... Confusing...... Mind to gimmie the links???</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Operation//Overkill</div>
+              <time class='date' datetime='2010-06-11T17:41:11+00:00'>11 Jun 10, 17:41</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Operation//Overkill:</div>
+              <div class="quote_body">
+              <p>Wha..... Confusing...... Mind to gimmie the links???</p>
+              </div>
+              </blockquote>
+              <p>Going pat jiao already....... &gt;.&lt;</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-06-11T17:45:31+00:00'>11 Jun 10, 17:45</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Operation//Overkill:</div>
+              <div class="quote_body">
+              <p>Going pat jiao already....... &gt;.&lt;</p>
+              </div>
+              </blockquote>
+              <p>What Samuel Lee's talking is EAST WEST LINE</p>
+              <p>What I'm talking is NORTH SOUTH LINE</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Operation//Overkill</div>
+              <time class='date' datetime='2010-06-11T17:47:39+00:00'>11 Jun 10, 17:47</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by yellowflip999:</div>
+              <div class="quote_body">
+              <p>What Samuel Lee's talking is EAST WEST LINE</p>
+              <p>What I'm talking is NORTH SOUTH LINE</p>
+              </div>
+              </blockquote>
+              <p>I know... But is he refering to Veyron's JUR-RDH?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-06-11T17:52:04+00:00'>11 Jun 10, 17:52</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Operation//Overkill:</div>
+              <div class="quote_body">
+              <p>I know... But is he refering to Veyron's JUR-RDH?</p>
+              </div>
+              </blockquote>
+              <p>I'm not sure, too many developers and routes of the same object folder confuses me too.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Operation//Overkill</div>
+              <time class='date' datetime='2010-06-11T17:57:54+00:00'>11 Jun 10, 17:57</time>
+            </div>
+            <div class='col-md body'><p>Ok problem solved.... I think I must redownload the EWL....... Anyway , Thanks for the assistance <img src="/images/emoticons/kde-3.5.8/plain/smile.png" alt="smile.png"></p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-06-11T23:48:32+00:00'>11 Jun 10, 23:48</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by yellowflip999:</div>
+              <div class="quote_body">
+              <p>I'm not sure, too many developers and routes of the same object
+              folder confuses me too.</p>
+              </div>
+              </blockquote>
+              <p>True, basically this was what happened:</p>
+              <p>The EWL used to have 2 teams, EB and WB.</p>
+              <p>The EB mainly led by Veyron 16.4 had developed up to CLE - QUE (Before merger) while the WB mainly led by me had developed only BDK - ALJ (Before merger)</p>
+              <p>Despite 2 teams are not merged at that time, I have also doing patches for EB so that CLE - QUE is also compatible with WB as well. (Along with few visual errors along the route)</p>
+              <p>It was only recently (Within 4 weeks from now as of 2010 June 11), the EWL WB got a sudden increase of co-developers, which each of them doing a few stations. None of these had gotten into release as of 2010 June 11 yet. The PSR - BGS is mainly done by the earlier codevelopers and I which had been planned to release by 2010 May 28 (Due to Vesak Day public holiday + CCL Stage 3's First Anniversery). However due to certain technical errors (Timing and station length), it was re-do and only ready on a few days ago. It was not an official release / found on EWL site is because what Flip said is right, too much developers and different sectors of the route makes it confusing.</p>
+              <p>So the plan for EWL is to release an official version 1.0 by September (Subjected to changes) that contains both PSR - JKN and JKN - PSR. Do note that CGL will <strong>NOT</strong> be included for any short / mid term plans.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Nickgoh45</div>
+              <time class='date' datetime='2010-06-16T11:45:43+00:00'>16 Jun 10, 11:45</time>
+            </div>
+            <div class='col-md body'>
+              <p>Does anyone know the code to open both doors in stations?</p>
+              <p>I don't know the code, can anyone help me to edit the code below?</p>
+              <p> .Sta AE4 East Harbour;14.06;14.063;1;-1;1;0;;20;100;..\object\Airport Express Line\sounds\Drs Close.wav</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>FSJZ</div>
+              <time class='date' datetime='2010-06-16T12:15:38+00:00'>16 Jun 10, 12:15</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Nickgoh45:</div>
+              <div class="quote_body">
+              <p>Does anyone know the code to open both doors in stations?</p>
+              <p>I don't know the code, can anyone help me to edit the code
+              below?</p>
+              <p> .Sta AE4 East
+              Harbour;14.06;14.063;1;-1;1;0;;20;100;..\object\Airport Express
+              Line\sounds\Drs Close.wav</p>
+              </div>
+              </blockquote>
+              <p>I think you replace the '-1' or '1' with 'B'. Might want to try it. Not so sure, though.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Nickgoh45</div>
+              <time class='date' datetime='2010-06-16T12:32:59+00:00'>16 Jun 10, 12:32</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by FSJZ:</div>
+              <div class="quote_body">
+              <p>I think you replace the '-1' or '1' with 'B'. Might want to try it. Not so sure, though.</p>
+              </div>
+              </blockquote>
+              <p><br>Yeah, I did that, it works now. Thank you!</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/3146/topics/376674/12/'>Prev</a>
+        <a class='page-link' href='/forums/3146/topics/376674/14/'>Next</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

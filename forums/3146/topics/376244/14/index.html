@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>[BVE] Development updates: C651</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['3146']).setTargeting('topic', ['376244']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['3146']).setTargeting('topic', ['376244']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['3146']).setTargeting('topic', ['376244']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['3146']).setTargeting('topic', ['376244']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/3146/'>BVE Singapore</a>
+      <h1>[BVE] Development updates: C651</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/3146/topics/376244/13/'>Prev</a>
+        <a class='page-link' href='/forums/3146/topics/376244/15/'>Next</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-10-06T18:23:02+00:00'>6 Oct 10, 18:23</time>
+            </div>
+            <div class='col-md body'>
+              <p>A bit add on to elaborate on current issue:</p>
+              <p><img src="http://img840.imageshack.us/img840/7724/originals.png" alt="" width="1280" height="800"></p>
+              <p> </p>
+              <p> </p>
+              <p>Well, you may see the white dotted on the background, this is due to the face is overlapping with another face. My issue is not that. What happened was the released train was supposed to look like this (On file 1220.csv), but the back motor image (Note: You can only see such image only if u got my test release OR on 3219 / 3220.csv as I extracted the code from there.) is likely forward, with a gap between white walls. I think this is a waste of rendering power + see the slight white gap above? I did try shift it but at the expense of the either end without cover and exposed the white thing again. (Kind of lending money from Loanshark just to pay debt that owe from another bank / loanshark)</p>
+              <p>Of course, on the earlier image, I removed the white wall facing interior car by changing the <strong>AddFace2</strong> into <strong>AddFace</strong> and resulted into the gap earlier while not showing in Object Viewer at all. BTW, the image is <strong>straight</strong> and the only reason to this is due to the train is curve like a cyliner shape and OpenBVE can only support straight line. Please pardon the gaps for future release as this is proven to be faster (Playing music while OpenBVE with the sounds turned off on a <strong>Intel Graphics Laptop</strong>'s fps can go as high as 17fps [interior] and 10fps [exterior] with only 3 of the cars edited.)</p>
+              <p>Interior:</p>
+              <p><img src="http://img94.imageshack.us/img94/5056/17fps.png" alt=""></p>
+              <p>Exterior:</p>
+              <p><img src="http://img508.imageshack.us/img508/2465/10fps.png" alt="" width="1280" height="800"></p>
+              <p>Index (To show how my laptop is not meant for serious gaming):</p>
+              <p><img src="http://img266.imageshack.us/img266/7045/indexab.png" alt=""></p>
+              <p> </p>
+              <p>Oh yeah, my OS is in Chinese and hence I shall explain a bit,</p>
+              <p>It shows (Respectively)</p>
+              <p><strong>Processor</strong> as 3.1 (Speed of calculation / computing per second)</p>
+              <p><strong>RAM</strong> as 4.1 (RAM's speed per second)</p>
+              <p><strong>Graphics</strong> as <em>3.5</em> (Windows Aero Desktop performance)</p>
+              <p><strong>Gaming Graphics</strong> as <em>4.5 </em>(Performance of 3D business and Gaming)</p>
+              <p><strong>Main Hard Drive</strong> as 5.1 (Data Transfer Rate of the Hard Drive)</p>
+              <p> </p>
+              <p>Well, the minimal score can get is 1.0 while the maximum is 7.9 and according to Windows, the score will remain and newer, faster and better hardware will get an even higher score (It goes up only). So you roughly gets the idea of my hardware. Of course, I am now opening for registration of beta testers who want to test on their not so powerful rig, be it Desktop or laptop. Maybe by next week or 2 you might be able to get a new Release Candidate release</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bngauw</div>
+              <time class='date' datetime='2010-10-06T18:31:20+00:00'>6 Oct 10, 18:31</time>
+            </div>
+            <div class='col-md body'><p>Release Candidate release?</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-10-06T18:47:12+00:00'>6 Oct 10, 18:47</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Bngauw:</div>
+              <div class="quote_body">
+              <p>Release Candidate release?</p>
+              </div>
+              </blockquote>
+              <p>A public test just like Windows 7 RC.</p>
+              <p> </p>
+              <p>Well featuring one of the most epic scene (No elaboration will be made), enjoy!</p>
+              <p><img src="http://img837.imageshack.us/img837/8274/epictrain.png" alt="" width="1280" height="800"></p>
+              <p><img src="http://img818.imageshack.us/img818/2417/traincrash.png" alt=""></p>
+              <p><img src="http://img839.imageshack.us/img839/1296/crashed.png" alt=""></p>
+              <p> </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-18T13:01:50+00:00'>18 Oct 10, 13:01</time>
+            </div>
+            <div class='col-md body'>
+              <p>Sometimes, you just cannot have the cake and eat it. You people want the train to be "normal" unlike all exisitng trains, where "reflective" colour patches can be seen from far (Example: From far, you should see a unrefurb C651 as white with SMRT livery in real life regardless of the train interior carriage colour , but in BVE, the white part might see green [The colour of the glass] or the respective train interior carriage colour) wished to be solved. Ok, granted. Then, you people do feedback that train is laggy (Most trains are laggy, anyway, just a note that openBVE requires <a href="http://openbve.trainsimcentral.co.uk/downloads.html#instructions"><strong>1GB RAM</strong></a> or it wont gurantee anything. Well, I wont say 768 MB / 512MB RAM users will crashed their system but it just lags [It just <span style="color: #ffffff;">wont</span> works]. Ok, then all these are done with a price. Advert. Yes, as I removed all the unnecessary faces and unnecessary loading, it sees a few fps improvement (Even up to 20fps at times)</p>
+              <p><img src="http://img259.imageshack.us/img259/2333/20fps.png" alt=""></p>
+              <p> </p>
+              <p>Well, advert thing caused some delays and re-implementation and seemed to offset the most of the improvements (Or maybe partially is the implementation of lighting thingy --- see the Development Standards thread)</p>
+              <p>Another thing is difficult to implement in C651 is the positioning. For some stupid reasons, the implementation to remove the reflective patches as above had several options and after various trials, the implementation changes again and caused the existing position to screwed up. Hence, everything was re-position and checked with my PSDs for accuracy. It will <strong>NOT</strong> affect (existing) users but just to vent out my frustration for this few days of MIA-ing on top of playing GTA Vice City.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-10-18T13:36:19+00:00'>18 Oct 10, 13:36</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C751A 70049/70050:</div>
+              <div class="quote_body">
+              <p>Sometimes, you just cannot have the cake and eat it. You people
+              want the train to be "normal" unlike all exisitng trains, where
+              "reflective" colour patches can be seen from far (Example: From
+              far, you should see a unrefurb C651 as white with SMRT livery in
+              real life regardless of the train interior carriage colour , but in
+              BVE, the white part might see green [The colour of the glass] or
+              the respective train interior carriage colour) wished to be solved.
+              Ok, granted. Then, you people do feedback that train is laggy (Most
+              trains are laggy, anyway, just a note that openBVE requires
+              <a rel="nofollow" href="http://openbve.trainsimcentral.co.uk/downloads.html#instructions"><strong>1GB RAM</strong></a> or it wont gurantee
+              anything. Well, I wont say 768 MB / 512MB RAM users will crashed
+              their system but it just lags [It just <span style="color: #ffffff;">wont</span> works]. Ok, then all these are done
+              with a price. Advert. Yes, as I removed all the unnecessary faces
+              and unnecessary loading, it sees a few fps improvement (Even up to
+              20fps at times)</p>
+              <p><img src="http://img259.imageshack.us/img259/2333/20fps.png" alt=""></p>
+              <p> </p>
+              <p>Well, advert thing caused some delays and re-implementation and
+              seemed to offset the most of the improvements (Or maybe partially
+              is the implementation of lighting thingy --- see the Development
+              Standards thread)</p>
+              <p>Another thing is difficult to implement in C651 is the
+              positioning. For some stupid reasons, the implementation to remove
+              the reflective patches as above had several options and after
+              various trials, the implementation changes again and caused the
+              existing position to screwed up. Hence, everything was re-position
+              and checked with my PSDs for accuracy. It will <strong>NOT</strong> affect (existing) users but just to vent out my frustration for
+              this few days of MIA-ing on top of playing GTA Vice City.</p>
+              </div>
+              </blockquote>
+              <p>768MB instantly kills the 256MB RAM. If anytime you need to test out any advert onto the train, I can help out.</p>
+              <p>PS. PSP ah?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bngauw</div>
+              <time class='date' datetime='2010-10-18T13:59:42+00:00'>18 Oct 10, 13:59</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by yellowflip999:</div>
+              <div class="quote_body">
+              <p>768MB instantly kills the 256MB RAM. If anytime you need to test out any advert onto the train, I can help out.</p>
+              <p>PS. PSP ah?</p>
+              </div>
+              </blockquote>
+              <p><br>PSP is Vice City <strong>Stories.</strong> So i dont think so..</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-19T12:57:32+00:00'>19 Oct 10, 12:57</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by yellowflip999:</div>
+              <div class="quote_body">
+              <p>768MB instantly kills the 256MB RAM. If anytime you need to test
+              out any advert onto the train, I can help out.</p>
+              <p>PS. PSP ah?</p>
+              </div>
+              </blockquote>
+              <p>PC version of GTA Vice City. No stories, or whatever.</p>
+              <p>Oh yeah, now, I am making certain final modification.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Funkymark4211</div>
+              <time class='date' datetime='2010-10-23T12:43:24+00:00'>23 Oct 10, 12:43</time>
+            </div>
+            <div class='col-md body'>
+              <p>I edited the C651 Motor sounds,Acceleration more smoother</p>
+              <p>motor2 extended up till 20kmh,</p>
+              <p>motor3 starts at 20kmh,</p>
+              <p>motor4 starts at 38kmh,</p>
+              <p>motor5 starts at 50 kmh</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-23T13:07:52+00:00'>23 Oct 10, 13:07</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Funkymark4211:</div>
+              <div class="quote_body">
+              <p>I edited the C651 Motor sounds,Acceleration more smoother</p>
+              <p>motor2 extended up till 20kmh,</p>
+              <p>motor3 starts at 20kmh,</p>
+              <p>motor4 starts at 38kmh,</p>
+              <p>motor5 starts at 50 kmh</p>
+              </div>
+              </blockquote>
+              <p>Hmm, do I have your MSN? Maybe we can discuss it on MSN.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bngauw</div>
+              <time class='date' datetime='2010-10-23T13:15:07+00:00'>23 Oct 10, 13:15</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C751A 70049/70050:</div>
+              <div class="quote_body">
+              <p>Hmm, do I have your MSN? Maybe we can discuss it on MSN.</p>
+              </div>
+              </blockquote>
+              <p><br>No he doesn't. His MSN can't work on his computer (Windows 7) for some reason. Try communicating via Hamachi or Fcebook.</p>
+              <p>P.s Got any new updates?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Funkymark4211</div>
+              <time class='date' datetime='2010-10-23T14:28:04+00:00'>23 Oct 10, 14:28</time>
+            </div>
+            <div class='col-md body'>
+              <p>eh C751A's comp is laptop n windows 7.</p>
+              <p>i'm Laptop and Windows 7 32-bit</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-23T14:37:11+00:00'>23 Oct 10, 14:37</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Funkymark4211:</div>
+              <div class="quote_body">
+              <p>eh C751A's comp is laptop n windows 7.</p>
+              <p>i'm Laptop and Windows 7 32-bit</p>
+              </div>
+              </blockquote>
+              <p>First, the 2009 / 2010 version of Messenger is sucks on Windows 7 (Workaround is to run it as Windows Vista, and <strong>NOT XP</strong> so that UAC wont prompt). But using 2011 Messenger may irritate some users of MSN becuase the latest one had dropped support for handwriting and it is kind of thanks to one person, the entire group chat no handwriting feature.</p>
+              <p>Second, there is no issues on whether is it a 32bit or 64bit (For my case is a 64bit) for MSN / openBVE becuase these are 32bit apps for the moment.</p>
+              <p> </p>
+              <p>By the way, i am Samuel (Just change account for some reasons that I wont want to disclose).</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-23T14:38:01+00:00'>23 Oct 10, 14:38</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Bngauw:</div>
+              <div class="quote_body">
+              <p><br> No he doesn't. His MSN can't work on his computer (Windows 7) for
+                  some reason. Try communicating via Hamachi or Fcebook.</p>
+              <p>P.s Got any new updates?</p>
+              </div>
+              </blockquote>
+              <p>Ok, there is one. A preview release to all (Uploading)</p>
+              <p> </p>
+              <p>Release notes:</p>
+              <p>1: You cant accelerate C651 to 100km/h or so for now. Previous release is possible if you skip stations and P4-ing all the way (Assuming no ATC). The only possibility to slightly hit more than 90km/h is to going through a downwards slope with P4 (Assuming no ATC).</p>
+              <p>2: The seats (long ones) might be slightly unaligned. This is thanks to the "wrong standards" done by our ancestor Willis' implementation (Of having the following code:)</p>
+              <blockquote>
+              <p>CreateMeshBuilder,<br>ADDVertex, -1.5, 3.6, <strong>19.1,</strong><br>ADDVertex, -1.8, 1.9, <strong>19.1,</strong><br>ADDVertex, -1.8, 0.3, <strong>19.1,</strong><br>ADDVertex, -1.5, 3.6, <strong>3,</strong><br>ADDVertex, -1.8, 1.9, <strong>3,</strong><br>ADDVertex, -1.8, 0.3, <strong>3,</strong><br>ADDFace, 3,4,1,0<br>ADDFace, 4,5,2,1<br>GenerateNormals,<br>LoadTexture, ext1.5.bmp,<br><strong>SETTextureCoordinates, 0, <span style="text-decoration: underline;">3</span>, 0,<br>SETTextureCoordinates, 1, <span style="text-decoration: underline;">3</span>, 0.45,<br>SETTextureCoordinates, 2, <span style="text-decoration: underline;">3</span>, 1,</strong><br>SETTextureCoordinates, 3, 0, 0,<br>SETTextureCoordinates, 4, 0, 0.45,<br>SETTextureCoordinates, 5, 0, 1,<br>SETDecalTransparentColor,0 ,0,255,</p>
+              </blockquote>
+              <p>See the bold ones, well he meant from position 3m to 19.1m, the texture will have to repeat 3 times (Shown in bold underlined code) and the texture is auto generated (Of course, the image has some transparent parts which is totally blue)</p>
+              <p> </p>
+              <p>However, 19.1 - 3 = 16.1 (The distance between end of 1st door to start of 4th door) which is not a factor of 3 (16.1 / 3 = 5.366666666666667), which means there are errors / inaccuracy bound to shown. You cant really say that the positioning is wrong but it is somewhere in the middle of the car is a bit wrong.</p>
+              <p>Well, thanks to this standard, I have to come out with my own PSD (Edited from Willis to extend it a 4 door PSD to 48 door full complete PSD) and if anyone remembers, I have ensured the correctness by coming out different length of doors in between the doors on different carriages (The door length flavours are 5.3m, 5.35m and 5.4m).</p>
+              <p>Due to this, it has a domino effect such that the interior wall has to strictly follow this standard and results into the intwall.csv to split into intwall530.csv, intwall535.csv and intwall540.csv (For first / last carriage, which is the orange ones in C651, which stands at 1st - 4th and 21st - 24th PSD door with a carriage number of 3XXX, there is no doors in between has a length of 5.3m and hence there is no intwall530.csv, however, there are 5.3m length gap on both blue and green (1XXX and 2XXX carriage number respectively) and hence the naming standards within C651 is retained (There is a file called intwall530-1.csv, intwall530-2.csv respectively).</p>
+              <p>Ok, obviously, I did not bring this into the seats. For the obvious reason, there is no way that the seats in different parts of a carriage would have different width (In terms of per seat basis) and hence I feel that these 530, 535 and 540 is a temporarily workaround basis and hopefully the other developers (Willis for his CGL PSDs / C151, SBS7322B for his C751B) would implement a standard of 5.35m (Apparently, the original intwall file is suited to be 5.35m as the length of intwall file was about 5.38m and we have to consider that part of the interior / exterior wall has to overlap with the doors and thus it cant be designed for length with 5.4m and 5.3m using this is simply an overkill.) or make it 5.4m (For the sake of "beauty number").</p>
+              <p> </p>
+              <p>3: Funkymark4211's edit is not included for the moment.</p>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Funkymark4211</div>
+              <time class='date' datetime='2010-10-23T14:54:39+00:00'>23 Oct 10, 14:54</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C751A 70049/70050:</div>
+              <div class="quote_body">
+              <p>First, the 2009 / 2010 version of Messenger is sucks on Windows
+              7 (Workaround is to run it as Windows Vista, and <strong>NOT
+              XP</strong> so that UAC wont prompt). But using 2011 Messenger may
+              irritate some users of MSN becuase the latest one had dropped
+              support for handwriting and it is kind of thanks to one person, the
+              entire group chat no handwriting feature.</p>
+              <p>Second, there is no issues on whether is it a 32bit or 64bit
+              (For my case is a 64bit) for MSN / openBVE becuase these are 32bit
+              apps for the moment.</p>
+              <p> </p>
+              <p>By the way, i am Samuel (Just change account for some reasons
+              that I wont want to disclose).</p>
+              </div>
+              </blockquote>
+              <p>yea i know ur samuel.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-23T14:59:34+00:00'>23 Oct 10, 14:59</time>
+            </div>
+            <div class='col-md body'><p>Preview over. Please refer to downloads thread for update.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Funkymark4211</div>
+              <time class='date' datetime='2010-10-23T15:07:22+00:00'>23 Oct 10, 15:07</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C751A 70049/70050:</div>
+              <div class="quote_body">
+              <p>Preview release link:</p>
+              <p><a rel="nofollow" href="http://www.4shared.com/file/1ssWDWub/219-220.html">http://www.4shared.com/file/1ssWDWub/219-220.html</a></p>
+              <p> </p>
+              <p>Please note that unless I feel this will be Version 2 release,
+                      it will only be available temporarily (Until next release) and
+                      hence I wont and please dont update the download thread for the
+                      moment. This is a test release.</p>
+              </div>
+              </blockquote>
+              <p>Downloading while Eating lunch.</p>
+              <p>Edit: Around 5pm Tomorrow I maybe will upload a preview Motor Sound of C651 on Youtube.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Funkymark4211</div>
+              <time class='date' datetime='2010-10-23T15:17:02+00:00'>23 Oct 10, 15:17</time>
+            </div>
+            <div class='col-md body'><p>Why is the poles pure white ...</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-23T15:29:00+00:00'>23 Oct 10, 15:29</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Funkymark4211:</div>
+              <div class="quote_body">
+              <p>Why is the poles pure white ...</p>
+              </div>
+              </blockquote>
+              <p>That has to do with the reflective lights (The SetEmissiveColor code) I will try to remove these issues then.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Funkymark4211</div>
+              <time class='date' datetime='2010-10-23T15:42:44+00:00'>23 Oct 10, 15:42</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C751A 70049/70050:</div>
+              <div class="quote_body">
+              <p>That has to do with the reflective lights (The SetEmissiveColor
+              code) I will try to remove these issues then.</p>
+              </div>
+              </blockquote>
+              <p>The most weirdest is the wheels and the under of the cars</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-23T18:07:30+00:00'>23 Oct 10, 18:07</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Funkymark4211:</div>
+              <div class="quote_body">
+              <p>The most weirdest is the wheels and the under of the cars</p>
+              </div>
+              </blockquote>
+              <p>Please download using the same link again as I have updated the file and corrected these issues.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bngauw</div>
+              <time class='date' datetime='2010-10-23T22:58:52+00:00'>23 Oct 10, 22:58</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C751A 70049/70050:</div>
+              <div class="quote_body">
+              <p>Preview release link:</p>
+              <p><a rel="nofollow" href="http://www.4shared.com/file/1ssWDWub/219-220.html">http://www.4shared.com/file/1ssWDWub/219-220.html</a></p>
+              <p> </p>
+              <p>Please note that unless I feel this will be Version 2 release, it will only be available temporarily (Until next release) and hence I wont and please dont update the download thread for the moment. This is a test release.</p>
+              </div>
+              </blockquote>
+              <p><br>Yay! I'll try it tomorrow. I'll also import my realistic sound..</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-23T23:54:05+00:00'>23 Oct 10, 23:54</time>
+            </div>
+            <div class='col-md body'>
+              <p>Attention, another update was made in 11:55pm, 2010 Oct 23 SGT (Singapore Time)</p>
+              <p> </p>
+              <p>Changelog:</p>
+              <p>1: On carriage 2220's end towards 2219, there is a flashing issue as the ceiling are overlapping each other. This should have not been exist in the first place.</p>
+              <p> </p>
+              <p>For those who have downloaded the second update (One after 6:10pm), please contact me for a patch as the changes is merely 1 file with few lines of repeative codes removed.</p>
+              <p>Thats all.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bngauw</div>
+              <time class='date' datetime='2010-10-24T10:33:43+00:00'>24 Oct 10, 10:33</time>
+            </div>
+            <div class='col-md body'><p>Samuel, do you think you are still doing the Realistic Sounds Patch? I mean since it's included, everyone's gonna say it's a cheat.. x(</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bngauw</div>
+              <time class='date' datetime='2010-10-24T16:45:12+00:00'>24 Oct 10, 16:45</time>
+            </div>
+            <div class='col-md body'><p>I've posted a new video on youtube about the C651 and its new buzzer: <a href="http://www.youtube.com/watch?v=j1geoLoxjZY">http://www.youtube.com/watch?v=j1geoLoxjZY</a> . The first 2 viewers already asked me abt the buzzers. Samuel, Mind if i edit your newest release with the new buzzer inclusive?</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-25T13:55:28+00:00'>25 Oct 10, 13:55</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Bngauw:</div>
+              <div class="quote_body">
+              <p>Samuel, do you think you are still doing the Realistic Sounds
+              Patch? I mean since it's included, everyone's gonna say it's a
+              cheat.. x(</p>
+              </div>
+              </blockquote>
+              <p>Hmm, nevermind, well, I think I used Flip's sound but not final.</p>
+              <p> </p>
+              <p>Please DONT include new buzzer and release, but you may edit with buzzer for personal uses. (Afterall, I got someone who claimed to have what colour issue on some carriages.)</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/3146/topics/376244/13/'>Prev</a>
+        <a class='page-link' href='/forums/3146/topics/376244/15/'>Next</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

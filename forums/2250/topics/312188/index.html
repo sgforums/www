@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Problem with RewriteRule syntax</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['312188']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['312188']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['312188']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['312188']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Problem with RewriteRule syntax</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-03-24T14:31:02+00:00'>24 Mar 08, 14:31</time>
+            </div>
+            <div class='col-md body'>
+              <p>/en/stuff/Michael_%E5%A4%A2_%E5%AF%A7%E5%BB%A3_Johnson_5574/</p>
+              <p>Above is my URL without the domain part.</p>
+              <p>My rule</p>
+              <p>RewriteRule ^([a-z]{2})/stuff/(.*)_([0-9]+)/?$ /search.php?lang=$1&amp;ReviewID=$3 [QSA]</p>
+              <p>I keep getting this error</p>
+              <p>"The system cannot find the file specified."</p>
+              <p>Actually, I have no need for the name part, just the last number after the last underscore (the 5574 part). The other part is supposedly for Google to optimise its search or so I am told.</p>
+              <p>So if anyone can tell me what is wrong with my rule, that would be great.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-03-24T17:19:29+00:00'>24 Mar 08, 17:19</time>
+            </div>
+            <div class='col-md body'>
+              <p>I've seen the original post you have made earlier. I suppose escaping the % character by placing a backslash (\) before it in the previous regex would solve your problem.</p>
+              <p><a href="http://www.webmasterworld.com/forum92/3174.htm">http://www.webmasterworld.com/forum92/3174.htm</a></p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-03-24T17:29:25+00:00'>24 Mar 08, 17:29</time>
+            </div>
+            <div class='col-md body'>
+              <p>My latest URL, double urlencoded</p>
+              <p>/en/stuff/Michael_%25E5%25A4%25A2_%25E5%25AF%25A7%25E5%25BB%25A3_Johnson_5574/</p>
+              <p>My latest Rule</p>
+              <p>RewriteRule ^([a-z]{2})/stuff/([A-Za-z0-9\_\%]+)_([0-9]+)/?$ /search.php?lang=$1&amp;ReviewID=$3 [QSA]</p>
+              <p>I have now backslash the underscore as well as the percent sign. Still same error.</p>
+              <p>I have double urlencode the URL because apparently the Rewrite Engine will urldecode it.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-03-24T18:20:56+00:00'>24 Mar 08, 18:20</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by GIB:</div>
+              <div class="quote_body">
+              <p>My latest URL, double urlencoded</p>
+              <p>/en/stuff/Michael_%25E5%25A4%25A2_%25E5%25AF%25A7%25E5%25BB%25A3_Johnson_5574/</p>
+              <p>My latest Rule</p>
+              <p>RewriteRule ^([a-z]{2})/stuff/([A-Za-z0-9\_\%]+)_([0-9]+)/?$ /search.php?lang=$1&amp;ReviewID=$3 [QSA]</p>
+              <p>I have now backslash the underscore as well as the percent sign. Still same error.</p>
+              <p>I have double urlencode the URL because apparently the Rewrite Engine will urldecode it.</p>
+              </div>
+              </blockquote>
+              <p>Oh damn it. I didn't know that mod_rewrite actually decodes the URL prior to matching them against the rewrite rules until I did some testing on my own just a while ago.</p>
+              <p>Hmm, how about using "^([a-z]{2})/stuff/.+_([0-9]+)/?$ /search.php?lang=$1&amp;ReviewID=$2" instead?</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-03-24T19:56:17+00:00'>24 Mar 08, 19:56</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by LatecomerX:</div>
+              <div class="quote_body">
+              <p>Oh damn it. I didn't know that mod_rewrite actually decodes the
+              URL prior to matching them against the rewrite rules until I did
+              some testing on my own just a while ago.</p>
+              <p>Hmm, how about using "^([a-z]{2})/stuff/.+_([0-9]+)/?$
+              /search.php?lang=$1&amp;ReviewID=$2" instead?</p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p><br>Will give it a try tomorrow. Hope I don't have to go bang my head on the wall again. I banged almost the whole afternoon today.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-03-25T11:03:24+00:00'>25 Mar 08, 11:03</time>
+            </div>
+            <div class='col-md body'><p>Nope. Didn't work. Oh well, time to put on my crash helmet and go bang the walls.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-03-25T12:50:57+00:00'>25 Mar 08, 12:50</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by GIB:</div>
+              <div class="quote_body">
+              <p>Nope. Didn't work. Oh well, time to put on my crash helmet and go bang the walls.</p>
+              </div>
+              </blockquote>
+              <p>Why bang the walls? They are not even female. I can't even believe you did it for the whole of last afternoon. <img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p>
+              <p>Anyway, I managed to get the rewrite rules working.</p>
+              <p><a href="http://latecomerx.com/lab/test/gib/lalala/en/stuff/Michael_%25E5%25A4%25A2_%25E5%25AF%25A7%25E5%25BB%25A3_Johnson_557">http://latecomerx.com/lab/test/gib/lalala/en/stuff/Michael_%25E5%25A4%25A2_%25E5%25AF%25A7%25E5%25BB%25A3_Johnson_557</a></p>
+              <p>The .htaccess file in the lalala folder is written like:</p>
+              <p><em>RewriteEngine On<br>RewriteRule ([a-z]{2})/stuff/.+_([0-9]+)/?$ ../test.php?lang=$1&amp;ReviewID=$2</em></p>
+              <p>And there's a test.php file in the gib folder  which dumps the $_GET array. Try comparing it against your rewrite rules and keep us updated on this issue.</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-03-25T15:26:13+00:00'>25 Mar 08, 15:26</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by LatecomerX:</div>
+              <div class="quote_body">
+              <p>Why bang the walls? They are not even female. I can't even believe you did it for the whole of last afternoon. <img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p>
+              <p>Anyway, I managed to get the rewrite rules working.</p>
+              <p><a rel="nofollow" href="http://latecomerx.com/lab/test/gib/lalala/en/stuff/Michael_%25E5%25A4%25A2_%25E5%25AF%25A7%25E5%25BB%25A3_Johnson_557">http://latecomerx.com/lab/test/gib/lalala/en/stuff/Michael_%25E5%25A4%25A2_%25E5%25AF%25A7%25E5%25BB%25A3_Johnson_557</a></p>
+              <p>The .htaccess file in the lalala folder is written like:</p>
+              <p><em>RewriteEngine On<br>RewriteRule ([a-z]{2})/stuff/.+_([0-9]+)/?$ ../test.php?lang=$1&amp;ReviewID=$2</em></p>
+              <p>And there's a test.php file in the gib folder which dumps the $_GET array. Try comparing it against your rewrite rules and keep us updated on this issue.</p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p><br>Yes, I am using same RewriteRule and still same error. Maybe better I show u the real thing and my real .htaccess file. I will PM you the instructions on how to view the real thing.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-03-25T15:44:26+00:00'>25 Mar 08, 15:44</time>
+            </div>
+            <div class='col-md body'><p>I just tested on the live site that is using Apache and Debian Linux and it works. So the problem is Isapi Rewriter.</p></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

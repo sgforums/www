@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>[(open)BVE] Developers' Resource: Standards</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['3146']).setTargeting('topic', ['391582']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['3146']).setTargeting('topic', ['391582']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['3146']).setTargeting('topic', ['391582']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['3146']).setTargeting('topic', ['391582']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/3146/'>BVE Singapore</a>
+      <h1>[(open)BVE] Developers' Resource: Standards</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/3146/topics/391582/2/'>Prev</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-19T13:06:48+00:00'>19 Oct 10, 13:06</time>
+            </div>
+            <div class='col-md body'>
+              <p>Well, as my memory fails, I did mentioned of some new standards in C651 thread.</p>
+              <p>Ok, here it goes, for Flip that asked me, which I have since implemented on my C651, that is to please, use the following code:</p>
+              <p><strong>SetEmissiveColor,200,200,200</strong></p>
+              <p>on each and every [known] object. (Well, I believed that each object / face serve its purpose, so it is prudent to put all of them so as to adjust the colour in accordance of lighting condition [Day / Night / Raining condition anyone?]</p>
+              <p> </p>
+              <p>BTW, Flip did mentioned of such implementation on AEL's PSD but not BSH / HHPSD ones and definitely not mine etc.</p>
+              <p> </p>
+              <p>Maybe you guys can consider and implement this. On a side note, do avoid the use of SetColor X,X,X because:</p>
+              <p>1: It <strong>DONT</strong> work well with the above code. (My C651 Blue / Green panel becomes white, grey pole becomes white)</p>
+              <p>2: Because at the most of the time, they are repeatively used and hence, it might be prudent to specifiy the colour on an image file and any adjustment to the colour, does NOT require you to manually find and replace each colour. Pain once and for all!</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-10-19T14:59:18+00:00'>19 Oct 10, 14:59</time>
+            </div>
+            <div class='col-md body'>
+              <p>[Add-on] Use it if it's either</p>
+              <p></p><ol>
+              <li>A source of light</li>
+              <li>In an area where there would be light all the time, regardless of day and night.</li>
+              <li>Interior of a train, not exterior.</li>
+              </ol>
+              <div>And the values "200,200,200" can be changed, if you think the light source is not really very bright. (Change it in direct proportion, unless there's a specific colour it emits)</div>
+              <p></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>TecomaStan</div>
+              <time class='date' datetime='2010-10-19T18:36:06+00:00'>19 Oct 10, 18:36</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C751A 70049/70050:</div>
+              <div class="quote_body">
+              <p>Well, as my memory fails, I did mentioned of some new standards in C651 thread.</p>
+              <p>Ok, here it goes, for Flip that asked me, which I have since implemented on my C651, that is to please, use the following code:</p>
+              <p><strong>SetEmissiveColor,200,200,200</strong></p>
+              <p>on each and every [known] object. (Well, I believed that each object / face serve its purpose, so it is prudent to put all of them so as to adjust the colour in accordance of lighting condition [Day / Night / Raining condition anyone?]</p>
+              <p> </p>
+              <p>BTW, Flip did mentioned of such implementation on AEL's PSD but not BSH / HHPSD ones and definitely not mine etc.</p>
+              <p> </p>
+              <p>Maybe you guys can consider and implement this. On a side note, do avoid the use of SetColor X,X,X because:</p>
+              <p>1: It <strong>DONT</strong> work well with the above code. (My C651 Blue / Green panel becomes white, grey pole becomes white)</p>
+              <p>2: Because at the most of the time, they are repeatively used and hence, it might be prudent to specifiy the colour on an image file and any adjustment to the colour, does NOT require you to manually find and replace each colour. Pain once and for all!</p>
+              </div>
+              </blockquote>
+              <p><br>I don't get it on how to implemend. Is the code there or must I add it myself? Which part to put?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-19T19:54:24+00:00'>19 Oct 10, 19:54</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by TecomaStan:</div>
+              <div class="quote_body">
+              <p><br> I don't get it on how to implemend. Is the code there or must I add
+              it myself? Which part to put?</p>
+              </div>
+              </blockquote>
+              <p>Non developers are not to worry about.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>TecomaStan</div>
+              <time class='date' datetime='2010-10-19T19:58:49+00:00'>19 Oct 10, 19:58</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C751A 70049/70050:</div>
+              <div class="quote_body">
+              <p>Non developers are not to worry about.</p>
+              </div>
+              </blockquote>
+              <p><br>Oh i see. Okay.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-10-19T20:02:35+00:00'>19 Oct 10, 20:02</time>
+            </div>
+            <div class='col-md body'><p>I wouldn't recommend standards for ways to code objects - each developer has his/her own method, mine being the use of nighttime textures. </p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-19T20:33:06+00:00'>19 Oct 10, 20:33</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by joeyfjj:</div>
+              <div class="quote_body">
+              <p>I wouldn't recommend standards for ways to code objects - each
+              developer has his/her own method, mine being the use of nighttime
+              textures. </p>
+              </div>
+              </blockquote>
+              <p>Care to elaborate?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-10-19T20:48:24+00:00'>19 Oct 10, 20:48</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C751A 70049/70050:</div>
+              <div class="quote_body">
+              <p>Care to elaborate?</p>
+              </div>
+              </blockquote>
+              <p>LoadTexture, DaytimeImage, NighttimeImage.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-19T21:39:43+00:00'>19 Oct 10, 21:39</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by joeyfjj:</div>
+              <div class="quote_body">
+              <p>LoadTexture, DaytimeImage, NighttimeImage.</p>
+              </div>
+              </blockquote>
+              <p>Walau, whats that. (I only know LoadTexture)</p>
+              <p> </p>
+              <p>BTW, I dont really like images as the tendency of NOT being align. (My freaking C651 window, both the interior and exterior dont align and roughly I got it fixed le at a cost of doors alignment freaked out. Aiya, I invented a new idea, that is to code doors based on my PSDs, which are again, used to code based on the old C151s.)</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Funkymark4211</div>
+              <time class='date' datetime='2010-10-20T13:02:28+00:00'>20 Oct 10, 13:02</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+                            <div class="quote_from">
+                              Originally posted by C751A 70049/70050:
+                            </div>
+                            <div class="quote_body">
+                              
+              <p>Walau, whats that. (I only know LoadTexture)</p>
+              <p> </p>
+              <p>BTW, I dont really like images as the tendency of NOT being
+              align. (My freaking C651 window, both the interior and exterior
+              dont align and roughly I got it fixed le at a cost of doors
+              alignment freaked out. Aiya, I invented a new idea, that is to code
+              doors based on my PSDs, which are again, used to code based on the
+              old C151s.)</p>
+                            </div>
+                          </blockquote><br>
+              Btw i think your 'gap in game, no gap in object viewer', change the bg to black or white. &lt;&lt; Maybe...
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-10-21T14:45:46+00:00'>21 Oct 10, 14:45</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C751A 70049/70050:</div>
+              <div class="quote_body">
+              <p>Walau, whats that. (I only know LoadTexture)</p>
+              <p> </p>
+              <p>BTW, I dont really like images as the tendency of NOT being
+              align. (My freaking C651 window, both the interior and exterior
+              dont align and roughly I got it fixed le at a cost of doors
+              alignment freaked out. Aiya, I invented a new idea, that is to code
+              doors based on my PSDs, which are again, used to code based on the
+              old C151s.)</p>
+              </div>
+              </blockquote>
+              <p>Use power-of-two texture sizes. (sides are 1,2,4,8,16,32,64,128,256,512,1024 pixels long)</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-29T10:06:21+00:00'>29 Oct 10, 10:06</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by joeyfjj:</div>
+              <div class="quote_body">
+              <p>Use power-of-two texture sizes. (sides are
+              1,2,4,8,16,32,64,128,256,512,1024 pixels long)</p>
+              </div>
+              </blockquote>
+              <p>Sorry, I dont get it. U mean the height and width or either of them?? Why is this so?? (BTW, the original train exterior image, was like 499 * 315 and interior image was like 998 * 630 or so, directly 50% larger. And any change is like siao.)</p>
+              <p> </p>
+              <p>BTW, the issue, was confirmed even on Desktop (Flip's with 7600GS) and hence, it would be sound unreasonable for me not to fix it. However, it does not make sense as everything is like standard liao.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C751A 70049/70050</div>
+              <time class='date' datetime='2010-10-29T10:09:24+00:00'>29 Oct 10, 10:09</time>
+            </div>
+            <div class='col-md body'>
+              <p>Suggestion to Willis:</p>
+              <p> </p>
+              <p>Please rename this forum from BVE Singapore to openBVE Singapore because our objects / trains / routes does not work in BVE anymore (Apparently from Wikipedia, that only openBVE support png, jpg (jpeg) and gif images on top of the bmp images that is supported by both BVE and openBVE.)</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-10-29T21:26:09+00:00'>29 Oct 10, 21:26</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C751A 70049/70050:</div>
+              <div class="quote_body">
+              <p>Sorry, I dont get it. U mean the height and width or either of
+              them?? Why is this so?? (BTW, the original train exterior image,
+              was like 499 * 315 and interior image was like 998 * 630 or so,
+              directly 50% larger. And any change is like siao.)</p>
+              <p> </p>
+              <p>BTW, the issue, was confirmed even on Desktop (Flip's with
+              7600GS) and hence, it would be sound unreasonable for me not to fix
+              it. However, it does not make sense as everything is like standard
+              liao.</p>
+              </div>
+              </blockquote>
+              <p>If you look at my route preview, take a look at the texture sizes I use. Both the width and the sides. This is as openBVE has to resize internally the images to this sizes anyway, so doing so now reduces the occurrence of the blue edges and "holes". </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>C830/C751B/C951 Fan</div>
+              <time class='date' datetime='2011-01-03T15:17:08+00:00'>3 Jan 11, 15:17</time>
+            </div>
+            <div class='col-md body'><p>What's this thread for?</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bngauw</div>
+              <time class='date' datetime='2011-01-03T20:18:51+00:00'>3 Jan 11, 20:18</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by C830/C751B/C951 Fan:</div>
+              <div class="quote_body">
+              <p>What's this thread for?</p>
+              </div>
+              </blockquote>
+              <p><br>Developing standards for developers. Also a chat box about developing I think.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/3146/topics/391582/2/'>Prev</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

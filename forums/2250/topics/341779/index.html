@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>SQL help needed</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['341779']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['341779']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['341779']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['341779']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>SQL help needed</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-12-25T21:31:59+00:00'>25 Dec 08, 21:31</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hi guys.</p>
+              <p> </p>
+              <p>I would need someone to help me with my database query.</p>
+              <p> </p>
+              <p>&lt;?php     <br>    <br>    $query ="SELECT COUNT(<span style="color: #800080;">team_id</span>) FROM allocated ORDER BY team_id ASC";<br>    $result = mysql_query($query) or die(mysql_error());<br><br>    while($row = mysql_fetch_array($result)){<br>    $data.="Total Number of Sales Team is ".$row['COUNT(team_id)']."
+              ";<br>    }<br>    <br>    $query = "SELECT COUNT(<span style="color: #ff0000;">staff_id</span>) FROM staff ORDER BY staff_id ASC";<br>    $result = mysql_query($query) or die(mysql_error());<br><br>    while($row = mysql_fetch_array($result)){<br>    $data.="Total Number of Sales Staff is ".$row['COUNT(staff_id)']."
+              ";<br>    }</p>
+              <p> </p>
+              <p>?&gt;</p>
+              <p> </p>
+              <p>Is there anyway that I could have like average Sales_Staff to Sales_Team...?</p>
+              <p> </p>
+              <p>Like say the 1st query the value I got is <span style="color: #800080;"><span style="text-decoration: underline;">100</span></span> Teams</p>
+              <p>2nd query is <span style="text-decoration: underline;"><span style="color: #800080;">300</span></span> Sales Staff.</p>
+              <p> </p>
+              <p>Is there anyway that I can make it to 3 staff per team?</p>
+              <p>Is it possible that I could merge the 2 query together and do a logical divisioN?</p>
+              <p> </p>
+              <p>please help and thanks!</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>caleb_chiang</div>
+              <time class='date' datetime='2008-12-25T21:41:10+00:00'>25 Dec 08, 21:41</time>
+            </div>
+            <div class='col-md body'>
+              <p>Erm... the simplest way is to rename your 2nd query with a 2 behind.</p>
+              <p>Then echo out the result of 2nd query / 1st query lor.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-12-25T21:42:47+00:00'>25 Dec 08, 21:42</time>
+            </div>
+            <div class='col-md body'>
+              <p>any examples like the ones above...?</p>
+              <p> </p>
+              <p>thanks!</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>caleb_chiang</div>
+              <time class='date' datetime='2008-12-25T21:56:59+00:00'>25 Dec 08, 21:56</time>
+            </div>
+            <div class='col-md body'>
+              <p>I would do it this way though...</p>
+              <p>$query ="SELECT * FROM allocated ORDER BY team_id";<br>$result = mysql_query($query) or die(mysql_error());<br>$row = mysql_num_rows($result);</p>
+              <p>$data.="Total Number of Sales Team is ".$row." ";</p>
+              <p>   <br>$query2 = "SELECT * FROM staff ORDER BY staff_id";<br>$result2 = mysql_query($query2) or die(mysql_error());<br>$row2 = mysql_num_rows($result2);<br>$data.="Total Number of Sales Staff is ".$row2." ";</p>
+              <p>$row3 = $row2/$row;</p>
+              <p>$data.="Average sales staffs per team is ".$row3." ";</p>
+              <p>echo $data;</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-12-26T14:41:15+00:00'>26 Dec 08, 14:41</time>
+            </div>
+            <div class='col-md body'>
+              <p>Then I have got another problem.</p>
+              <p> </p>
+              <p>&lt;?php <br>    <br>    $query ="SELECT SUM(income) FROM customer ORDER BY cust_id ASC";<br>    $result = mysql_query($query) or die(mysql_error());<br><br>    while($row = mysql_fetch_array($result)){<br>    echo $row['SUM(income)'];<br>    } <br>    <br>    ?&gt;</p>
+              <p> </p>
+              <p>This statement calculate the number of rows in my databse. Is there a way that I could add to the total Values from the income colomn?</p>
+              <p> </p>
+              <p>The DB table is customer and the colomn is income. Is there a way to add all the values in the colomn of Income?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-12-26T15:56:05+00:00'>26 Dec 08, 15:56</time>
+            </div>
+            <div class='col-md body'><pre>1           2<br>----------- -----------<br>          1           1<br>          1           2<br>          2           1<br>          2           2<br><br><br>Like the ones above. How could I add the values from Table 2. Like 1+2+1+2<br><br>In the context of <br><br>&lt;?php<br>                        Â Â  <br><br>$query ="SELECT SUM(income) FROM customer ORDER BY cust_id ASC";<br><br>$result = mysql_query($query) or die(mysql_error());<br><br>                        <br>while($row = mysql_fetch_array($result)){<br>echo $row['SUM(income)'];<br>}<br> ?&gt;</pre></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-12-27T15:59:21+00:00'>27 Dec 08, 15:59</time>
+            </div>
+            <div class='col-md body'><p>could anyone help me please?</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>RETARDED_MORON</div>
+              <time class='date' datetime='2008-12-27T16:06:58+00:00'>27 Dec 08, 16:06</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Trcyng:</div>
+              <div class="quote_body">
+              <p>Then I have got another problem.</p>
+              <p> </p>
+              <p>&lt;?php<br>   <br>    $query ="SELECT SUM(income) FROM customer ORDER BY cust_id ASC";<br>    $result = mysql_query($query) or die(mysql_error());<br><br>    while($row = mysql_fetch_array($result)){<br>    echo $row['SUM(income)'];<br>    }<br>   <br>    ?&gt;</p>
+              <p> </p>
+              <p>This statement calculate the number of rows in my databse. Is there a way that I could add to the total Values from the income colomn?</p>
+              <p> </p>
+              <p>The DB table is customer and the colomn is income. Is there a way to add all the values in the colomn of Income?</p>
+              </div>
+              </blockquote>
+              <p>I'm not sure if that would calculate the number of rows, but this would:</p>
+              <p>$query = "SELECT income FROM customer WHERE &lt;condition, if necessary&gt;";<br>$result = mysql_query($query);<br>$totalrows = mysql_num_rows($result);</p>
+              <p>echo "Number of rows: ".$totalrows;</p>
+              <p>To add all the values in the income column, the SQL query should be:</p>
+              <p>"SELECT SUM(income) AS 'totalIncome' FROM customer WHERE &lt;condition, if necessary"</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>teraexa</div>
+              <time class='date' datetime='2008-12-27T16:12:23+00:00'>27 Dec 08, 16:12</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by RETARDED_MORON:</div>
+              <div class="quote_body">
+              <p>I'm not sure if that would calculate the number of rows, but
+                      this would:</p>
+              <p>$query = "SELECT income FROM customer WHERE &lt;condition, if
+                      necessary&gt;";<br> $result = mysql_query($query);<br> $totalrows = mysql_num_rows($result);</p>
+              <p>echo "Number of rows: ".$totalrows;</p>
+              <p>To add all the values in the income column, the SQL query
+                      should be:</p>
+              <p>"SELECT SUM(income) AS 'totalIncome' FROM customer WHERE
+                      &lt;condition, if necessary"</p>
+              </div>
+              </blockquote>
+              <p>RETARDED_MORON is correct.</p>
+              <p>You can try this also:</p>
+              <p>$query = "SELECT income FROM customer WHERE &lt;condition, if
+                      necessary&gt;";<br> $result = mysql_query($query);</p>
+              <p><br> $totalrows = mysql_num_rows($result);</p>
+              <p>$sum=0;</p>
+              <p>while($result_array=mysql_fetch_array($result))</p>
+              <p>        $sum+=$result_array['income'];</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>RETARDED_MORON</div>
+              <time class='date' datetime='2008-12-27T17:39:00+00:00'>27 Dec 08, 17:39</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by teraexa:</div>
+              <div class="quote_body">
+              <p>RETARDED_MORON is correct.</p>
+              <p>You can try this also:</p>
+              <p>$query = "SELECT income FROM customer WHERE &lt;condition, if necessary&gt;";<br>$result = mysql_query($query);</p>
+              <p><br>$totalrows = mysql_num_rows($result);</p>
+              <p>$sum=0;</p>
+              <p>while($result_array=mysql_fetch_array($result))</p>
+              <p>        $sum+=$result_array['income'];</p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p>Your username seems familiar. Were you from RJC?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>teraexa</div>
+              <time class='date' datetime='2008-12-27T17:52:09+00:00'>27 Dec 08, 17:52</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by RETARDED_MORON:</div>
+              <div class="quote_body">
+              <p>Your username seems familiar. Were you from RJC?</p>
+              </div>
+              </blockquote>
+              <p>Yep.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-12-28T05:49:23+00:00'>28 Dec 08, 05:49</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Trcyng:</div>
+              <div class="quote_body">
+              <p>Hi guys.</p>
+              <p> </p>
+              <p>I would need someone to help me with my database query.</p>
+              <p> </p>
+              <p>&lt;?php    <br>    <br>     $query ="SELECT COUNT(<span style="color: #800080;">team_id</span>) FROM allocated ORDER BY team_id
+              ASC";<br>     $result = mysql_query($query) or
+              die(mysql_error());<br> <br>     while($row = mysql_fetch_array($result)){<br>     $data.="Total Number of Sales Team is
+              ".$row['COUNT(team_id)']." ";<br>     }<br>    <br>     $query = "SELECT COUNT(<span style="color: #ff0000;">staff_id</span>) FROM staff ORDER BY staff_id
+              ASC";<br>     $result = mysql_query($query) or
+              die(mysql_error());<br> <br>     while($row = mysql_fetch_array($result)){<br>     $data.="Total Number of Sales Staff is
+              ".$row['COUNT(staff_id)']." ";<br>     }</p>
+              <p> </p>
+              <p>?&gt;</p>
+              <p> </p>
+              <p>Is there anyway that I could have like average Sales_Staff to
+              Sales_Team...?</p>
+              <p> </p>
+              <p>Like say the 1st query the value I got is <span style="color: #800080;"><span style="text-decoration: underline;">100</span></span> Teams</p>
+              <p>2nd query is <span style="text-decoration: underline;"><span style="color: #800080;">300</span></span> Sales Staff.</p>
+              <p> </p>
+              <p>Is there anyway that I can make it to 3 staff per team?</p>
+              <p>Is it possible that I could merge the 2 query together and do a
+              logical divisioN?</p>
+              <p> </p>
+              <p>please help and thanks!</p>
+              </div>
+              </blockquote>
+              <p>Avoid using while() loops and ORDER BY clauses <span style="font-weight: bold;">unnecessarily</span> as this would cause your application to take up additional resources which could have been avoided.</p>
+              <p>$query = 'SELECT<br>  (SELECT COUNT(team_id) FROM allocated) AS team,<br>  (SELECT COUNT(staff_id) FROM staff) AS staff,<br>  (team / staff) AS ratio';</p>
+              <p>($result = mysql_query($query)) || exit(mysql_error());</p>
+              <p>list($team, $staff, $ratio) = mysql_fetch_row($result); // $ratio now contains the result of dividing the number of staff by the number of teams</p>
+              <p>Sources:<br><a href="http://forums.devarticles.com/general-sql-development-47/count-from-multiple-tables-14903.html">http://forums.devarticles.com/general-sql-development-47/count-from-multiple-tables-14903.html</a><br><a href="http://dev.mysql.com/doc/refman/5.0/en/arithmetic-functions.html">http://dev.mysql.com/doc/refman/5.0/en/arithmetic-functions.html</a></p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-12-28T19:13:21+00:00'>28 Dec 08, 19:13</time>
+            </div>
+            <div class='col-md body'>
+              <p>I have a last problem. It is regarding the ROWS vs. VALUES.</p>
+              <p>Thanks for the help guys and I regretted not taking the programming as my specialisation.</p>
+              <p> </p>
+              <p>See this codes:</p>
+              <p> </p>
+              <p>&lt;?php <br>    <br>    $query = "SELECT income FROM customer";<br>    $result = mysql_query($query);<br>    $totalrows = mysql_num_rows($result);<br>    $sum=0;<br>    while($result_array=mysql_fetch_array($result))<br>    $sum+=$result_array['income'];    <br>    <br>    // This was taken from the post above and the <strong>VALUE IS &lt; $377413 &gt;</strong><br>  <br>    $query2 = "SELECT SUM(cust_id) FROM customer ORDER BY cust_id ASC";<br>    $result2 = mysql_query($query2) or die(mysql_error());<br>    $row2 = mysql_num_rows($result2);   </p>
+              <p>    // This was done and the <strong>RESULT IS &lt;88&gt;</strong></p>
+              <p>// Now I want to do is an average Income/customer and the logical answer is <strong>$4288</strong><br>// So logically this is done like that isn't it?</p>
+              <p><br>    $row3 = FLOOR($sum/$row2);<br><br>    echo $row3;</p>
+              <p>// But how come it the result is $0...? I suspect that this is the rows issues...<br>    ?&gt;</p>
+              <p> </p>
+              <p> </p>
+              <p><strong>Any help guys?</strong></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-12-28T22:06:29+00:00'>28 Dec 08, 22:06</time>
+            </div>
+            <div class='col-md body'><p>anyone please help me...?</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-12-28T22:06:38+00:00'>28 Dec 08, 22:06</time>
+            </div>
+            <div class='col-md body'><p>anyone please help me...?</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>teraexa</div>
+              <time class='date' datetime='2008-12-28T22:30:49+00:00'>28 Dec 08, 22:30</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Trcyng:</div>
+              <div class="quote_body">
+              <p>I have a last problem. It is regarding the ROWS vs. VALUES.</p>
+              <p>Thanks for the help guys and I regretted not taking the
+              programming as my specialisation.</p>
+              <p> </p>
+              <p>See this codes:</p>
+              <p> </p>
+              <p>&lt;?php<br>    <br>     $query = "SELECT income FROM customer";<br>     $result = mysql_query($query);<br>     $totalrows = mysql_num_rows($result);<br>     $sum=0;<br>    
+              while($result_array=mysql_fetch_array($result))<br>    
+              $sum+=$result_array['income'];   <br>    <br>     // This was taken from the post above and the
+              <strong>VALUE IS &lt; $377413 &gt;</strong><br>  <br>     $query2 = "SELECT SUM(cust_id) FROM customer
+              ORDER BY cust_id ASC";<br>     $result2 = mysql_query($query2) or
+              die(mysql_error());<br>     $row2 =
+              mysql_num_rows($result2);   </p>
+              <p>    // This was done and the <strong>RESULT IS
+              &lt;88&gt;</strong></p>
+              <p>// Now I want to do is an average Income/customer and the
+              logical answer is <strong>$4288</strong><br> // So logically this is done like that isn't it?</p>
+              <p><br>     $row3 = FLOOR($sum/$row2);<br> <br>     echo $row3;</p>
+              <p>// But how come it the result is $0...? I suspect that this is
+              the rows issues...<br>     ?&gt;</p>
+              <p> </p>
+              <p> </p>
+              <p><strong>Any help guys?</strong></p>
+              </div>
+              </blockquote>
+              <p>can try</p>
+              <p>    $query2 = "SELECT SUM(cust_id) FROM customer
+              ORDER BY cust_id ASC";<br>     $result2 = mysql_query($query2) or
+              die(mysql_error());<br>     $row2 =
+              (int) mysql_num_rows($result2); </p>
+              <p>and</p>
+              <p>$query = "SELECT income FROM customer";<br>     $result = mysql_query($query);<br>     $totalrows = mysql_num_rows($result);<br>     $sum=0;<br>    
+              while($result_array=mysql_fetch_array($result))<br>    
+              $sum+=(int) $result_array['income'];  </p>
+              <p>and see what's the result? I am afraid typecasting may be the problem here.</p>
+              <p>In any case, maybe you would like to try this instead:</p>
+              <p>    $query = "SELECT FLOOR(AVG(income)) average FROM customer
+              ORDER BY cust_id ASC";<br>     $result = mysql_query($query) or
+              die(mysql_error());<br>     $average = (int) mysql_fetch_array['average'];</p>
+              <p>echo $average;</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-12-28T22:45:34+00:00'>28 Dec 08, 22:45</time>
+            </div>
+            <div class='col-md body'>
+              <p>The 1st and the second is the same as the codes that I had.</p>
+              <p> </p>
+              <p>the trial part seemed... "<strong>Parse error</strong>:  syntax error, unexpected '['" I tried changing but it is not valid.<br><br></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>teraexa</div>
+              <time class='date' datetime='2008-12-28T22:49:21+00:00'>28 Dec 08, 22:49</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Trcyng:</div>
+              <div class="quote_body">
+              <p>The 1st and the second is the same as the codes that I had.</p>
+              <p> </p>
+              <p>the trial part seemed... "<strong>Parse error</strong>: syntax
+                  error, unexpected '['" I tried changing but it is not valid.</p>
+              </div>
+              </blockquote>
+              <p>hmm. sorry my fault. didn't note about the wrong use of mysql_fetch_array/mysql_fetch_row, try:</p>
+              <p>$query = "SELECT FLOOR(AVG(income))
+                                          FROM customer ORDER BY cust_id ASC";<br>     $result = mysql_query($query) or
+                                          die(mysql_error());<br>     $query_result = mysql_fetch_row($result);</p>
+              <p>echo $query_result[0];</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-12-28T23:19:24+00:00'>28 Dec 08, 23:19</time>
+            </div>
+            <div class='col-md body'><p>it still states to be syntax error. Oh yes, the database that I am using is mySQL server</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>teraexa</div>
+              <time class='date' datetime='2008-12-28T23:34:46+00:00'>28 Dec 08, 23:34</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Trcyng:</div>
+              <div class="quote_body">
+              <p>it still states to be syntax error. Oh yes, the database that I
+              am using is mySQL server</p>
+              </div>
+              </blockquote>
+              <p>hmm. sorry my fault. didn't note about the wrong use of
+                                      mysql_fetch_array/mysql_fetch_row, try:</p>
+              <p>$query = "SELECT FLOOR(AVG(income)) FROM customer ORDER BY
+                                      cust_id ASC";<br>     $result = mysql_query($query) or
+                                      die(mysql_error());<br>     $query_result = mysql_fetch_row($result);</p>
+              <p>echo $query_result[0];</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-12-28T23:41:53+00:00'>28 Dec 08, 23:41</time>
+            </div>
+            <div class='col-md body'>
+              <p>It works!!! Thank you very much!!! Are you a programmer...?</p>
+              <p> </p>
+              <p>=)</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>teraexa</div>
+              <time class='date' datetime='2008-12-28T23:44:52+00:00'>28 Dec 08, 23:44</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Trcyng:</div>
+              <div class="quote_body">
+              <p>It works!!! Thank you very much!!! Are you a programmer...?</p>
+              <p> </p>
+              <p>=)</p>
+              </div>
+              </blockquote>
+              <p>nope. just used to program back in secondary school.</p>
+              <p>these two should be your good friends in PHP/MySQL:</p>
+              <p><a href="http://sg2.php.net/manual/en/langref.php">http://sg2.php.net/manual/en/langref.php</a></p>
+              <p><a href="http://dev.mysql.com/doc/refman/5.1/en/sql-syntax.html">http://dev.mysql.com/doc/refman/5.1/en/sql-syntax.html</a></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

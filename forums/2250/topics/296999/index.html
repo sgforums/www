@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Any asp.net expert?</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['296999']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['296999']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['296999']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['296999']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Any asp.net expert?</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>laurence82</div>
+              <time class='date' datetime='2007-12-13T16:51:50+00:00'>13 Dec 07, 16:51</time>
+            </div>
+            <div class='col-md body'>ok, i got this problem<br><br>i have this database, using SQL Server for database and asp.net for web design<br><br>what i need to to is that once i click a button, it will draw up data from the database into an Excel spreadsheet<br><br>at the same time, the Microsoft Outlook template (with the relevant messages)will open up, with the Excel Spreadsheet attached<br><br>ready to be sent to whoever i send it to<br><br>anyone knows the coding for this?<br><br>asking for my programmer, coz she cant seems to get around this problem<br><br>as far as i know, it may not be possible<br><br>would appreciate if there are other workarounds<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2007-12-13T17:53:12+00:00'>13 Dec 07, 17:53</time>
+            </div>
+            <div class='col-md body'>Won't be it easier to create a webpage that accepts GET parameters and email that link to the recipient. Once click on it, Excel file can be saved (using Excel header or something similar).<br><br>Maybe this link will help:<br><a href="http://www.eggheadcafe.com/tutorials/aspnet/6e1ae1a8-8285-4b2a-a89b-fafc7668a782/aspnet-download-as-wor.aspx" rel="nofollow">http://www.eggheadcafe.com/tutorials/aspnet/6e1ae1a8-8285-4b2a-a89b-fafc7668a782/aspnet-download-as-wor.aspx</a></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2007-12-13T19:15:12+00:00'>13 Dec 07, 19:15</time>
+            </div>
+            <div class='col-md body'>This bit for generating Excel file and saving it on the server side. You have to load the database data into the dataset first.<br><br>[ C# ]<br><br>DataSet DS = somevalueDataSet();<br>XmlDataDocument xdd = new XmlDataDocument(DS);<br>XslTransform  xt = new XslTransform();<br>string workingdir = AppDomain.CurrentDomain.BaseDirectory + "/" + "xslSheet.xsl";<br>xt.Load(workingdir);<br>string dirPath = AppDomain.CurrentDomain.BaseDirectory +  "/" + "GeneratedFR";<br>string filePath = AppDomain.CurrentDomain.BaseDirectory +  "/" + "GeneratedFR" + "/" + "Test1.xls";<br>if (!Directory.Exists(dirPath))<br>{<br>Directory.CreateDirectory(dirPath);<br>}<br>File.Delete(filePath);<br>FileStream fs = new FileStream(filePath, FileMode.Create);<br>using(fs)<br>{<br>xt.Transform(xdd,null,fs);<br>fs.Close();<br>}<br><br>This bit for sending email. You can bypass your Outlook. It will attach a file from the server side. That can be your Excel file that you generated and saved on the server side.<br><br>[ C# ]<br><br>MailMessage mail = new MailMessage();<br>mail.To = "me@mycompany.com'';<br>mail.From = "you@yourcompany.com";<br>mail.Subject = "this is a test email.";<br>mail.Body = "this is my test email body.";<br>MailAttachment attachment = new MailAttachment( Server.MapPath( "test.txt" ) ); //create the attachment<br>mail.Attachments.Add( attachment );	//add the attachment<br>SmtpMail.SmtpServer = "localhost";  //your real server goes here<br>SmtpMail.Send( mail );<br><br>[ VB.NET ]<br><br>Dim mail As New MailMessage()<br>mail.To = "me@mycompany.com''<br>mail.From = "you@yourcompany.com"<br>mail.Subject = "this is a test email."<br>mail.Body = "this is my test email body."<br>Dim attachment As New MailAttachment(Server.MapPath(''test.txt'')) 'create the attachment<br>mail.Attachments.Add(attachment) 'add the attachment<br>SmtpMail.SmtpServer = "localhost" 'your real server goes here<br>SmtpMail.Send(mail)</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>laurence82</div>
+              <time class='date' datetime='2007-12-13T22:07:25+00:00'>13 Dec 07, 22:07</time>
+            </div>
+            <div class='col-md body'>hey thanks for this<br><br>i will revert to my programmer<br><br>but i am not sure if its ok to bypass outlook<br><br>if i am not wrong, the codes u have will open up the mailbox on the database right?<br><br>we tried with that, but not to my satisfaction<br><br>mainly becos<br><br>1. i need to be able to open up the attachment and confirm the details inside<br>2. it will not be stored on my outlook folders<br>3. to add to pt 2, if its not opened on my outlook, it doesnt have the smtp and can be able to send 'From' my mailbox, unless i go hardcode it or manually fill it in<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2007-12-14T14:38:58+00:00'>14 Dec 07, 14:38</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by laurence82:</div><div class="quote_body">hey thanks for this<br><br>i will revert to my programmer<br><br>but i am not sure if its ok to bypass outlook<br><br>if i am not wrong, the codes u have will open up the mailbox on the database right?<br><br>we tried with that, but not to my satisfaction<br><br>mainly becos<br><br>1. i need to be able to open up the attachment and confirm the details inside<br>2. it will not be stored on my outlook folders<br>3. to add to pt 2, if its not opened on my outlook, it doesnt have the smtp and can be able to send 'From' my mailbox, unless i go hardcode it or manually fill it in<br><br></div></blockquote>There no mailbox to open on the database. The email sending part is from ASP.Net and not using SQLMail. If you want to confirm the data first, you can create a GridView and view it first. If OK, then you can click a button to run the above codes to generate the Excel and email it.<br><br>As for the SMTP server settings, you can configure Web.Config file. Or hardcode.</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

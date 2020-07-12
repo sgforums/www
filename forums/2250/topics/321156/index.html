@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Need a little help in CSS Coding</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['321156']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['321156']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['321156']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['321156']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Need a little help in CSS Coding</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2008-06-16T17:42:11+00:00'>16 Jun 08, 17:42</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hi, would like a little help for CSS coding here.</p>
+              <p> </p>
+              <p>Basically, i have a website that has a sidebar on the top left side of the screen. The top right holds some text and at the bottom lies more text.</p>
+              <p> </p>
+              <p>You see, i wish to align the top and bottom text such that they are parallal to each other.</p>
+              <p> </p>
+              <p>However, due to the sidebar(which i put as 300px width 500px height overflow hidden) i think it is such that the bottom text appeared to slant to either side of the screen.If i put float left it will go left while right get right.But middle nor center wont get the alignment i want either.</p>
+              <p><img src="http://i40.photobucket.com/albums/e236/ceecookie/untitled-15.jpg" alt=""></p>
+              <p>This is originally before i tried to remedy it.</p>
+              <p><img src="http://i40.photobucket.com/albums/e236/ceecookie/untitled1.jpg" alt=""></p>
+              <p>After applying the code " padding-left: 174px;", it appears ok(what i wanted) in Firefox.</p>
+              <p><img src="http://i40.photobucket.com/albums/e236/ceecookie/untitled2-2.jpg" alt=""></p>
+              <p>But the problem still persist in Internet Explorer which i know it's due to incompatibilites between the 2 Browsers.</p>
+              <p> </p>
+              <p>Therefore,is there any better solution/code to apply such that its also aligned as in picture 2?</p>
+              <p> </p>
+              <p><img src="http://i40.photobucket.com/albums/e236/ceecookie/untitled3.jpg" alt=""></p>
+              <p>(Arrowed) - The attempted code remedy.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-06-16T19:11:36+00:00'>16 Jun 08, 19:11</time>
+            </div>
+            <div class='col-md body'>
+              <p>Why not just use tables to fix the positions?</p>
+              <p>E.g.</p>
+              <p>&lt;table&gt;<br>&lt;tr&gt;<br>&lt;td&gt;my side bar &lt;/td&gt;<br>&lt;td style="text-align: center;"&gt;my middle bit &lt;/td&gt;<br>&lt;td&gt;empty space&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;<br>&lt;td colspan="3" style="text-align: center;"&gt;bottom bit&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2008-06-16T20:16:33+00:00'>16 Jun 08, 20:16</time>
+            </div>
+            <div class='col-md body'><p>Is it CSS coding?i have to do it in CSS and in external style sheet</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-06-16T22:15:13+00:00'>16 Jun 08, 22:15</time>
+            </div>
+            <div class='col-md body'>
+              <p>Without seeing the whole HTML and the rest of the CSS, kinda hard to know what to fix.</p>
+              <p>You can try one thing. Turn the top left box into a div with position: absolute; left: 0px; top: 0px; and the rest of the page should centre correctly.</p>
+              <p>In other words, you do the middle bits first from top to bottom. Then only add the div for the top left box.</p>
+              <p>E.g.</p>
+              <p>&lt;div class="mybox"&gt;<br>My top left box here<br>&lt;/div&gt;<br>&lt;div class="normaltext"&gt;<br>My first text<br>&lt;/div&gt;<br>&lt;div class="normaltext"&gt;<br>My second text<br>&lt;/div&gt;<br>&lt;div class="secondtext"&gt;<br>My last bits<br>&lt;/div&gt;</p>
+              <p>Inside CSS file</p>
+              <p>div.mybox {<br>  position: absolute;<br>  top: 0px;<br>  left: 0px;<br>}<br><br>div.normaltext {<br>  width: 100%;<br>  text-align: center;<br>  padding-left: 200px; /*adjust yourself<br>  padding-right: 200px; /*adjust yourself<br>}<br><br>div.secondtext {<br>   width: 100%;<br>   text-align: center;<br>   padding-left: 100px; /*adjust yourself<br>   padding-right: 100px; /*adjust yourself<br> }</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-06-17T02:29:15+00:00'>17 Jun 08, 02:29</time>
+            </div>
+            <div class='col-md body'><p>Is this what you are trying to achieve?<br><br><a href="http://latecomerx.com/work/Project_166_sgf321156/index.html">http://latecomerx.com/work/Project_166_sgf321156/index.html</a><br></p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2008-06-17T14:35:37+00:00'>17 Jun 08, 14:35</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by LatecomerX:</div>
+              <div class="quote_body">
+              <p>Is this what you are trying to achieve?<br> <br> <a rel="nofollow" href="http://latecomerx.com/work/Project_166_sgf321156/index.html">http://latecomerx.com/work/Project_166_sgf321156/index.html</a></p>
+              </div>
+              </blockquote>
+              <p>Yes,only that the title (Lorem Dimsum) should be aligned along with the rest of the sub-header.</p>
+              <p><br>The current code can only work perfectly in either one browser,and not both.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2008-06-17T15:40:28+00:00'>17 Jun 08, 15:40</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by GIB:</div>
+              <div class="quote_body">
+              <p>Without seeing the whole HTML and the rest of the CSS, kinda
+              hard to know what to fix.</p>
+              <p>You can try one thing. Turn the top left box into a div with
+              position: absolute; left: 0px; top: 0px; and the rest of the page
+              should centre correctly.</p>
+              <p>In other words, you do the middle bits first from top to bottom.
+              Then only add the div for the top left box.</p>
+              <p>E.g.</p>
+              <p>&lt;div class="mybox"&gt;<br> My top left box here<br> &lt;/div&gt;<br> &lt;div class="normaltext"&gt;<br> My first text<br> &lt;/div&gt;<br> &lt;div class="normaltext"&gt;<br> My second text<br> &lt;/div&gt;<br> &lt;div class="secondtext"&gt;<br> My last bits<br> &lt;/div&gt;</p>
+              <p>Inside CSS file</p>
+              <p>div.mybox {<br>   position: absolute;<br>   top: 0px;<br>   left: 0px;<br> }<br> <br> div.normaltext {<br>   width: 100%;<br>   text-align: center;<br>   padding-left: 200px; /*adjust yourself<br>   padding-right: 200px; /*adjust yourself<br> }<br> <br> div.secondtext {<br>   width: 100%;<br>   text-align: center;<br>   padding-left: 100px; /*adjust yourself<br>   padding-right: 100px; /*adjust yourself<br> }</p>
+              </div>
+              </blockquote>
+              <p>Haha...i tried your code..customising it to make sure its aligned...but whenever its perfect on Firefox, IE simply refuse to show it the same -.-</p>
+              <p>#container {<br>width:800;<br>height:600;<br>margin:auto;<br>padding: 0 0 0 0;<br>background-repeat: no-repeat;<br>position:top;<br>}<br><br>div.sidebar {<br>  position: top;<br>  top: 0px;<br>  left: 0px;<br>  width: 280px;<br>  height: 700px;<br>   color: #FFFFFF;<br>   float: left;<br>}<br><br>div.main_first_part {<br>  width: 100%;<br>  text-align: center;<br>  padding-left: 100px; <br>  padding-right: 100px; <br>  color: #FFFFFF;<br>  width: 900px;<br>}<br><br>div.main {<br>  width: 100%;<br>  text-align: center;<br>  padding-left: 127px; <br>  padding-right: 100px; <br>  <br>  width:1000px;<br>  color: #FFFFFF;<br><br>}</p>
+              <p> </p>
+              <p>My newer code according to GIB.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-06-17T16:33:18+00:00'>17 Jun 08, 16:33</time>
+            </div>
+            <div class='col-md body'>
+              <p>position: top<br><br>Is there such a thing? I thought position only supports static/relative/absolute/fixed.</p>
+              <p>My code depends on the "position: absolute" part.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2008-06-17T16:36:53+00:00'>17 Jun 08, 16:36</time>
+            </div>
+            <div class='col-md body'>
+              <p>Not sure, but anyway the stock code that u gave me gave a result of the sidebar at the left but on the right lies the empty space while the actual text is below the sidebar area.</p>
+              <p> </p>
+              <p>So i customised the code to make the text appear next to the sidebar.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-06-17T16:57:00+00:00'>17 Jun 08, 16:57</time>
+            </div>
+            <div class='col-md body'>
+              <p>My HTML file, I borrowed wordings from latecomer page.<br><br>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>"&gt;<br>&lt;html xmlns="<a href="http://www.w3.org/1999/xhtml">http://www.w3.org/1999/xhtml</a>"&gt;<br>&lt;head&gt;<br>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;<br>&lt;title&gt;Untitled Document&lt;/title&gt;<br>&lt;link href="test.css" rel="stylesheet" type="text/css" /&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;div class="mybox"&gt;<br>&lt;h2&gt;Lily Lee's Links&lt;/h2&gt;<br>&lt;ul&gt;<br>&lt;li&gt;Hard Link&lt;/li&gt;<br>&lt;li&gt;Normal Link&lt;/li&gt;<br>&lt;li&gt;Easy Link&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;/div&gt;<br>&lt;div id="container"&gt;<br>&lt;div class="normaltext"&gt;<br>&lt;h2&gt;So what is it actually?&lt;/h2&gt;<br>&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;<br>&lt;h2&gt;The Real Stuff&lt;/h2&gt;<br>&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam pede nibh, lacinia eget, rhoncus nec, vestibulum tincidunt, tellus. Duis feugiat. Donec imperdiet massa et sem. Donec nisi. Duis turpis mauris, vestibulum vitae, pulvinar porta, fermentum id, quam. Praesent imperdiet dui a eros. Duis dapibus auctor erat. Phasellus sed metus. Nam cursus. Praesent sed massa. Pellentesque sit amet mi ac neque malesuada aliquam. Proin accumsan mi id nunc. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus neque, varius id, sodales sit amet, tempor ac, quam. Etiam velit. Quisque lobortis elementum libero. Sed vel augue. Nullam blandit blandit risus. Quisque rutrum semper mauris.&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;div class="secondtext"&gt;<br>&lt;h2&gt;And why use it?&lt;/h2&gt;<br>&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p&gt;<br>&lt;h2&gt;The Real Stuff...Again&lt;/h2&gt;<br>&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam pede nibh, lacinia eget, rhoncus nec, vestibulum tincidunt, tellus. Duis feugiat. Donec imperdiet massa et sem. Donec nisi. Duis turpis mauris, vestibulum vitae, pulvinar porta, fermentum id, quam. Praesent imperdiet dui a eros. Duis dapibus auctor erat. Phasellus sed metus. Nam cursus. Praesent sed massa. Pellentesque sit amet mi ac neque malesuada aliquam. Proin accumsan mi id nunc. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus neque, varius id, sodales sit amet, tempor ac, quam. Etiam velit. Quisque lobortis elementum libero. Sed vel augue. Nullam blandit blandit risus. Quisque rutrum semper mauris.&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</p>
+              <p> </p>
+              <p>My CSS page</p>
+              <p>div.mybox {<br>  position: absolute;<br>  top: 0px;<br>  left: 0px;<br>}</p>
+              <p>div.normaltext {<br>  display: block;<br>  border: 1px solid black;<br>  text-align: center;<br>  padding-left: 100px;<br>  padding-right: 100px;<br>}</p>
+              <p>div.secondtext {<br>  display: block;<br>  border: 1px solid black;<br>  text-align: center;<br>}</p>
+              <p>#container {<br>  display: block;<br>  border: 1px solid black;<br>  margin: 0 auto;   /* align for good browsers */<br>  /*text-align: left;*/ /* counter the body center */<br>  width: 600px;<br>}</p>
+              <p>/*<br>div.container {<br>  margin: 0 auto;   /* align for good browsers */<br>  text-align: left; /* counter the body center */</p>
+              <p>  width: 100%;<br>}<br>*/</p>
+              <p>body {<br>  text-align: center;<br>}</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2008-06-17T18:05:20+00:00'>17 Jun 08, 18:05</time>
+            </div>
+            <div class='col-md body'>
+              <p>Something like that,but the bottom text must be longer..here's a rough layout wich is intended.The sidebar must be bigger too.</p>
+              <p> </p>
+              <p>What i did to your code was to add width properties to both normaltext and secondtext,but this throw their alignment off so i edited the padding properties such that they appear aligned again.But FF and IE wont show it correctly together.</p>
+              <p><img src="http://i40.photobucket.com/albums/e236/ceecookie/layout.jpg" alt=""></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ceecookie</div>
+              <time class='date' datetime='2008-06-17T18:05:54+00:00'>17 Jun 08, 18:05</time>
+            </div>
+            <div class='col-md body'>
+              <p>PS: Boundery means the vertical scroll bar area</p>
+              <p>Header One and Two must be aligned parallel,and there should be no bordering at all,just empty space to seperate them</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-06-17T18:16:50+00:00'>17 Jun 08, 18:16</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by ceecookie:</div>
+              <div class="quote_body">
+              <p>Yes,only that the title (Lorem Dimsum) should be aligned along
+              with the rest of the sub-header.</p>
+              <p><br> The current code can only work perfectly in either one browser,and
+              not both.</p>
+              </div>
+              </blockquote>
+              <p>I have viewed the page on IE6, IE7, Firefox 2 and Opera 9.5 and I don't see any discrepancy other than the sizes of the font which you can adjust on your own. To align the title as you have described, just move the h1 title into the content div.<br></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>meltz</div>
+              <time class='date' datetime='2008-06-17T18:18:25+00:00'>17 Jun 08, 18:18</time>
+            </div>
+            <div class='col-md body'>
+              not sure this is what u want anot .. borrow the text from late
+               <p><a href="http://www.mediafire.com/?d1sgtg4j2nb">http://www.mediafire.com/?d1sgtg4j2nb</a></p>   
+                  xhtml
+                  
+                  
+                  
+                  
+                  
+                  <title>Untitled Document</title>
+                  
+                  
+                  
+                  
+                  	<div id="holder">
+                  		<h1>Lorem Dimsum</h1>
+                  		<div id="left">
+                  			<h2>Lily Lee's Links</h2>
+                  			<ul>
+                  				<li><a href="#">Hard Link</a></li>
+                  				<li><a href="#">Normal Link</a></li>
+                  				<li><a href="#">Easy Link</a></li>
+                  				<li><a href="#">Show/Hide Borders</a></li>
+                  			</ul>
+                  		</div>
+                  		<div id="right">
+                  			<h2>So what is it actually?</h2>
+                  			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled itto make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentiallyunchanged. It was popularised in the 1960s with the release of Letrasets heets containing Lorem Ipsum passages, and more recently with deskto ppublis hing software like Aldus PageMaker including versions of LoremIpsum.</p>
+                  			<h2>The Real Stuff</h2>
+                  			<p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Nullam pede nibh, lacinia eget, rhoncusnec, vestibulum tincidunt, tellus. Duis feugiat. Donec imperdiet massaet sem. Donec nisi. Duis turpis mauris, vestibulum vitae, pulvinarporta, fermentum id, quam. Praesent imperdiet dui a eros. Duis dapibusauctor erat. Phasellus sed metus. Nam cursus. Praesent sed massa.Pellentesque sit amet mi ac neque malesuada aliquam. Proin accumsan miid nunc. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Utpurus neque, varius id, sodales sit amet, tempor ac, quam. Etiam velit.Quisque lobortis elementum libero. Sed vel augue. Nullam blandit blandit risus. Quisque rutrum semper mauris.</p>
+                  		</div>
+                  		<div id="below">
+                  			<h2>And why use it?</h2>
+                  			<p>Itis a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point ofusing Lorem Ipsum is that it has a more-or-less normal distribution ofletters, as opposed to using 'Content here, content here', making itlook like readable English. Many desktop publishing packages and webpage editors now use Lorem Ipsum as their default model text, and asearch for 'lorem ipsum' will uncover many web sites still in theirinfancy. Various versions have evolved over the years, sometimes byaccident, sometimes on purpose (injected humour and the like).</p>
+                  		</div>
+                  	</div>
+                  
+                  
+                  
+                  -------------------------------------------------
+                  
+                  css
+                  
+                  @charset "utf-8";
+                  /* CSS Document */
+                  
+                  body
+                  {
+                  	padding: 0;
+                  	margin: 0;
+                  	font: 12px 'Arial', Helvetica, sans-serif;
+                  }
+                  
+                  #holder
+                  {
+                  	padding: 0 0 0 50px;
+                  	margin: 0;
+                  	float: left;
+                  	width: 800px;
+                  }
+                  
+                  #holder h1
+                  {
+                  	padding: 0 0 0 200px;
+                  	margin: 0 0 50px 0;
+                  	display: block;
+                  	text-align: center;
+                  }
+                  
+                  #holder #left
+                  {
+                  	padding: 0;
+                  	margin: 0;
+                  	float: left;
+                  	width: 250px;
+                  }
+                  
+                  #left h2
+                  {
+                  	padding: 0;
+                  	margin: 0 0 15px 0;
+                  }
+                  
+                  #left ul
+                  {
+                  	padding: 0;
+                  	margin: 0;
+                  }
+                  
+                  #left ul li
+                  {
+                  	padding: 0;
+                  	margin: 0 0 0 15px;
+                  }
+                  
+                  #left ul li a
+                  {
+                  	padding: 0;
+                  	margin: 0;
+                  	color: #000;
+                  	text-decoration: none;
+                  	display: block;
+                  }
+                  
+                  #left ul li a:hover
+                  {
+                  	text-decoration: underline
+                  }
+                  
+                  #holder #right
+                  {
+                  	padding: 0;
+                  	margin: 0;
+                  	float: left;
+                  	width: 500px;
+                  	text-align: center;
+                  }
+                  
+                  #right h2
+                  {
+                  	padding: 0;
+                  	margin: 0 0 15px 0;
+                  }
+                  
+                  #right p
+                  {
+                  	padding: 0;
+                  	margin: 0 0 30px 0;
+                  }
+                  
+                  #holder #below
+                  {
+                  	padding: 0 0 0 150px;
+                  	margin: 0;
+                  	clear: both;
+                  	text-align: center;
+                  	height: 200px;
+                  }
+                  
+                  #below h2
+                  {
+                  	padding: 0;
+                  	margin: 0 0 15px 0;
+                  	text-align: center;
+                  }
+                  
+                  #below p
+                  {
+                  	padding: 0;
+                  	margin: 0;
+                  }
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-06-17T18:18:52+00:00'>17 Jun 08, 18:18</time>
+            </div>
+            <div class='col-md body'><p><a href="http://latecomerx.com/work/Project_166_sgf321156/index2.html">http://latecomerx.com/work/Project_166_sgf321156/index2.html</a></p></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

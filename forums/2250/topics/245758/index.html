@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Executing Scripts...??? What...???</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['245758']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['245758']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['245758']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['245758']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Executing Scripts...??? What...???</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>VODKA KE0601</div>
+              <time class='date' datetime='2007-03-31T23:45:41+00:00'>31 Mar 07, 23:45</time>
+            </div>
+            <div class='col-md body'>Was told to execute this script in-order to solve a problem associated with Microsoft Windows Update..., anybody have any ideas on how i should go 'bout in achieving this...??<br><br><blockquote><br>@echo off<br>Echo . Libraries registration<br>regsvr32 /s msxml3.dll<br>regsvr32 /s wups.dll<br>regsvr32 /s wuaueng.dll<br>Echo . Stopping services<br>net stop wuauserv<br>echo . Deleting DataStore<br>cd /d %windir%\SoftwareDistribution<br>rd /s DataStore<br>Echo . Starting services<br>net start wuauserv<br>Echo . Restarting computer<br>shutdown -r -f -t 01<br><br></blockquote></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-03-31T23:49:10+00:00'>31 Mar 07, 23:49</time>
+            </div>
+            <div class='col-md body'>Hmm... weird method.<br><br>Is your Windows Update not working?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>VODKA KE0601</div>
+              <time class='date' datetime='2007-03-31T23:53:01+00:00'>31 Mar 07, 23:53</time>
+            </div>
+            <div class='col-md body'><br>Windows Automatic Update in the process of screwing-up mine entire system... System resources spiked at 100% upon start-up (Till Shut-Down) of Windows-XP...<br><br>Culprit being the WUAUSERV in SVCHOST.EXE..., Microsoft claims the issue is being look into, and the only solution is to disable Windows Automatic Update for the time being...<br><br><img src="http://img109.imageshack.us/img109/7075/usuage01ia3.png"><br><img src="http://img109.imageshack.us/img109/638/usuage02si4.png"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-03-31T23:56:48+00:00'>31 Mar 07, 23:56</time>
+            </div>
+            <div class='col-md body'>How long have you used the PC?<br><br>If it has been for quite long, either it's downloading a service pack or some other updates. IE7 particularly.<br><br>That script will not solve your problem, it's only for those who have problems updating Windows.<br><br>More info: <a href="http://support.microsoft.com/kb/914224" rel="nofollow">http://support.microsoft.com/kb/914224</a></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>VODKA KE0601</div>
+              <time class='date' datetime='2007-04-01T00:01:29+00:00'>1 Apr 07, 00:01</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">How long have you used the PC?<br><br>If it has been for quite long, either it's downloading a service pack or some other updates. IE7 particularly.<br><br>That script will not solve your problem, it's only for those who have problems updating Windows.<br><br>More info: <a href="http://support.microsoft.com/kb/914224" rel="nofollow">http://support.microsoft.com/kb/914224</a></div></blockquote>No..., it happens eveytime even offline... As long as Windows Automatic Update is enable... Hmm...<br><br>I was told by a friend..., an alternative would be to rely on WinDizUpDate For Firefox... (<a href="http://windowsupdate.62nds.com/" rel="nofollow">http://windowsupdate.62nds.com/</a>). Anyone experienced in using it, as in any problems or reliablity-issues with the sites...???</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-04-01T00:37:24+00:00'>1 Apr 07, 00:37</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by VODKA KE0601:</div><div class="quote_body">No..., it happens eveytime even offline... As long as Windows Automatic Update is enable... Hmm...<br><br>I was told by a friend..., an alternative would be to rely on WinDizUpDate For Firefox... (<a href="http://windowsupdate.62nds.com/" rel="nofollow">http://windowsupdate.62nds.com/</a>). Anyone experienced in using it, as in any problems or reliablity-issues with the sites...???</div></blockquote>That's because Windows Automatic Update is enabled.<br><br>Just disable it, don't run this script. This script will damage quite a lot of things.<br><br>Go to Start &gt; Run and type in services.msc<br><br>Locate Automatic Updates. Double click it.<br><br>Change to the Startup Type to Disabled from the drop-down list.<br><br>Then click on Stop to stop this service.<br><br>WinDizUpdate is for those using a fake version of Windows. If yours is legal, ignore it. Otherwise, Microsoft will detect your legal copy as illegal and you are going to have headaches.</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

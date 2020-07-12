@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Need help on javascript programming for blogger</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['315085']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['315085']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['315085']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['315085']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Need help on javascript programming for blogger</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Gordonator</div>
+              <time class='date' datetime='2008-04-21T09:36:20+00:00'>21 Apr 08, 09:36</time>
+            </div>
+            <div class='col-md body'>
+              <p>hi,</p>
+              <p>i will like to seek expertise advice on some javascript programming for my blog.</p>
+              <p>i'm using <a href="http://gordonator.blogspot.com/">blogger</a> and sometimes i will post quite a lot of photos of my figures thus making the page very long.</p>
+              <p>blogger doesn't come with the option to jump to another page within the same post so i will like to learn how to hide the content instead.</p>
+              <p>for example,<br><br>paragraph 1</p>
+              <p><span style="color: #3366ff;"><strong>click here to continue reading</strong></span></p>
+              <p>paragraph 2</p>
+              <p>paragraph 3</p>
+              <p>paragraph 4</p>
+              <p><span style="color: #3366ff;"><strong>click here to hide</strong></span></p>
+              <p>so what i want is by default only paragraph 1 will show on the blog, when visitors click on "<span style="color: #3366ff;"><strong>click here to continue reading" </strong><span style="color: #000000;">paragraph 2 to 4 will show up. at the bottome will be "</span></span><span style="color: #3366ff;"><strong>click here to hide"</strong></span></p>
+              <p>any advices for this is greatly appreciated. <img src="/images/emoticons/classic/icon_biggrin.gif" alt="icon_biggrin.gif"></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-04-21T10:48:06+00:00'>21 Apr 08, 10:48</time>
+            </div>
+            <div class='col-md body'>
+              <p>Use div or span to segregate the parts.</p>
+              
+              <p></p>
+              
+              <p>E.g.</p>
+              
+              <p></p>
+              
+              <p>&lt;div id="para1"&gt;</p>
+              
+              <p>paragraph one stuff</p>
+              
+              <p>&lt;a href="javascript:doHide();doShow(2);"&gt;Next&lt;/a&gt;</p>
+              
+              <p>&lt;/div&gt;</p>
+              
+              <p>&lt;div id="para2" style="display: none;"&gt;</p>
+              
+              <p>paragraph two stuff</p>
+              
+              <p>&lt;a href="javascript:doHide();doShow(3);"&gt;Next&lt;/a&gt;</p>
+              
+              <p>&lt;/div&gt;</p>
+              
+              <p>&lt;div id="para3" style="display: none;"&gt;</p>
+              
+              <p>paragraph three stuff</p>
+              
+              <p>&lt;/div&gt;</p>
+              
+              <p></p>
+              
+              <p>&lt;script language="Javascript"&gt;</p>
+              
+              <p>function doHide() {</p>
+              
+              <p>var x=document.getElementsByTagName("div");</p>
+              
+              <p>for (y = 0; y &lt; x.length; y++) {</p>
+              
+              <p>if (x[y].id.indexOf("para") == 0) {</p>
+              
+              <p>x[y].style.display = "none";</p>
+              
+              <p>}</p>
+              
+              <p>}</p>
+              
+              <p>}</p>
+              
+              <p></p>
+              
+              <p>function doShow(myid) {</p>
+              
+              <p>if (document.getElementById("para" + myid)) {</p>
+              
+              <p>document.getElementById("para" + myid).style.display = "";</p>
+              
+              <p>}</p>
+              
+              <p>}</p>
+              
+              <p>&lt;/script&gt;</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2008-04-21T11:42:00+00:00'>21 Apr 08, 11:42</time>
+            </div>
+            <div class='col-md body'><p>since we are on the topic of javascript/java...anyone knows of any good free webhosting server that allows the use of *.java files?</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Gordonator</div>
+              <time class='date' datetime='2008-04-21T13:23:25+00:00'>21 Apr 08, 13:23</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by GIB:</div>
+              <div class="quote_body">
+              <p>Use div or span to segregate the parts.</p>
+              <p>E.g.</p>
+              <p>&lt;div id="para1"&gt;</p>
+              <p>paragraph one stuff</p>
+              <p>&lt;a
+                          href="javascript:doHide();doShow(2);"&gt;Next&lt;/a&gt;</p>
+              <p>&lt;/div&gt;</p>
+              <p>&lt;div id="para2" style="display: none;"&gt;</p>
+              <p>paragraph two stuff</p>
+              <p>&lt;a
+                          href="javascript:doHide();doShow(3);"&gt;Next&lt;/a&gt;</p>
+              <p>&lt;/div&gt;</p>
+              <p>&lt;div id="para3" style="display: none;"&gt;</p>
+              <p>paragraph three stuff</p>
+              <p>&lt;/div&gt;</p>
+              <p>&lt;script language="Javascript"&gt;</p>
+              <p>function doHide() {</p>
+              <p>var x=document.getElementsByTagName("div");</p>
+              <p>for (y = 0; y &lt; x.length; y++) {</p>
+              <p>if (x[y].id.indexOf("para") == 0) {</p>
+              <p>x[y].style.display = "none";</p>
+              <p>}</p>
+              <p>}</p>
+              <p>}</p>
+              <p>function doShow(myid) {</p>
+              <p>if (document.getElementById("para" + myid)) {</p>
+              <p>document.getElementById("para" + myid).style.display = "";</p>
+              <p>}</p>
+              <p>}</p>
+              <p>&lt;/script&gt;</p>
+              </div>
+              </blockquote>
+              <p>i tried it on a text file and converted it to a html it works. but when i tried on blogger it doesn't work. :-(<br>the hide function also doesn't work.  :-(</p>
+              <p> </p>
+              <p>below is my coding, please help to look through it and advice me on the coding for the <span style="color: #3366ff;"><strong>show </strong></span>and <strong><span style="color: #3366ff;">hide</span>.</strong></p>
+              <p>----------------------------------------------------------------------------------------------------------</p>
+              <p>&lt;div id="para1"&gt;</p>
+              <p><strong><span style="color: #ff0000;">paragraph one stuff <span style="color: #339966;">&lt;- to be displayed always</span><br></span></strong></p>
+              <p>&lt;a
+                          href="javascript:doHide();doShow(2);"&gt;<strong><span style="color: #3366ff;">Click here to read more</span></strong>&lt;/a&gt;</p>
+              <p>&lt;/div&gt;</p>
+              <p>&lt;div id="para2" style="display: none;"&gt;</p>
+              <p><strong><span style="color: #ff0000;">paragraph two stuff </span></strong><strong><span style="color: #ff0000;"><span style="color: #339966;">&lt;- to hide until until users click to open<br></span></span></strong></p>
+              <p>&lt;/div&gt;</p>
+              <p>&lt;script language="Javascript"&gt;</p>
+              <p>function doHide() {</p>
+              <p>var x=document.getElementsByTagName("div");</p>
+              <p>for (y = 0; y &lt; x.length; y++) {</p>
+              <p>if (x[y].id.indexOf("para") == 0) {</p>
+              <p>x[y].style.display = "none";</p>
+              <p>}</p>
+              <p>}</p>
+              <p>}</p>
+              <p>function doShow(myid) {</p>
+              <p>if (document.getElementById("para" + myid)) {</p>
+              <p>document.getElementById("para" + myid).style.display = "";</p>
+              <p>}</p>
+              <p>}</p>
+              <p>&lt;/script&gt;</p>
+              <p> </p>
+              <p>where to put the <strong><span style="color: #3366ff;">"click here to hide"</span></strong>?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-04-21T14:36:53+00:00'>21 Apr 08, 14:36</time>
+            </div>
+            <div class='col-md body'>
+              <p>&lt;html&gt;</p>
+              <p>&lt;body&gt;</p>
+              <p>&lt;div&gt;</p>
+              <p> </p>
+              <p>paragraph one stuff &lt;- to be displayed always</p>
+              <p> </p>
+              <p> </p>
+              <p>&lt;a href="javascript:doShow(2);"&gt;Click here to read more&lt;/a&gt;</p>
+              <p> </p>
+              <p>&lt;/div&gt;</p>
+              <p> </p>
+              <p>&lt;div id="para2" style="display: none;"&gt;</p>
+              <p> </p>
+              <p>paragraph two stuff &lt;- to hide until until users click to open</p>
+              <p> </p>
+              <p>paragraph three stuff &lt;- to hide until until users click to open&lt;br&gt;</p>
+              <p> </p>
+              <p>paragraph four stuff &lt;- to hide until until users click to open&lt;br&gt;</p>
+              <p> </p>
+              <p>&lt;a href="javascript:doHide(2);"&gt;Click here to hide&lt;/a&gt;</p>
+              <p>&lt;/div&gt;</p>
+              <p>&lt;/body&gt;</p>
+              <p>&lt;/html&gt;</p>
+              <p>&lt;script language="Javascript"&gt;</p>
+              <p>function doHide(myid) {</p>
+              <p>if (document.getElementById("para" + myid)) {</p>
+              <p>document.getElementById("para" + myid).style.display = "none";</p>
+              <p>}</p>
+              <p>}</p>
+              <p> </p>
+              <p>function doShow(myid) {</p>
+              <p>if (document.getElementById("para" + myid)) {</p>
+              <p>document.getElementById("para" + myid).style.display = "";</p>
+              <p>}</p>
+              <p>}</p>
+              <p>&lt;/script&gt;</p>
+              <p> </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Gordonator</div>
+              <time class='date' datetime='2008-04-21T14:50:27+00:00'>21 Apr 08, 14:50</time>
+            </div>
+            <div class='col-md body'>
+              <p>THANKS GIB! it works! ^_^</p>
+              <p>but only on notepad but not on blogger. any ideas how to slove it?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-04-21T14:54:56+00:00'>21 Apr 08, 14:54</time>
+            </div>
+            <div class='col-md body'>
+              <p>I just saw some other blog and they mentioned something about Javascript on blogger.<br><br>If you have convert line breaks set to "YES" then you have to put in the javascript codes without carriage returns else you get br on all the new lines and that will break the code.</p>
+              <p>When publishing, u will get an error saying "tag is not allowed", check the box that says stop reporting errors for this post and publish again. It should work now.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Gordonator</div>
+              <time class='date' datetime='2008-04-21T16:17:23+00:00'>21 Apr 08, 16:17</time>
+            </div>
+            <div class='col-md body'>
+              <p>thanks GIB but i still can't get it to work. i have already taken out all the carriage returns.</p>
+              <p> </p>
+              <p>&lt;div&gt;<br><br><span style="color: #3366ff;"><strong>paragraph one stuff &lt;- to be displayed always</strong></span><br><br>&lt;a href="javascript:doShow(2);"&gt;Click here to read
+                                      more&lt;/a&gt;<br>&lt;/div&gt;<br>&lt;div id="para2" style="display: none;"&gt;</p>
+              <p><strong><span style="color: #3366ff;"> paragraph two stuff &lt;- to hide until until users click to
+                                      open</span></strong><br><br>&lt;a href="javascript:doHide(2);"&gt;Click here to
+                                      hide&lt;/a&gt;<br>&lt;/div&gt;<br>&lt;script language="Javascript"&gt;<br>function doHide(myid) {if (document.getElementById("para" + myid)) {document.getElementById("para" + myid).style.display =
+                                      "none";}}<br>function doShow(myid) {if (document.getElementById("para" + myid)) {document.getElementById("para" + myid).style.display = "";}}<br>&lt;/script&gt;</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-04-21T17:45:33+00:00'>21 Apr 08, 17:45</time>
+            </div>
+            <div class='col-md body'><p>I have just tested and mine worked. Just make sure &lt;script&gt; to &lt;/script&gt; is in one line.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Gordonator</div>
+              <time class='date' datetime='2008-04-21T23:20:11+00:00'>21 Apr 08, 23:20</time>
+            </div>
+            <div class='col-md body'>
+              <p>GIB it works!!!! THANKS SO MUCH!!! already implemented it on my blog. the
+                                      &lt;script&gt; to &lt;/script&gt; must be in one line.  <img src="/images/emoticons/classic/icon_wink.gif" alt="icon_wink.gif"><img src="/images/emoticons/classic/icon_surprised.gif" alt="icon_surprised.gif"><img src="/images/emoticons/classic/icon_smile.gif" alt="icon_smile.gif"><img src="/images/emoticons/classic/icon_mrgreen.gif" alt="icon_mrgreen.gif"><img src="/images/emoticons/classic/icon_razz.gif" alt="icon_razz.gif"><img src="/images/emoticons/classic/icon_biggrin.gif" alt="icon_biggrin.gif"><img src="/images/emoticons/classic/icon_cool.gif" alt="icon_cool.gif"></p>
+              <p>i must remember to treat u lunch next time we meet. ^^</p>
+              <p>anyway can i bother u for one last thing? when people click to read more then click hide, the page stays at the same place. is it possible to code it so that it go back to the top of paragraph one?</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-04-22T09:29:36+00:00'>22 Apr 08, 09:29</time>
+            </div>
+            <div class='col-md body'>
+              <p>Change this &lt;a href="javascript:doHide(2);"&gt;Click here to hide&lt;/a&gt; to</p>
+              <p>&lt;a href="javascript:doHide(2);doScroll(1);"&gt;Click here to hide&lt;/a&gt;</p>
+              <p>and the first div put id="para1".</p>
+              <p>Then inside the &lt;script&gt;&lt;/script&gt; add another function called doScroll.</p>
+              <p>function doScroll(myid) {<br>  if (document.getElementById("para" + myid)) {<br>    document.getElementById("para" + myid).scrollIntoView(true);<br>  }<br>}</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Gordonator</div>
+              <time class='date' datetime='2008-04-22T12:51:36+00:00'>22 Apr 08, 12:51</time>
+            </div>
+            <div class='col-md body'>
+              <p>Thanks again GIB! it works. <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="icon_mrgreen.gif"></p>
+              <p>if u need anything from me just let me know. i owe u one. <img src="/images/emoticons/classic/icon_biggrin.gif" alt="icon_biggrin.gif"></p>
+              <p><img src="http://i4.photobucket.com/albums/y143/gordon008/blog/yatta.jpg" alt=""></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>purpledragon84</div>
+              <time class='date' datetime='2008-04-22T13:47:11+00:00'>22 Apr 08, 13:47</time>
+            </div>
+            <div class='col-md body'><p>aiseh man.. yuan lai GIB is java pro.. i thot he put up jokes nia.. hahaha..</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Gordonator</div>
+              <time class='date' datetime='2008-04-22T20:10:41+00:00'>22 Apr 08, 20:10</time>
+            </div>
+            <div class='col-md body'><p>GIB, i have already credited $6969 into your account. <img src="/images/emoticons/classic/icon_biggrin.gif" alt="icon_biggrin.gif"></p></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

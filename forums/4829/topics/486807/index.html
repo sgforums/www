@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Hardware</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['4829']).setTargeting('topic', ['486807']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['4829']).setTargeting('topic', ['486807']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['4829']).setTargeting('topic', ['486807']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['4829']).setTargeting('topic', ['486807']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/4829/'>Computing</a>
+      <h1>Hardware</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>The Code</div>
+              <time class='date' datetime='2014-11-03T12:07:42+00:00'>3 Nov 14, 12:07</time>
+            </div>
+            <div class='col-md body'>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 28pt;"><span style="font-family: Calibri;">Hardware</span></span></p>
+              <p> </p>
+              <p>We now need to consider more closely what makes up the computer's processor and how it interacts with the other components of the computer system. The processor is purely electronic circuits. It will be mounted on a motherboard which has connectors to various buses used to communicate with input and output devices.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">A bus</span></span></p>
+              <p> </p>
+              <p>A bus a pathway along which data travels and consists of a set of parallel wires (lines). Each line can transmit a single bit. The bus is made up of a number of lines so be would described as (for example) a 16-line bus. 16 lines means 16 bits can be sent along the bus at the same time, so a 16-line bus therefore can transmit a 16-bit number.</p>
+              <p><strong>The address bus</strong></p>
+              <p>All components of the system - including the primary memory - will be referenced by the processor using an address. Since it is the only data that the processor understands an address will be a binary number.</p>
+              <p>The only component which can load an address onto the address bus is the processor. This address is then passed to the relevant component such as the main memory or an input or-output device.</p>
+              <p><strong>Device controllers</strong></p>
+              <p>The processor has a fundamental problem. Manufacturers will want a particular processor to be able to communicate with thousands of different devices which are manufactured by various companies. It would be impossible for these connections to be hard-wired for all possible devices and so communication between the processor and the various devices is done through an intermediary device controller.</p>
+              <p><strong>The data bus</strong></p>
+              <p>Data will be continually passed to and from the processor, the main memory and the devices. Since data needs to be both read and written, the data bus will be bi-directional.</p>
+              <p><strong>The control bus</strong></p>
+              <p>Both the address bus and data bus use all the lines together to form a binary member. The control bus works very differently where each line is used for a different control signal. It is the task of the control bus to coordinate the various actions and send appropriate timing signals to indicate something has happened or been completed.</p>
+              <p>   Consider when the processor has to read a value from main memory. The sequence of events would be as given here.</p>
+              <p>• Address bus is loaded with the address</p>
+              <p>• Data bus is loaded with the contents of this address and copies the value to a register in the processor</p>
+              <p>• Control bus sends a signal to confirm the 'data read' operation has been completed.</p>
+              <p>Other control bus signals include:</p>
+              <p>• memory write completed</p>
+              <p>• output completed - data on the data bus has been copied to the output device</p>
+              <p>• input completed - data has been copied from the input device to the data bus</p>
+              <p>• reset - the user has pressed the Reset button on the computer.</p>
+              <p><strong>Inside the processor</strong></p>
+              <p>The processor will be continually receiving program instructions in sequence. Each time it must make sense of the instruction before it is able to execute the instruction.</p>
+              <p>   A typical instruction could require the processor to:</p>
+              <p>• load the contents of a memory location</p>
+              <p>• add/subtract a number</p>
+              <p>• add/subtract the contents of a memory location</p>
+              <p>• manipulate the bits in some way, for example, shift them one place to the left.</p>
+              <p>   Each instruction must be loaded from memory onto the data bus and it is one of the main roles of the control unit to manage the sequencing of instructions.</p>
+              <p>   Arithmetic is done by circuits inside the processor called the Arithmetic Logic Unit (ALU). The ALU is made up oflogic circuits which are designed for various computations required.</p>
+              <p> </p>
+              <p>Processor</p>
+              <p> </p>
+              <p>CIR                             Accumulator<br>   |                                       ↑<br>  ↓                                       ↓<br>Instruction decoder          ALU</p>
+              <p> </p>
+              <p><strong>Figure 4.1</strong> Inside the processor</p>
+              <p> </p>
+              <p>   Figure 4.1 assumes there is only one general storage location available inside the processor called the Accumulator.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Primary memory (or Main memory)</span></span></p>
+              <p> </p>
+              <p>Primary memory</p>
+              <p>Operating system</p>
+              <p>Word processor</p>
+              <p>Document</p>
+              <p>Unused</p>
+              <p><strong></strong></p>
+              <p><strong>Figure 4.2</strong> Primary memory</p>
+              <p> </p>
+              <p>Consider a session of word processing on a PC. The user will load the word processing software (from the secondary storage) - type the document and later save the document onto the secondary storage.</p>
+              <p>   For this computer session the primary memory Will contain both program instructions (the OS and the word processing software) and what the computer system will consider as 'data' (the document) (Figure 4.2) .</p>
+              <p>   The memory consist of a number of memory cell Which are each referenced with a unique memory address.</p>
+              <p>   Each cell of main memory on a PC will contain one byte (i.e. 8 bits); hence modern computers are described as 'byte-addressable'.</p>
+              <p>   It is a major job for the operating system to manage which memory cells are being used and which cells are 'free'. When the word processing session finishes both the memory used for the program and the document will become free and available.</p>
+              <p>   It is a fundamental concept that the computer system when reading/writing values to and from memory will treat the contents of all memory cells as a 'data' value. It is what it then does with that data value that will give the byte a context.</p>
+              <p><strong>Random Access Memory (RAM)</strong></p>
+              <p>'Random access' because the processor is able to go directly to a particular memory location (assuming it knows the address) to retrieve the data value from that cell.</p>
+              <p>   For the most popular form of RAM - Dynamic RAM (DRAM) - each bit is formed from a capacitor and a transistor working together. The capacitor stores the charge representing the value 0 or 1. The transistor is the switch to this component which allows the value to be written or read.</p>
+              <p>   RAM is volatile - that is its contents will be lost when the power to the computer system is switched off. Also the contents of the RAM can continually change (think back to our word processing session scenario).</p>
+              <p>   Integrated circuit technology has progressed at such a rate that PCs with a memory size of 4GB are now common and this has implications for programming. In the early days of computing memory was at a premium and programming techniques were specifically designed to maximise the use of the available memory. One quote Bill Gates will want to forget is "640K ought to be enough for anybody!" (1981).</p>
+              <p><strong>Read Only Memory (ROM)</strong></p>
+              <p>'Read only' implies that the contents of this type of memory cannot be changed. The bit pattern in each cell of ROM is burned at the time of manufacture of the memory component. ROM also allows random access to cells. Because the contents of this memory cannot be changed this makes it suitable for storing the program instructions the computer needs for its start-up process (called booting the computer). The software on the ROM memory is called the bootstrap loader. The computer will be hard-wired to run the bootstrap loader software when the power is switched on and its main task will then be to load parts of the operating system from the secondary storage.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Secondary storage</span></span></p>
+              <p> </p>
+              <p>Also called auxiliary storage or backing storage.</p>
+              <p>   If the RAM is volatile the computer system must use secondary storage for the permanent storage of programs and data.</p>
+              <p>Issues concerned with secondary storage will be:</p>
+              <p>• Is the device internal or external to the computer?</p>
+              <p>• Does the medium allow for direct access to particular files?</p>
+              <p>• Is the technology based on optical or magnetic methods of storage?</p>
+              <p>• Is the data effectively online or off-line to the computer system</p>
+              <p><strong>Magnetic devices</strong></p>
+              <p><strong>Hard disk</strong></p>
+              <p>A magnetic medium which has a number of surfaces (or disk platters) each divided into tracks and sectors. Data is read/written to and from the surface of a platter by a read/write head which floats above the surface of the disk. The disk rotates at high speed. To read a particular sector from the disc requires that:</p>
+              <p>• the head moves to a position over the correct track</p>
+              <p>• the head must wait until the disk rotates with the start of the sector under the head</p>
+              <p>• the head reads/writes the sector data.</p>
+              <p><strong>Convention</strong></p>
+              <p>♦ 'Disk' for magnetic media</p>
+              <p>♦ 'Disc' for optical media</p>
+              <p>The hard disk is the device for secondary storage on all PCs and is an internal unit. External hard drives are available and are often used for archiving or the backing up of data.</p>
+              <p>   The hard disk is an electro-mechanical device. Read and writing the data is electrical but the positioning of the head to the correct track and waiting for the disc to rotate (the latency time) are all the result of a mechanical movement. The mechanical aspect has implications for the speed with which data can be retrieved and written to the device.</p>
+              <p><strong>Optical devices - General operation</strong></p>
+              <p>Like a hard disk, an optical disc is rotating at high speed. The disc consists of a protective plastic layer on top of a reflective layer (that looks like aluminium foil). The surface of the disc alternates between flat areas (called 'lands') and tiny depressions (called 'pits'). These two surfaces effectively encode the pattern of Os and 1s.</p>
+              <p>   A laser is shone onto the disc and light that strikes a land it reflected back to a detector - light that strikes a pit is scattered. Unlike a hard disk, the data is written onto a single track divided into areas called sectors all of the same size. The speed of rotation of the disc is continually changing.</p>
+              <p><strong>CD-ROM (Compact Disc-Read Only Memory)</strong></p>
+              <p>Typically used for the commercial distribution of media files - software, audio and video/film. Typical capacity 600-800MB.</p>
+              <p><strong>CD-R</strong></p>
+              <p>A CD-R can be written to once and read many times. Capacity the same as for a CD-ROM. It is useful for the backup/archiving of data .</p>
+              <p><strong>CD-RW</strong></p>
+              <p>A CD-RW can be written to many times. Capacity the same as for a CD-ROM. It is useful for the backup/archiving of data.</p>
+              <p><strong>DVD</strong></p>
+              <p>Rapidly replacing the CD-ROM. Has a capacity approximately 13 times that of a CD-ROM.</p>
+              <p>   Technology is similar to a CD-ROM but the DVD disc is multi-layered hence the increased storage capacity.</p>
+              <p><strong>DVD-RW</strong></p>
+              <p>A DVD-RW can be read and written to many times.</p>
+              <p><strong>Blu-ray</strong></p>
+              <p>Designed to eventually replace the DVD, Blu-ray discs store 25GB of data in each layer and are dualed. Hence they are used for High Definition (HD) media and games machines such as the Playstation 3. A Blu-ray player is becoming a standard household item to connect to the television monitor.</p>
+              <p>   The media use a blue laser (replacing the red laser used with DVDs) which allows data to be stored with a higher packing density.</p>
+              <p>   Until 2008 there had been two competing optical formats Blu-ray and HD DVD and it was the announcement from Warner Bros that it was to adopt the Blu-ray format that made it become the de-facto standard.</p>
+              <p><strong>Solid-state Storage</strong></p>
+              <p>A Solid-state Storage Device (SSD) uses solid-state technology to store and retrieve the data. Unlike a hard disk (which is an electro-mechanical device) the SSD is only electrical. The benefits which result from this are that the device is silent and not susceptible to shock (such as a hard disk).</p>
+              <p>   SSDs are increasingly being used as the main secondary storage in laptops, netbooks and other mobile devices.</p>
+              <p><strong>Flash memory cards/Pens</strong></p>
+              <p>In widespread use and capacities of 4GB now common. Fitted in portable devices such as a smartphone or a digital camera and used extensively for transferring files between two PCs.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Buffers</span></span></p>
+              <p> </p>
+              <p>We have already described a hard disk as being an electro-mechanical device - compared with solid state memory which is purely electrical (there are no moving mechanical parts). This has implications for the operation of the computer system.</p>
+              <p>   The processor executes its program instructions on a time scale of microseconds (i.e. millionth's of a second).</p>
+              <p>   The mechanical parts of the disk drive operation (rotation of the disk and the movement of the head) are on a time scale of milliseconds (i.e. thousands of a second.</p>
+              <p>Consider these tasks:</p>
+              <p>• the output of data to a printer - this could take several seconds to print an A4 document.</p>
+              <p>• the user keying in data at the keyboard - even slower!</p>
+              <p>   This suggests that all stages of operation of the computer, i.e. input, output and storing data are much slower than the speed at which the processor can operate.</p>
+              <p>   A buffer is a temporary storage area between the device (for example, the hard disk) and the processor. Buffers are used when there is a speed mismatch between the speed at which data can be processed and input/output.</p>
+              <p>   When data is read from the disk we can never read just a byte or a couple of bytes. The operating system will organise its available storage space into 'allocation units' which will typically be two of the sectors on the disc - this is called a physical record. An allocation unit which is read could contain (for example) 10 of the customer records we are storing so we say that one physical record from the disk is storing ten of the logical records.</p>
+              <p>   A read operation of the disk head will copy this allocation unit to the disk buffer. And the operating system will then sort out the logical records and make them available to the application program (for example, the database).</p>
+              <p>   Data transfer between the buffer and the processor is only electrical and so the use of a buffer is effectively speeding up the transfer of data between the secondary storage device and the processor.</p>
+              <p><strong>Double buffering</strong></p>
+              <p>More sophisticated is the use of double buffering. When one of the buffers is having its contents read by the application program a second buffer can be filling up by reading data from the disk.</p>
+              <p><strong>Print buffer</strong></p>
+              <p>The buffering technique can similarly be applied to the output of data to a printer. Output is sent to a print buffer storage area and then the printer receives the data from the buffer. Double buffering would again speed up the operation.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Peripheral devices</span></span></p>
+              <p> </p>
+              <p>A peripheral is any device which is not part of the Central Processing Unit. This includes any external input, output and storage device and also the internal hard disk.</p>
+              <p><strong>Input devices</strong></p>
+              <p><strong>Keyboard</strong></p>
+              <p>We expect to find a standard QWERTY keyboard on any PC. The keyboard may have a numeric keypad on the right hand side. Each key press generates the ASCII code for that character and the codes are stored in a keyboard buffer before transmission to the processor.</p>
+              <p><strong>Concept keyboard</strong></p>
+              <p>A keyboard device with a similar appearance to a touch screen. Different areas on the keyboard can be represented as a picture and each picture programmed to match a choice or action.</p>
+              <p><strong>Mouse</strong></p>
+              <p>Used by all computers with a graphical user interface. Original mice had the movement detected by the physical movement of a trackball, but newer mice use lasers and transit the movement signal wirelessly (rather that through a connecting cable).</p>
+              <p><strong>Scanner</strong></p>
+              <p>Most scanners are a photo-diode system which works on the following principle.</p>
+              <p>• A laser light is shone at the source document</p>
+              <p>• A moving mirror or prism moves the light across the source</p>
+              <p>• The light is reflected back; black areas reflect less light than white areas/bands</p>
+              <p>• A light sensor - typically a photo-diode - measures the intensity of the reflected light</p>
+              <p>• This level of reflected light is converted to an electrical signal which is encoded as a digital measurement.</p>
+              <p><strong>Barcode reader</strong></p>
+              <p>The following group of devices - barcodes, OMR and OCR - are given the description automatic data entry as the data capture is done with some form other than the keying of data from the user.</p>
+              <p>   A barcode is a series of vertical black bars with variable spacing of the width of the bars and the White space gap between. The pattern of bars and gaps encodes the data value. The two coding systems in widespread use are the Universal Product Code (UPC), a variant UPC-E and the European Article Number (EAN).</p>
+              <p>   A bar code is read by a peripheral device called a bar code scanner and there are variations:</p>
+              <p>• a horizontal flatbed panel - as used at the EPOS in a supermarket</p>
+              <p>• a hand held wand type scanner.</p>
+              <p><strong>Optical Mark Reader (OMR)</strong></p>
+              <p>Optical mark recognition uses 'marks' placed by the user at certain positions on a document. For example, the shading in one of a number of boxes coded (1 to 5) on a customer satisfaction survey form. The positioning of the marks on the data capture form is the method for encoding the data. The form once completed is scanned. Some applications will have the ability to scan a whole batch of completed forms at high speed.</p>
+              <p>Typical applications include</p>
+              <p>• the input of an entry into the National Lottery</p>
+              <p>• students complete a multiple choice examination where the answer paper is designed for the OMR entry of the responses.</p>
+              <p><strong>Optical Character Reader (OCR)</strong></p>
+              <p>Uses optical character recognition. A document contains a numbers of characters which are printed in a stylised font which can be read by a scanner.</p>
+              <p>Typical applications include</p>
+              <p>• utility billing - the invoice sent to the customer is a document in two parts. The customer will return the bottom part of the form with their payment. This returned form has data such as the account number, printed in characters which can be scanned and captured.</p>
+              <p>• The basis of any OCR software on a PC. A document is first scanned and captured as an image. Software then processes the image and converts its contents into separate text characters (which could typically then be edited by word processing software).</p>
+              <p><strong>Graphics tablet</strong></p>
+              <p>The user draw on a glass plate with a digital pen and the movement of the pen is captured by software and mirrored on the screen.</p>
+              <p>Typically applications include</p>
+              <p><br>• capturing a handwritten signature</p>
+              <p>• tracing the outline of a shape from a paper copy (the paper document would be first secured on the tablet).</p>
+              <p><strong>Touch screen</strong></p>
+              <p>The visual display can detect the touching of the screen and translates the input as (for example) a menu choice and follows it with some action.</p>
+              <p>   The obvious benefit of this device is that it does away with the need for an intermediary device such as a mouse. Modern touch screens use one of two possible technologies:</p>
+              <p>Resistive - The screen consists of a number of layers, two of which come into contact as the result of a 'touch'.</p>
+              <p>Capacitive - the glass screen is coated with a layer of transparent conductor. Touching the screen causes the screen's electro-static charge to change and so its capacitance.</p>
+              <p>   Typical applications include the primary communication for tablet PCs such as an iPad and smartphones such as an iPhone.</p>
+              <p><strong>Radio Frequency Identification Reader (RFID) </strong></p>
+              <p>An RFID chip or tag is embedded into an input device such as a plastic card.</p>
+              <p>• The RFID reader transmits a radio signal</p>
+              <p>• When the RFID tag comes into close proximity to the reader the signal from the reader activates (or 'energises') the tag</p>
+              <p>• The tag then transmits data to the reader by radio waves.</p>
+              <p>Typical applications include</p>
+              <p>• the identification of crates boxes of products in retail distribution (or even individual items)</p>
+              <p>• a microchip tag under the skin of a pet - when the tag is activated it sends data to a central database so allowing the identification of the (lost?) pet</p>
+              <p>• tagging of new born babies in a hospital (to avoid them being wrongly identified).</p>
+              <p><strong>Output devices</strong></p>
+              <p><strong>Monitor or the Visual Display Unit (VDU)</strong></p>
+              <p>Monitors using cathode ray tube technology are rapidly being replaced by flat-screen LCD and TFT technology monitors. LCD monitors have the benefitthat they use little power, but have the drawback that they are susceptible to temperature changes.</p>
+              <p><strong>Laser printer</strong></p>
+              <p>A laser is a page printer, i.e. it prints a whole page at a time. To print a page the following sequence is followed:</p>
+              <p>• the rotating print drum is negatively charged</p>
+              <p>• the printer generates a bitmap image of the page</p>
+              <p>• a laser beam is directed at the drum and removes the charge corresponding to the black areas of the image</p>
+              <p>• the toner is given a negative charge and is attracted to the positively charged areas of the drum</p>
+              <p>• toner is then bonded to the paper using heated rollers.</p>
+              <p>Typical application</p>
+              <p>The laser printer is the 'office workhorse'.</p>
+              <p><strong>Dot matrix printer</strong></p>
+              <p>A dot matrix printer has a print-head which moves laterally across the page and so prints a line of characters before advancing the paper to print the next line.</p>
+              <p>   The print-head is made up of a matrix of pins and various combinations of pins form the different characters. The clarity of the printing will increase as the number of pins forming the matrix is increased. The pins strike a carbon ribbon which then impacts the character onto the paper.</p>
+              <p>Typical application</p>
+              <p>Although noisy and lacking in quality they are still in office use as their impact way of working makes them suitable for printouts which require one or more carbonised copies printed concurrently.</p>
+              <p><strong>Inkjet printer</strong></p>
+              <p>A print-head squirts coloured ink- black, cyan, magenta and yellow - onto the page from a piezoelectric crystal. Combinations of these four colours produce the coloured output.</p>
+              <p>• A heater behind the ink reservoir warms the ink. <br>• This causes droplets of ink to vaporise and a small blob of ink is forced out onto the paper</p>
+              <p>• The print-head moves laterally across the width of the page and then prints the image line-by-line. The ink dries on the paper before it is removed from the printer.</p>
+              <p>Typical application</p>
+              <p>Inkjet printers are in widespread commercial and home use for producing photo-quality printouts.</p>
+              <p><strong>Plotter</strong></p>
+              <p>The most common type is a jlatbed plotter. A sheet of paper is placed on the flat surface and a carriage mounted with pens of different colours moves above the paper. The carriage can move both horizontally and vertically so enabling the pens to be positioned anywhere on the page.</p>
+              <p>Typical application</p>
+              <p>Production of CAD drawings.</p>
+              <p><strong>Speakers/Headphones</strong></p>
+              <p>A loudspeaker is an analogue device and so the digital signals representing the sound wave must first pass through a digital-to-analogue converter before they are received by the loudspeaker.</p>
+              <p>Typical applications include</p>
+              <p>• the playback of media files</p>
+              <p>• signalling a warning message from a software application.</p>
+              <p><strong>Storage devices</strong></p>
+              <p>These can simply be summarised here as:</p>
+              <p>• an internal or external hard disk</p>
+              <p>• a variety of optical media storage devices</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

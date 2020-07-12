@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>[BVE] Development updates: C651</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['3146']).setTargeting('topic', ['376244']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['3146']).setTargeting('topic', ['376244']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['3146']).setTargeting('topic', ['376244']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['3146']).setTargeting('topic', ['376244']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/3146/'>BVE Singapore</a>
+      <h1>[BVE] Development updates: C651</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/3146/topics/376244/4/'>Prev</a>
+        <a class='page-link' href='/forums/3146/topics/376244/6/'>Next</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-03-21T14:49:18+00:00'>21 Mar 10, 14:49</time>
+            </div>
+            <div class='col-md body'>
+              <p>This is interesting:</p>
+              <p>North South Line<br>+   C151   cab view             10fps<br>+   C151   exterior view       4fps<br>+   C651   cab view             10fps<br><strong>+   C651   exterior view    0fps, aka hanged. Now need to Ctrl+Alt+Del...</strong></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-03-21T21:12:23+00:00'>21 Mar 10, 21:12</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by joeyfjj:</div>
+              <div class="quote_body">
+              <p>This is interesting:</p>
+              <p>North South Line<br> +   C151   cab
+              view            
+              10fps<br> +   C151   exterior view  
+                  4fps<br> +   C651   cab
+              view         
+                 10fps<br> <strong>+   C651   exterior view   
+              0fps, aka hanged. Now need to Ctrl+Alt+Del...</strong></p>
+              </div>
+              </blockquote>
+              <p><span style="text-decoration: underline;">North South Line</span> (at Jurong East)</p>
+              <p>+ C151 cab view = ranging from 50~80fps, average 70fps</p>
+              <p>+ C151 exterior view = ranging from 20~25fps, average 25fps</p>
+              <p>+ C651 cab view = ranging from 60~80fps, average 75fps</p>
+              <p>+ C651 exterior view = ranging from 25~35fps, average 30fps, <em>with some lags</em>.</p>
+              <p> </p>
+              <p><span style="text-decoration: underline;">Changi Airport Branch Line</span> (at Changi Airport)</p>
+              <p>+ C151 cab view = 28~33fps, average 30fps</p>
+              <p>+ C151 exterior view = 14~17fps, average 15fps</p>
+              <p>+ C651 cab view = 30~35fps</p>
+              <p>+ C651 exterior view = beginning around 10fps, after a while it goes to 22fps +/-.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>kenneth1228</div>
+              <time class='date' datetime='2010-03-24T19:49:28+00:00'>24 Mar 10, 19:49</time>
+            </div>
+            <div class='col-md body'>
+              <p>My Computer takes around 1 min to load the whole ext and int before it goes back to</p>
+              <p>its normal framerate.</p>
+              <p> </p>
+              <p>C651 Nice Interior and Exterior, thanks jcqh!!!</p>
+              <p>Kenneth1228</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>jcqh</div>
+              <time class='date' datetime='2010-03-24T20:31:25+00:00'>24 Mar 10, 20:31</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by kenneth1228:</div>
+              <div class="quote_body">
+              <p>My Computer takes around 1 min to load the whole ext and int before it goes back to</p>
+              <p>its normal framerate.</p>
+              <p> </p>
+              <p>C651 Nice Interior and Exterior, thanks jcqh!!!</p>
+              <p>Kenneth1228</p>
+              </div>
+              </blockquote>
+              <p>No prob... I'm happy that you enjoy it <img src="/images/emoticons/classic/icon_biggrin.gif" alt="icon_biggrin.gif"></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>kenneth1228</div>
+              <time class='date' datetime='2010-03-24T20:37:42+00:00'>24 Mar 10, 20:37</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by jcqh:</div>
+              <div class="quote_body">
+              <p>No prob... I'm happy that you enjoy it <img src="/images/emoticons/classic/icon_biggrin.gif" alt="icon_biggrin.gif"></p>
+              </div>
+              </blockquote>
+              <p><br>If possible, please read the PM im sending you now.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bryanwee1</div>
+              <time class='date' datetime='2010-03-26T13:31:30+00:00'>26 Mar 10, 13:31</time>
+            </div>
+            <div class='col-md body'><p>how come  the c651 that i've dowloaded from this thread the exterior are all white and there is no interior? someone please help me. thanks!</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-03-26T22:18:47+00:00'>26 Mar 10, 22:18</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Bryanwee1:</div>
+              <div class="quote_body">
+              <p>how come  the c651 that i've dowloaded from this thread the
+              exterior are all white and there is no interior? someone please
+              help me. thanks!</p>
+              </div>
+              </blockquote>
+              <p>The C651 exterior IS white.</p>
+              <p>There's no interior means that either your openBVE version is not the latest, or you're using BVE.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-03-26T22:22:14+00:00'>26 Mar 10, 22:22</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Bryanwee1:</div>
+              <div class="quote_body">
+              <p>how come  the c651 that i've dowloaded from this thread the exterior are all white and there is no interior? someone please help me. thanks!</p>
+              </div>
+              </blockquote>
+              <p>Mind giving a screenshot?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-03-26T22:28:42+00:00'>26 Mar 10, 22:28</time>
+            </div>
+            <div class='col-md body'>
+              <p>C651 motor sound is a challenge... Listening to it on repeat mode... =D</p>
+              <p>No promises, by the way.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bryanwee1</div>
+              <time class='date' datetime='2010-03-26T22:34:36+00:00'>26 Mar 10, 22:34</time>
+            </div>
+            <div class='col-md body'><p>i mean the exterior is in GREY!</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-03-26T23:22:42+00:00'>26 Mar 10, 23:22</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Bryanwee1:</div>
+              <div class="quote_body">
+              <p>i mean the exterior is in GREY!</p>
+              </div>
+              </blockquote>
+              <p>I know. Grey boxes moving. Any error messages? Most likely the file is not found.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yellowflip999</div>
+              <time class='date' datetime='2010-03-27T00:07:10+00:00'>27 Mar 10, 00:07</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by joeyfjj:</div>
+              <div class="quote_body">
+              <p>I know. Grey boxes moving. Any error messages? Most likely the
+              file is not found.</p>
+              </div>
+              </blockquote>
+              <p>Most likely that computer couldn't render that images quickly.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wenjie639</div>
+              <time class='date' datetime='2010-03-28T19:58:55+00:00'>28 Mar 10, 19:58</time>
+            </div>
+            <div class='col-md body'>
+              <p>Real Life @ TNM</p>
+              <p><img src="http://i844.photobucket.com/albums/ab8/wenjie639/P2280261Medium.jpg" alt=""></p>
+              <p>BVE @ TNM</p>
+              <p><img src="http://i844.photobucket.com/albums/ab8/wenjie639/219220atTNM.jpg" alt=""></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS7322B</div>
+              <time class='date' datetime='2010-03-28T21:13:51+00:00'>28 Mar 10, 21:13</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by wenjie639:</div>
+              <div class="quote_body">
+              <p>Real Life @ TNM</p>
+              <p><img src="http://i844.photobucket.com/albums/ab8/wenjie639/P2280261Medium.jpg" alt=""></p>
+              <p>BVE @ TNM</p>
+              <p><img src="http://i844.photobucket.com/albums/ab8/wenjie639/219220atTNM.jpg" alt=""></p>
+              </div>
+              </blockquote>
+              <p>It's seriously not bad you know.....</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>jcqh</div>
+              <time class='date' datetime='2010-03-29T21:48:25+00:00'>29 Mar 10, 21:48</time>
+            </div>
+            <div class='col-md body'>
+              <p>Good news!</p>
+              <p>1st add on and patch to be released soon.</p>
+              <p>Add on: Window advert, KFC<br>Patch: Brightening of overhead boards / stickers</p>
+              <p>Screenshots will be posted by Wed.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-03-29T23:04:20+00:00'>29 Mar 10, 23:04</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by jcqh:</div>
+              <div class="quote_body">
+              <p>Good news!</p>
+              <p>1st add on and patch to be released soon.</p>
+              <p>Add on: Window advert, KFC<br> Patch: Brightening of overhead boards / stickers</p>
+              <p>Screenshots will be posted by Wed.</p>
+              </div>
+              </blockquote>
+              <p>Looking forward, do remember to patch it up with 4P 3B, thanks.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>jcqh</div>
+              <time class='date' datetime='2010-03-30T19:16:25+00:00'>30 Mar 10, 19:16</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Samuel Lee:</div>
+              <div class="quote_body">
+              <p>Looking forward, do remember to patch it up with 4P 3B, thanks.</p>
+              </div>
+              </blockquote>
+              <p>Oh i'm not in charge of that. WIllis or the other developers will release that.</p>
+              <p>I'm now just in charge of adverts.</p>
+              <p>Updated:</p>
+              <p> </p>
+              <p><img src="http://i356.photobucket.com/albums/oo6/jcqh/BVE%20pics/KFCadonC6512.jpg" alt="" width="960" height="600"></p>
+              <p><img src="http://i356.photobucket.com/albums/oo6/jcqh/BVE%20pics/KFCadonC6511.jpg" alt=""></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-03-31T00:11:55+00:00'>31 Mar 10, 00:11</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by jcqh:</div>
+              <div class="quote_body">
+              <p>Oh i'm not in charge of that. WIllis or the other
+              developers will release that.</p>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p>Willis or the other developers? Does that mean that neither do you know who will be in charge of that at this moment, except you yourself is not the one will do?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>joeyfjj</div>
+              <time class='date' datetime='2010-03-31T21:24:23+00:00'>31 Mar 10, 21:24</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Samuel Lee:</div>
+              <div class="quote_body">
+              <p>Willis or the other developers? Does that mean that neither do you know who will be in charge of that at this moment, except you yourself is not the one will do?</p>
+              </div>
+              </blockquote>
+              <p>Something like that.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-03-31T21:25:55+00:00'>31 Mar 10, 21:25</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by joeyfjj:</div>
+              <div class="quote_body">
+              <p>Something like that.</p>
+              </div>
+              </blockquote>
+              <p>Then would you want to take over? If not I am seriously considering it.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>kenneth1228</div>
+              <time class='date' datetime='2010-04-02T11:18:32+00:00'>2 Apr 10, 11:18</time>
+            </div>
+            <div class='col-md body'>
+              <p>Noooo!!! My PCK advertistment, just my luck, thought of putting it onto the C651,</p>
+              <p>but my luck was gone, all the ads were remoed by then. :( , if anyone has a photo of</p>
+              <p>them, please send me a PM regarding this. Thank You. T__T</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>jcqh</div>
+              <time class='date' datetime='2010-04-02T23:44:30+00:00'>2 Apr 10, 23:44</time>
+            </div>
+            <div class='col-md body'>
+              <p>The first few patches are available for the BVE C651:</p>
+              <p>1. DELETED</p>
+              <p>2. Brighter overhead adverts<br><a href="http://www.4shared.com/file/255330598/f82d50bb/Patch_-_Overhead_adverts.html">http://www.4shared.com/file/255330598/f82d50bb/Patch_-_Overhead_adverts.html</a></p>
+              <p>3a. The interior walls on the right are now inverted (Works only with download 3b)<br><a href="http://www.4shared.com/file/255332412/7bea9111/Patch_-_Interior_walls.html">http://www.4shared.com/file/255332412/7bea9111/Patch_-_Interior_walls.html</a></p>
+              <p>3b. Brighter stickers for higher realism; corrects the problem involving inverted walls<br><a href="http://www.4shared.com/file/255334908/af9785c1/No_ad__window_.html">http://www.4shared.com/file/255334908/af9785c1/No_ad__window_.html</a></p>
+              <p><span style="text-decoration: underline;"><strong>Instructions<br></strong></span>Files from patch 2 are to be copied and pasted into the subfolder "panels".<br>Files from patches 3a to 3b are to be copied and pasted directly ino the "cars" folder, replacing any current files.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Samuel Lee</div>
+              <time class='date' datetime='2010-04-03T01:08:20+00:00'>3 Apr 10, 01:08</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by jcqh:</div>
+              <div class="quote_body">
+              <p>The first few patches are available for the BVE C651:</p>
+              <p>1. Train.dat folder, changed from 3P4B to 4P3B<br> <a rel="nofollow" href="http://www.4shared.com/file/255329005/11fd339e/traindat.html">http://www.4shared.com/file/255329005/11fd339e/traindat.html</a></p>
+              <p>2. Brighter overhead adverts<br> <a rel="nofollow" href="http://www.4shared.com/file/255330598/f82d50bb/Patch_-_Overhead_adverts.html">http://www.4shared.com/file/255330598/f82d50bb/Patch_-_Overhead_adverts.html</a></p>
+              <p>3a. The interior walls on the right are now inverted (Works
+              only with download 3b)<br> <a rel="nofollow" href="http://www.4shared.com/file/255332412/7bea9111/Patch_-_Interior_walls.html">http://www.4shared.com/file/255332412/7bea9111/Patch_-_Interior_walls.html</a></p>
+              <p>3b. Brighter stickers for higher realism; corrects the problem
+              involving inverted walls<br> <a rel="nofollow" href="http://www.4shared.com/file/255334908/af9785c1/No_ad__window_.html">http://www.4shared.com/file/255334908/af9785c1/No_ad__window_.html</a></p>
+              <p><span style="text-decoration: underline;"><strong>Instructions</strong></span><br> The .dat file in patch 1 is to be copied and pasted into the main
+              folder, "219-220".<br> Files from patch 2 are to be copied and pasted into the
+              subfolder "panels".<br> Files from patches 3a to 3b are to be copied and pasted directly
+              ino the "cars" folder, replacing any current files.</p>
+              </div>
+              </blockquote>
+              <p>Excuse me, Why is my C651, ended up with 3 weird powers (F,P8,EMG) and the train cannot move after using Patch 1 solely??</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>kenneth1228</div>
+              <time class='date' datetime='2010-04-03T01:25:59+00:00'>3 Apr 10, 01:25</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Samuel Lee:</div>
+              <div class="quote_body">
+              <p>Excuse me, Why is my C651, ended up with 3 weird powers (F,P8,EMG) and the train cannot move after using Patch 1 solely??</p>
+              </div>
+              </blockquote>
+              <p><br>Yes, it can go up to P8, EMG, And B8, looks like the patch was wrongly done. Maybe? It can move but up to 92.87km/h and it will work till P4, and the brakes were very loose.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>jcqh</div>
+              <time class='date' datetime='2010-04-03T11:28:00+00:00'>3 Apr 10, 11:28</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Samuel Lee:</div>
+              <div class="quote_body">
+              <p>Excuse me, Why is my C651, ended up with 3 weird powers (F,P8,EMG) and the train cannot move after using Patch 1 solely??</p>
+              </div>
+              </blockquote>
+              <p>I'm sorry, the .dat file problem has been rectified (thanks to yellowflip999)<br><a href="http://www.4shared.com/file/255787243/ae88aa45/Patch_-_traindat.html">http://www.4shared.com/file/255787243/ae88aa45/Patch_-_traindat.html</a></p>
+              <p>As for the interior walls, the following has to be downloaded and replaced as well:<br><a href="http://www.4shared.com/file/255761803/5d280b2a/Patch_-_Interior_walls_2.html">http://www.4shared.com/file/255761803/5d280b2a/Patch_-_Interior_walls_2.html</a></p>
+              <p>Patch #4 - Door formula throughout the entire train (originally only in car 3219)<br><a href="http://www.4shared.com/file/255763504/619dc551/Patch_-_Door_formula.html">http://www.4shared.com/file/255763504/619dc551/Patch_-_Door_formula.html</a></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/3146/topics/376244/4/'>Prev</a>
+        <a class='page-link' href='/forums/3146/topics/376244/6/'>Next</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

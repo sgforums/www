@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>HTML DOM innerHTML</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['391853']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['391853']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['391853']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['391853']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>HTML DOM innerHTML</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2010-02-24T16:54:20+00:00'>24 Feb 10, 16:54</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <p>&lt; HTML&gt;</p>
+              <p> </p>
+              <p>&lt; BODY&gt;</p>
+              <p>&lt; P&gt;Hello World!&lt; /P&gt;</p>
+              <p>&lt; DIV&gt;
+              	&lt; P&gt;The DOM is very useful!&lt; /P&gt;</p>
+              <p>&lt; P&gt;This example demonstrates the &lt; B&gt;document.body&lt; /B&gt; property.&lt; /P&gt;</p>
+              <p>&lt; /DIV&gt;</p>
+              <p>&lt; SCRIPT TYPE="text/Javascript"&gt;</p>
+              <p>x=document.body;</p>
+              <p>alert(x.innerHTML);</p>
+              <p>document.write(x.innerHTML);</p>
+              <p>&lt; /SCRIPT&gt;</p>
+              <p>&lt; /BODY&gt;</p>
+              <p>&lt; /HTML&gt;</p>
+              </blockquote>
+              <p>I basically got this from an internet tutorial...The original version only has the alert(x.innerHTML) and I added in document.write(x.innerHTML).</p>
+              <p>Original version is stable in the sense that its output is always the same but after my addition, the output is something like a loop but I am not sure why.</p>
+              <p>Can anyone here tell me what was the thing that I missed?</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2010-03-01T04:24:42+00:00'>1 Mar 10, 04:24</time>
+            </div>
+            <div class='col-md body'>
+              <p>x.innerHTML would contain everything between the &lt;body&gt; tags (see below), so by calling document.write(x.innerHTML), you're also re-inserting the JS code into the web document.</p>
+              <p>x.innerHTML:</p>
+              <p><span style="color: #333333; line-height: 15px; font-size: 13px;">
+              </span></p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;">&lt; P&gt;Hello World!&lt; /P&gt;</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;">&lt; DIV&gt; &lt; P&gt;The DOM is very useful!&lt; /P&gt;</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;">&lt; P&gt;This example demonstrates the &lt; B&gt;document.body&lt; /B&gt; property.&lt; /P&gt;</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;">&lt; /DIV&gt;</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;">&lt; SCRIPT TYPE="text/Javascript"&gt;</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;">x=document.body;</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;">alert(x.innerHTML);</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;"><strong><span style="color: #ff0000;">document.write(x.innerHTML);</span></strong></p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;">&lt; /SCRIPT&gt;</p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;"><span style="color: #000000; font-size: medium;"><span style="font-size: 16px; line-height: 20px;">As you can see, this would result in the browser parsing the same JS code again, resulting in a loop.</span></span></p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;"><span style="color: #000000; font-size: medium;"><span style="font-size: 16px; line-height: 20px;">If you wish to display the code on the web page, you'll need to convert the special characters (such as &lt; and &gt;) to HTML entities so that the browser would recognize them as text rather than HTML code and parse them. You may wish to use the following JS function for this purpose:</span></span></p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;"><a href="http://phpjs.org/functions/htmlspecialchars:426">http://phpjs.org/functions/htmlspecialchars:426</a></p>
+              <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding: 0px;"> </p>
+              <p></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2010-03-01T18:00:12+00:00'>1 Mar 10, 18:00</time>
+            </div>
+            <div class='col-md body'>
+              <p>Thanks for the explanation...</p>
+              <p>managed to use character codes to convert the () in document.write...</p>
+              <p>document.write&amp;40;x.innerHTML&amp;41;;</p>
+              <p>works in the sense that my display stops its infinite loop and displays correctly in the document but the alert() will contain the special characters for the document.write.</p>
+              <p>if I change alert(x.innerHTML); to alert&amp;40;x.innerHTML&amp;41;;</p>
+              <p>the alert will not appear..</p>
+              <p> </p>
+              <p>any way to <span style="color: #3366ff;">easily</span> keep the alert(x.innerHTML) but change the information parsed into document.write into special characters?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2010-03-02T03:07:56+00:00'>2 Mar 10, 03:07</time>
+            </div>
+            <div class='col-md body'>
+              <p>Why do you need the document.write statement in the first place?</p>
+              <p>The modified line "<span style="line-height: 16px; font-size: 14px; color: #333333;">document.write&amp;40;x.innerHTML&amp;41;;<span style="color: #000000; line-height: 20px; font-size: 16px;">", while valid as a JS statement, doesn't do anything other than to return integer values because the ampersands are recognized as bitwise ANDs and the semicolons simply close the statement that precedes them.</span></span></p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Xcert</div>
+              <time class='date' datetime='2010-03-02T14:19:09+00:00'>2 Mar 10, 14:19</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by LatecomerX:</div>
+              <div class="quote_body">
+              <p>Why do you need the document.write statement in the first
+                      place?</p>
+              <p>The modified line "<span style="color: #333333;">document.write&amp;40;x.innerHTML&amp;41;;<span style="color: #000000; line-height: 20px; font-size: 16px;">",
+                      while valid as a JS statement, doesn't do anything other than to
+                      return integer values because the ampersands are recognized as
+                      bitwise ANDs and the semicolons simply close the statement that
+                      precedes them.</span></span></p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p>its more for understanding the difference in parsing different input parameters and how to manipulate them as parse inputs.Right now the sitation is that I either have an loop or have an alert with special characters when I play around with the special characters so I am missing a link in how to parse inputs which are codes by themselves.</p>
+              <p>What I trying to do is for the document to show the coding in the correct format, likewise for the alert.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2010-03-03T07:29:44+00:00'>3 Mar 10, 07:29</time>
+            </div>
+            <div class='col-md body'>
+              <p><a href="http://lx.sg/null/20100303.html">http://lx.sg/null/20100303.html</a></p>
+              <p>Press Ctrl+U to view source code.</p>
+              <p>And I still don't understand what you're trying to achieve here.</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

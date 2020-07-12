@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>need help in C# programming</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['127']).setTargeting('topic', ['202618']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['127']).setTargeting('topic', ['202618']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['127']).setTargeting('topic', ['202618']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['127']).setTargeting('topic', ['202618']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/127/'>+Programming Language+</a>
+      <h1>need help in C# programming</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>dark_snowboy</div>
+              <time class='date' datetime='2006-07-30T18:12:54+00:00'>30 Jul 06, 18:12</time>
+            </div>
+            <div class='col-md body'>im actually doing a ecommerce dynamic website using asp.net.<br>my code for button login is as below.<br>May i know the origin of the error? or how it happened<img src="/images/emoticons/classic/icon_confused.gif" alt="Confused" title="Confused"><br><br>protected void btnLogin_Click(object sender, EventArgs e)<br>{<br>OleDbConnection mDB = new OleDbConnection();<br>mDB.ConnectionString = "Provider = Microsoft.Jet.OLEDB.4.0;Data source="<br>+ Server.MapPath("~/App_Data/webBase.mdb");<br>mDB.Open();<br>OleDbCommand cmd;<br>OleDbDataReader rdr;<br><br>String strSql1 = "SELECT * FROM customersTable";<br>cmd = new OleDbCommand(strSql1, mDB);<br>rdr = cmd.ExecuteReader();<br>while (rdr.Read() == true)<br>{<br>if (txtUserId.Text == (string)rdr["cUserId"] &amp;&amp; txtPassword.Text == (string)rdr["cPassword"])<br>{<br>Session["sFlag"] = "T"; // sFlag = "T" means user has logged in<br>Session["sName"] = rdr["cName"];<br>Session["sUserId"] = rdr["cUserId"];<br>Session["sAddress"] = rdr["cAddress"];<br>Session["sEmail"] = rdr["cEmail"];<br>Session["sTel"] = rdr["cTel"];<br>lblMessage.Text = "Welcome " + Session["sName"];<br>btnUpdateData.Visible = true;<br>btnLogOut.Visible = true;<br><br>String strOFlag = "F";<br>// check to see if there is an active order record - inserted to allow buying<br>String strUserId = (string)Session["sUserId"];<br>String strSql2 = "SELECT oStatus FROM ordersTable "<br>+ "WHERE oUserId = " + "'" + strUserId + "'" + "ORDER BY oOrderNo DESC;";<br>cmd = new OleDbCommand(strSql2, mDB);<br>rdr = cmd.ExecuteReader();<br>Boolean booRows = rdr.HasRows; // rdr.HasRows is true when there are recordsif (booRows) // when booRows is true, there are order records for the user<br>{<br>rdr.Read();<br>if ((string)rdr["oStatus"] != "Ordering")<br>{<br>strOFlag = "T";  // =Â”TÂ” means there is a need to generate a new order number<br>}<br>else<br>{<br>strOFlag = "T";<br>}<br>}<br><br>if (strOFlag == "T")<br>{<br>// insert a new order record<br>String strStatus = "Ordering";<br>String strSQL3 = "INSERT INTO ordersTable (oUserId, oStatus) VALUES ("<br>+ "'" + strUserId + "'" + ", " + "'" + strStatus + "')";<br>cmd = new OleDbCommand(strSQL3, mDB);<br>cmd.ExecuteNonQuery();<br>}<br>// get back order No - this order No is needed when the user buys an item<br>String strSql4 = "SELECT oOrderNo FROM ordersTable "<br>+ "WHERE oUserId = " + "'" + strUserId + "'" + "ORDER BY oOrderNo DESC;";<br>cmd = new OleDbCommand(strSql4, mDB);<br>rdr = cmd.ExecuteReader();<br>rdr.Read();<br>Session["sOrderNo"] = rdr["oOrderNo"]; // store the active order no in sOrderNo<br>mDB.Close();<br>Response.Redirect("Home.aspx");<br>}<br><br>}// userid and password not matched, hence login unsuccessful<br>btnLogOut.Visible = false;<br>btnUpdateData.Visible = false;<br>Session["sFlag"] = "F";<br>Session["sName"] = "";<br>Session["sUserId"] = "";<br>lblMessage.Text = "Error in login - Please login again ";<br>}<br>protected void btnLogOut_Click(object sender, EventArgs e)<br>{<br>btnLogOut.Visible = false;<br>btnUpdateData.Visible = false;<br>Session["sFlag"] = "L"; // L for logout<br>Session["sName"] = "";<br>Session["sUserId"] = "";<br>Session["sOrderNo"] = "";<br>txtUserId.Text = "";<br>}<br>protected void btnUpdateData_Click(object sender, EventArgs e)<br>{<br>Response.Redirect("UpdateCust.aspx");<br>}<br>}<br><br>the picture attached when there is a error is below<br><img src="http://i18.photobucket.com/albums/b149/dark_snowboy/untitled-1.jpg"></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

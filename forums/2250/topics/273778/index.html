@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>errors in my program and i cant solve!!! anyone can help???</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['273778']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['273778']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['273778']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['273778']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>errors in my program and i cant solve!!! anyone can help???</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>freak creeper</div>
+              <time class='date' datetime='2007-08-13T01:11:03+00:00'>13 Aug 07, 01:11</time>
+            </div>
+            <div class='col-md body'>hi, i wrote the foolowing program... it shows that i got errors. the errors say tat  syntax error before numeric constant. anyone knows wat is wrong? below is the program tat i worte...<br><br>#include <br>#include <br><br>#define DATA_SIZE 8000<br>#define NUM_THREADS 8<br><br>int result_max;<br>int result_min;<br><br>/* need long integer to hold so as to prevent overflow(in case) */<br>long result_sum;<br>int mark[DATA_SIZE];<br><br>/* compute max, min and total sum */<br>void *Compute(void *i)<br>{<br>int startIndex; /* starting index of i-th partition of 1000 size */<br>int j;<br>int max;<br>int min;<br>long sum;<br><br>startIndex = (DATA_SIZE/NUM_THREADS) * ((int)i);<br><br>sum = mark[startIndex];<br>max = mark[startIndex];<br>min = mark[startIndex];<br><br>for (j=startIndex; j &lt; startIndex + (DATA_SIZE/NUM_THREADS); j++)<br>{<br>sum = sum + mark[j];<br>if (mark[j] &gt; max)<br>max = mark[j];<br>if (mark[j] &lt; min)<br>min = mark[j];<br>}<br><br>/* update total sum, max, min */<br>result_sum = result_sum + sum;<br>if (max &gt; result_max)<br>{<br>result_max = max;<br>}<br>if (min &lt; result_min)<br>{<br>result_min = min;<br>}<br>/* terminate worker thread */<br>pthread_exit(NULL);<br>}<br><br>int main()<br>{<br>pthread_t threads[NUM_THREADS]; /* declare array of 8 working threads */<br>pthread_attr_t attr; /* pthread attribute variable */<br>int result;<br>int i;<br>int mean;<br><br>for (i=0; i{<br>/* i+1 as starting mark is 1 instead of 0 */<br>mark[i] = i+1;<br>}<br><br>/* update result sum, max, min to first mark */<br>result_sum = mark[0];<br>result_max = mark[0];<br>result_min = mark[0];<br><br>/* initialize the attribute variable */<br>pthread_attr_init(&amp;attr);<br>/* set the thread as joinable */<br>pthread_attr_setdetachstate(&amp;attr, PTHREAD_CREATE_JOINABLE);<br>/* create 8 worker threads */<br>for(i = 0; i &lt; NUM_THREADS; i++)<br>{<br>/* creates i-th thread which will execute compute function */<br>result = pthread_create(&amp;threads[i], &amp;attr, Compute, (void *)i);<br><br>/* if creation of thread failed */<br>if (result)<br>{<br>fprintf(stderr, "Error: pthread_create() failed, thread: %d, return code: %d\n", i, result);<br>return 1;<br>}<br>}<br><br>/* Free attribute and wait for the other threads */<br>pthread_attr_destroy(&amp;attr);<br>/* wait for all 8 worker threads created to terminate */<br>for(i = 0; i &lt; NUM_THREADS; i++)<br>{<br>/* wait for i-th thread termination */<br>result = pthread_join(threads[i], NULL);<br>/* if joining failed */<br>if (result)<br>{<br>fprintf(stderr, "Error; pthread_join() failed, thread: %d, return code: %d\n", i, result);<br>return 1;<br>}<br>}<br><br>/* integer value for mean is just good enough */<br>mean = result_sum / DATA_SIZE;<br><br>printf("min=%d, max=%d, mean=%d\n", result_min, result_max, mean);<br><br>/* terminate main thread */<br>pthread_exit(NULL);<br>return 0;<br>}<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>cloud210</div>
+              <time class='date' datetime='2007-08-13T01:31:58+00:00'>13 Aug 07, 01:31</time>
+            </div>
+            <div class='col-md body'>can u pinpoint where the error is? i can't see it</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>freak creeper</div>
+              <time class='date' datetime='2007-08-13T01:37:35+00:00'>13 Aug 07, 01:37</time>
+            </div>
+            <div class='col-md body'>void *Compute(void *i)<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>eagle</div>
+              <time class='date' datetime='2007-08-13T01:39:39+00:00'>13 Aug 07, 01:39</time>
+            </div>
+            <div class='col-md body'>I'm not comfortable with the following lines... Not sure if they are correct:<br><br>1)<br>void *Compute(void *i)<br><br>2)<br>result = pthread_create(&amp;threads[i], &amp;attr, Compute, (void *)i);<br><br>for 1)<br>It seems like i is an integer pointer...<br>due to<br>startIndex = (DATA_SIZE/NUM_THREADS) * ((int)i);<br><br>try changing to<br><br>void *Compute(int *i)<br><br>for 2)<br>Should be<br>result = pthread_create(&amp;threads[i], &amp;attr, Compute(void *)i);<br>no comma after Compute<br><br>Anyway just to comment, the code does seems a bit messy. What is the purpose of this program?</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

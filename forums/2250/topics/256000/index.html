@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Java question. Help needed.</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['256000']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['256000']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['256000']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['256000']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Java question. Help needed.</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Refugees</div>
+              <time class='date' datetime='2007-05-23T19:03:16+00:00'>23 May 07, 19:03</time>
+            </div>
+            <div class='col-md body'>import javax.swing.JOptionPane;<br><br>public class Revision_Practical {<br>public static void main(String[] args) {<br>int years = getYears();<br>double salary = getSalary();<br>String output = "";<br>}<br><br>public static int getYears() {<br>int years;<br>do {<br>String input = JOptionPane.showInputDialog(null,<br>"Please enter the number of years worked");<br>years = Integer.parseInt(input);<br>if (years &lt;= 0) {<br>JOptionPane.showMessageDialog(null,<br>"Years worked must be more than 0. Please re-enter");<br>} else {<br>JOptionPane.showMessageDialog(null,<br>"The number of years worked is: " +<br>years);<br><br>}<br><br>} while (years &lt;= 0);<br>return years;<br>} //end getYears<br><br>public static double getSalary() {<br>double salary;<br>do {<br>String input1 = JOptionPane.showInputDialog(null,<br>"Please enter the salary");<br>salary = Double.parseDouble(input1);<br>if (salary &lt;= 0) {<br>JOptionPane.showMessageDialog(null,<br>"Salary must be more than 0. Please re-enter");<br>} else {<br>JOptionPane.showMessageDialog(null, "The salary is: " + salary);<br>}<br>} while (salary &lt;= 0);<br>return salary;<br>} //end getSalary<br><br>public static int checkIncrement(int years, double salary) {<br>int increase = 0;<br>if (years &lt; 10) {<br><br>if (salary &lt; 1000) {<br>increase = 100;<br>} else if (salary &lt; 2000) {<br>increase = 200;<br>} else {<br>increase = 300;<br>}<br>} //end top if<br><br>if (years &gt; 10) {<br>if (salary &lt; 1000) {<br>increase = 200;<br>} else if (salary &lt; 2000) {<br>increase = 300;<br>} else {<br>increase = 400;<br>}<br>} //end top if<br>return increase;<br>} //end checkIncrement<br>} //end class<br><br>This is the first part of the question which i manage to do but what i don't understand is this.<br><br>d)	Modify the main() method as follows:<br>Â•	Invoke getYears() method to get the number of years worked.<br><br>Â•	Invoke getSalary() method to get the salary.<br><br>Â•	Invoke checkIncrement() method to determine the increment amount.<br><br>Â•	Declare a String variable called output to concatenate the required information (Years Worked, Salary and Increment)<br><br>Can anyone help?<br></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-05-23T19:07:07+00:00'>23 May 07, 19:07</time>
+            </div>
+            <div class='col-md body'>I don't see your main() method anywhere.<br><br>Anyway, my Java fail... but roughly it means to:<br><br>Write a main() method which will output the number of years, salary and increment.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>turbo_drift</div>
+              <time class='date' datetime='2007-05-23T19:09:48+00:00'>23 May 07, 19:09</time>
+            </div>
+            <div class='col-md body'><span style="color: indigo;">No main(), how to do like this nia...<br><br>Put main() at the top most and try..<br><br>Btw, my java just pass only.. <img src="/images/emoticons/classic/icon_redface.gif" alt="Embarassed" title="Embarassed"><br></span></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Refugees</div>
+              <time class='date' datetime='2007-05-23T19:15:48+00:00'>23 May 07, 19:15</time>
+            </div>
+            <div class='col-md body'>so the last part i must write a method out again?<br>how do i concatenate the first 3 method tgt using the string output?<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-05-23T19:21:38+00:00'>23 May 07, 19:21</time>
+            </div>
+            <div class='col-md body'>Use the + operator...</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Refugees</div>
+              <time class='date' datetime='2007-05-23T19:27:12+00:00'>23 May 07, 19:27</time>
+            </div>
+            <div class='col-md body'>import javax.swing.JOptionPane;<br><br>public class Revision_Practical {<br>public static void main(String[] args) {<br>int years = getYears();<br>double salary = getSalary();<br>int increase = checkIncrement(years, salary);<br>}<br><br>public static int getYears() {<br>int years;<br>do {<br>String input = JOptionPane.showInputDialog(null,<br>"Please enter the number of years worked");<br>years = Integer.parseInt(input);<br>if (years &lt;= 0) {<br>JOptionPane.showMessageDialog(null,<br>"Years worked must be more than 0. Please re-enter");<br>} else {<br>JOptionPane.showMessageDialog(null,<br>"The number of years worked is: " +<br>years);<br><br>}<br><br>} while (years &lt;= 0);<br>return years;<br>} //end getYears<br><br>public static double getSalary() {<br>double salary;<br>do {<br>String input1 = JOptionPane.showInputDialog(null,<br>"Please enter the salary");<br>salary = Double.parseDouble(input1);<br>if (salary &lt;= 0) {<br>JOptionPane.showMessageDialog(null,<br>"Salary must be more than 0. Please re-enter");<br>} else {<br>JOptionPane.showMessageDialog(null, "The salary is: " + salary);<br>}<br>} while (salary &lt;= 0);<br>return salary;<br>} //end getSalary<br><br>public static int checkIncrement(int years, double salary) {<br>int increase = 0;<br>if (years &lt; 10) {<br><br>if (salary &lt; 1000) {<br>increase = 100;<br>} else if (salary &lt; 2000) {<br>increase = 200;<br>} else {<br>increase = 300;<br>}<br>} //end top if<br><br>if (years &gt; 10) {<br>if (salary &lt; 1000) {<br>increase = 200;<br>} else if (salary &lt; 2000) {<br>increase = 300;<br>} else {<br>increase = 400;<br>}<br>} //end top if<br><br>String output = "";<br>if (increase &lt; 100) {<br>output = "fair";<br>} else if (increase &lt; 200) {<br>output = "ok";<br>} else if (increase &lt; 300) {<br>output = "good";<br>} else {<br>output = "excellent";<br>}<br><br>JOptionPane.showMessageDialog(null,<br>"Years Worked: " + years + "\n" + "Salary: " +<br>salary + "\n" + "Increment: " + increase +<br>"\n" + "\n" + "Increment amount " +<br>output);<br><br>return increase;<br><br>} //end checkIncrement<br><br>}<br><br>This is the new coding. But the value for increase &amp; increment doesn't appear. Where got error? <img src="/images/emoticons/classic/icon_sad.gif" alt="Sad" title="Sad"> Being doing since 1 nw still cannot finish. sigh</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>turbo_drift</div>
+              <time class='date' datetime='2007-05-23T19:28:45+00:00'>23 May 07, 19:28</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Refugees:</div><div class="quote_body">so the last part i must write a method out again?<br>how do i concatenate the first 3 method tgt using the string output?<br><br></div></blockquote>I assume ur last part is this..<br><br><blockquote><div class="quote_from">Originally posted by Refugees:</div><div class="quote_body">if (years &gt; 10) {<br>if (salary &lt; 1000) {<br>increase = 200;<br>} else if (salary &lt; 2000) {<br>increase = 300;<br>} else {<br>increase = 400;<br>}<br>} //end top if<br>return increase;<br>} //end checkIncrement<br>} //end class<br></div></blockquote>Based on what i've learned.. I think u may try it out (using the below one to replace the last part..<br><br><blockquote>Originally posted by turbo_drift:<br><br>if (years &gt; 10 + salary &lt; 1000)<br>increase = 200;<br>else if (salary &lt; 2000)<br>increase = 300;<br>else<br>increase = 400;<br><br>return increase;</blockquote>Some part of the java that i've learned, has returned to my teacher liaox.. If wrong, don't blame me hor.. <img src="/images/emoticons/classic/icon_redface.gif" alt="Embarassed" title="Embarassed"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-05-23T19:40:50+00:00'>23 May 07, 19:40</time>
+            </div>
+            <div class='col-md body'>Try commenting out this part of the codes first:<br><br><blockquote>if (years &gt; 10) {<br>if (salary &lt; 1000) {<br>increase = 200;<br>} else if (salary &lt; 2000) {<br>increase = 300;<br>} else {<br>increase = 400;<br>}<br>} //end top if<br><br>String output = "";<br>if (increase &lt; 100) {<br>output = "fair";<br>} else if (increase &lt; 200) {<br>output = "ok";<br>} else if (increase &lt; 300) {<br>output = "good";<br>} else {<br>output = "excellent";<br>}</blockquote>Then print out the results.<br><br>If the results are correct, it's your subsequent that is wrong. If you still get the same thing, then I don't know liao.</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

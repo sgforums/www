@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Cannot open .INI file with Notepad</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['336098']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['336098']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['336098']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['336098']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Cannot open .INI file with Notepad</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Darkdrium</div>
+              <time class='date' datetime='2008-11-05T15:03:21+00:00'>5 Nov 08, 15:03</time>
+            </div>
+            <div class='col-md body'>
+              <p>I am using Window XP SP2</p>
+              <p>There are 2 possibilities that caused this, I don't know which.</p>
+              <p>- Last Monday, my computer detected a virus. I don't know what is it called, all I know it has W32 at the beginning.</p>
+              <p>- Today I tried to create an .INI file, first creating a .TXT file and changing the extension to .INI</p>
+              <p> </p>
+              <p>Then I got the problem, I couldn't edit the new .INI file. Because when I open it, I get this message "The file name, directory name, or volume syntax is incorrect".</p>
+              <p><br>I decided to delete the .INI file I created and just copy an .INI file I got from another folder.</p>
+              <p>When I was exploring that folder and opening my .INI file. (The one I wanted to copy)</p>
+              <p> </p>
+              <p>I got the error message again, "The file name, directory name, or volume syntax is incorrect"</p>
+              <p>I googled for solution, then I came across this person saying changing the registry setting will work.</p>
+              <p> </p>
+              <p>This is what he said, and what I did.</p>
+              <p> </p>
+              <blockquote>
+              <p> </p>
+              </blockquote>
+              <p>Please change the registry settings, this will go.<br> <br> HKEY_CLASSES_ROOT\inifile\shell\open\c...<br> <br> change from "%SystemRoot%\system32\NOTEPAD.EXE %1"  to "%SystemRoot%\system32\NOTEPAD.EXE"<br> <br> (just take out the "%1") <br> <br> HKEY_CLASSES_ROOT\inifile\shell\print\...<br> <br> change from "%SystemRoot%\system32\NOTEPAD.EXE /p %1"  to "%SystemRoot%\system32\NOTEPAD.EXE /p"<br> <br> simillarly for Batfiles.<br> <br> HKEY_CLASSES_ROOT\batfiles\shell\edit\...<br> <br> change from "%SystemRoot%\system32\NOTEPAD.EXE %1"  to "%SystemRoot%\system32\NOTEPAD.EXE"<br> <br> <br> HKEY_CLASSES_ROOT\batfiles\shell\print...<br> <br> change from "%SystemRoot%\system32\NOTEPAD.EXE %1"  to "%SystemRoot%\system32\NOTEPAD.EXE"</p>
+              <blockquote>
+              <p> </p>
+              </blockquote>
+              <p> </p>
+              <p>After changing these settings, rebooting. I tried opening the .INI file, the error message was gone. BUT when I open it, the notepad is empty, and the blue bar above which states the file name is "Untitled".</p>
+              <p> </p>
+              <p>I can open .INI file without problems with Wordpad, but Notepad is the problem.</p>
+              <p>Any solutions?</p>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>playmemory</div>
+              <time class='date' datetime='2008-11-05T16:14:56+00:00'>5 Nov 08, 16:14</time>
+            </div>
+            <div class='col-md body'><p>the %1 refers to the parameters that is needed to open by notepad. mybe your notepad.exe is corrupted. try system restore. good luck.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>caleb_chiang</div>
+              <time class='date' datetime='2008-11-05T16:29:00+00:00'>5 Nov 08, 16:29</time>
+            </div>
+            <div class='col-md body'>
+              <p>reinstall then...</p>
+              <p>or download the notepad++ better</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Darkdrium</div>
+              <time class='date' datetime='2008-11-05T16:42:19+00:00'>5 Nov 08, 16:42</time>
+            </div>
+            <div class='col-md body'>
+              <p>Thanks for the reply.</p>
+              <p>@ playmemory, I changed the registry settings back to normal, then when I tried to open the .INI file. I can read the text inside.</p>
+              <p>But  a small window pops up, "Before you can perform printer-related tasks such as page setup or printing a document, you need to install a printer". Means whenever I open it, it is clicking the "Print" button.</p>
+              <p>I did Right Click &gt; Open the file and it still asks me whether I want to print.</p>
+              <p>I think the Open button become Printing button. I don't have the Edit button.</p>
+              <p>If there's nothing I can do, I will just get Notepad++ as caleb suggested.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>playmemory</div>
+              <time class='date' datetime='2008-11-05T16:54:24+00:00'>5 Nov 08, 16:54</time>
+            </div>
+            <div class='col-md body'>
+              <p>Could you install a printer first?</p>
+              <p>Alternatively, use add/remove program files to remove and add notepad.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Darkdrium</div>
+              <time class='date' datetime='2008-11-05T17:19:02+00:00'>5 Nov 08, 17:19</time>
+            </div>
+            <div class='col-md body'>
+              <p>That would be troublesome, and all the printers in my house are used.</p>
+              <p>And I see no "Notepad" in Add or Remove Programs.</p>
+              <p>If I were to remove Notepad, how do I add it again. Is Window XP disc required?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>playmemory</div>
+              <time class='date' datetime='2008-11-05T17:48:05+00:00'>5 Nov 08, 17:48</time>
+            </div>
+            <div class='col-md body'>
+              <p>i mean install a printer driver and set it as default.</p>
+              <p>you may need windows XP CD. it should be under add/remove windows component.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Darkdrium</div>
+              <time class='date' datetime='2008-11-05T19:26:10+00:00'>5 Nov 08, 19:26</time>
+            </div>
+            <div class='col-md body'>
+              <p>I will do that soon, I will post the results tomorrow.</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

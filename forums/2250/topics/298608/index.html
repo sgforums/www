@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Locking files without software!</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['298608']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['298608']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['298608']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['298608']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Locking files without software!</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>[DVD]</div>
+              <time class='date' datetime='2007-12-22T00:27:58+00:00'>22 Dec 07, 00:27</time>
+            </div>
+            <div class='col-md body'><span style="color: blue;">cls<br>@ECHO OFF<br>title Folder Locker<br>if EXIST "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" goto UNLOCK<br>if NOT EXIST Locker goto MDLOCKER<br>:CONFIRM<br>echo Are you sure u want to Lock the folder(Y/N)<br>set/p "cho=&gt;"<br>if %cho%==Y goto LOCK<br>if %cho%==y goto LOCK<br>if %cho%==n goto END<br>if %cho%==N goto END<br>echo Invalid choice.<br>goto CONFIRM<br>:LOCK<br>ren Locker "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"<br>attrib +h +s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"<br>echo Folder locked<br>goto End<br>:UNLOCK<br>echo Enter password to Unlock folder<br>set/p "pass=&gt;"<br>if NOT %pass%==type your password here goto FAIL<br>attrib -h -s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"<br>ren "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" Locker<br>echo Folder Unlocked successfully<br>goto End<br>:FAIL<br>echo Invalid password<br>goto end<br>:MDLOCKER<br>md Locker<br>echo Locker created successfully<br>goto End<br>:End</span><br><br>1. Paste the above code in notepad. (remember to put in your password)<br>2. Save it as batch file(with extension .bat).Any name will do.<br>3. Now you see a batch file. Double click it to create a folder locker.<br>4. A new folder named Locker would be formed at the same location.<br>5. Now brings all the files you want to hide in the locker folder.<br>6. Now double click the batch file to lock the folder namely Locker.<br>7. If you want to unlock your files,double click the batch file again and you would be prompted for password.<br>8. Enter the password and enjoy access to the folder.<br><br>Drop a reply if you like it.  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"><br></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-12-22T00:38:53+00:00'>22 Dec 07, 00:38</time>
+            </div>
+            <div class='col-md body'>Looks cool.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ctstalin</div>
+              <time class='date' datetime='2007-12-22T00:40:09+00:00'>22 Dec 07, 00:40</time>
+            </div>
+            <div class='col-md body'>great for hiding seafood in your family com  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Darkness_hacker99</div>
+              <time class='date' datetime='2007-12-22T00:43:31+00:00'>22 Dec 07, 00:43</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ctstalin:</div><div class="quote_body">great for hiding seafood in your family com  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"> </div></blockquote>Especially prawns..</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>[DVD]</div>
+              <time class='date' datetime='2007-12-22T00:47:27+00:00'>22 Dec 07, 00:47</time>
+            </div>
+            <div class='col-md body'>Don't have to be prawns.....but people usually wana hide prawns so nvm.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-12-22T00:52:34+00:00'>22 Dec 07, 00:52</time>
+            </div>
+            <div class='col-md body'>Oioioi, don't forget to quote the source hor.<br><br><a href="http://www.google.com/search?client=opera&amp;rls=en&amp;q=echo+Enter+password+to+Unlock+folder&amp;sourceid=opera&amp;ie=utf-8&amp;oe=utf-8" rel="nofollow">http://www.google.com/search?client=opera&amp;rls=en&amp;q=echo+Enter+password+to+Unlock+folder&amp;sourceid=opera&amp;ie=utf-8&amp;oe=utf-8</a><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>[DVD]</div>
+              <time class='date' datetime='2007-12-22T00:58:58+00:00'>22 Dec 07, 00:58</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">Oioioi, don't forget to quote the source hor.<br><br><a href="http://www.google.com/search?client=opera&amp;rls=en&amp;q=echo+Enter+password+to+Unlock+folder&amp;sourceid=opera&amp;ie=utf-8&amp;oe=utf-8" rel="nofollow">http://www.google.com/search?client=opera&amp;rls=en&amp;q=echo+Enter+password+to+Unlock+folder&amp;sourceid=opera&amp;ie=utf-8&amp;oe=utf-8</a><br></div></blockquote>Nothing better to do that googling it huh?<br><br>Do note there are many variations to this coding for bat files.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>^tamago^</div>
+              <time class='date' datetime='2007-12-22T01:04:48+00:00'>22 Dec 07, 01:04</time>
+            </div>
+            <div class='col-md body'>dun use windows. use zip or rar for locking. <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-12-22T01:32:30+00:00'>22 Dec 07, 01:32</time>
+            </div>
+            <div class='col-md body'>No hostility please.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-12-22T02:27:13+00:00'>22 Dec 07, 02:27</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by [DVD]:</div><div class="quote_body">Nothing better to do that googling it huh?<br><br>Do note there are many variations to this coding for bat files.</div></blockquote>Nah, I'm not that free. Just that my intuition told me it was copied from somewhere and it happened to be a spot-on. So which variation did you copy? I'm guessing it's <a href="http://www.lytebyte.com/2007/06/25/how-to-lock-and-hide-folders-in-windows-without-additional-software/" rel="nofollow">this one</a> since the capitalization and the variable names are exactly the same. Am I right on this as well?<br><br>And please, as a kind advice, quote your source if you're copying someone else's work in the future.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>[DVD]</div>
+              <time class='date' datetime='2007-12-22T02:46:52+00:00'>22 Dec 07, 02:46</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">Nah, I'm not that free. Just that my intuition told me it was copied from somewhere and it happened to be a spot-on. So which variation did you copy? I'm guessing it's <a href="http://www.lytebyte.com/2007/06/25/how-to-lock-and-hide-folders-in-windows-without-additional-software/" rel="nofollow">this one</a> since the capitalization and the variable names are exactly the same. Am I right on this as well?<br><br>And please, as a kind advice, quote your source if you're copying someone else's work in the future.<br></div></blockquote>Erm, you're so free to look through google links and the variations huh?<br>If you want the sense of pride/ego so badly, you can have it  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>maurizio13</div>
+              <time class='date' datetime='2007-12-22T03:40:29+00:00'>22 Dec 07, 03:40</time>
+            </div>
+            <div class='col-md body'>Hehehe...........<br><br>Nothing more than renaming the Locker folder into another folder name and setting hidden attributes and system attributes.<br><br>So, if anybody uses notepad to read your batch file, they will know your password huh?<br><br><img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-12-22T06:12:29+00:00'>22 Dec 07, 06:12</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by [DVD]:</div><div class="quote_body">Erm, you're so free to look through google links and the variations huh?<br>If you want the sense of pride/ego so badly, you can have it  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"> </div></blockquote>Oh no, you would be shocked at how fast I can traverse through Google results after using it for all these years. It took me much less than 5 minutes to discover that you're not the first one to post the exact same thing.<br><br>And of course, thank you. I need that sense of pride, definitely. I'm sure someone like you who shamelessly copy a person's work and leave no credit for him/her wouldn't need it anyway.<br><br>I see that both of us will be flaming each other to no end if we continue this way. If you still wish to play this childish game, please go ahead, but I will not be joining you anymore.<br></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

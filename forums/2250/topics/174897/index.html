@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Equation Handling</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['174897']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['174897']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['174897']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['174897']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Equation Handling</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Weirdo80</div>
+              <time class='date' datetime='2006-01-20T11:49:48+00:00'>20 Jan 06, 11:49</time>
+            </div>
+            <div class='col-md body'>Doing an large enterprise calculation system that requires complex math functions to be stored in the database and used in future simulation scenarios.<br><br>I thoroughly understand the process of using Reverse Polish Notation to convert the user-entered equations into a computer-readable form. However, I have problems with tokenizing the equation string. If anyone can point me in the right direction....that'll be awesome<br><br>For example, if the user enters:<br><br>z = sin(x) / 40 * cos(-50) + log(2.953 + pi)<br><br>I have to tokenize the input string into operators and operands. Having problems with this. The language is C#.<br><br><div>code:<pre>string strInput=value.Trim().ToLower()  ;<br>string strNew="";<br>System.Text.StringBuilder sbOutput=new StringBuilder() ;<br><br>string[] Operators=new string[]{"+","-","*","/","sin","cos","pi","tan","sinh","cosh","tanh","asin","acos","atan","log","ln"} ;<br><br>// remove whitespaces<br>foreach (char c in strInput.ToCharArray() )<br>{<br>if (!Char.IsWhiteSpace(c) )<br>strNew+=c;<br>}<br>strInput=strNew;<br><br>Stack numberStack=new Stack() ;<br>Stack letterStack=new Stack() ;<br>ArrayList tokens=new ArrayList() ;<br><br>// stuck!!!!! this next loop is wrong.<br>foreach (char c in strInput.ToCharArray() )<br>{<br>if (c=='x')<br>tokens.Add("x") ;<br>else if (c=='y')<br>tokens.Add("y") ;<br>else if (Char.IsDigit(c) || c=='.')<br>numberStack.Push(c) ;<br>else if (Char.IsLetter(c) )<br>letterStack.Push(c) ;<br><br>}<br><br>// convert to reverse polish notation</pre></div></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-01-20T12:56:24+00:00'>20 Jan 06, 12:56</time>
+            </div>
+            <div class='col-md body'>I haven't learn C# yet...<br><br>Sorry, cannot help.<br><br>But learn from ASP.NET that when you start, you need to end.<br><br>Your code like got start no end. Like this part below:<br><br>foreach (char c in strInput.ToCharArray() )<br>{<br>if (c=='x')<br>tokens.Add("x") ;<br>else if (c=='y')<br>tokens.Add("y") ;<br>else if (Char.IsDigit(c) || c=='.')<br>numberStack.Push(c) ;<br>else if (Char.IsLetter(c) )<br>letterStack.Push(c) ;<br><br>}<br><br>Or does the sign } means ending?<br><br>In ASP.NET will be If ... End If</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Weirdo80</div>
+              <time class='date' datetime='2006-01-20T13:36:05+00:00'>20 Jan 06, 13:36</time>
+            </div>
+            <div class='col-md body'>If..End If is for VB.NET only. I'm using C# in which codeblocks are demarkated by { }</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-01-20T13:51:33+00:00'>20 Jan 06, 13:51</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Weirdo80:</div><div class="quote_body">If..End If is for VB.NET only. I'm using C# in which codeblocks are demarkated by { }</div></blockquote>I see.<br><br>Then cannot help liao. Have learnt only VB.NET and ASP.NET</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

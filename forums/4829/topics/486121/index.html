@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Data Representation, Structure and Management</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['4829']).setTargeting('topic', ['486121']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['4829']).setTargeting('topic', ['486121']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['4829']).setTargeting('topic', ['486121']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['4829']).setTargeting('topic', ['486121']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/4829/'>Computing</a>
+      <h1>Data Representation, Structure and Management</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>The Code</div>
+              <time class='date' datetime='2014-08-21T15:40:25+00:00'>21 Aug 14, 15:40</time>
+            </div>
+            <div class='col-md body'>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 28pt;"><span style="font-family: Calibri;">Data Representation, Structure and Management</span></span></p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">The use of codes to represent a character set</span></span></p>
+              <p> </p>
+              <p>Computers store and process numeric and character data. A digital computer stores all data as binary digits - hence characters must also be represented as numbers.</p>
+              <p>   The character set used will have a different number to represent each character.</p>
+              <p>   The character set must include upper case letters, lower case letters, the number digits and all the punctuation and other characters found on the standard QWERTY keyboard.</p>
+              <p><strong></strong></p>
+              <p><strong>ASCII (American Standard Code for Information Interchange)</strong></p>
+              <p>This text suggests that we must have a standard set of character codes which is used by all computers (especially for transferring data between computers).</p>
+              <p>   ASCII uses a 7 -bit code to represent each of the characters and any programming text book should include this table of codes.</p>
+              <p>A selection of the codes is shown in Table 3.1.</p>
+              <p><strong></strong></p>
+              <p><strong>Table 3.1</strong></p>
+              <p>Character  Decimal   Character   Decimal</p>
+              <p>&lt;Return&gt;      13                ...               ...</p>
+              <p>&lt;Space&gt;       32                z              122</p>
+              <p>A                   65                0               48</p>
+              <p>B                   66                1               49</p>
+              <p>c                   67                 2               50</p>
+              <p>z                   90                 9               57</p>
+              <p>a                   97                $               36</p>
+              <p>b                   98                %              37</p>
+              <p>c                   99                &amp;               38</p>
+              <p> </p>
+              <p>   The math tells us that 7-bits makes possible 128 different codes (with binary codes 0000000, 00000001, ... , 1111111).</p>
+              <p>   The computer stores all data as one or more bytes (8-bits) and so an extra digit is used in the most significant bit position (on the left) for a checking function called a parity check. This bit is called the parity bit.</p>
+              <p><strong>Parity</strong></p>
+              <p>A computer system uses either even parity or odd parity.</p>
+              <p>   Even parity means that the total number of one bits (including the parity bit) must total to an even number.</p>
+              <p>Consider these characters:</p>
+              <p>1. 'A' has ASCII code 65 denary.<br>       7-bit binary for 65 is 1000001.<br>    This has two 1 bits (an even number), so the parity bit to be added will be a 0 bit. The 8-bit ASCII code for character is 01000001.</p>
+              <p>2. '8' has ASCII code 56 denary. <br>       7-bit binary for 56 is 0111000.</p>
+              <p>   This has three 1 bits (an odd number), so the parity bit to be added will be a 1 bit to make the total number of 1 bits even.</p>
+              <p>   The 8-bit ASCII code for character '8' is 10111000.</p>
+              <p> </p>
+              <p><span style="font-family: Calibri;"><span style="line-height: 115%; font-size: 18pt;">The representation of different data types</span></span></p>
+              <p> </p>
+              <p><strong>Data types</strong></p>
+              <p>The computer system - or more precisely the programming language or applications software such as a spreadsheet - will distinguish between different types of data.</p>
+              <p><strong>Integer</strong></p>
+              <p>In math this is any positive or negative whole number.</p>
+              <p><strong>Boolean</strong></p>
+              <p>Some data only have values 'True' or 'False'.</p>
+              <p>• Is a customer allowed credit?<br>• Is a student aged over 18?</p>
+              <p><strong>Date and Time</strong></p>
+              <p>There are considerable variations across different programming languages for how the language stores and processes a date value. Typical would be SQL which uses the format YYYY/MM/DD and encloses the characters inside the hash character.</p>
+              <p>   The representation for the 13 April 2012 is #2010/04/13#.</p>
+              <p><strong>Currency</strong></p>
+              <p>The data type 'Currency' is available in Visual Basic. Net and applications such as MS Access and Excel. The data type is used for money values which have two digits after the decimal point.</p>
+              <p><strong>Character</strong></p>
+              <p>The ASCII code table was concerned with the number codes used for single characters.</p>
+              <p>Examples could include:</p>
+              <p>• gender - with possible value 'M' and 'F' only</p>
+              <p>• product type - 'E' used for electrical, 'C' for computer equipment etc.</p>
+              <p><strong>Strings</strong></p>
+              <p>Most program applications will need to store string data. A string is a sequence of characters from the character set. So:</p>
+              <p>"President putin"<br>"14 The High Street"<br>"9876"</p>
+              <p>Are all examples of a valid string value</p>
+              <p><strong>Note</strong></p>
+              <p>• The string may have no characters - called an 'empty string'</p>
+              <p>• The string may include digit or &lt;space&gt; characters - e.g. the address above</p>
+              <p>• The Programming language used may have an upper limit on the maximum length of a string</p>
+              <p>• The Programming language will have built-in functions for the manipulation of string data</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Express positive integers in binary form</span></span></p>
+              <p> </p>
+              <p>All data in the computer must be represented in binary form.</p>
+              <p>Consider a single byte used to represent a positive integer.</p>
+              <p>Think - just like we would in denary base ten - that each of the bits positions has a place value.</p>
+              <p>These are shown below:</p>
+              <p>• the most significant bit position has place value 128</p>
+              <p>• the least significant position has place value a 'unit' i.e. 0 or 1.</p>
+              <p>128 64 32 16 8 4 2 1</p>
+              <p>The following examples illustrate:</p>
+              <p> </p>
+              <p>1. What positive integer is this?</p>
+              <p>01100111</p>
+              <p>1 + 2 + 4 + 32 + 64 = 103 denary.</p>
+              <p> </p>
+              <p>2. Represent 93 as an 8-bit positive integer.</p>
+              <p>93 = 64 + 16 + 8 + 4 + 1</p>
+              <p>128  64  32  16  8  4  2  1</p>
+              <p>    0    1    0   1   0  1  0  1</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Understand the structure of arrays</span></span></p>
+              <p> </p>
+              <p>When we store three surnames with the identifier names - Customer1, Customer2 and customer3 the variables will be declared in the program and this is the trigger for the interpreter or compiler to reserve three storage locations in memory ready to store the values assigned in the program. Appreciate that the data items have no relation to each other; the identifier names customer1, Customer2 etc., are as different as using names NameA, NameB etc .</p>
+              <p><strong>Arrays</strong></p>
+              <p>An array is a collection of data items which are referred to by the same identifier name.</p>
+              <p>Example</p>
+              <p>A garage sells cars and stores data for the number of cars sold in each month of the year. The array will be called MonthlySales and we need to store twelve values. The array can be visualised as shown in Table 3.2.</p>
+              <p><strong>Table 3.2</strong></p>
+              <p>   MonthlySales</p>
+              <p>1     13</p>
+              <p>2     15</p>
+              <p>3       5</p>
+              <p>4     11</p>
+              <p>...</p>
+              <p>12     6</p>
+              <p>The numbers alongside each value is called the index or subscript number of the array.</p>
+              <p>Typical values are:</p>
+              <p>MonthlySales[1]=13<br>MonthlySales[4]=11</p>
+              <p>This array is a one-dimensional array.</p>
+              <p>   MonthlySales is storing integer values. We can have arrays that store values of any of the recognised data types, i.e. Char, Boolean etc.</p>
+              <p><strong>Visual Basic.Net</strong></p>
+              <p>• VB uses parentheses - ( and ) -to enclose the array subscript.</p>
+              <p>• Throughout the text we shall use square brackets.</p>
+              <p>Example</p>
+              <p>The garage has a site in three towns and records separately the monthly sales made on each site for the 12-month period.</p>
+              <p>   This suggests we need to visualise the data as shown in Table 3.3. The columns represent each month and the rows represent the sites.</p>
+              <p> </p>
+              <p><strong>Table 3.3</strong></p>
+              <p>                 SiteMonthlySales</p>
+              <p> </p>
+              <p>         1    2    3    4    5    6    7    8     9   10   11  13</p>
+              <p>1       3    5    1    4    9  11    6     8     6     3    9    0</p>
+              <p>2       4    5    1    7  12    6    7     3     5   11    6    4<br> <br>3       6    5    3    4    8  12    9   12   10     8    8    2</p>
+              <p> </p>
+              <p>   All values are represented with a single array. We shall use identifier name SiteMonthlySales which now needs two subscript numbers. This is called a <strong>two-dimensional array</strong>.</p>
+              <p>Typical values are:</p>
+              <p>SiteMonthlySales[1, 5] = 9<br>SiteMonthlySales[3, 11] = 8</p>
+              <p>If this was implemented with program code:</p>
+              <p>♦ For array MonthlySales subscript 0 is never used</p>
+              <p>♦ For array SiteMonthlySales column zero and row 0 are not used.</p>
+              <p><strong>Initialising an array</strong></p>
+              <p>The variable name use for the array must be declared in the program code.</p>
+              <p>   Visual Basic.Net assumes the first subscript is zero, and the number shown is the highest subscript.</p>
+              <p>Dim MonthlySales(12) As Integer<br>Dim SiteMonthlySales(3, 12) As Integer</p>
+              <p>The smallest and largest subscripts are called the lower bound and the upper bound of the array.</p>
+              <p>If the array is to be given an initial value for all the cells in the array this can be done using a loop.</p>
+              <p>   All the monthly sales values are to be assigned an initial value of zero.</p>
+              <p>Dim MonthlySales(12) As Integer<br>Dim Index As Integer</p>
+              <p>For Index = 1 To 12<br>MonthlySales(Index) = 0<br>Next Index</p>
+              <p><strong>Reading values into an array</strong></p>
+              <p>This is what essentially has been done in the code above. Each element of the array was assigned the value zero.</p>
+              <p>   We are to input the twelve monthly sales totals from the keyboard and store them in the array.</p>
+              <p>Note the Index variable is supplying both:</p>
+              <p>• the index number for the array</p>
+              <p>• the prompt for the data entry.</p>
+              <p> Dim MonthlySales (12) As Integer<br> Dim Index As Integer</p>
+              <p> For Index = 1 To 12<br>    Console.Write("Month: " &amp; Index &amp; " ... ")<br>    MonthlySales(Index) = Console.Readline<br> Next Index<br>Console.WriteLine("Sales figures now stored in array ... ")</p>
+              <p><strong>Pseudocode</strong></p>
+              <p>What follows is our first use of pseudocode to describe an algorithm.</p>
+              <p>   You should be able to study this and then write the program code from it.</p>
+              <p><strong>Serial search of an array</strong></p>
+              <p>A serial (or linear) search means start with the first value and then consider each value in order.</p>
+              <p>   Find the first month is which the total sales was below 10.</p>
+              <p>   We shall write a pseudocode description for the search algorithm.</p>
+              <p> </p>
+              <p>Index ← 1</p>
+              <p>Found ← False</p>
+              <p>REPEAT</p>
+              <p>IF MonthlySales[Index] &lt; 10</p>
+              <p>  THEN</p>
+              <p>     Found ← True</p>
+              <p>     OUTPUT "The month number was..."</p>
+              <p>     Index</p>
+              <p>ELSE</p>
+              <p>     Index ← Index + 1</p>
+              <p>ENDIF</p>
+              <p> UNTIL Found = True</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">The LIFO and FIFO features of stacks and queues</span></span></p>
+              <p> </p>
+              <p><strong>Stack</strong></p>
+              <p>A stack is a collection of data items - which can continually have new items join and items leave - which behave in a certain way. A stack manages its data items as 'the last item to join the stack will be the first item to leave: This can be abbreviated to 'Last in - First Out' (LIFO).</p>
+              <p><strong>Queue</strong></p>
+              <p>A queue behaves as follows. The first item to join the queue will be the first item to leave. That is 'First In- First Out' (FIFO). Again there are practical situations for a computer system where we would want data to be managed as a queue.</p>
+              <p>6 Storing data in files in the form of fixed length records comprising items in fields</p>
+              <p><strong>Records</strong></p>
+              <p>Data often consist of several data items which all relate to some entity. For example the collection of data for title, artist and release date all relate to the same 'recording' entity and we want to store the data for many recordings. The programmer would organise this data as a record. Using database terminology, each recording record would consist of three fields (title, artist and release date).</p>
+              <p>   A collection of the data for (for example 150) recordings would be a file of recordings.</p>
+              <p><strong>Fixed-length records</strong></p>
+              <p>If the programming language was to store every record with the same number of characters then the records are said to be fixed length records.</p>
+              <p>In practice for the example given:</p>
+              <p><br>• Title of the recording</p>
+              <p>&gt; would be a string of characters with a stated maximum length. If this was about 50 characters, then the title 'Abbey Road' could be stored either as:</p>
+              <p>* a string of 10 characters only, or</p>
+              <p>* a string with 'Abbey Road' followed by 40 characters so ensuring all title data was a fixed length. This second option ensures that the records will be fixed-length records.</p>
+              <p>• Artist field</p>
+              <p>&gt; Same alternatives as for the Title data.</p>
+              <p>• Release date</p>
+              <p>&gt; The programming language will have a standard format it uses for dates. If it was as suggested earlier YYYY/MM/DD, then all dates would be stored as 10 characters</p>
+              <p>   So the issue is that some data types will mean the number of characters is always fixed - but for the 'string of characters' data type the data value could be a variable or a fixed size.</p>
+              <p> </p>
+              <p><span style="font-family: Calibri;"><span style="line-height: 115%; font-size: 18pt;">Serial, sequential, indexed sequential and random access to data and implementing serial, sequential and random organisation of files using indexes and hashing as appropriate</span></span></p>
+              <p> </p>
+              <p><strong>Serial Access</strong></p>
+              <p>Serial access to a set of data items is accessing them in the natural order in which they are stored. Access to the items held in an array would be serial if we started at the item with subscript 1, then subscript 2 etc.</p>
+              <p>   Consider items held in a text file. Serial access would mean reading the line of text on line 1, followed by line 2 etc.</p>
+              <p>   What serial access means in practice will depend upon how the items were originally stored or organised. If the file was a file of words stored in alphabetical order, then serial access would retrieve the data in alphabetical order. This is generally not so; serial access generally is retrieving the data items in the original order in which they were stored.</p>
+              <p>Advantage of serial access</p>
+              <p>• Easy to program and supported by all programming languages.</p>
+              <p>Disadvantage</p>
+              <p>• We do not have direct access to an individual record.</p>
+              <p>Sequential access</p>
+              <p>Sequential access assumes that the data items were stored with sequential organisation. One of the data items will be acting as a key field. For example a file of customer records could have the product code as the key field. The data items are then read starting with the first and this retrieves the items in (alphabetical) order, i.e. in sequential order.</p>
+              <p>   For all applications where we are reading data from a file, the programming file processing methods have the major disadvantage that the data items can only be read in sequence. There is no way that we can immediately read the 12th item in the file.</p>
+              <p>Advantage</p>
+              <p>• Easy to program and supported by all programming languages.</p>
+              <p>Disadvantages</p>
+              <p>• We do not have direct access to an individual record.</p>
+              <p>• The subsequent maintenance of the file (adding a new record, deleting a record) requires a lot of program code involving two files.</p>
+              <p><strong>Random Access</strong></p>
+              <p>This technique is designed to overcome the limitations of serial/sequential access.</p>
+              <p>   A random access file uses a record key number allocated to each record. This number is used to calculate (or 'hash') the disc address where the data will be stored. The same record key can be used later to directly access this individual record from the file.</p>
+              <p>   An array can be considered in the same way. The index number will be used when the data item is stored. The same array subscript can be used to directly access that individual array item.</p>
+              <p>   There are issues to consider when deciding how each record key is generated. If we anticipate that there will be approximately 1000 records in the file, we need to use a hashing calculation which gives this range of key numbers. Also, we do not want two different numbers to generate the same record key. If this happens then potentially one of the records will be lost, or we need to anticipate this and have a strategy in place to deal with this situation of duplicate<br>record key number.</p>
+              <p>Advantage</p>
+              <p>• Able to directly access individual records (without referencing any of the other records).</p>
+              <p>Disadvantages</p>
+              <p>• Storage space may be wasted as a result of a poor choice of hashing function (i.e. record key)</p>
+              <p>• Possible that two different records could generate the same record key number.</p>
+              <p><strong>Indexed sequential</strong></p>
+              <p>Index sequential organisation and access is designed to offer the benefits of both sequential and random organisation.</p>
+              <p>   To understand index sequential organisation, we must appreciate that the data records will be written onto the disc in blocks. A block is the smallest unit of data which can be read/written. A block is typically 512 bytes and so could contain several logical (for example customer) records.</p>
+              <p>   An indexed sequential file works as follows. Each record has a record key (just like a random file).</p>
+              <p>• An index which stores the highest record key in that block of records</p>
+              <p>• In practice this could be a multi-level index where:</p>
+              <p>&gt; the top-level is a track index for each track on the disc</p>
+              <p>&gt; each track then has its own block index.</p>
+              <p>The following 'track index' is the first place to look when the program has to write a new record (Table 3.4).</p>
+              <p><strong></strong></p>
+              <p><strong>Table 3.4</strong></p>
+              <p>        Track Index</p>
+              <p>Track    Highest key (on that track)</p>
+              <p>1                     946</p>
+              <p>2                   1693</p>
+              <p>3                   2030</p>
+              <p>4                   5166</p>
+              <p><br>Hence writing a new record with key 1926 would search the track index and establish this will be written s9mewhere on track 3. We then consult the block index for track 3 (Table 3.5).</p>
+              <p> </p>
+              <p>Table 3.5</p>
+              <p>       Track 3: Block Index</p>
+              <p>Block   Highest key (on that track)</p>
+              <p>  1                  1701</p>
+              <p>  2                  1754</p>
+              <p>   Ê…                      Ê…</p>
+              <p> 14                 1896</p>
+              <p> 15                 1944</p>
+              <p> 16                 2030</p>
+              <p> </p>
+              <p>This tells the software to store this new record in block 14 (i.e. its home storage area). The problem arises when the track index tells us use block 14 but when the software reads block 14 it finds that it is full (It already has five records stored). This is the situation when an overflow area must be used.</p>
+              <p>   The home storage area stores the blocks of records. A disc which used blocks of size 512 bytes and logical (fixed sized) records of 95 bytes would be able to store five records in each block.</p>
+              <p>   An overflow area stores any records which could not be stored in their home block. Records stored here will have a link from the home area block in order that these can be retrieved.</p>
+              <p>Advantages</p>
+              <p>• Able to directly access individual records (without referencing any of the other records)</p>
+              <p>• Able also to access the records in sequence.</p>
+              <p>   Many computing applications could benefit from both direct access and sequential access. Printing customer statements could use sequential access assuming the records are stored in customer name order.</p>
+              <p>Searching for a single transaction (to answer an on-line customer query) would use direct access to the customers record using the indexes.</p>
+              <p>Disadvantage</p>
+              <p>• Not supported by all programming languages.</p>
+              <p>   The data type to be used for any particular item should be self-evident and this issue is a fundamental one when we consider an initial program specification design.</p>
+              <p>   As a general rule data items which are a 'one off' will be coded with a single variable whereas a collection of items - such as all the student surnames - would be represented with an array. A major advantage of using arrays is that separate arrays can be used for different data items. For example an array for the pupil's surname, an array for the form, and an array for the year the student joined the school. This way, we can assume that</p>
+              <p>Surname[56], Form [56] and<br>YearJoined [56] all refer to the same student.</p>
+              <p>   A typical task such as searching for a student would search the surname array - find the array index where the surname is found - for example index value X - and then directly access Form [ X ] and YearJoined [ X ] to display this student's data.</p>
+              <p>   The previous section on the use of files is a key consideration when designing the data structures to be used for a particular problem. We often have to think in reverse order. The data processing requirements will determine the file organisation and access methods to be used. 'For example if we have to carry out frequent searches for individual records then direct access may be needed. An alternative approach could be to read all the data values into arrays at the start of any program session and save the data back to the file at the end of the session. This way the array indexes provide fast access to any data value.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Backing up data and archiving</span></span></p>
+              <p> </p>
+              <p><strong>Backing up data</strong></p>
+              <p>The data that a company generates is one of its most important assets. All aspects of the business will generate data for order processing, research, manufacturing and general operational data. The loss of this data could prove disastrous for the company.</p>
+              <p>   Safeguarding the companies' data is a security issue. Backing up the data means taking a complete copy of the data and is based on the worst-case scenario that this data could be completely destroyed. This could be the result of a hardware malfunction, some human error, a natural disaster or a member of staff not following the correct operational procedures.</p>
+              <p>   The issues around backing up of the data are given here.</p>
+              <p>• Do we need to backup all the data?</p>
+              <p>• How often should this backup be taken?</p>
+              <p>• Where the backup data should be stored?</p>
+              <p>• What are the recovery procedures should the backups be required?</p>
+              <p>There is probably little to be gained in backing up program files. If a program fails then we will have the original program discs to re-install the software. However there may be configuration files which have been generated in the course of using the software which should be backed up.</p>
+              <p>   The frequency of backup will be determined by the nature of the application. Consider a payroll application which uses batch processing and is run on the 28th day of each month. The processing is that the latest payroll master file is generated each month from the current payroll master and a monthly file of employee transactions. This produces the updated <strong>master file</strong>. The backup files should therefore be the original version of the master file and this month's transaction file. If the updated master became corrupted, then we could recover using the old master and the current transaction file. Hence a new backup set of files is effectively generated only every month.</p>
+              <p>   Compare this with an order processing application which is receiving (for example) 50 new orders through its website every hour. What happens if this order processing file fails?</p>
+              <p>   There will be changes made to the data every minute and it will not be possible to take a backup of the data every minute! It may be reasonable to backup the data every (for example) one hour. If we log all the transactions in a separate file then it should be possible the recreate master file(s) in the event of a failure.</p>
+              <p>   An alternative strategy is the mirroring of the master files so that we always have a second 'live' copy of the important data. In the event of a disk failure, we can simply switch to the mirrored files.</p>
+              <p><strong>Archiving files</strong></p>
+              <p>We shall frequently get queries from customers about an order that was recently placed, but is it likely we shall get queries about orders which are two years old? This suggests that some data on the computer system could be removed from on -line availability.</p>
+              <p>   Archiving is the removal of files from online availability and moving (not copying) them to some form of off-line storage. In the unlikely event that the data will be needed, it can be accessed from the off-line storage.</p>
+              <p>   Archiving is the process of freeing up files which are no longer in use but still having the files available if needed. Client email software typically asks the users if they want to 'archive' emails which are older than (for example) two months.</p>
+              <p> </p>
+              <p>Top Tip : Don't confuse the terms backup and archive - they are not the same.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Bettymcdonald50</div>
+              <time class='date' datetime='2014-08-21T18:57:10+00:00'>21 Aug 14, 18:57</time>
+            </div>
+            <div class='col-md body'><p>If you are one of the group that are not real practicing or not workout regularly, perhaps you mortal both disconfirming thoughts of your own. Isn't it instance to move business and programing your intention with solon electropositive thoughts?"I don't mortal indication." It would exclusive position 1/48th of your total day to learn for 30 minutes - and most group degenerate a lot statesman example than that on unfertile activities equivalent watching TV or invoice chatting on the phone! Beingness physically activist is many grave for your eudaemonia and well-being than 99% of the new things you anticipate must get done each day.You gift pauperization to hit this a precedency in your beingness if you are e'er feat to motility your eudaemonia and shape goals.  <span style='font-size: 11.0pt; font-family: "Calibri","sans-serif";         '><a href="http://guiadecorpomagro.com/"><strong><span style="font-size: 24.0pt; font-family: Gabriola;">http://guiadecorpomagro.com/  </span></strong></a></span><strong><span style="font-size: 24.0pt; font-family: Gabriola;       "><span><br></span></span></strong></p></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

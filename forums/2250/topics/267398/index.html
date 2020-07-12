@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Various Firefox vulnerabilities</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['267398']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['267398']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['267398']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['267398']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Various Firefox vulnerabilities</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/2250/topics/267398/2/'>Next</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-11T21:06:58+00:00'>11 Jul 07, 21:06</time>
+            </div>
+            <div class='col-md body'>From <a href="http://secunia.com/advisories/25984/" rel="nofollow">Secunia</a><br><br><strong>Description</strong><br>A vulnerability has been discovered in Firefox, which can be exploited by malicious people to compromise a user's system.<br><br>The problem is that Firefox registers the "firefoxurl://<strong></strong>" URI handler and allows invoking firefox with arbitrary command line arguments. Using e.g. the "-chrome" parameter it is possible to execute arbitrary Javascript in chrome context. This can be exploited to execute arbitrary commands e.g. when a user visits a malicious web site using Microsoft Internet Explorer.<br><br>The vulnerability is confirmed in Firefox version 2.0.0.4 on a fully patched Windows XP SP2. Other versions may also be affected.<br><br><strong>Test codes</strong><br><br><span style="color: red;"><strong>Warning: Do not run this on your machine. If you wish to do so, please use a virtual machine or perform it on a test machine. All these codes are live; they will affect your machine. Anybody who disregards this message is not my problem.</strong></span><br><br><a href="http://www.xs-sniper.com/sniperscope/IE-Pwns-Firefox.html" rel="nofollow">http://www.xs-sniper.com/sniperscope/IE-Pwns-Firefox.html</a><br><a href="http://larholm.com/vuln/firefoxurl.html" rel="nofollow">http://larholm.com/vuln/firefoxurl.html</a><br><br><strong>Explantion</strong><br><br>An explanation of how this works is provided at: <a href="http://larholm.com/2007/07/10/internet-explorer-0day-exploit/" rel="nofollow">http://larholm.com/2007/07/10/internet-explorer-0day-exploit/</a><br><br><strong>Prevention</strong><br><br>Avoid untrusted sites and disable the "Firefox URL" URI handler.<br><br>I haven't found out how to disable the "Firefox URL" URI handler yet. Will post once I've figured out how. Or if anybody knows, please post it.<br><br>Edit: Found out how to disable Firefox URL URI handler.<br><br>1. Open My Computer.<br>2. Click on <strong>Tools</strong> &gt; <strong>Folder Options</strong><br>3. Select <strong>File Types</strong> tab.<br>4. Under <strong>Extensions</strong> column, select <strong>None</strong>. Next to <strong>None</strong>, make sure it says <strong>Firefox URL</strong>.<br><br><img src="http://xs117.xs.to/xs117/07283/firefoxsettings.PNG"><br><br>5. Select it, click on <strong>Delete</strong>.<br><br>a) If your Delete button is grayed out, click on <strong>Advanced</strong><br><br><img src="http://xs217.xs.to/xs217/07283/firefoxsettings2.PNG"><br><br>b) A new window will open. Click <strong>Remove</strong>.<br><br><img src="http://xs217.xs.to/xs217/07283/firefoxsettings3.PNG"><br><br>If it is done properly, you should receive a warning:<br><br><img src="http://xs117.xs.to/xs117/07284/nomore.PNG"></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-11T21:17:08+00:00'>11 Jul 07, 21:17</time>
+            </div>
+            <div class='col-md body'>From <a href="http://secunia.com/advisories/25990/" rel="nofollow">Secunia</a><br><br><strong>Description</strong><br><br>Michal Zalewski has discovered a vulnerability in Mozilla Firefox, which can be exploited by malicious people to disclose sensitive information and conduct spoofing attacks.<br><br>The vulnerability is caused due to an error in the handling of the "wyciwyg://" URI handler. This can be exploited to access or spoof contents from a previously cached web site e.g. via HTTP 302 redirects when a user visits a malicious web page.<br><br>The vulnerability is confirmed in version 2.0.0.4. Other versions may also be affected.<br><br><strong>Test codes</strong><br><br><span style="color: red;"><strong>Warning: Do not run this on your machine. If you wish to run it, use it on a virtual machine or a test machine. All these codes are live; they can modify your machine. Anybody who disregards this message is not my problem.</strong></span><br><br><a href="http://lcamtuf.coredump.cx/ffcache/" rel="nofollow">http://lcamtuf.coredump.cx/ffcache/</a><br><br><strong>Explanation</strong><br><br>The explanation is also provided at the above link provided for the exploit.<br><br><strong>Prevention</strong><br><br>Avoid untrusted sites.<br><br><strong>Other notes</strong><br><br>Didn't work on my Linux machine (maybe because it's Firefox 2.0.0.3 ?). I will test out on a Windows soon...<br><br>Edit:<br><br>Update: Works on Firefox 2.0.0.4 Windows SP2<br><br>Screenshots:<br><br><a href="http://xs.to/xs.php?h=xs117&amp;d=07284&amp;f=webby.PNG" rel="nofollow"><img src="http://xs117.xs.to/xs117/07284/webby.PNG.xs.jpg"></a><br><br><img src="http://xs117.xs.to/xs117/07284/success.PNG"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>The man who was death</div>
+              <time class='date' datetime='2007-07-12T19:32:44+00:00'>12 Jul 07, 19:32</time>
+            </div>
+            <div class='col-md body'>got four url leh...got file transfer protocol, gopher protocol, hypertext transfer protocol and hypertext transfer with privacy.....<br><br>delete which one??</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-12T19:34:21+00:00'>12 Jul 07, 19:34</time>
+            </div>
+            <div class='col-md body'>How come you got so many?  <img src="/images/emoticons/classic/icon_surprised.gif" alt="Surprised" title="Surprised"><br><br>You sure you looking at the correct section?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>The man who was death</div>
+              <time class='date' datetime='2007-07-12T19:45:51+00:00'>12 Jul 07, 19:45</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">How come you got so many?  <img src="/images/emoticons/classic/icon_surprised.gif" alt="Surprised" title="Surprised"><br><br>You sure you looking at the correct section?</div></blockquote>i think becos i still using 1.0.7.....<br><br>i look at correct section.....maybe i shldn't be so worried 1.0.7 so old le...</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-12T19:49:13+00:00'>12 Jul 07, 19:49</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by The man who was death:</div><div class="quote_body">i think becos i still using 1.0.7.....<br><br>i look at correct section.....maybe i shldn't be so worried 1.0.7 so old le...</div></blockquote>Oh... like that no need worry... it only affects Firefox 2... I think... because of compatibility issue with Vista... which opened this hole.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>revnon</div>
+              <time class='date' datetime='2007-07-18T17:20:03+00:00'>18 Jul 07, 17:20</time>
+            </div>
+            <div class='col-md body'>Think should be resolved.<br><br>Download and Update to <strong>Firefox 2.0.0.5</strong> via <strong><span style="text-decoration: underline;"><a href="http://www.mozilla.com/en-US/firefox/" rel="nofollow">http://www.mozilla.com/en-US/firefox/</a></span></strong><br><br>OR<br><br>Just click on "<strong>Help</strong>" -&gt; "<strong>Check for Updates...</strong>" for auto update to 2.0.0.5.<br><br>============================================================<br><strong><span style="font-style: italic;">Fixed in Firefox 2.0.0.5</span></strong><br><br>MFSA 2007-25 XPCNativeWrapper pollution<br>MFSA 2007-24 Unauthorized access to wyciwyg:// documents<br>MFSA 2007-23 Remote code execution by launching Firefox from Internet Explorer<br>MFSA 2007-22 File type confusion due to %00 in name<br>MFSA 2007-21 Privilege escallation using an event handler attached to an element not in the document<br>MFSA 2007-20 Frame spoofing while window is loading<br>MFSA 2007-19 XSS using addEventListener and setTimeout<br>MFSA 2007-18 Crashes with evidence of memory corruption<br>============================================================</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-24T22:56:20+00:00'>24 Jul 07, 22:56</time>
+            </div>
+            <div class='col-md body'>An update to the vulnerabilities. While removing those Firefox URL (see post 1) will prevent a successful attack, the problem is far worse.<br><br>You can read more about it here:<br><br><a href="http://mozillalinks.org/wp/2007/07/ies-unescaped-urls-vulnerability-also-present-in-firefox/" rel="nofollow">http://mozillalinks.org/wp/2007/07/ies-unescaped-urls-vulnerability-also-present-in-firefox/</a><br><a href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9027718&amp;intsrc=hm_list" rel="nofollow">http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9027718&amp;intsrc=hm_list</a><br><br>Basically, any programs that you have uses Firefox to call another program will be vulnerable. One example is P2P. Bittorent and eDonkey are two examples which users can set in Firefox to call your P2P programs to download when you click on a torrent link.<br><br>The next set of update will patch this same vulnerability again.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-25T14:50:23+00:00'>25 Jul 07, 14:50</time>
+            </div>
+            <div class='col-md body'><a href="http://blog.mozilla.com/security/2007/07/23/related-security-issue-in-url-protocol-handling-on-windows/" rel="nofollow">http://blog.mozilla.com/security/2007/07/23/related-security-issue-in-url-protocol-handling-on-windows/</a><br><br>Confirmed Firefox bug. Firefox 2.0.0.6 should be shipping soon.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-25T14:53:47+00:00'>25 Jul 07, 14:53</time>
+            </div>
+            <div class='col-md body'>Testers needed.<br><br><a href="http://forums.mozillazine.org/viewtopic.php?t=569539" rel="nofollow">http://forums.mozillazine.org/viewtopic.php?t=569539</a><br><br>The above link is for Linux and Mac testers.<br><br>Firefox 2.0.0.5 password bug doesn't seem to be listed there.  <img src="/images/emoticons/classic/icon_confused.gif" alt="Confused" title="Confused"><br><br>Edit: <a href="http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla1.8/" rel="nofollow">http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla1.8/</a></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-25T15:35:01+00:00'>25 Jul 07, 15:35</time>
+            </div>
+            <div class='col-md body'>Well, it turns out that all Internet related protocols are affected.<br><br>mailto, nntp, news, etc are all affected.<br><br><a href="http://www.0x000000.com/?i=401" rel="nofollow">http://www.0x000000.com/?i=401</a><br><br><a href="http://xs-sniper.com/blog/remote-command-exec-firefox-2005/" rel="nofollow">http://xs-sniper.com/blog/remote-command-exec-firefox-2005/</a><br><br>And works very well if the related application is a registered URI.<br><br>Those who don't believe, click on the mailto link. If you are using Thunderbird, MS Outlook or any clients as your default email program, it will be launched.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-25T16:04:38+00:00'>25 Jul 07, 16:04</time>
+            </div>
+            <div class='col-md body'>Just tested it. One of the screenshots I took.<br><br><img src="http://xs317.xs.to/xs317/07303/telnet.PNG"><br><br>Looks like Mozilla was right about not their fault (but too bad, they admitted already).<br><br>Microsoft is at fault. Or maybe all OS. If that is so, it's not a program error, but rather how the OS handles it as long as it's allowed.<br><br>Go to Start &gt; Run and type in this: <strong>telnet:%00%00../../../../../../windows/system32/cmd".exe ../../../../../../../../windows/system32/calc.exe " - " blah.bat</strong><br><br>Command Prompt will open.  <img src="/images/emoticons/classic/icon_cool.gif" alt="Cool" title="Cool"><br><br>One doesn't even need Firefox to trigger. Microsoft will do it PROPERLY and PROMPTLY for you.  <img src="/images/emoticons/classic/icon_eek.gif" alt="Shocked" title="Shocked"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-25T16:36:11+00:00'>25 Jul 07, 16:36</time>
+            </div>
+            <div class='col-md body'>Workarounds:<br><br><ol type="1">[*]Open My Computer.<br>[*]Click on <strong>Tools</strong> &gt; <strong>Folder Options...</strong>.<br>[*]Select the <strong>File Types</strong> tab.<br>[*]Select <strong>(NONE) URL:News Protocol</strong>.<br>[*]Click on <strong>Advanced</strong>.<br><br><img src="http://img2.freeimagehosting.net/uploads/481879bcb2.png"><br><br>[*]Select <strong>open</strong> in the list.<br>[*]Click on <strong>Remove</strong>.<br>[*]Click <strong>OK</strong>.<br><br><img src="http://img2.freeimagehosting.net/uploads/811603315b.png"><br><br>[*]Repeat for the following protocols:<br><br>(NONE) URL:NNTP Protocol<br>(NONE) URL:Snews Protocol<br>(NONE) URL:Telnet Protocol</ol><br><br>If you have no other email clients other than Outlook Express installed, you will need to remove this as well: (NONE) URL:MailTo Protocol.<br><br>After successfully de-registering them, you will either be prompted, see no actions or see errors.<br><br>For Telnet when triggered within Firefox:<br><br><img src="http://img2.freeimagehosting.net/uploads/b5a4d071d5.png"><br><br>For Telnet when triggered by using Start &gt; Run:<br><br><img src="http://img2.freeimagehosting.net/uploads/9a4cfa8fb1.png"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-31T13:27:28+00:00'>31 Jul 07, 13:27</time>
+            </div>
+            <div class='col-md body'>Windows bug... why can't MS just admit it?<br><br><a href="http://www.kb.cert.org/vuls/id/403150" rel="nofollow">http://www.kb.cert.org/vuls/id/403150</a><br><br>US-CERT has issued an article on it.<br><br>News article: <a href="http://www.betanews.com/article/IE7Firefox_URI_Handling_Bug_Caused_by_Windows_After_All/1185811085" rel="nofollow">http://www.betanews.com/article/IE7Firefox_URI_Handling_Bug_Caused_by_Windows_After_All/1185811085</a></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-07-31T13:31:55+00:00'>31 Jul 07, 13:31</time>
+            </div>
+            <div class='col-md body'>Firefox updated to 2.0.0.6.<br><br><a href="http://www.mozilla.com/en-US/firefox/" rel="nofollow">http://www.mozilla.com/en-US/firefox/</a></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-08-16T09:20:31+00:00'>16 Aug 07, 09:20</time>
+            </div>
+            <div class='col-md body'><a href="http://www.infoworld.com/article/07/08/15/New-URI-browser-flaws-worse-than-first-thought_1.html" rel="nofollow">http://www.infoworld.com/article/07/08/15/New-URI-browser-flaws-worse-than-first-thought_1.html</a><br><br>MS still don't want to admit!  <img src="/images/emoticons/classic/icon_evil.gif" alt="Evil or Very Mad" title="Evil or Very Mad"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-09-05T16:53:59+00:00'>5 Sep 07, 16:53</time>
+            </div>
+            <div class='col-md body'><a href="http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/" rel="nofollow">http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/</a><br><br>Same URI vulnerability, but is affecting another part of Windows.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>yiha093</div>
+              <time class='date' datetime='2007-09-05T19:46:43+00:00'>5 Sep 07, 19:46</time>
+            </div>
+            <div class='col-md body'>okie.<br>dun get u.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-09-05T21:52:47+00:00'>5 Sep 07, 21:52</time>
+            </div>
+            <div class='col-md body'>You need to read the first few posts to understand. Anyway, if your Firefox is the latest, all the exploits posted before today will not affect you.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>fifteen</div>
+              <time class='date' datetime='2007-09-06T15:39:37+00:00'>6 Sep 07, 15:39</time>
+            </div>
+            <div class='col-md body'>i clicked on Help&gt;Check for update but then they say no update. but how do i know my firefox is up to date?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-09-06T17:32:08+00:00'>6 Sep 07, 17:32</time>
+            </div>
+            <div class='col-md body'>That means it's up to date liao lo.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>kawasaki2</div>
+              <time class='date' datetime='2007-09-06T18:10:04+00:00'>6 Sep 07, 18:10</time>
+            </div>
+            <div class='col-md body'>Firefox 2.0.0.7 RC1<br>-------------------------<br>Features in Firefox include:<br>- Easy migration: Switching to Firefox has never been easier now that Firefox imports data like Favorites, history, settings, cookies and passwords from Internet Explorer. Firefox can also import settings from Mozilla 1.x, Netscape and Opera.<br>- Smaller Download: Continuing efforts to make this the most efficient browser, the Windows version of Firefox is now only a 5.7 MB download, making downloading Firefox a breeze for dial-up and broadband users alike.<br>- New Default Theme: A new default theme provides a bright new look for Windows and Linux users.<br>- SmartUpdate: A new SmartUpdate feature notifies users of new versions of Firefox to ensure that the browser is always up to date.<br>- Help: A new online help system makes this one powerful, friendly browser.<br>- Extension/Theme Manager: New Extension and Theme Managers provide a convenient and secure way to manage and update the hundreds of add-ons that set Firefox apart from other browsers.<br>Mozilla Firefox also includes numerous bug fixes and incremental improvements, including faster page load speed.<br>- Popup Blocking: Stop annoying popup ads in their tracks with Firefox's built in popup blocker.<br>- Tabbed Browsing: View more than one web page in a single window with this time saving feature. Open links in the background so that they're ready for viewing when you're ready to read them.<br>- Smarter Search: Google Search is built right into the toolbar, and there are a plethora of other search tools including Keywords (type "dict " in the Location Bar), and FastFind (start typing the first few letters of some text in the page and Firefox takes you there).<br>- Privacy and Security: Built with your Security in mind, Firefox keeps your computer safe from malicious spyware by not loading harmful ActiveX controls. A comprehensive set of privacy tools keep your online activity your business.<br>- Hassle-Free Downloading: Files you download are automatically saved to your Desktop so they're easy to find. Fewer prompts mean files download quicker.<br>- Fits Like a Glove: Simple and intuitive, yet fully featured, Firefox has all the functions you're used to - Bookmarks, History, Full Screen, Text Zooming to make pages with small text easier to read, etc.<br>- S M L XL XXL XXXL: Firefox is the most customizable browser on the planet. Customize your toolbars to add additional buttons, install new Extensions that add new features, add new Themes to browse with style, and use the adaptive search system to allow you to search an infinite number of engines. Firefox is as big or small as you want.<br>- Setup's a Snap: At only 4.7MB (Windows), Firefox only takes minutes to download over a fast connection. The installer gets you set up quickly, and the new Easy Transition system imports all of your settings - Favorites, passwords and other data from Internet Explorer and other browsers - so you can start surfing right away.<br>- A Developer's Best Friend: Firefox comes with a standard set of developer tools including a powerful JavaScript and CSS error/warning console, and an optional Document Inspector that gives unheard of insight into how your pages work.<br>- Read MailÂ—Not Spam<br><br>What's New in Firefox 2:<br>* Visual Refresh: Firefox 2's theme and user interface have been updated to improve usability without altering the familiarity of the browsing experience.<br>* Built-in phishing protection: Phishing Protection warns users when they encounter suspected Web forgeries, and offers to return the user to their home page. Phishing Protection is turned on by default, and works by checking sites against either a local or online list of known phishing sites. This list is automatically downloaded and regularly updated when the Phishing Protection feature is enabled.<br>* Enhanced search capabilities: Search term suggestions will now appear as users type in the integrated search box when using the Google, Yahoo! or Answers.com search engines. A new search engine manager makes it easier to add, remove and re-order search engines, and users will be alerted when Firefox encounters a website that offers new search engines that the user may wish to install.<br>* Improved tabbed browsing: By default, Firefox will open links in new tabs instead of new windows, and each tab will now have a close tab button. Power users who open more tabs than can fit in a single window will see arrows on the left and right side of the tab strip that let them scroll back and forth between their tabs. The History menu will keep a list of recently closed tabs, and a shortcut lets users quickly re-open an accidentally closed tab.<br>* Resuming your browsing session: The Session Restore feature restores windows, tabs, text typed in forms, and in-progress downloads from the last user session. It will be activated automatically when installing an application update or extension, and users will be asked if they want to resume their previous session after a system crash.<br>* Previewing and subscribing to Web feeds: Users can decide how to handle Web feeds (like this one), either subscribing to them via a Web service or in a standalone RSS reader, or adding them as Live Bookmarks. My Yahoo!, Bloglines and Google Reader come pre-loaded as Web service options, but users can add any Web service that handles RSS feeds.<br>* Inline spell checking: A new built-in spell checker enables users to quickly check the spelling of text entered into Web forms (like this one) without having to use a separate application.<br>* Live Titles: When a website offers a microsummary (a regularly updated summary of the most important information on a Web page), users can create a bookmark with a "Live Title". Compact enough to fit in the space available to a bookmark label, they provide more useful information about pages than static page titles, and are regularly updated with the latest information. There are several websites that can be bookmarked with Live Titles, and even more add-ons to generate Live Titles for other popular websites.<br>* Improved Add-ons manager: The new Add-ons manager improves the user interface for managing extensions and themes, combining them both in a single tool.<br>* JavaScript 1.7: JavaScript 1.7 is a language update introducing several new features such as generators, iterators, array comprehensions, let expressions, and destructuring assignments. It also includes all the features of JavaScript 1.6.<br>* Extended search plugin format: The Firefox search engine format now supports search engine plugins written in Sherlock and OpenSearch formats and allows search engines to provide search term suggestions.<br>* Updates to the extension system: The extension system has been updated to provide enhanced security and to allow for easier localization of extensions.<br>* Client-side session and persistent storage: New support for storing structured data on the client side, to enable better handling of online transactions and improved performance when dealing with large amounts of data, such as documents and mailboxes. This is based on the WHATWG specification for client-side session and persistent storage.<br>* SVG text: Support for the svg:textpath specification enables SVG text to follow a curve or shape.<br>* New Windows installer: Based on Nullsoft Scriptable Install System, the new Windows installer resolves many long-standing issues.<br><br><a href="http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2.0.0.7-candidates/rc1/firefox-2.0.0.7.en-US.win32.installer.exe" rel="nofollow">ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2.0.0.7-candidates/rc1/firefox-2.0.0.7.en-US.win32.installer.exe</a></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>revnon</div>
+              <time class='date' datetime='2007-09-19T15:41:17+00:00'>19 Sep 07, 15:41</time>
+            </div>
+            <div class='col-md body'><strong>Firefox 2.0.0.7</strong> via <strong><a href="http://www.mozilla.com/en-US/firefox/" rel="nofollow">http://www.mozilla.com/en-US/firefox/</a></strong><br><br>Security Update:<br>Fixed in Firefox 2.0.0.7<br>MFSA 2007-28 Code execution via QuickTime Media-link files.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>dumbdumb!</div>
+              <time class='date' datetime='2007-09-19T15:46:25+00:00'>19 Sep 07, 15:46</time>
+            </div>
+            <div class='col-md body'>u're using xp right. i'm using win2000 i think its slightly different, i don't have the none option under extention  <img src="/images/emoticons/classic/icon_sad.gif" alt="Sad" title="Sad"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-09-19T15:51:55+00:00'>19 Sep 07, 15:51</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by dumbdumb!:</div><div class="quote_body">u're using xp right. i'm using win2000 i think its slightly different, i don't have the none option under extention  <img src="/images/emoticons/classic/icon_sad.gif" alt="Sad" title="Sad"> </div></blockquote>Either way, Firefox has been updated to correct these issues. These issues were posted before Firefox corrected the vulnerabilities.</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/2250/topics/267398/2/'>Next</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

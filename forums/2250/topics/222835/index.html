@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Help with php mail();</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['222835']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['222835']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['222835']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['222835']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Help with php mail();</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>NekoRin</div>
+              <time class='date' datetime='2006-11-30T12:11:17+00:00'>30 Nov 06, 12:11</time>
+            </div>
+            <div class='col-md body'>Help I can't get the html to be displayed correctly in outlook.... but they can be displayed in mail clients like hotmail, yahoo.... anyone knows how to solve it?<br><br>attached is the script i use<br><br>$email_subject = "This is a test subject title";<br>$email_body1 = "This is test body text";<br><br>$email_body2 = ",<p>This is a  <a href="http://www.website.com">link</a> ";<br><br>$headers  = 'MIME-Version: 1.0' . "\r\n";<br>$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";<br>$headers .= 'From: '.$_POST['email1name'].'&lt;'.$_POST['email1']. "&gt;\r\n" .<br>'Reply-To: '.$_POST['email1name'].'&lt;'.$_POST['email1']. "&gt;\r\n" .<br>'X-Mailer: PHP/' . phpversion();<br>mail($_POST['email1'],$email_subject,$email_body1,$headers);<br><br>for( $arrayCounter = 1; ($arrayCounter &lt;= $_POST['emailno']); $arrayCounter++) {<br>mail($_POST['emailname'.$arrayCounter]."&lt;".$_POST['emailadd'.$arrayCounter]."&gt;",$email_subject,"Hi ".$_POST['emailname'.$arrayCounter].$email_body2,$headers);<br>};<br>$returnst = $_POST['emailno'];<br>echo $returnst;<br>?&gt;<br><br>zzzzzzzzzzzzz  <img src="/images/emoticons/classic/icon_cry.gif" alt="Crying or Very sad" title="Crying or Very sad">  <img src="/images/emoticons/classic/icon_cry.gif" alt="Crying or Very sad" title="Crying or Very sad"></p></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-11-30T15:07:19+00:00'>30 Nov 06, 15:07</time>
+            </div>
+            <div class='col-md body'><blockquote>$email_body2 = ",<p>This is a <a href="http://www.website.com">link</a> ";</p></blockquote>Extra comma.<br><br>Think should be all ba... I can't find other errors...</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>NekoRin</div>
+              <time class='date' datetime='2006-11-30T17:17:07+00:00'>30 Nov 06, 17:17</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">Extra comma.<br><br>Think should be all ba... I can't find other errors...</div></blockquote>That's not the error, that comma is in the string field  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>I found out the error... seems like Outlook doesn't like \r   so I erased all of them and it works like magic  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing">  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-11-30T18:18:34+00:00'>30 Nov 06, 18:18</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by NekoRin:</div><div class="quote_body">That's not the error, that comma is in the string field  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>I found out the error... seems like Outlook doesn't like \r   so I erased all of them and it works like magic  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing">  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"> </div></blockquote>It crashed my Apache server.  <img src="/images/emoticons/classic/icon_sad.gif" alt="Sad" title="Sad"><br><br>I removed the comma and works very well... weird weird.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>alexkusu</div>
+              <time class='date' datetime='2006-11-30T18:20:37+00:00'>30 Nov 06, 18:20</time>
+            </div>
+            <div class='col-md body'>I know what the problem is.<br><br>Microsoft Outlook cant handle the \r . Just settle that and everything would be fine  <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MyPillowTalks</div>
+              <time class='date' datetime='2006-12-01T11:57:35+00:00'>1 Dec 06, 11:57</time>
+            </div>
+            <div class='col-md body'>wad is the difference between php and pop3 ar? i duno <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-12-01T11:58:35+00:00'>1 Dec 06, 11:58</time>
+            </div>
+            <div class='col-md body'>PHP is a programming language; pop3 is an email standard.</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

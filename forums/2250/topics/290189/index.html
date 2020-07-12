@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Questions on DHCP</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['290189']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['290189']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['290189']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['290189']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Questions on DHCP</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-11-07T02:59:46+00:00'>7 Nov 07, 02:59</time>
+            </div>
+            <div class='col-md body'>Does running a DHCP server on the router while connecting to it using a static IP makes the connection any less stable? And is it necessary to disable the DHCP client service in Windows if I'm using a static IP address?<br><br>I'm using DMZ to direct all traffic from the modem (it's acting like a router, though) to this computer which require a static IP address. But somehow, after setting up a static IP, if I disable DHCP on the router, the computer can't surf the net despite the router page showing that a internet connection has been established. So I left it enabled on the router instead. Now, when I tried to switch back to the option of obtaining the IP address automatically, it ends up with a "limited or no connectivity" error. Any idea what is actually going on behind all these networking issues?<br><br>Modem: Linksys AM300<br></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-11-07T13:07:37+00:00'>7 Nov 07, 13:07</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">Does running a DHCP server on the router while connecting to it using a static IP makes the connection any less stable?</div></blockquote>Not that I know of.<br><br><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">And is it necessary to disable the DHCP client service in Windows if I'm using a static IP address?</div></blockquote>You can leave it on, so if you want to use Dynamic IP addresses, it can automatically detect it.<br><br><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">I'm using DMZ to direct all traffic from the modem (it's acting like a router, though) to this computer which require a static IP address. But somehow, after setting up a static IP, if I disable DHCP on the router, the computer can't surf the net despite the router page showing that a internet connection has been established.</div></blockquote>No idea why this is happening. Did you set the DNS servers?<br><br><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">So I left it enabled on the router instead. Now, when I tried to switch back to the option of obtaining the IP address automatically, it ends up with a "limited or no connectivity" error. Any idea what is actually going on behind all these networking issues?</div></blockquote>This one, haha. Some queer feature of Windows.<br><br>Remove all your static IP addresses settings, from Windows as well as the router.<br><br>Then set it to automatically obtain IP addresses from the router.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-11-07T14:38:28+00:00'>7 Nov 07, 14:38</time>
+            </div>
+            <div class='col-md body'>Thanks for the reply, mayi.  <img src="/images/emoticons/classic/icon_smile.gif" alt="Smile" title="Smile"><br><br>Everything's quite stable now, though I'm still curious over the issues occured during that hours of tweaking.<br><br>Currently I have DHCP enabled on the router, so is it possible that it will assign another client the same IP address as mine when it is connecting to a DHCP-enabled computer since mine is not in the DHCP list, resulting in some clashing there? Or will DHCP prevent that?<br><br>Will there be issues if I leave both DHCP enabled on the router and the computer while using a static IP address to connect to the router? Wouldn't there be some sort of race condition to assign an IP address to the computer? Or does DHCP prevent this from happening as well?<br><br>And yea, I have set the DNS servers correctly then. It's 165.21.83.88 and 165.21.100.88 for SingNet. (I have typed in this so many times during that no-connection period that I can recall this from memory.)<br><br>And I have to remove the configuration that I have inputted for a static IP address before selecting the other option eh? ...damn Windows.  <img src="/images/emoticons/classic/icon_mad.gif" alt="Mad" title="Mad"><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Phaze</div>
+              <time class='date' datetime='2007-11-07T14:49:38+00:00'>7 Nov 07, 14:49</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">Currently I have DHCP enabled on the router, so is it possible that it will assign another client the same IP address as mine when it is connecting to a DHCP-enabled computer since mine is not in the DHCP list, resulting in some clashing there? Or will DHCP prevent that?<br></div></blockquote>The solution is to use a static IP outside of the DHCP range. For example, if your DHCP server is configured to issue 192.168.1.100-192.168.1.253, use 192.168.1.99 as your static IP.<br><br>Let's say if you have a static IP that's within the DHCP range. If you are already plugged into the network, the DHCP server will not issue your static IP as it already exists on the network. However, say you turn off your PC and another PC joins the network and obtains that IP. Once you rejoin the network with your static IP, there will be an IP address conflict.<br><br>However, it's best to avoid this issue completely by using an address outside the DHCP range.<br><br><blockquote><strong><br>Will there be issues if I leave both DHCP enabled on the router and the computer while using a static IP address to connect to the router? Wouldn't there be some sort of race condition to assign an IP address to the computer? Or does DHCP prevent this from happening as well?</strong></blockquote><br><br>No. If you have a static IP, your laptop will not send a DHCP request. There should be no problem leaving the DHCP server enabled on the router.<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-11-07T15:56:33+00:00'>7 Nov 07, 15:56</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">Currently I have DHCP enabled on the router, so is it possible that it will assign another client the same IP address as mine when it is connecting to a DHCP-enabled computer since mine is not in the DHCP list, resulting in some clashing there? Or will DHCP prevent that?</div></blockquote>Unlikely, though it has occurred before.<br><br>One way I do to avoid this program is to use extreme ends of the IP address range.<br><br>Say I set the range from 192.168.1.2 to 192.168.1.100<br><br>For static IP addreses, I start from 192.168.1.100 and move backwards.<br><br><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">Will there be issues if I leave both DHCP enabled on the router and the computer while using a static IP address to connect to the router? Wouldn't there be some sort of race condition to assign an IP address to the computer? Or does DHCP prevent this from happening as well?</div></blockquote>There shouldn't be issues, although if you want to switch back to DHCP assigned addresses, you need to clear the previous static IP addresses and DNS servers settings, otherwise Windows will just be confused and give you network problems.<br><br><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">And yea, I have set the DNS servers correctly then. It's 165.21.83.88 and 165.21.100.88 for SingNet. (I have typed in this so many times during that no-connection period that I can recall this from memory.)<br><br>And I have to remove the configuration that I have inputted for a static IP address before selecting the other option eh? ...damn Windows.  <img src="/images/emoticons/classic/icon_mad.gif" alt="Mad" title="Mad"><br></div></blockquote>How about trying without the DNS servers? It's kind of crazy at times.  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Phaze</div>
+              <time class='date' datetime='2007-11-07T16:24:29+00:00'>7 Nov 07, 16:24</time>
+            </div>
+            <div class='col-md body'><br><blockquote><strong><br>One way I do to avoid this program is to use extreme ends of the IP address range.<br><br>Say I set the range from 192.168.1.2 to 192.168.1.100<br><br>For static IP addreses, I start from 192.168.1.100 and move backwards.<br></strong></blockquote><br><br>No. This is bad advice. What you are doing is taking the chance that your DHCP server won't issue up to the end of the range. It will probably work for him in this example because it's unlikely he will have 90+ laptops connecting to his router but it's still better to do it properly and use an IP address that OUTSIDE of the DHCP range. Then there's NO chance of conflict.<br><br><blockquote><strong><br>How about trying without the DNS servers? It's kind of crazy at times.<br></strong></blockquote><br><br>You MUST have DNS set in your laptop. if you do not, your laptop will not be able to resolve domain names. It's up to you whether you want to enable the DNS relay server in your router. This usually just acts as a DNS proxy for your ISP DNS server (unless you have a really advanced router). Personally, I prefer to manually configure the ISP DNS like he has done.<br><br>If you think you have problems with your DNS, try flushing the DNS cache on your laptop.<br><br><span style="font-style: italic;">ipconfig /flushdns</span></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-11-07T16:27:37+00:00'>7 Nov 07, 16:27</time>
+            </div>
+            <div class='col-md body'><blockquote>No. This is bad advice. What you are doing is taking the chance that your DHCP server won't issue up to the end of the range. It will probably work for him in this example because it's unlikely he will have 90+ laptops connecting to his router but it's still better to do it properly and use an IP address that OUTSIDE of the DHCP range. Then there's NO chance of conflict.</blockquote>Ya, taking chance. No users would have so many PCs anyway.<br><br>As for outside DHCP range... not all routers will recognize that... so he may have to take chance. 3Com is one of those. You assign out of it, no network connections.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Phaze</div>
+              <time class='date' datetime='2007-11-07T16:33:59+00:00'>7 Nov 07, 16:33</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">Ya, taking chance. No users would have so many PCs anyway.<br><br>As for outside DHCP range... not all routers will recognize that... so he may have to take chance. 3Com is one of those. You assign out of it, no network connections.</div></blockquote>Oh... that's very strange.<br><br>Perhaps the 3COM only routes the DHCP range? There should be a way to manually add routes then.<br><br>In any case, I'm not familiar enough with 3COM products that I can comment on this. However, most routers will route the entire LAN subnet which is usually a /24.<br><br>Linksys should support it though. I'm not really familiar with the AM300 though I am familiar with linksys in general.<br><br>Well okay then. First try OUTSIDE the DHCP range. If that doesn't work, try the END of the DHCP range.  <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-11-07T16:40:10+00:00'>7 Nov 07, 16:40</time>
+            </div>
+            <div class='col-md body'>Thanks again, mayi, and Phaze. If you need help in web programming someday, just let me know; I will be glad to provide assistance.   <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"><br><br>The connection is stable now, and here's the current configuration that I'm using for the modem.<br><br><a href="http://dl.latecomerx.com/images/Screenshot_2007-11-07_16-12-45.jpeg" rel="nofollow">http://dl.latecomerx.com/images/Screenshot_2007-11-07_16-12-45.jpeg</a><br><br><a href="http://dl.latecomerx.com/images/Screenshot_2007-11-07_16-10-45.jpeg" rel="nofollow">http://dl.latecomerx.com/images/Screenshot_2007-11-07_16-10-45.jpeg</a><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2007-11-07T16:47:59+00:00'>7 Nov 07, 16:47</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Phaze:</div><div class="quote_body">Oh... that's very strange.<br><br>Perhaps the 3COM only routes the DHCP range? There should be a way to manually add routes then.<br><br>In any case, I'm not familiar enough with 3COM products that I can comment on this. However, most routers will route the entire LAN subnet which is usually a /24.<br><br>Linksys should support it though. I'm not really familiar with the AM300 though I am familiar with linksys in general.<br><br>Well okay then. First try OUTSIDE the DHCP range. If that doesn't work, try the END of the DHCP range.  <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"></div></blockquote>The static IP address I'm using which is outside the DHCP range works fine. The other method would have worked as well, since there is only an ethernet port and an USB port on the modem, so there is virtually zero chance of an IP address collision even with a /30 subnet.  <img src="/images/emoticons/classic/icon_lol.gif" alt="Laughing" title="Laughing"><br><br>Edit:<br>Erm. I forgot about the gateway itself. It should be a /29.  <img src="/images/emoticons/classic/icon_redface.gif" alt="Embarassed" title="Embarassed"><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-11-07T16:49:47+00:00'>7 Nov 07, 16:49</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Phaze:</div><div class="quote_body">Oh... that's very strange.<br><br>Perhaps the 3COM only routes the DHCP range? There should be a way to manually add routes then.<br><br>In any case, I'm not familiar enough with 3COM products that I can comment on this. However, most routers will route the entire LAN subnet which is usually a /24.<br><br>Linksys should support it though. I'm not really familiar with the AM300 though I am familiar with linksys in general.<br><br>Well okay then. First try OUTSIDE the DHCP range. If that doesn't work, try the END of the DHCP range.  <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"></div></blockquote>Perhaps. 3Com is mainly for enterprise users... so that may be some security feature of it not to route outside of the range set.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Phaze</div>
+              <time class='date' datetime='2007-11-07T16:53:05+00:00'>7 Nov 07, 16:53</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by LatecomerX:</div><div class="quote_body">Thanks again, mayi, and Phaze. If you need help in web programming someday, just let me know; I will be glad to provide assistance.   <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"><br><br>The connection is stable now, and here's the current configuration that I'm using for the modem.<br><br><a href="http://dl.latecomerx.com/images/Screenshot_2007-11-07_16-12-45.jpeg" rel="nofollow">http://dl.latecomerx.com/images/Screenshot_2007-11-07_16-12-45.jpeg</a><br><br><a href="http://dl.latecomerx.com/images/Screenshot_2007-11-07_16-10-45.jpeg" rel="nofollow">http://dl.latecomerx.com/images/Screenshot_2007-11-07_16-10-45.jpeg</a><br></div></blockquote>Looks good.    <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

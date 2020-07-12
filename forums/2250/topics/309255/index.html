@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Need help with mod_rewrite equivalent</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['309255']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['309255']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['309255']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['309255']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Need help with mod_rewrite equivalent</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-02-29T13:56:57+00:00'>29 Feb 08, 13:56</time>
+            </div>
+            <div class='col-md body'>
+              <p>I have been told that for Google to be able to search your pages properly, the URL must be distinct.</p>
+              <p>Currently, I am using same URL for a page but using session variables in PHP to change the language and the contents. Every phrases that is different for each language is output for a session variable.</p>
+              <p>Like, <a href="http://kowbow.com/index.php">http://kowbow.com/index.php</a> will have different content when user choose a different language.</p>
+              <p>So some Google consultant said must use mod_rewrite to change the URL into <a href="http://kowbow.com/en/">http://kowbow.com/en/</a> for English and <a href="http://kowbow.com/de/">http://kowbow.com/de/</a> for German.</p>
+              <p>Problem is that I am using Window 2003 shared hosting. That means it's not Apache. And the Google consultant said to use mod_rewrite which is for Apache.</p>
+              <p>Also another problem is that some of my URLs are dynamic. For instance, <a href="http://kowbow.com/getstuff.php?stuffid=xxxxx">http://kowbow.com/getstuff.php?stuffid=xxxxx</a> with xxxx being a running number from my mysql table.</p>
+              <p>I know that I can maintain actual folders for each language but that would mean lots of duplicate files to update. Btw, I am currently supporting 7 languages, 2 more to come. Probably more in the future. I am hoping to maintain one set of files but appear to the user that for different languages, the URL is distinct like</p>
+              <p><a href="http://kowbow.com/en/getstuff.php?stuffid=xxxx">http://kowbow.com/en/getstuff.php?stuffid=xxxx</a> for English and <a href="http://kowbow.com/de/getstuff.php?stuffid=xxxx">http://kowbow.com/de/getstuff.php?stuffid=xxxx</a> for German.</p>
+              <p> Anyone know how to do the distinct URL thing? I really don't want to maintain one folder for each language. BTW, I am the only one doing this website.</p>
+              <p>P.S. kowbow.com is just an example. That is not my real site. Also very important is that any solution must work on IIS (Windows 2003) as well as Apache (Debian Linux). This is because my testing website is Window 2003 but my actual customer's website is Debian Linux.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-02-29T16:29:11+00:00'>29 Feb 08, 16:29</time>
+            </div>
+            <div class='col-md body'>
+              <p>Why not just install an Apache server on your computer and test the site locally?</p>
+              <p>I have not worked on an IIS server so far, so I can't help you much with that. But as for mod_rewrite, you can always pass the language variable to your PHP script with a RewriteRule in the .htaccess file like:</p>
+              <p>RewriteRule ([a-z]{2})/(.*) /index.php?lang=$1&amp;path=$2</p>
+              <p>This will internally redirect (as in it won't be visible to the user - the URL remains intact) requests like http://example.com/en/Haruhi to http://example.com/index.php?lang=en&amp;path=Haruhi.</p>
+              <p>You may need to switch on the RewriteEngine with the line below prior to any RewriteRule statement if it is not by default.</p>
+              <p>RewriteEngine On</p>
+              <p>To support multiple langauges, you would still have to either maintain a file or use a database table to store the text for each language being used. The translated text can be inserted into the page via defined constants which is similar to what is done in osCommerce. Like:</p>
+              <p>require_once $lang . '_constants.php';</p>
+              <p>&lt;h2&gt;&lt;?=TOPIC_TITLE?&gt;&lt;/h2&gt;<br>&lt;p&gt;&lt;?=TOPIC_TEXT?&gt;&lt;/p&gt;</p>
+              <p>Then in en_constants.php, you may have:</p>
+              <p>define('TOPIC_TITLE', 'Hello World!');<br>define('TOPIC_TEXT', 'Bla Bla Bla');</p>
+              <p>And in cn_constants.php, it may be :</p>
+              <p>define('TOPIC_TITLE', 'å“ˆå–½, ä¸–ç•Œ!');<br>define('TOPIC_TEXT', 'å�Ÿå•¦ å�Ÿå•¦ å�Ÿå•¦');</p>
+              <p>Or you can choose to store them all in a database table and pull them out in a similar fashion. Either way, please remember to sanitize all input data (eg. the language variable).</p>
+              <p>If you want to pass the stuffid in a "cleaner" way, like how sgForums pass the forum ID and topic ID in the URL, you can always turn to, once again, mod_rewrite. You can either modify the above RewriteRule and the script to suit this purpose, or, if you have already coded the getstuff.php page and everything is pretty much rigid, you can try adding the below rule on top of the above one.</p>
+              <p>RewriteRule ([a-z]{2})/getstuff/([0-9]+)/? /getstuff.php?lang=$1&amp;stuffid=$2 [L]</p>
+              <p>So, if the user looks for a page like http://example.com/en/getstuff/1234, the request will be internally redirected to http://example.com/getstuff.php?lang=en&amp;stuffid=1234.</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-02-29T17:08:14+00:00'>29 Feb 08, 17:08</time>
+            </div>
+            <div class='col-md body'>
+              <p>Thanks for your reply. I just found out that my hosting has ISAPI_Rewrite which simulates mod_rewrite on IIS. So I should be able to use the .htaccess after all.</p>
+              <p>I cannot test locally because my customer is viewing the test website too. He is doing his own testing on my test website and giving me feedback.</p>
+              <p>I am not too sure of the syntax for RewriteRule yet. Never done it before. I guess I have to go and read the Apache website documentations.</p>
+              <p>Btw, I am already storing my translations in a mysql table. Then when a language is chosen, I store them into session variables.</p>
+              <p>This part is the one that most interests me:</p>
+              <blockquote>
+              <p>So, if the user looks for a page like http://example.com/en/getstuff/1234, the request will be internally redirected to http://example.com/getstuff.php?lang=en&amp;stuffid=1234</p>
+              </blockquote>
+              <p>Only thing is that I call a page to load the translations. I don't load the translations in every page.  Maybe I can tweak it a bit to get it to work with lang=en in the URL.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-02-29T19:13:45+00:00'>29 Feb 08, 19:13</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by GIB:</div>
+              <div class="quote_body">
+              <p>Thanks for your reply. I just found out that my hosting has
+              ISAPI_Rewrite which simulates mod_rewrite on IIS. So I should be
+              able to use the .htaccess after all.</p>
+              <p>I cannot test locally because my customer is viewing the test
+              website too. He is doing his own testing on my test website and
+              giving me feedback.</p>
+              <p>I am not too sure of the syntax for RewriteRule yet. Never done
+              it before. I guess I have to go and read the Apache website
+              documentations.</p>
+              <p>Btw, I am already storing my translations in a mysql table. Then
+              when a language is chosen, I store them into session variables.</p>
+              <p>This part is the one that most interests me:</p>
+              <p>Only thing is that I call a page to load the translations. I
+              don't load the translations in every page.  Maybe I can tweak
+              it a bit to get it to work with lang=en in the URL.</p>
+              </div>
+              </blockquote>
+              <p>Well, for your client to test the site on your computer, all you have to do is to keep your computer on, make sure port 80 is accessible and let him know your IP address, or subscribe to a Dynamic DNS service to create a hostname that points to your computer whenever you're online. That's what I did for my last few clients.</p>
+              <p>And yea, just Google "mod_rewrite" for more information. The official documentation is really detailed and the examples they provide gives you a good idea of its syntax and workings.</p>
+              <p>Anyway, you may want to consider storing the language variable client-side as a browser cookie as well, so that it can be stored permanently, or at least until the visitor clears his/her cookies.</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-02-29T19:58:42+00:00'>29 Feb 08, 19:58</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by LatecomerX:</div>
+              <div class="quote_body">
+              <p>Well, for your client to test the site on your computer, all you
+              have to do is to keep your computer on, make sure port 80 is
+              accessible and let him know your IP address, or subscribe to a
+              Dynamic DNS service to create a hostname that points to your
+              computer whenever you're online. That's what I did for my last few
+              clients.</p>
+              <p>And yea, just Google "mod_rewrite" for more information. The
+              official documentation is really detailed and the examples they
+              provide gives you a good idea of its syntax and workings.</p>
+              <p>Anyway, you may want to consider storing the language variable
+              client-side as a browser cookie as well, so that it can be stored
+              permanently, or at least until the visitor clears his/her
+              cookies.</p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p>Well, my company already has its own website and I just created a new subdomain for testing. Also I don't keep my PC on when I go home. With a real website, the customer can go play with it any time he wants. Which he does.</p>
+              <p>As for the cookies, the customer specifically don't want cookies.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-02-29T21:02:50+00:00'>29 Feb 08, 21:02</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by GIB:</div>
+              <div class="quote_body">
+              <p>Well, my company already has its own website and I just created
+              a new subdomain for testing. Also I don't keep my PC on when I go
+              home. With a real website, the customer can go play with it any
+              time he wants. Which he does.</p>
+              <p>As for the cookies, the customer specifically don't want
+              cookies.</p>
+              </div>
+              </blockquote>
+              <p>Oh ok. I thought you were working from home. Anyway, by calling session_start() and using $_SESSION, the script creates a cookie which is named "PHPSESSID" by default in the visitor's browser. So unless you are passing the PHPSESSID value through the URL, you are actually using a cookie already. And I find it weird that your client requests for zero cookie being used in the script. Does he/she has a grudge against them or something? <img src="http://latecomerx.com/images/emoticons/icon_lol.gif" alt="" width="15" height="15"></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-02-29T21:23:37+00:00'>29 Feb 08, 21:23</time>
+            </div>
+            <div class='col-md body'>
+              <p>If I remember correctly, his users had some problem with cookies in their browsers. So he requests that whatever I do, I should avoid cookies.</p>
+              <p>Yeah, I know session variables are cookies. But he doesn't know that.</p>
+              <p>Besides, the users that were having problems with cookies did not have problems with session variables. Or something like that.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

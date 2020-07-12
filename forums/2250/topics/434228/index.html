@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>getting driving directions</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['434228']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['434228']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['434228']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['434228']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>getting driving directions</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>noob321</div>
+              <time class='date' datetime='2011-07-13T10:08:04+00:00'>13 Jul 11, 10:08</time>
+            </div>
+            <div class='col-md body'>
+              <hr>
+              <p></p>
+              <div id="post_message_214785">I'm sorry if this is in the wrong section...<br><br>I am not sure how to do it...<br><br>Here is the coding:<br>function displayTitle(name, x, y){<br>return name + " &lt;a href='#' onClick='showDirectionsDialog(\""+name+"\", "+x+", "+y+")'&gt;&lt;img src='images/direction.png' alt='Get driving directions'/&gt;&lt;/a&gt;";<br>}<br><br>function showDirectionsDialog(name, x, y){<br>var d=dijit.byId("dialogDirections");<br><br>d.set("title", "Get directions to \""+name+"\"");<br><br>document.getElementById("txtToX").value=x;<br>document.getElementById("txtToY").value=y;<br><br>d.show();<br>}<br><br>function getDirections(){<br>var frmX=document.getElementById("txtFrmX").value;<br>var frmY=document.getElementById("txtFrmY").value;<br>var toX=document.getElementById("txtToX").value;<br>var toY=document.getElementById("txtToY").value;<br><br>var routeData = new Route;<br>routeData.routeStops = frmX+","+frmY+";"+toX+","+toY;<br>routeData.routeMode = "DRIVE";<br>routeData.avoidERP=0;<br>routeData.routeOption = "Shortest"; <br>routeData.GetRoute(showDirections);<br>}<br><br>function showDirections(routeResults){<br>if (routeResults.results=="No results"){<br>alert("No directions found, please try other location.");<br>return;<br>}<br><br>}<br><br>Here is the coding I have now:<br>function getDirections() {<br><br>var routeData = new Route;<br>routeData.routeStops = document.getElementById('txtTheme').value;<br>routeData.routeMode = document.getElementById('txtOtptFlds').value;<br>routeData.avoidERP = document.getElementById('txtExtent').value;<br>routeData.routeOption = "Shortest"; <br>routeData.GetRoute(showRouteData)<br>}<br><br>function showRouteData(routeResults)<br>{<br>if (routeResults.results=="No results"){<br>alert("No Route found, please try other location.")<br>return<br>}<br>else if (routeResults.results=="Stops more than nine"){<br>alert("Number of stops exceed than nine");<br>return;<br>}<br>directions = routeResults.results.directions[0];<br><br>directionFeatures = directions.features;<br><br>var routeSymbol = new esri.symbol.SimpleLineSymbol().setColor(new dojo.Color([0,0,255,0.5])).setWidth(4);<br><br>var mergedGeometry = new esri.geometry.Polyline()<br><br>mergedGeometry.addPath(routeResults.results.routes.features[0].geometry.paths[0])<br>OneMap.map.graphics.clear();<br>OneMap.map.graphics.add(new esri.Graphic(mergedGeometry, routeSymbol)); <br>//Display the total time and distance of the route<br>document.getElementById("results").innerHTML = "&lt;br /&gt; &amp;nbsp; Total distance: " + directions.summary.totalLength + "&lt;br /&gt; &amp;nbsp; Total time: " + directions.summary.totalTime;<br><br>//List the directions and create hyperlinks for each route segment<br>for (var i=0;i&lt;directions.features.length;i++)<br>{<br>var feature=directions.features[i]<br>document.getElementById("results").innerHTML= document.getElementById("results").innerHTML + '&lt;br&gt;&lt;u&gt;' + parseInt(parseInt(i)+1) + ". " + feature.attributes.text + " (" + feature.attributes.length + ", " + feature.attributes.time + ")&lt;/u&gt;" <br><br>}<br>}<br><br>I am not sure how to integrate my codings into the other codings.<br><br>There is a name of the place (lets say London) and a clickable icon by the side. When I click the icon, a dojo toolkit dialog box appear for me to enter my location (the other place, London, will be displayed in the dialog box) Click "Go" to get the directions...<br><br>I wish to have the directions also placed in a dialog box too...<br><br></div>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

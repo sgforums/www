@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Custom Exception Types</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2073']).setTargeting('topic', ['485896']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2073']).setTargeting('topic', ['485896']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2073']).setTargeting('topic', ['485896']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2073']).setTargeting('topic', ['485896']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2073/'>Are you good at programming?</a>
+      <h1>Custom Exception Types</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>The Code</div>
+              <time class='date' datetime='2014-07-29T16:38:36+00:00'>29 Jul 14, 16:38</time>
+            </div>
+            <div class='col-md body'>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 28pt;"><span style="font-family: Calibri;">Kurt Guntheroth</span></span></p>
+              <p> </p>
+              <p><span style="line-height: 115%; color: #652b91; font-size: 30pt;"><span style="font-family: Calibri;">Custom Exception Types</span></span></p>
+              <p> </p>
+              <p><span style="line-height: 115%; color: mediumblue; font-size: 22pt;"><span style="font-family: Calibri;">Yes, there are alternatives to std::exception</span></span></p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 48pt;"><span style="font-family: Calibri;"><span style="line-height: 115%; color: #5d2884; font-size: 43pt;">I</span></span></span>t is a recurring design pattern that infrequently occurring event can prevent performance of some operation, and the code that responds to this failure is in high-level logic, far up the function call stack from the code that detects the event. The exception-handling mechanism in C++ elegantly implements this pattern; it signals ihe event, delimits the affected operation, concentrates runtime cost in the infrequently executed exceptional case, and frees resources while unwinding the call stack on the way to the handling code. It is a mistake (with high runtime cost) to use C++ exception handling for events that occur frequently, or for events that are handled near the point of detection.</p>
+              <p>   An exception type defines a package of information provided by the throw statement that raises the exception, for use by the try/catch block that handles the exception. A well-designed exception type should identify the exceptional event in enough detail-saying what went wrong and where the exception occurred - for users or developers to correct the problem. A good exception type facilitates efficient throwing and handling. It is robust enough to work properly, even under the difficult or unexpected conditions likely to give rise to exceptions.</p>
+              <p>   The try/catch block defines ihe scope of an operation that can be interrupted by a thrown exception, and provides ihe code ihat handles exceptions. There are only a few conceptual ways to handle an exception. If all future operations depend on the one that failed (initializing a window, for instance), the program must stop. If operations are independent (such as commands), the program can fix someihing and retry the failed operation, abandon ihe failed operation and perform the next one, or perform an alternate operation.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Why Not std::exception?</span></span></p>
+              <p> </p>
+              <p>The C++ Standard Library defines a rich family of exception classes. A few of these are thrown by C++ on memory allocation failures or improper casts. In a Standard Library extension or a simple program, it is appropriate to throw an exception type derived from std::exception. In large programs, there are good reasons to use a project-specific exception type instead.</p>
+              <p>   The standard exception classes form a hierarchical catalog of the sorts of design and runtime errors that can give rise to exceptions. The std::exception class hierarchy is user extensible; derived classes represent new exceptions or exception categories.</p>
+              <p>   At development time, the derivations of std::logic_error inform you of design errors. They are most useful in library code, where library developers may be disconnected from other developers. Most logic errors are discovered and removed during development. Exceptions in production code arise mostly from unexpected problems in the program's runtime environment: resource shortages, security violations, hardware failures, and so forth. Runtime exceptions derive from std::runtime_error. Since the catch clause that handles an exception depends on the exception type, this design works best if logic errors are handled one way and runtime errors another.</p>
+              <p>   What matters is whether the failing operation can be retried or discarded, or the program must be stopped. The appropriate action depends partly on the meaning of the interrupted operation in the overall program, partly on the details of the specific exception, and hardly at all on whether the exception is a kind of logic error or a kind of runtime error. There is a mismatch between the standard exception hierarchy, which offers to select recovery code based on the taxonomy of exception causes, and the needs of the program to select from a few recovery strategies, with little regard to the cause of the exception.</p>
+              <p>   std::exception describes the "what" of an exception in two ways - through the std::exception-derived class type, and through an optional string argument to most exception class constructors. Neither of these two forms of "what" information lends itself to efficient classification in the handler. Comparing strings is slow. It further requires the developer to always remember to pass the additional information to the exception constructor. Using derived class types to select a handler means multiple catch clauses with duplicated code.</p>
+              <p>   If the code has many throw sites and only a few catch sites (a typical pattern), knowing where the exception was thrown is helpful for debugging. The "where" of an exception can be a program subsystem, function name, filename and line, or perhaps an entire callstack trace plus thread information. std::exception doesn't provide this directly. It is possible to put "where" information in the exception constructor's optional string argument, as in Listing 1.</p>
+              <p>   Using std::exception's optional constructor argument for "where" information means relying on programmers to provide the information at every throw point, and makes it harder to put other ("what") information in the same string.</p>
+              <p>   To support the responsibility for formatting a message, std::exception has a virtual what() method. std::exception uses dynamically allocated memory and supports extensibility through derivation, so it has a virtual destructor. Thus, every standard exception class instance contains a vtable pointer along with its other data. An instance of std::exception doesn't fit into a CPU register like an integer does. When copying or deleting an std::exception instance, the compiler is more likely to generate a function call instead of speedy inline code. This problem is even more acute on modest embedded processors, where efficiency is most important.</p>
+              <p>   std::exception's virtual destructor is especially troublesome. In any scope that constructs objects (potentially any matched pair of curly brackets, but typically a function body), the compiler must generate additional code to destroy the objects if an exception is thrown within the scope. No extra code is needed in scopes that don't construct any objects, or whose constructed objects don't have destructors. The throw statement constructs an object (the exception class instance). Some compilers thus generate extra code for any function that throws an exception, if the exception type has a destructor (like std::exception). For compilers with this behavior, the solution is to call a function that throws the exception. The compiler may generate extra preamble and postamble code for the Throw() function in Listing 1. The Throw() function insulates the many calling functions unless they create other local objects with destructors.</p>
+              <p>   Exception classes derived from std::exception accept an optional constructor argument of type std::basic_string&lt;char&gt;&amp;. Constructing such a string generally calls the memory allocator; a troubling choice for many reasons. Calling into the allocator is expensive, typically consuming thousands of CPU cycles. More important, the exception class becomes coupled to the memory allocation subsystem. You can't pass optional information to an std::bad_ alloc exception because the allocator has already failed. Further, if the heap is corrupted, preparing to throw the exception may cause the program to crash, just as it is about to give useful information.</p>
+              <p>   The standard exception classes make an irrevocable choice of character width by accepting an std:: basic_string&lt;char&gt; constructor argument, and by defining the what() method to return an std::basic_string&lt;char&gt;. This adds complexity to applications using wide characters. It isn't obvious that an exception class must embed the responsibility for formatting error messages, in addition to conducting "what" and "where" information to the try/catch block.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Simple Exception Type Alternatives</span></span></p>
+              <p> </p>
+              <p>It isn't necessary to throw a class instance as an exception. The exception-handling mechanism can throw and catch any type. Throwing exceptions of integral type is both powerful and efficient. The thrown values can belong to an enumeration, can be Windows string resource IDs, or can be error codes from UNIX _errno or Windows GetLastErro (). Throwing an integer requires no function call for constructing or copying the data.</p>
+              <p>   Integral exception types are easy to catch. Instead of multiple catch clauses for the many derivations of std::exception, a single catch clause handles all integral exceptions. Inside the catch clause, a switch statement can efficiently classify the exception value to provide specialized processing. Switch statements can handle multiple cases with one statement block, provide default handlers, and don't have complex type-matching rules.</p>
+              <p>   The principal weakness of integral exception types is that they provide little in the way of "where" information. This problem is not insurmountable. The "where" of the exception can be provided by optional file and line arguments to a Throw() function. The Throw() function can log this information as in Listing 2. The actual values of the file and line arguments come from the C++ preprocessor macros_FILE_ and _ LINE_, which always refer to the current file and line number. A complete stack trace can also be recovered by inspecting the executable image's symbols and by walking the stack, at least on Windows and Linux. (A description of this technique is beyond the scope of this article.)</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">A Simple Exception Class</span></span></p>
+              <p> </p>
+              <p>A well-designed exception type describes what happened and where. It is efficient to throw and handle. Classifying exceptions in the handler should be simple, efficient, and avoid duplicating code. A good exception type avoids interactions with major subsystems, such as the memory allocator, that may themselves be the cause of the exception. The exception type's extension mechanism ideally avoids the runtime cost of polymorphism. There should be an extensible way to format exception text for display that doesn't mandate a specific character width or encoding. Listing 3 is a first candidate for such an exception type.</p>
+              <p>   Although this exception type is a class instance, its only member is an int because the file and line are logged and discarded in the constructor. An instance can be constructed and copied efficiently. It has no virtual functions and no destructor. The required "what" constructor argument is a numeric exception code to distinguish one exception from another. This type can accommodate a virtually unlimited number of distinct exceptions as unique integer codes. As with integral exception types, the exception code can control a switch statement for efficient classification of exceptions in the try/catch block.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">An Efficient Exception Class</span></span></p>
+              <p> </p>
+              <p>The simple exception class has some weaknesses. It assumes the availability of a logging subsystem at the point where the exception is thrown. This assumption can be violated, as when there is a problem with the filesystem or memory allocator. It is somewhat safer to defer logging to the handler, when the stack has been unwound and hopefully resources reclaimed. To perform logging in the handler, the exception type must retain the "where" information. This can be done efficiently by keeping a pointer to the filenname argument.</p>
+              <p>   The fast exception class of Listing 4 is similar to simple_exception. It is still simple and small enough to be reasonably efficient. However, this efficiency is bought with some risk. The constructor's file argument is expected to come from the C++ _FILE_ macro, which creates a literal character string in the initialized data storage area. The exception class stores only a pointer to this data. You can think of a literal string as being constant. But C++ doesn't enforce read-only access to literal strings; a buffer overwrite can compromise this data. Further, C++ cannot prevent a user from passing any value as the file argument, including a pointer to local data that will become garbage when the stack unwinds during exception processing.</p>
+              <p>   Instead of a virtual what() method that returns a string, a project-specific exception header can define iostream inserters or other methods taking the exception as an argument for formatting a displayable string representation of the exception. This decouples formatting exception data from throwing and handling the exception. On Windows, the "what" codes can be string resource IDs. This allows - but does not require - you to associate a formatting string with the exception. The exception-formatting method can parse the file and line into the string using the Windows FormatMessage() function, sprintf(), or equivalent.</p>
+              <p>   The first template in Listing 5 is a stream inserter. The second method formats the exception into a provided fixed-length buffer and returns the beginning of the buffer.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">A Conservative Exception Class</span></span></p>
+              <p> </p>
+              <p>The design of a general exception-handling class is influenced by your degree of paranoia. An important question is, "How much of the environment shall we rely upon when an exception is thrown?" After all, if the environment wasn't broken, the program wouldn't be throwing exceptions. Again, any exception class that relies upon the memory allocator accepts a risk, especially when reporting a bad_alloc exception.</p>
+              <p>   You can extend this paranoia to resources such as the stack, GUI, filesystem, networking subsystem, and so on. All such resources might be corrupt or unavailable. A really fastidious embedded-system environment might not rely upon any of these things. Its exception constructor might log exceptions to reserved, nonvolatile memory that can subsequently be accessed with no support beyond execution of CPU cycles.</p>
+              <p>   In a mature application running on a more robust operating system and platform, less paranoia is called for, but it still forms a consideration. I follow these guidelines:</p>
+              <p>• Don't call a lot of functions in the exception constructor, lest the stack run out.</p>
+              <p>• Minimize use of heap and other system resources at least until the handler, when the stack has been unwound and presumably some resources<br>freed.</p>
+              <p>• Log to a text file rather than to a complex network-based logging program.</p>
+              <p>   A paranoid view of exception-constructor arguments is appropriate, too. The guaranteed lifetime of pointer arguments is bounded by the constructor call. Really fussy exception classes (such as Listing 6) copy their arguments even if they are expected to be (for instance) literal sttings. Copying trades size and speed for safety. In spite of its correctness, I cannot recommend this degree of caution without reference to the specific implementation. Speed considerations, the operating environment, and maturity of the project must be considered when trading efficiency against paranoia and perfect usage.</p>
+              <p>   For big projects, or where speed, simplicity, or pure paranoia is an important consideration, a custom-designed exception type is an appropriate choice.</p>
+              <p><strong>Listing 1</strong></p>
+              <p>#include &lt;stdio.h&gt;<br>#include &lt;string&gt;<br>#include &lt;exception&gt;<br>// encode "where" info into standard exception<br>void Throw(char const* file, int line)<br>{ char buf[500];</p>
+              <p>  sprintf(buf,"%s(%d)", file, line);<br>  throw std::logic_error(std::basic_string&lt;char&gt;(buf)) ;</p>
+              <p>}</p>
+              <p><strong>Listing 2</strong></p>
+              <p>#include &lt;stdio.h&gt;<br>void Throw(int ex_code, char const* file, int line)</p>
+              <p>{ fprintf(stderr, "int exception %d at %s(%d) ", ex_code, file, line);<br>  throw ex_code;</p>
+              <p>}</p>
+              <p><strong>Listing 3</strong></p>
+              <p>class simple_exception<br>{<br>public:<br>    simple_exception(int what, char const* file=0, int line=0);<br>    int what() const { return what_; }<br>private:<br>    int what_;</p>
+              <p>};</p>
+              <p><strong>Listing 4</strong></p>
+              <p>class fast_exception<br>{<br>public:<br>    fast_exception(int what, char const* file=0, int line=0)<br>        : what_(what), line_(line), file_(file)<br>    {/*empty*/]<br>    int what() const { return what_; }<br>    int line() const { return line_; }<br>    char const* file() const { return file_: }<br>private:<br>    int   what_;<br>    int   line_;<br>    char const* file_;</p>
+              <p>};</p>
+              <p><strong>Listing 5</strong></p>
+              <p>template &lt;typename C&gt; std::basic_ostream&lt;C&gt;&amp; operator&lt;&lt;(<br>        std::basic_ostream&lt;C&gt;&amp; o,<br>        fast_exception const&amp; ex);<br>template &lt;typename C&gt; C const* Format(<br>        C* buf, int len, fast_exception const&amp; ex);</p>
+              <p><strong>Listing 6</strong></p>
+              <p>class conservative_exception<br>{<br>public:<br>    conservative_exception(int what, char const* file=0, int line=0);<br>    int what() const { return what_; }<br>    int line() const { return line_; }<br>    char const* file() const { return file_0 !=0 ? file_:0; }<br>private:<br>   int what_;<br>   int line_;<br>   char file_[32]</p>
+              <p>};</p>
+              <p> </p>
+              <p>Kurt Guntheroth holds an M.S. in computer science from the University of Washington and has been developing commercial software for 20 years. He can be contacted at <a href="mailto:k.guntheroth@att.net">k.guntheroth@att.net</a>.</p>
+              <p> </p>
+              <p>C/C++ Users Journal Advanced Solutions for Professional Developers, Vol 23, No 2, February 2005, Pg 32-35</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

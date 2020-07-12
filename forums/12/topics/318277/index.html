@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>question about bfs and gfs</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['12']).setTargeting('topic', ['318277']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['12']).setTargeting('topic', ['318277']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['12']).setTargeting('topic', ['318277']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['12']).setTargeting('topic', ['318277']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/12/'>Aunt Agony</a>
+      <h1>question about bfs and gfs</h1>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/12/topics/318277/2/'>Next</a>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Nikar 3</div>
+              <time class='date' datetime='2008-05-21T22:08:28+00:00'>21 May 08, 22:08</time>
+            </div>
+            <div class='col-md body'>
+              <p>hi all.......</p>
+              <p>from my observation, it seems almost everyone in singapore usually have a girlfriend or boyfriend during their poly (especially) and JC days, and then, their relationship last all the way into the mid-twenties and they go on to have kids etc.?</p>
+              <p>and they stay together despite obstacles like NS etc.?</p>
+              <p>is it true?</p>
+              <p>and if you don't have a bf or gf during your poly / JC days and you go on to adulthood in working life, very hard to find gf / bf?</p>
+              <p>even if got people un-attached at this time, usually it's those "dinosaurs", hags, super-nerds, war-pigs etc.</p>
+              <p>pls advise.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>FireIce</div>
+              <time class='date' datetime='2008-05-21T22:18:25+00:00'>21 May 08, 22:18</time>
+            </div>
+            <div class='col-md body'><p>im auntie, fat, ugly, wear nerdy specs and oni A-cup.<br><br>but i still got many ppl date.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-21T22:21:18+00:00'>21 May 08, 22:21</time>
+            </div>
+            <div class='col-md body'>
+              <p>this kind of things is very individualised and subjective, not based on your 'observation'</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>escadaraindrops</div>
+              <time class='date' datetime='2008-05-21T22:23:48+00:00'>21 May 08, 22:23</time>
+            </div>
+            <div class='col-md body'><p>,</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Hello Kitty</div>
+              <time class='date' datetime='2008-05-21T22:24:10+00:00'>21 May 08, 22:24</time>
+            </div>
+            <div class='col-md body'>
+              <p>den hw cm u oso single?</p>
+              <p>u belong to which cat one?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>CannyOng</div>
+              <time class='date' datetime='2008-05-21T22:27:11+00:00'>21 May 08, 22:27</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Nikar 3:</div>
+              <div class="quote_body">
+              <p>hi all.......</p>
+              <p>from my observation, it seems <span style="color: #ff0000;">almost everyone in singapore usually have a girlfriend or boyfriend during their poly (especially) and JC days, and then, their relationship last all the way into the mid-twenties and they go on to have kids etc.?</span></p>
+              <p>and they stay together despite obstacles like NS etc.?</p>
+              <p>is it true?</p>
+              <p>and if you don't have a bf or gf during your poly / JC days and you go on to adulthood in working life, very hard to find gf / bf?</p>
+              <p>even if got people un-attached at this time, usually it's those "dinosaurs", hags, super-nerds, war-pigs etc.</p>
+              <p>pls advise.</p>
+              </div>
+              </blockquote>
+              <p>Are u sure with yr observation??  I think u are living in another world..</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Eternal-fire</div>
+              <time class='date' datetime='2008-05-21T22:27:35+00:00'>21 May 08, 22:27</time>
+            </div>
+            <div class='col-md body'>
+              <p>Dun talk craps. Most of the people I know in poly is unattached and they aren't all 'dinosaurs', hags or whatever u mentioned up there.</p>
+              <p>And you think all gals will stay together with you even when you are in NS. That is not true man, actually most of the breakups happen within that time period.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-21T22:27:56+00:00'>21 May 08, 22:27</time>
+            </div>
+            <div class='col-md body'><p>even if you dont have bf/gf during poly/jc time, you still can get em ma while workin.... you want or dont want only</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>TehJarVu</div>
+              <time class='date' datetime='2008-05-21T22:29:52+00:00'>21 May 08, 22:29</time>
+            </div>
+            <div class='col-md body'><p>if those dates can only sustain until the 2nd or the 3rd date<br>or she keep having to solicit for dates<br>then something is wrong with the auntie<br>maybe her personality suX<br>or some other thing is wrong</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-21T22:31:10+00:00'>21 May 08, 22:31</time>
+            </div>
+            <div class='col-md body'>
+              <p>also,</p>
+              <p>a relationship that lasts from poly/jc to mid-twenties + have kids............. very long leh.</p>
+              <p>you sure you see a lot like that?</p>
+              <p> </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-21T22:33:43+00:00'>21 May 08, 22:33</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by FireIce:</div>
+              <div class="quote_body">
+              <p>im auntie, fat, ugly, wear nerdy specs and oni A-cup.<br></p>
+              </div>
+              </blockquote>
+              <p>made me very curious leh.... haha. But i think you possess this kickass attitude <img src="/images/emoticons/classic/icon_biggrin.gif" alt="icon_biggrin.gif"> so it's a plus also</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Karma88</div>
+              <time class='date' datetime='2008-05-21T22:45:44+00:00'>21 May 08, 22:45</time>
+            </div>
+            <div class='col-md body'>
+              <p>I`m in poly and most of my friends are unattached . And all of them not bad looking lea . Models lea .</p>
+              <p>But those of my friends who are attached are fugly. But the funny thing is that even though they are fugly their partners are very chio or yan dao . <img src="/images/emoticons/kde-3.5.8/KMess-Cartoon/ugly.png" alt="ugly.png"></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wonderamazement</div>
+              <time class='date' datetime='2008-05-21T22:47:22+00:00'>21 May 08, 22:47</time>
+            </div>
+            <div class='col-md body'><p>what are war-pigs? <img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>browniebaobao</div>
+              <time class='date' datetime='2008-05-21T22:50:17+00:00'>21 May 08, 22:50</time>
+            </div>
+            <div class='col-md body'>
+              <p><span style="color: #ae3cee;">not most la...</span></p>
+              <p> </p>
+              <p><span style="color: #ae3cee;">but i think love r/s during schooling days are the most innocent and sweet ones.. </span></p>
+              <p> </p>
+              <p><span style="color: #ae3cee;">i do know of ple who got married aft 18 yrs of courtship since sec sch.. </span></p>
+              <p> </p>
+              <p><span style="color: #ae3cee;">first love are most often v memorable.. </span></p>
+              <p> </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wonderamazement</div>
+              <time class='date' datetime='2008-05-21T22:55:41+00:00'>21 May 08, 22:55</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by browniebaobao:</div>
+              <div class="quote_body">
+              <p><span style="color: #ae3cee;">i do know of ple who got married
+              aft 18 yrs of courtship since sec sch..</span></p>
+              </div>
+              </blockquote>
+              <p>geez... true love.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Nikar 3</div>
+              <time class='date' datetime='2008-05-21T22:56:52+00:00'>21 May 08, 22:56</time>
+            </div>
+            <div class='col-md body'>
+              <p>thanks all.....then it must be the people around me lah.....at least, almost all my friends and one of my cousin also like that......JC got gf until now he's in university and gf working.....still together......really envy people like this.</p>
+              <p>and the term "warpigs" refer to fat, big, huge, fugly, *sweaty*, dirty, rough, haggard, smelly, loud, old-fashioned girls.</p>
+              <p>those girls who are fat, big, huge, fugly but who *are not* sweaty, dirty, rough, haggard, smelly, loud or old-fashioned are NOT warpigs.</p>
+              <p>got difference one.</p>
+              <p>now, back to topic.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wonderamazement</div>
+              <time class='date' datetime='2008-05-21T22:57:57+00:00'>21 May 08, 22:57</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Nikar 3:</div>
+              <div class="quote_body">
+              <p>even if got people un-attached at this time, usually it's those
+              "dinosaurs", hags, super-nerds, war-pigs etc.</p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p>weird leh... i not in these categories... hmm.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-21T23:04:46+00:00'>21 May 08, 23:04</time>
+            </div>
+            <div class='col-md body'><p>so chim.. simi war pigs <img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Nikar 3</div>
+              <time class='date' datetime='2008-05-21T23:08:19+00:00'>21 May 08, 23:08</time>
+            </div>
+            <div class='col-md body'>
+              <p>see explanation in the above post (my 2nd post in this thread).</p>
+              <p>warpigs is an american slang, although it's not very widely used in the USA, but some guys over there use this word now and then.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wonderamazement</div>
+              <time class='date' datetime='2008-05-21T23:10:26+00:00'>21 May 08, 23:10</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Nikar 3:</div>
+              <div class="quote_body">
+              <p>see explanation in the above post (my 2nd post in this
+              thread).</p>
+              <p>warpigs is an american slang, although it's not very widely used
+              in the USA, but some guys over there use this word now and
+              then.</p>
+              </div>
+              </blockquote>
+              <p>errr... got assplain meh?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wonderamazement</div>
+              <time class='date' datetime='2008-05-21T23:11:08+00:00'>21 May 08, 23:11</time>
+            </div>
+            <div class='col-md body'><p>and i think you meant warthogs is it?</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-21T23:23:31+00:00'>21 May 08, 23:23</time>
+            </div>
+            <div class='col-md body'>
+              <p>ok, now what? <img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wonderamazement</div>
+              <time class='date' datetime='2008-05-21T23:26:36+00:00'>21 May 08, 23:26</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Lorry`:</div>
+              <div class="quote_body">
+              <p>ok, now what? <img src="/images/emoticons/classic/icon_lol.gif" alt="icon_lol.gif"></p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p>dunno... let's discuss about chio bus in this thread!</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lorry`</div>
+              <time class='date' datetime='2008-05-21T23:35:07+00:00'>21 May 08, 23:35</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by wonderamazement:</div>
+              <div class="quote_body">
+              <p>dunno... let's discuss about chio bus in this thread!</p>
+              </div>
+              </blockquote>
+              <p>ok sure <img src="/images/emoticons/classic/icon_redface.gif" alt="icon_redface.gif"></p>
+              <p>In my eyes, you're indeed a chiobu <img src="/images/emoticons/classic/icon_redface.gif" alt="icon_redface.gif"> <br></p>
+              <p>thats a fact<br>and by makin the above statement, I would like the forum ple to know that you're a chiobu</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wonderamazement</div>
+              <time class='date' datetime='2008-05-21T23:37:08+00:00'>21 May 08, 23:37</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Lorry`:</div>
+              <div class="quote_body">
+              <p>ok sure <img src="/images/emoticons/classic/icon_redface.gif" alt="icon_redface.gif"></p>
+              <p>In my eyes, you're indeed a chiobu <img src="/images/emoticons/classic/icon_redface.gif" alt="icon_redface.gif"></p>
+              <p>thats a fact<br> and by makin the above statement, I would like the forum ple to
+              know that you're a chiobu</p>
+              </div>
+              </blockquote>
+              <p>shhh dun asspose me real gender leh. <img src="/images/emoticons/classic/icon_redface.gif" alt="icon_redface.gif"> i'm not war-pig leh.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+        <a class='page-link' href='/forums/12/topics/318277/2/'>Next</a>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

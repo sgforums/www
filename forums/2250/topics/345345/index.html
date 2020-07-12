@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Need help in .NET coding</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['345345']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['345345']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['345345']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['345345']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Need help in .NET coding</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>denotilater</div>
+              <time class='date' datetime='2009-01-24T02:19:25+00:00'>24 Jan 09, 02:19</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hello guys, I've question regarding retrieving of data from SQL
+              server 2005 and then displaying it on a textbox / label. So hopefully I
+              can find aid here. I've done some research and was thinking of using
+              dataReader to read and then display data. I'm doing it 3-tier.</p>
+              <p>So these are my codes...</p>
+              <p><strong><span style="text-decoration: underline;">ViewInformationDAL.vb</span></strong></p>
+              <p>Public Class ViewInformationDAL<br>    Dim cmd As New System.Data.SqlClient.SqlCommand<br><br>    Sub New()<br>        'Empty constructor<br>    End Sub<br><br>    Public Function viewInformation(ByVal username As String, ByVal password As String) As String<br>        Dim dReader As System.Data.IDataReader = Nothing<br>        Dim StrSelect As String = "SELECT * FROM Members"<br>        Dim msg As String = Nothing<br>        Try<br>            retrieveDReader(StrSelect, dReader)<br>            While dReader.Read<br>                msg = "Successful"<br>            End While<br>        Catch ex As System.Data.DataException<br>            msg = ex.Message<br>        End Try<br>        Return msg<br>    End Function<br><br>    Public Sub retrieveDReader(ByVal StrSelect As String, ByRef dReader As System.Data.IDataReader)<br><br>        Dim connectionString As String = My.Settings.dbConnection<br>        Dim dbConnection As System.Data.IDbConnection = New System.Data.SqlClient.SqlConnection(connectionString)<br>        dbConnection.Open()<br>        Try<br><br>            cmd.Connection = dbConnection<br>            cmd.CommandText = StrSelect<br>            dReader = cmd.ExecuteReader<br><br>        Catch ex As Exception<br><br>        End Try<br><br>    End Sub<br>End Class</p>
+              <p><span style="text-decoration: underline;"><strong>ViewInfoBLL.vb</strong></span></p>
+              <p>Imports Microsoft.VisualBasic<br><br>Public Class ViewInfoBLL<br>    Dim loginAdapter As DAL.LoginDAL = New DAL.LoginDAL<br><br>    Public Sub New()<br>    End Sub<br><br><br>    Public Function GetLogin(ByVal username As String, ByVal password As String) As String<br>        Dim str As String = loginAdapter.GetLogin(username, password)<br>        Return str<br>    End Function<br><br>End Class</p>
+              <p><span style="text-decoration: underline;"><strong>Default.aspx.vb</strong></span></p>
+              <p><br>Partial Class Default<br>    Inherits System.Web.UI.Page<br>    Dim retrieveInfo As ViewInfoBLL = New ViewInfoBLL<br><br>    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load<br>        Dim username As String = Nothing<br>        Dim password As String = Nothing<br><br>        Dim Result As String = retrieveInfo.GetLogin(username, password)<br><br>        If Result = "Successful" Then<br>             'I want to display value thats from database into the question marks part<br>            TextBox1.Text = "???"<br>            TextBox2.Text = "???"<br>        Else<br>            TextBox1.Text = "Error"<br>            TextBox2.Text = "Error"<br>        End If<br><br>    End Sub<br>End Class</p>
+              <p>And lastly there's tableAdapter</p>
+              <p>Hopefully someone can enlighten me.Thanks alot and greatly appreciated for any advices and helps.</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2009-01-24T11:45:27+00:00'>24 Jan 09, 11:45</time>
+            </div>
+            <div class='col-md body'><p>Imports System.Data.SqlClient<br><br>Public Class Form1<br>    Inherits System.Web.UI.Page<br><br>Dim myConnection As SqlConnection<br>Dim myCommand As SqlCommand<br>Dim dr As New SqlDataReader()<br>'declaring the objects<br><br>Public Sub Page_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load<br>myConnection = New SqlConnection("server=localhost;uid=sa;pwd=;database=pubs")<br>'establishing connection. you need to provide password for sql server<br>Try<br>myConnection.Open()<br>'opening the connection<br>myCommand = New SqlCommand("Select col1, col2 from Members", myConnection)<br>'executing the command and assigning it to connection<br>dr = myCommand.ExecuteReader()<br>if dr.Read() Then<br>'reading from the datareader<br><br>TextBox1.Text = dr(0).ToString()<br>TextBox2.Text = dr(1).ToString()<br>else<br>TextBox1.Text = "Not found"<br>TextBox2.Text = "Not found"<br>End If<br>Catch e As Exception<br>TextBox1.Text = "Error : " &amp; e.Message<br>TextBox2.Text = "Error : " &amp; e.Message<br>Finally<br>'need to do checking for state first before closing<br>dr.Close()<br>myConnection.Close()<br>End Try<br>End Sub<br><br>End Class</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>denotilater</div>
+              <time class='date' datetime='2009-01-24T23:46:25+00:00'>24 Jan 09, 23:46</time>
+            </div>
+            <div class='col-md body'><p>Hi GIB, thanks for your reply, but however...I'm quite confused with your codes. <img src="/images/emoticons/kde-3.5.8/ccmathteam.com/confused.png" alt="confused.png"></p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2009-01-25T11:40:52+00:00'>25 Jan 09, 11:40</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by denotilater:</div>
+              <div class="quote_body">
+              <p>Hi GIB, thanks for your reply, but however...I'm quite confused
+              with your codes. <img src="/images/emoticons/kde-3.5.8/ccmathteam.com/confused.png" alt="confused.png"></p>
+              </div>
+              </blockquote>
+              <p>It's just a simple example of a code behind page which opens a connection to an SQL Server and read the values from the database table and then assigns the values to the 2 textboxes. Which part is confusing?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>denotilater</div>
+              <time class='date' datetime='2009-01-25T15:06:28+00:00'>25 Jan 09, 15:06</time>
+            </div>
+            <div class='col-md body'><p>Thanks GIB for reply, but I managed to solve it <img src="/images/emoticons/kde-3.5.8/set1/wink.png" alt="wink.png">. Did some changes and examples from your codes and i got it. Thanks again ^^</p></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

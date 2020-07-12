@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Need Access multi database query help</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['362909']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['362909']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['362909']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['362909']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Need Access multi database query help</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2009-06-05T17:48:00+00:00'>5 Jun 09, 17:48</time>
+            </div>
+            <div class='col-md body'><p>I need some help with the Access 2003 database syntax to connect to another Access 2003 database so I can query the tables in both databases using join.<br><br>So far I got it to work if I put in the absolute path to the mdb file.<br><br>E.g. select * from mytable in 'c:\myfolder\mydb.mdb'<br><br>But I have search everywhere and I cannot find the equivalent syntax for DSN. The external Access 2003 database is only accessible via DSN. I have tried various combinations and nothing worked.<br><br>If anyone has found the syntax before, please share it with me.<br><br>I'll be running the query in asp.net (vb) using ODBC.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Py ho</div>
+              <time class='date' datetime='2009-06-08T00:25:11+00:00'>8 Jun 09, 00:25</time>
+            </div>
+            <div class='col-md body'>
+              <p>Try Link tables</p>
+              <p>With Link tables you can query multiple mdb using join as if tables are in same mdb.</p>
+              <p>From current mdb, select menu bar, Insert,Table, Link table, choose tables from 'c:\myfolder\mydb.mdb'</p>
+              <p>lets say you have table mytable on  'c:\myfolder\mydb.mdb'</p>
+              <p>Your query becomes, 'select * from mytable'</p>
+              <p>Hope it helps.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2009-06-08T20:38:12+00:00'>8 Jun 09, 20:38</time>
+            </div>
+            <div class='col-md body'><p>I'm afraid link tables are not an option for me. The databases are part of a software solution and I can't expect the customer to modify things behind the scenes. Also they may not have Access installed on their server. I also doubt whether link tables would be available if I use asp.net and ODBC to connect to it.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Py ho</div>
+              <time class='date' datetime='2009-06-09T19:55:02+00:00'>9 Jun 09, 19:55</time>
+            </div>
+            <div class='col-md body'>
+              <p>If you cannot see any sense of my solutions. Well good luck.</p>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

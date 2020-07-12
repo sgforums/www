@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>H2 Maths : Linear Regression</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2297']).setTargeting('topic', ['383507']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2297']).setTargeting('topic', ['383507']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2297']).setTargeting('topic', ['383507']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2297']).setTargeting('topic', ['383507']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2297/'>Homework Forum</a>
+      <h1>H2 Maths : Linear Regression</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Snoopyies</div>
+              <time class='date' datetime='2009-12-02T00:22:41+00:00'>2 Dec 09, 00:22</time>
+            </div>
+            <div class='col-md body'>
+              <p>How come the least squares regression lines for regress y on x and regress x on y is NOT that as follows ?</p>
+              <p>Regress y on x, the least squares regrestion line is y= a + bx</p>
+              <p>y = a + bx</p>
+              <p>y - a = bx</p>
+              <p>(y - a)/b = x</p>
+              <p>x = -(a/b) + (1/b)y </p>
+              <p>So why for the case of Regress x on y,</p>
+              <p>the least squares regresiion line is NOT x = -(a/b) + (1/b)y ?</p>
+              <p>Thanks for the help.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Snoopyies</div>
+              <time class='date' datetime='2009-12-02T00:24:24+00:00'>2 Dec 09, 00:24</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_body">
+              <p>Deleted</p>
+              </div>
+              </blockquote>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>absol</div>
+              <time class='date' datetime='2009-12-02T00:38:39+00:00'>2 Dec 09, 00:38</time>
+            </div>
+            <div class='col-md body'>
+              <p>i think its because your "x on y regression line" is simply a rearrangement of your equation of your y on x regression line.</p>
+              <p>y on x and x on y lines should yield totally different values because your independent and dependent variables are different in each case.</p>
+              <p>i think its like that? lol.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Forbiddensinner</div>
+              <time class='date' datetime='2009-12-02T00:44:09+00:00'>2 Dec 09, 00:44</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Snoopyies:</div>
+              <div class="quote_body">
+              <p>How come the least squares regression lines for regress y on x
+              and regress x on y is NOT that as follows ?</p>
+              <p>Regress y on x, the least squares regrestion line is y= a +
+              bx</p>
+              <p>y = a + bx</p>
+              <p>y - a = bx</p>
+              <p>(y - a)/b = x</p>
+              <p>x = -(a/b) + (1/b)y </p>
+              <p>So why for the case of Regress x on y,</p>
+              <p>the least squares regresiion line is NOT x = -(a/b) + (1/b)y
+              ?</p>
+              <p>Thanks for the help.</p>
+              </div>
+              </blockquote>
+              <p>y = bx + a</p>
+              <p>x = -(a/b) + (1/b)y</p>
+              <p>x = cy + d, where c = (1/b) and d = (-(a/b))</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Snoopyies</div>
+              <time class='date' datetime='2009-12-02T00:53:40+00:00'>2 Dec 09, 00:53</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by absol:</div>
+              <div class="quote_body">
+              <p>i think its because your "x on y regression line" is simply a rearrangement of your equation of your y on x regression line.</p>
+              <p>y on x and x on y lines should yield totally different values because your independent and dependent variables are different in each case.</p>
+              <p>i think its like that? lol.</p>
+              </div>
+              </blockquote>
+              <p>In the textbook, the linear regression questions in the textbook are usually given in a table form with 2 rows of X and Y data. Next, the questions will ask to find the regression lines for the case of regress Y on X and regress X on Y ie the first case Y is Dependent variable and X is Independent Variable and for the second case X is Dependent variable and Y is Independent Variable. The X and Y data are the same. So,</p>
+              <p>1. For the case of regress y on x, the least square regression line is</p>
+              <p>    y = a + bx</p>
+              <p>2. For the case of regress x on y, the least square regression line is</p>
+              <p>    x = c + dy</p>
+              <p>    So, from y = a + bx and then re-arrange x in terms of y</p>
+              <p>   x = - (a/b) + (1/b)y</p>
+              <p>   So, why is it incorrect  ie why c is not equal to - (a/b) and d is not equal to 1/b ?</p>
+              <p>    </p>
+              <p>  </p>
+              <p> </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Snoopyies</div>
+              <time class='date' datetime='2009-12-02T00:58:01+00:00'>2 Dec 09, 00:58</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Forbiddensinner:</div>
+              <div class="quote_body">
+              <p>y = bx + a</p>
+              <p>x = -(a/b) + (1/b)y</p>
+              <p>x = cy + d, where c = (1/b) and d = (-(a/b))</p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p>It is not the same because I do the questions with actual numbers from the textbook.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wee_ws</div>
+              <time class='date' datetime='2009-12-02T08:19:30+00:00'>2 Dec 09, 08:19</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Snoopyies:</div>
+              <div class="quote_body">
+              <p>How come the least squares regression lines for regress y on x and regress x on y is NOT that as follows ?</p>
+              <p>Regress y on x, the least squares regrestion line is y= a + bx</p>
+              <p>y = a + bx</p>
+              <p>y - a = bx</p>
+              <p>(y - a)/b = x</p>
+              <p>x = -(a/b) + (1/b)y </p>
+              <p>So why for the case of Regress x on y,</p>
+              <p>the least squares regresiion line is NOT x = -(a/b) + (1/b)y ?</p>
+              <p>Thanks for the help.</p>
+              </div>
+              </blockquote>
+              <p>Hi,</p>
+              <p>  It is good to ask why :)</p>
+              <p>  If that is the case, then both lines coincide.</p>
+              <p>  Regression lines only coincide when r = 1 or -1 and this is rarely the case.</p>
+              <p>  Thanks!</p>
+              <p>Cheers,<br>Wen Shih</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Lee012lee</div>
+              <time class='date' datetime='2009-12-02T13:21:58+00:00'>2 Dec 09, 13:21</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hi,</p>
+              <p>      <span style="color: #ff0000;"><span style="text-decoration: underline;">Regress y on x</span></span>                           <span style="color: #ff0000;"><span style="text-decoration: underline;">Regress x on y</span></span></p>
+              <p>1.   Use GC, do a scatter plot       1.  Use GC, do a scatter plot</p>
+              <p>2.   Note that gradient = a             2.  Note that gradient = c</p>
+              <p>      Vertical intercept = b                   Vertical intercept = d</p>
+              <p>3.  Residual Error ei                      3. Residual Error ei</p>
+              <p>     = Observed Value of each yi        = Observed value of each xi</p>
+              <p>       - each predicted y value               - each predicted x value                            </p>
+              <p>     = yi - (a + bxi)                             = xi - (c + dyi)</p>
+              <p>4.  Using the least squares            4. Using the least squares</p>
+              <p>     method to minimise the                method to mininise the</p>
+              <p>     sum of the squared residual        sum of the squared residual</p>
+              <p>     errors, differentiation and            errors, differentiation and</p>
+              <p>     substitution, the formula for         susbstitution, the formula for</p>
+              <p>     a and b are obtained.                 c and d are obtained.</p>
+              <p>5.  When the sum of squared        5. When the sum of squared</p>
+              <p>     residual errors are not zero,        residual errors are not zero,</p>
+              <p>     a =/= - cb  and b =/= 1/d             c =/= -(a/b) and d =/= 1/b</p>
+              <p>     ie r =/= 1 or r =/= - 1                  ie r =/= 1 or r =/= -1           </p>
+              <p>6.  When the sum of squared        6. When the sum of squared</p>
+              <p>     residual errors are zero,              residual errors are zero,</p>
+              <p>     a = - cb  and b = 1/d                   c = - (a/b) and d = 1/b</p>
+              <p>     ie r = 1 or r = - 1                       ie r = 1 or r = -1                   </p>
+              <p>     This means that all the               This means that all the</p>
+              <p>     observed y values are                observed x values are</p>
+              <p>     equal to the predicted                equal to the predicted</p>
+              <p>     y values                                    x values </p>
+              <p>So to TS,</p>
+              <p>(a)  <span style="color: #0000ff;">why a is not equal to c or - (a/b) and b is not equal to d or 1/b because the</span></p>
+              <p><span style="color: #0000ff;">      the sum of squared residual errors for regress y on x and regress x on y are</span></p>
+              <p><span style="color: #0000ff;">      different and not equal to zero. So, the least squares regression lines for both </span></p>
+              <p><span style="color: #0000ff;">      cases are different ( ie r are not equal to 1 or -1 ).</span></p>
+              <p>(b)  <span style="color: #008000;">a is equal to c or - (a/b) and b is equal to d or 1/b when the sum of squared </span></p>
+              <p><span style="color: #008000;">      residual errors for regress y on x and regress x on y are both equal to zero. </span></p>
+              <p><span style="color: #008000;">      So, the least squares regression lines for both cases are the same (ie r are</span></p>
+              <p><span style="color: #008000;">      equal to 1 or - 1). So, <span style="color: #ff0000;"><span style="text-decoration: underline;">only in this case</span></span>, we can from y = a + bx and re-</span></p>
+              <p><span style="color: #008000;">      arrange and express x in terms of y into x = - (a/b) + (1/b)y = c + dy.</span></p>
+              <p><span style="color: #ff0000;">PS :</span> For Step 4, TS you may refer to your textbook Appendix 6.</p>
+              <p>       This will require you to use partial differentiation with respect to a, then b, c</p>
+              <p>       and d. Since we want to minimise the sum of squared residual errors, we</p>
+              <p>       can set the 4 equations equal to zero (known as normal equations).  Solving</p>
+              <p>       these equations, we get the formula for a, b, c and d. To prove that it is a</p>
+              <p>       minimum, we can find the second derivatives for a, b, c and d.  </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wee_ws</div>
+              <time class='date' datetime='2009-12-02T14:38:05+00:00'>2 Dec 09, 14:38</time>
+            </div>
+            <div class='col-md body'>
+              <p>Dear Lee012lee,</p>
+              <p>  Thanks for your in-depth explanations!</p>
+              <p>Cheers,<br>Wen Shih</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

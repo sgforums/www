@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>PSU 12V rail question</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['418184']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['418184']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['418184']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['418184']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>PSU 12V rail question</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Call4ljw</div>
+              <time class='date' datetime='2010-12-17T16:39:57+00:00'>17 Dec 10, 16:39</time>
+            </div>
+            <div class='col-md body'>
+              <p><img src="http://www.nordichardware.com/skrivelser_img/432/psu.12v.jpg" alt="" width="1024" height="768"></p>
+              <p>Is the above picture a 12V rail from the PSU?</p>
+              <p>My PSU comes with 2 12V output, and i heard that using only 1 12V increases the efficiency. I'm planning on get the new sandy bridge processor and a basic motherboard, which will bring the power consumption to be below 200W, far lower than what a single 12V rail can provide.</p>
+              <p>So i'm thinking if i can use only 1 12V output instead? and if yes, which one is more recommended to use?(left or right)</p>
+              <p> </p>
+              <p>Thanks!</p>
+              <p> </p>
+              <p>Edit:</p>
+              <p>I saw on another website that 12V output actually refers to the one on the mainboard(true?). By mainboard i refer to <a href="http://en.wikipedia.org/wiki/Power_supply_rail">http://en.wikipedia.org/wiki/Power_supply_rail </a></p>
+              <p>So do i actually need to use the 12V to the CPU?(picture at the top)</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Call4ljw</div>
+              <time class='date' datetime='2010-12-20T14:23:18+00:00'>20 Dec 10, 14:23</time>
+            </div>
+            <div class='col-md body'><p>bump.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS7484P</div>
+              <time class='date' datetime='2010-12-24T10:46:43+00:00'>24 Dec 10, 10:46</time>
+            </div>
+            <div class='col-md body'>
+              <p>This is not a rail. This is a 4-pin CPU power connector.</p>
+              <p>What you heard is false.</p>
+              <p>A rail is a split 12V sub-line with an OCP feature on it.</p>
+              <p>Take a look at this example.</p>
+              <p>A PSU with 4x 12V rails have the following limits of 22A, 22A, 36A and 36A on the 4 lines respectively.</p>
+              <p>What does this mean? It shows that the 12V group is split into 4 sub channels that can handle this amount of current each, without tripping the OCP feature on either line, and shutting down the PSU.</p>
+              <p>There are no proven advantages with regards to efficiency and/or performance by choosing to use only one 12V rail instead of using.</p>
+              <p> </p>
+              <p>Furthermore, modern PSU's with two 12V rails are probably low-wattage PSU's with no 6-pin PCI-e support, and will group the two 12V rails accordingly; the first rail for 12V CPU (or EPS 8-pin CPU power) and the remaining rail for S-ATA devices and Molex devices.</p>
+              <p>PSU's with four rails like my abovementioned example have them grouped as such:<br>1st rail: CPU<br>2nd rail: Peripherals (S-ATA, Molex)<br>3rd rail: PCI-e 6-pin/8-pin/6+2-pin #1<br>4th rail: PCI-e 6-pin/8-pin/6+2-pin #2</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS7484P</div>
+              <time class='date' datetime='2010-12-24T10:48:19+00:00'>24 Dec 10, 10:48</time>
+            </div>
+            <div class='col-md body'>
+              <p>In some cases, the PSU may actually have only one rail, and the manufacturer decides to place a label on the box that suggests the PSU has multiple rails.</p>
+              <p>There is nothing really wrong with using a PSU with a large, single 12V rail.</p>
+              <p><br>The only problem here is, you could be overloading your Molex connections to the point that they catch on fire, and the PSU will still keep going.</p>
+              <p> </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>troublemaker2005</div>
+              <time class='date' datetime='2010-12-29T00:06:24+00:00'>29 Dec 10, 00:06</time>
+            </div>
+            <div class='col-md body'>
+              <p>from what i know efficiency or rather how much power can the 12V rail draw depends on the current rating in amps. of course for example a 10 amp rating at the 12V rail is better than a 5amp rating.</p>
+              <p>also if you have mutiple connections try to use power line from different branches. avoid loading power connections to your other iternal PC hardware from a single line.</p>
+              <p> </p>
+              <p>the connector shown in the picture looks like one to power graphics card, or similar to the additional power socket to the processor</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>SBS7484P</div>
+              <time class='date' datetime='2010-12-29T19:55:06+00:00'>29 Dec 10, 19:55</time>
+            </div>
+            <div class='col-md body'>
+              <p>It is true that using power from different branches on a multi-rail PSU is better so as to prevent tripping the OCP on each rail.</p>
+              <p> </p>
+              <p>But in most modern PSU's, there are 4 rails distributed for Molex/SATA, CPU, GPU0 and GPU1.<br><br>That basically means all your peripherals, and things like fan controllers, CCFL's, water pumps, etc. are running on one rail.</p>
+              <p>This provided you have a higher end PSU that splits the peripheral (Molex/SATA) group into two different rails.</p>
+              <p>In view that modern GPUs have large power demands, therefore each 6-pin/8-pin PCIe connector is allocated its own rail.<span style="white-space: pre;"> </span></p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Need Help on Cygwin and Emacs</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['40']).setTargeting('topic', ['18456']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['40']).setTargeting('topic', ['18456']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['40']).setTargeting('topic', ['18456']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['40']).setTargeting('topic', ['18456']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/40/'>Computer Lab</a>
+      <h1>Need Help on Cygwin and Emacs</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>jungleboy111</div>
+              <time class='date' datetime='2002-01-20T18:07:00+00:00'>20 Jan 02, 18:07</time>
+            </div>
+            <div class='col-md body'>Hi. Is anyone familiar with cygwin and emacs? I need help on them.<br><br>Apparently, I've installed cygwin and emacs. But I can't seem to access emacs from cygwin. What are the ".bashrc" &amp; ".emacs" file for? I don't have them. What can I do?<br><br>Please Help. Thanks</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>truck</div>
+              <time class='date' datetime='2002-02-13T00:31:00+00:00'>13 Feb 02, 00:31</time>
+            </div>
+            <div class='col-md body'>you're an NP IT year 1 student huh?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>pinkK</div>
+              <time class='date' datetime='2002-02-14T22:07:00+00:00'>14 Feb 02, 22:07</time>
+            </div>
+            <div class='col-md body'>Your .bashrc file is where you can place any shell commands that you want executed every time you start up a new shell.<br><br>Here is the TCC standard .bashrc file with interspersed commentary.<br><br>#File: /usr/local/adm/lib/initial_dir_src/.bashrc<br>## If not a login shell, source /etc/profile anyway<br>if [ "$0" != "-bash" ] ; then<br>. /etc/profile<br>fi<br>The above lines cause the .profile file to be read even if the current shell ($0) is not bash. That file sets up your default search path.<br><br>## to add someting to your path, do something like the following<br>export PATH=${PATH}:${HOME}/bin<br>There's a lot going on in the above line. The export command sets a variable in this script but also ``exports'' it so it affects things outside this script. The ${PATH} part is a special function that expands to your current search path. The ${HOME} function expands to your home directory's pathname, so effectively it adds your ~/bin directory to your search path. The colon ( <img src="/images/emoticons/classic/icon_smile.gif" alt="Smile" title="Smile"> must be used to separate elements of the search path.<br><br>## set a happy editor for programs that want them<br>export EDITOR='pico'<br>export VISUAL='pico'<br>This sets up two environmental variables, EDITOR and VISUAL, that some programs expect to find to tell them what editor you like. Substitute emacs or vi for pico in the above lines if you prefer one of those editors.<br><br>set history=40<br>Tells bash to remember the last 40 commands you have typed. Refer to ``history substitution'' in the textbook to see how you can recall such previously entered commands and execute them again.<br><br>## some usefull aliases, so new users don't hurt themselves<br>alias rm='rm -i'<br>alias cp='cp -i'<br>alias mv='mv -i'<br>alias ls='ls -F'<br>The bash alias command sets up new commands as shorthand for longer commands. For example, the first command makes rm an alias for the rm command with the -i option so that the shell will ask the user before removing files.<br><br>## this is to fool the automounter<br>cd ${HOME}<br>This command does a cd to your home directory so that pwd prints out your /u/username pathname and not the longer ``real'' (and confusing) path name.<br><br>hope that helps..........</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

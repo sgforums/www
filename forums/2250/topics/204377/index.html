@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Windows folder</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['204377']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['204377']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['204377']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['204377']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Windows folder</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>dearkd</div>
+              <time class='date' datetime='2006-08-11T08:40:50+00:00'>11 Aug 06, 08:40</time>
+            </div>
+            <div class='col-md body'>Windows Explorer acting funny ????????????????<br><br>Windows only remembers 400 folder settings. When that number is reached some settings aren't retained any longer. You can change this to 8000 by adding this edit to the registry.<br><br>Instructions for use:<br><br>1. Copy all the text in the quote box below into notepad.<br>2. Save this as folder8k.reg<br>3. Backup your registry or create a restore point. (this is not necessary for fix to work, but should always be done before any changes are made to the registry)<br>4. Run this reg file, and accept the changes.<br>5. You will need to reset your preferred folder options.<br><br><div>code:<pre>Windows Registry Editor Version 5.00<br>[-HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\BagMRU]<br>[-HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\Bags]<br>[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell]<br>"BagMRU Size"=dword:00001f40<br>[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam]<br>"BagMRU Size"=dword:00001f40<br>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]<br>"NoSaveSettings"=dword:00000000<br></pre></div><br><br>Change "e; to  <img src="/images/emoticons/classic/icon_arrow.gif" alt="Arrow" title="Arrow"> <strong><span class="large">"</span></strong><br><br>Make sure that there's a space for every line, it should look like this:<br><br><blockquote>Windows Registry Editor Version 5.00<br><br>[-HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\BagMRU]<br><br>[-HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\Bags]<br><br>[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell]<br><br>"BagMRU Size"=dword:00001f40<br><br>[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam]<br><br>"BagMRU Size"=dword:00001f40<br><br>[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]<br><br>"NoSaveSettings"=dword:00000000<br><br></blockquote></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-08-11T08:48:48+00:00'>11 Aug 06, 08:48</time>
+            </div>
+            <div class='col-md body'>Edit: Codes have been re-written, use at your own risk. Found source.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-08-11T13:08:17+00:00'>11 Aug 06, 13:08</time>
+            </div>
+            <div class='col-md body'><a href="http://www.google.com/search?hl=en&amp;lr=&amp;safe=off&amp;q=%22You+can+change+this+to+8000+by+adding+this+edit+to+the+registry%22&amp;btnG=Search" rel="nofollow">Google search results</a><br><br><a href="http://www.tweakxp.com/article37555.aspx" rel="nofollow">TweakXP article on it</a><br><br><a href="http://www.tweakxp.com/article36833.aspx" rel="nofollow">Another TweakXP article</a></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>abao</div>
+              <time class='date' datetime='2006-08-12T13:01:14+00:00'>12 Aug 06, 13:01</time>
+            </div>
+            <div class='col-md body'>Go download TweakUI. Its a tool for Windows XP by Microsoft. It can change a lot of things including the folder settings.<br><br><a href="http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx" rel="nofollow">http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx</a><br><br>so u dun need to go manually type through the registry...<br><br></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>rathcycle</div>
+              <time class='date' datetime='2006-08-12T13:02:27+00:00'>12 Aug 06, 13:02</time>
+            </div>
+            <div class='col-md body'>can this be trusted ?</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>abao</div>
+              <time class='date' datetime='2006-08-12T13:16:01+00:00'>12 Aug 06, 13:16</time>
+            </div>
+            <div class='col-md body'>A note though, the more folders you remember, the more memory needed by windows.<br><br><a href="http://xs.to" rel="nofollow"><img src="http://xs304.xs.to/xs304/06326/TweakUI.JPG"></a></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2006-08-12T15:30:06+00:00'>12 Aug 06, 15:30</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by rathcycle:</div><div class="quote_body">can this be trusted ?</div></blockquote>If you don't know how to do it, don't use it.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>rathcycle</div>
+              <time class='date' datetime='2006-08-12T15:32:35+00:00'>12 Aug 06, 15:32</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">If you don't know how to do it, don't use it.</div></blockquote>k.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>lifeisgood9989</div>
+              <time class='date' datetime='2006-08-12T15:41:59+00:00'>12 Aug 06, 15:41</time>
+            </div>
+            <div class='col-md body'>editing this part of the registry won't corrupt ur system. if u wan the easiest way to back up, just create a new user account. in case anything crashes, just delete the old account and use the new one.  <img src="/images/emoticons/classic/icon_wink.gif" alt="Wink" title="Wink"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>dearkd</div>
+              <time class='date' datetime='2006-08-12T16:02:43+00:00'>12 Aug 06, 16:02</time>
+            </div>
+            <div class='col-md body'>this is for whom who has more than 400 folders<br><br></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Java Scripts.</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['307576']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['307576']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['307576']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['307576']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Java Scripts.</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>juantan</div>
+              <time class='date' datetime='2008-02-14T16:45:29+00:00'>14 Feb 08, 16:45</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hi. i'm came upon this java script and i find it extremely interesting. Firstly because im a noob. but also i wanna ask some questions. Don't mind please do reply! thanks.</p>
+              <p> </p>
+              <p>/**<br> * @(#)ComputeBPR.java<br> *<br> *<br> * @author<br> * @version 1.00 2008/1/24<br> */<br>public class ComputeBPR {<br>    <br>  static int systollic;//delcare Systollic<br>  static String name;<br>  static int diastollic;//declare Diastolic<br>  static String printout;<br>  static int verify;<br>  static String[]array = new String[10];//delcare array of size 10<br>  static int counter ;<br>  <br>    public static void main(String[] args)<span style="text-decoration: underline;"><strong>throws Exception</strong></span> {<br>        int choice;<br>        do{<br>       System.out.println("********* BPR Program *********");<br>       System.out.println("1) Check your BPR Status");<br>       System.out.println("2) Tactics to Lower BPR");<br>       System.out.println("3) Exit program
+              ");<br>       System.out.println("***********************************");<br>       System.out.print("Please select your choice &lt;1-3&gt; : ");<br>       choice = CspInput.readInt();<br>       <br>       switch(choice){ // switch case (choice)<br>            case 1:choice1(); <br>            break;<br>            case 2:choice2();<br>            break;<br>            case 3:choice3<span style="text-decoration: underline;"><strong>(array,counter)</strong></span>;<br>            break;<br>            default:System.out.println("Please enter only 1,2,3: ");<br>            }<br>        }while(choice != 3);<br>           }// end of main method<br>    static void choice1()throws Exception{ // method declaration for choice1()<br>        System.out.println(""); <br>        System.out.println(" Blood Pressure Range &lt;BPR&gt;");<br>        System.out.println(" ==========================");<br>        System.out.println("Please enter your name: ");<br>        name = CspInput.readString();<br>        System.out.println("Enter your systollic in (mm Hg): ");<br>        systollic = CspInput.readInt();<br>        System.out.println("Enter your diastollic in (mm Hg): ");<br>        diastollic = CspInput.readInt();<br>        System.out.println("Have you keyed in correctly &lt;Y/N&gt;? : ");<br>        char verify = (char)System.in.read();<br>        System.in.read();<br>        System.in.read();<br>        <br>        if((verify == 'Y') || (verify == 'y'))<br>            {    <br>        if(((211&lt;=systollic)&amp;&amp;(systollic&lt;=230))&amp;&amp;((121&lt;=diastollic)&amp;&amp;(diastollic&lt;=140)))//211&lt;sys&lt;230 &amp;&amp; 121&lt;dia&lt;140<br>        printout= "You have Very Severe Hypertension.";<br>        else if(((181&lt;=systollic)&amp;&amp;(systollic&lt;=210))&amp;&amp;((111&lt;=diastollic)&amp;&amp;(diastollic&lt;=120)))//181&lt;sys&lt;210 &amp;&amp; 111&lt;dia&lt;120<br>        printout= "You have Severe Hypertension";<br>        else if(((161&lt;=systollic)&amp;&amp;(systollic&lt;=180))&amp;&amp;((101&lt;=diastollic)&amp;&amp;(diastollic&lt;=110)))//161&lt;sys&lt;180 &amp;&amp; 101&lt;dia&lt;110<br>        printout=    "You have Moderate Hypertension.";<br>        else if(((141&lt;=systollic)&amp;&amp;(systollic&lt;=160))&amp;&amp;((91&lt;=diastollic)&amp;&amp;(diastollic&lt;=100)))//141&lt;sys&lt;160 &amp;&amp; 91&lt;dia&lt;100<br>        printout= "You have Mild Hypertension";<br>        else if(((91&lt;=systollic)&amp;&amp;(systollic&lt;=140))&amp;&amp;((61&lt;=diastollic)&amp;&amp;(diastollic&lt;=90)))//91&lt;sys&lt;140 &amp;&amp; 61&lt;dia&lt;90<br>        printout=    "Your blood pressure is normal.";<br>        else if(((51&lt;=systollic)&amp;&amp;(systollic&lt;=90))&amp;&amp;((31&lt;=diastollic)&amp;&amp;(diastollic&lt;=60)))//51&lt;syst&lt;90 &amp;&amp; 31&lt;dia&lt;60<br>        printout= "You have low blood pressure";<br>        else<br>        printout= "Your blood pressure is abnormal";<br>        <br>        System.out.println(""); <br>        System.out.println("");       <br>        System.out.println(" Name\t\t\t Systollic\t\t\t Diastollic\t\t BPR Status");<br>        System.out.println(" ----\t\t\t ---------\t\t\t ----------\t\t ------------");<br>        System.out.println(name+"\t\t\t"+systollic+"\t\t\t\t"+diastollic+"\t\t\t\t"+printout);    <br>        System.out.println("");<br>        array[counter] = name+"\t\t\t"+systollic+"\t\t\t\t"+diastollic+"\t\t\t\t"+printout;<br>      <span style="text-decoration: underline;"><strong>  counter += 1;</strong></span><br>        }       <br>        else if ((verify == 'N') || (verify == 'n'))<br>        choice1();<br>        else <br>        {<br>        System.out.println("Please re-enter either &lt;Y/N&gt;");<br>        choice1();<br>        }<br>        }<br>    static void choice2(){ // method declaration for choice2()<br>        System.out.println("*** Blood Pressure Lowering Tactics *** ");<br>        System.out.println(" Stop Smoking");<br>        System.out.println(" Reduce Weight");<br>        System.out.println(" Exerice");<br>        System.out.println(" Low salt");<br>        System.out.println(" Low Protein");<br>        System.out.println(" Mild Sedation");<br>        System.out.println(" No Caffein");<br>        System.out.println(" Sufficient Rest");<br>        System.out.println(" Dun Oversleep ");<br>         }<br>    static void choice3(String[]array,int counter){ // method declaration for choice3()<br>    System.out.println(" Name\t\t\t Systollic\t\t\t Diastollic\t\t BPR Status");<br>    System.out.println(" ----\t\t\t ---------\t\t\t ----------\t\t ----------------------");<br>    for(int i = 0;i&lt;counter;i++)<br>    System.out.println(<span style="text-decoration: underline;"><strong>array[i]</strong></span>);    <br>    System.out.println("Thank you for using the BPR program.  Good Bye...");    <br>    }  <br>}//end class</p>
+              <p> </p>
+              <p>As above in BOLD and underlined. Can someone tell me what are those for? like throws exception. What is it for?</p>
+              <p> </p>
+              <p>Or under choice 3, the (array,counter) thing. what is it for? and what (array[i]) is for? do enlighten me! thanks!</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2008-02-14T20:46:53+00:00'>14 Feb 08, 20:46</time>
+            </div>
+            <div class='col-md body'><p>Google "learn java", with or without the quotation marks.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>juantan</div>
+              <time class='date' datetime='2008-02-14T22:00:30+00:00'>14 Feb 08, 22:00</time>
+            </div>
+            <div class='col-md body'>
+              <p> </p>
+              <p>But i simply can't get what the internet is saying. its in a language too chim for me to understand. So if the guys here can help, please do.</p>
+              <p> </p>
+              <p>Thanks.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2008-02-14T23:40:27+00:00'>14 Feb 08, 23:40</time>
+            </div>
+            <div class='col-md body'>
+              <p>......</p>
+              <p>If too chim, might as well don't learn.</p>
+              <p>Array - 
+              An array is a collection of variables of the same type.</p>
+              <p>To keep on generating a thousand and one variables isn't fun:</p>
+              <p>int a = 0;</p>
+              <p>int b = 1;</p>
+              <p>int c = 2;</p>
+              <p>int d = 3;</p>
+              <p>int e = 4;</p>
+              <p>So it's grouped into an array, like this:</p>
+              <p>int [] digits = new int [5];</p>
+              <p>Arrays start counting from zero. 0, 1, 2, 3, 4 = total 5 numbers.</p>
+              <p>Exception is for handling errors.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>juantan</div>
+              <time class='date' datetime='2008-02-15T01:10:38+00:00'>15 Feb 08, 01:10</time>
+            </div>
+            <div class='col-md body'>
+              <p>if everything chim then don't learn. So what is the word "learn" for? Right? lol</p>
+              <p> </p>
+              <p>Ok. thanks. But About exception, throws exception simply means ignoring any errors right?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2008-02-15T01:20:30+00:00'>15 Feb 08, 01:20</time>
+            </div>
+            <div class='col-md body'>
+              <p>LOL</p>
+              <p>No, not ignoring errors.</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>cloud210</div>
+              <time class='date' datetime='2008-02-15T01:48:06+00:00'>15 Feb 08, 01:48</time>
+            </div>
+            <div class='col-md body'><p>handling exceptions means what do you wan to do when something unexpected occurs such as, you're expecting to read a important data which somehow got lost and came out null which result in nullpointer exception. so throw exception actually means ignore any errors and continue with the flow. catching exception is whereby you define another set of flow in the event something unexpected occurs.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-02-15T07:11:27+00:00'>15 Feb 08, 07:11</time>
+            </div>
+            <div class='col-md body'>
+              <p>I thought it was a bot post like the one I saw on another SG-based forum until you replied. Anyway, firstly, this is no JavaScript, but Java, which both are totally unrelated to each other.</p>
+              <p>I'll elaborate more on the exceptions thingie. It's used to interrupt a program flow when something is not right and the following statements need to be skipped which may otherwise cause the entire program to malfunction. For example (the code below is in OO-PHP, but its syntax is quite similar to Java's):</p>
+              <p>class Girl {<br><br> private $anger = 0;<br> private $timeOfTheMonth = 0;<br><br> public function __construct($day) {<br> 	$this-&gt;timeOfTheMonth = mt_rand(1, 31);<br> 	if ($this-&gt;day == $this-&gt;timeOfTheMonth) {<br> 		incrementAnger(50);<br> 	}<br> }<br> <br> private function incrementAnger($add) {<br> 	$this-&gt;anger += $add;<br> 	if ($this-&gt;anger &gt; 100) throw new Exception("Girl is too angry.");<br> }	<br>  <br> public function dating($gift, $guyAppearance, $goDutch) {<br> 	try {<br> 		if ($gift == 'none') {<br> 			incrementAnger(80);<br> 		}<br> 		if ($guyAppearance &lt; 50) {<br> 			incrementAnger(40);<br> 		}<br> 		if ($goDutch == true) {<br> 			incrementAnger(40);<br> 		}<br> 		goMakan();<br> 	} catch (exception $e) {<br> 		if ($e-&gt;getMessage() == 'Girl is too angry.') {<br> 			tellsTheGuy("I'm not feeling well today. I need to go home now.");<br> 		}<br> 	}<br> }<br>}</p>
+              <p><a href="http://java.sun.com/docs/books/tutorial/essential/exceptions/throwing.html">http://java.sun.com/docs/books/tutorial/essential/exceptions/throwing.html</a></p>
+              <p>So, before goMakan(), in any event of an incrementAnger(), the anger level is incremented and checked and if it exceeds 100, an exception is thrown and any following statement within the try{} block will be skipped. Script execution will continue from the catch{} block where the exception is caught. If there is no exception thrown, the statements within the catch{} block will not be ran.</p>
+              <p>It's not like the errors are ignored or something, otherwise the girl may very well fall in love with an ugly guy who gives her no present and asks her to pay for the whole dinner on the first date even when she was having PMS.</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Shotgun</div>
+              <time class='date' datetime='2008-02-15T10:48:21+00:00'>15 Feb 08, 10:48</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by juantan:</div>
+              <div class="quote_body">
+              <p>Hi. i'm came upon this java script and i find it extremely
+                  interesting. Firstly because im a noob. but also i wanna ask some
+                  questions. Don't mind please do reply! thanks.</p>
+              <p> </p>
+              <p>/**<br>  * @(#)ComputeBPR.java<br>  *<br>  *<br>  * @author<br>  * @version 1.00 2008/1/24<br>  */<br> public class ComputeBPR {<br>    <br>   static int systollic;//delcare Systollic<br>   static String name;<br>   static int diastollic;//declare Diastolic<br>   static String printout;<br>   static int verify;<br>   static String[]array = new String[10];//delcare array of
+                  size 10<br>   static int counter ;<br>  <br>     public static void main(String[]
+                  args)<span style="text-decoration: underline;"><strong>throws
+                  Exception</strong></span> {<br>         int choice;<br>         do{<br>        System.out.println("*********
+                  BPR Program *********");<br>        System.out.println("1) Check
+                  your BPR Status");<br>        System.out.println("2) Tactics
+                  to Lower BPR");<br>        System.out.println("3) Exit
+                  program ");<br>       
+                  System.out.println("***********************************");<br>        System.out.print("Please
+                  select your choice &lt;1-3&gt; : ");<br>        choice =
+                  CspInput.readInt();<br>       <br>        switch(choice){ // switch case
+                  (choice)<br>             case
+                  1:choice1();<br>             break;<br>             case
+                  2:choice2();<br>             break;<br>             case
+                  3:choice3<span style="text-decoration: underline;"><strong>(array,counter)</strong></span>;<br>             break;<br>            
+                  default:System.out.println("Please enter only 1,2,3: ");<br>             }<br>         }while(choice != 3);<br>            }//
+                  end of main method<br>     static void choice1()throws Exception{ // method
+                  declaration for choice1()<br>         System.out.println("");<br>         System.out.println(" Blood
+                  Pressure Range &lt;BPR&gt;");<br>         System.out.println("
+                  ==========================");<br>         System.out.println("Please
+                  enter your name: ");<br>         name =
+                  CspInput.readString();<br>         System.out.println("Enter
+                  your systollic in (mm Hg): ");<br>         systollic =
+                  CspInput.readInt();<br>         System.out.println("Enter
+                  your diastollic in (mm Hg): ");<br>         diastollic =
+                  CspInput.readInt();<br>         System.out.println("Have you
+                  keyed in correctly &lt;Y/N&gt;? : ");<br>         char verify =
+                  (char)System.in.read();<br>         System.in.read();<br>         System.in.read();<br>        <br>         if((verify == 'Y') || (verify
+                  == 'y'))<br>            
+                  {   <br>        
+                  if(((211&lt;=systollic)&amp;&amp;(systollic&lt;=230))&amp;&amp;((121&lt;=diastollic)&amp;&amp;(diastollic&lt;=140)))//211&lt;sys&lt;230
+                  &amp;&amp; 121&lt;dia&lt;140<br>         printout= "You have Very
+                  Severe Hypertension.";<br>         else
+                  if(((181&lt;=systollic)&amp;&amp;(systollic&lt;=210))&amp;&amp;((111&lt;=diastollic)&amp;&amp;(diastollic&lt;=120)))//181&lt;sys&lt;210
+                  &amp;&amp; 111&lt;dia&lt;120<br>         printout= "You have Severe
+                  Hypertension";<br>         else
+                  if(((161&lt;=systollic)&amp;&amp;(systollic&lt;=180))&amp;&amp;((101&lt;=diastollic)&amp;&amp;(diastollic&lt;=110)))//161&lt;sys&lt;180
+                  &amp;&amp; 101&lt;dia&lt;110<br>         printout=   
+                  "You have Moderate Hypertension.";<br>         else
+                  if(((141&lt;=systollic)&amp;&amp;(systollic&lt;=160))&amp;&amp;((91&lt;=diastollic)&amp;&amp;(diastollic&lt;=100)))//141&lt;sys&lt;160
+                  &amp;&amp; 91&lt;dia&lt;100<br>         printout= "You have Mild
+                  Hypertension";<br>         else
+                  if(((91&lt;=systollic)&amp;&amp;(systollic&lt;=140))&amp;&amp;((61&lt;=diastollic)&amp;&amp;(diastollic&lt;=90)))//91&lt;sys&lt;140
+                  &amp;&amp; 61&lt;dia&lt;90<br>         printout=   
+                  "Your blood pressure is normal.";<br>         else
+                  if(((51&lt;=systollic)&amp;&amp;(systollic&lt;=90))&amp;&amp;((31&lt;=diastollic)&amp;&amp;(diastollic&lt;=60)))//51&lt;syst&lt;90
+                  &amp;&amp; 31&lt;dia&lt;60<br>         printout= "You have low blood
+                  pressure";<br>         else<br>         printout= "Your blood
+                  pressure is abnormal";<br>        <br>         System.out.println("");<br>        
+                  System.out.println("");      <br>         System.out.println("
+                  Name\t\t\t Systollic\t\t\t Diastollic\t\t BPR Status");<br>         System.out.println("
+                  ----\t\t\t ---------\t\t\t ----------\t\t ------------");<br>        
+                  System.out.println(name+"\t\t\t"+systollic+"\t\t\t\t"+diastollic+"\t\t\t\t"+printout);   <br>         System.out.println("");<br>         array[counter] =
+                  name+"\t\t\t"+systollic+"\t\t\t\t"+diastollic+"\t\t\t\t"+printout;<br>       <span style="text-decoration: underline;"><strong>  counter +=
+                  1;</strong></span><br>         }  
+                     <br>         else if ((verify == 'N') ||
+                  (verify == 'n'))<br>         choice1();<br>         else<br>         {<br>         System.out.println("Please
+                  re-enter either &lt;Y/N&gt;");<br>         choice1();<br>         }<br>         }<br>     static void choice2(){ // method declaration for
+                  choice2()<br>         System.out.println("***
+                  Blood Pressure Lowering Tactics *** ");<br>         System.out.println(" Stop
+                  Smoking");<br>         System.out.println(" Reduce
+                  Weight");<br>         System.out.println("
+                  Exerice");<br>         System.out.println(" Low
+                  salt");<br>         System.out.println(" Low
+                  Protein");<br>         System.out.println(" Mild
+                  Sedation");<br>         System.out.println(" No
+                  Caffein");<br>         System.out.println("
+                  Sufficient Rest");<br>         System.out.println(" Dun
+                  Oversleep ");<br>          }<br>     static void choice3(String[]array,int counter){
+                  // method declaration for choice3()<br>     System.out.println(" Name\t\t\t Systollic\t\t\t
+                  Diastollic\t\t BPR Status");<br>     System.out.println(" ----\t\t\t ---------\t\t\t
+                  ----------\t\t ----------------------");<br>     for(int i = 0;i&lt;counter;i++)<br>     System.out.println(<span style="text-decoration: underline;"><strong>array[i]</strong></span>);   <br>     System.out.println("Thank you for using the BPR
+                  program.  Good Bye...");   <br>     } <br> }//end class</p>
+              <p> </p>
+              <p>As above in BOLD and underlined. Can someone tell me what are
+                  those for? like throws exception. What is it for?</p>
+              <p> </p>
+              <p>Or under choice 3, the (array,counter) thing. what is it for?
+                  and what (array[i]) is for? do enlighten me! thanks!</p>
+              </div>
+              </blockquote>
+              <p>This is not javascript dude.</p>
+              <p> </p>
+              <p>This is Java. Its a heavyweight compared to javascript.</p>
+              <p>Choice 3 is to show the all strings stored in the variable "array." Choose a better variable name.  U don't have to name something "array" just to reflect that its an array.  String[] Diagnosis; is more meaningful.</p>
+              <p>2nd, avoid using Arrays when not all the array size will be used up.  Use Vectors as the size can grow.</p>
+              <p> </p>
+              <p>3rd, Exceptions.  try catch are your best friends.  First, you will be able to solve any errors caused by exception, and even use those errors to run other codes.  For example, java doesn't have a way to detect whether a user input is an integer or not, unlike the javascript isNAN() function. </p>
+              <p>so you basically can try to parse that string as an integer/double.  If it doesn't contain any alphabets or u can use it to process something.  If it doesnt' a catch numberformat exception can allow you to do other stuff with the string. Very useful if you need to access PreparedStatements when workin with databases.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

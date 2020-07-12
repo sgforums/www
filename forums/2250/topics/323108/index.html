@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Appending files</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['323108']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['323108']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['323108']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['323108']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>Appending files</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-07-04T21:30:04+00:00'>4 Jul 08, 21:30</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hi, I have gt another problem. Firstly, you see these codes;</p>
+              <p> </p>
+              <p>$myFile = "testFile.txt";<br>$fh = fopen($myFile, 'a') or die("can't open file");<br>$stringData = "New Stuff 1
+              ";<br>fwrite($fh, $stringData);<br>$stringData = "New Stuff 2
+              ";<br>fwrite($fh, $stringData);<br>fclose($fh);</p>
+              <p> </p>
+              <p>So bascially this codes could actually append a file and the output in the .txt file would be:</p>
+              <p> </p>
+              <p>New Stuff1</p>
+              <p>New Stuff2</p>
+              <p> </p>
+              <p>am i correct to say that, right?</p>
+              <p> </p>
+              <p>So is there any way that I could input SQL instructions so that the text file would display the <strong>value</strong> of my, erm, my SQL codes?</p>
+              <p> </p>
+              <p>So if I were to say, INSERT name WHERE table =1 and the .txt file would have the 'name'?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-07-04T22:34:16+00:00'>4 Jul 08, 22:34</time>
+            </div>
+            <div class='col-md body'>
+              <p>It would actually be "New Stuff1 New Stuff2 ". The text file would only contain one single line. And there's no WHERE clause in an INSERT statement. The code to write text into a file can be simpler with the <a href="http://sg.php.net/manual/en/function.file-put-contents.php">file_put_contents() function</a> if you happen to be using PHP 5 (see example below). If you want to query the database and save the output into a text file, it would be something like this:</p>
+                  <p><span style="text-decoration: underline;">Database</span></p>
+                  <p>Table: some_table</p>
+                  <p>id - user - score<br>1 - Dokuro - 12345<br>2 - Zakuro - 2345<br>3 - Sakura - 345</p>
+                  <p><span style="text-decoration: underline;">Application</span></p>
+                  <p>&lt;?php<br><br>$db = new mysqli('localhost', 'database_username', 'database_password', 'name_of_database'); // establish a database connection<br><br>$result = $db-&gt;query("SELECT user FROM some_table WHERE id = 1"); // query the database<br>$row = $result-&gt;fetch_array(); // retrieves a row from the query result as an array<br>$name = $row['user']; // get the value stored in the "user" column from the row retrieved</p>
+                  <p>for ($i = 1; $i &lt;= 4; $i++) { // writes the name 4 times in the file<br>file_put_contents('filename.text', $name . "\<span></span>r\<span></span>n", FILE_APPEND); // "\<span></span>r\<span></span>n" is used to "push" any following text onto the next line<br>}<br><br>?&gt;<br><br><span style="text-decoration: underline;">Resulting Text File (filename.text)</span></p>
+                  <p>Dokuro<br>Dokuro<br>Dokuro<br>Dokuro</p>
+                  <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-07-05T15:34:20+00:00'>5 Jul 08, 15:34</time>
+            </div>
+            <div class='col-md body'>
+              <p>Is there any easier examples based on the codes below??</p>
+              <p>&lt;?php</p>
+              <p>$conn = mysql_connect($dbhost, $dbuser, $dbpass) or die ('Error connecting to mysql');<br>mysql_select_db($dbname);<br> <br> <br>$query = "SELECT name,type,MIN(totalprice) FROM transactions GROUP BY name,type";<br>$result = mysql_query($query) or die(mysql_error());</p>
+              <p>$myFile = "testFile.txt"; //Specific Flie<br>$fh = fopen($myFile, 'a') or die("can't open file"); //open file<br>$stringData = "New Stuff 1 ";<br>fwrite($fh, $stringData);</p>
+              <p>$stringData = "THE SQL COMMAND CODES MAYBE $query ???"; // HELP NEEDED HERE<br>fwrite($fh, $stringData);</p>
+              <p><br>$stringData = "New Stuff 2 ";<br>fwrite($fh, $stringData);</p>
+              <p><br>fclose($fh);</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-07-05T18:54:27+00:00'>5 Jul 08, 18:54</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Trcyng:</div>
+              <div class="quote_body">
+              <p>Is there any easier examples based on the codes below??</p>
+              <p>&lt;?php</p>
+              <p>$conn = mysql_connect($dbhost, $dbuser, $dbpass) or die ('Error
+              connecting to mysql');<br> mysql_select_db($dbname);<br>  <br>  <br> $query = "SELECT name,type,MIN(totalprice) FROM transactions GROUP
+              BY name,type";<br> $result = mysql_query($query) or die(mysql_error());</p>
+              <p>$myFile = "testFile.txt"; //Specific Flie<br> $fh = fopen($myFile, 'a') or die("can't open file"); //open
+              file<br> $stringData = "New Stuff 1 ";<br> fwrite($fh, $stringData);</p>
+              <p>$stringData = "THE SQL COMMAND CODES MAYBE $query ???"; //
+              HELP NEEDED HERE<br> fwrite($fh, $stringData);</p>
+              <p><br> $stringData = "New Stuff 2 ";<br> fwrite($fh, $stringData);</p>
+              <p><br> fclose($fh);</p>
+              </div>
+              </blockquote>
+              <p>I can't tell what you are trying to achieve from your code. Why are you storing the SQL query string in the text file? And there's no function call to fetch the data from $result.</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-07-05T21:24:27+00:00'>5 Jul 08, 21:24</time>
+            </div>
+            <div class='col-md body'>
+              <p>ok you see...</p>
+              <p> </p>
+              <p>SInce</p>
+              <p> </p>
+              <p>$myFile = "testFile.txt"; // is specific the file<br>$fh = fopen($myFile, 'a') or die("can't open file"); //open<br>$stringData = "New Stuff 1 "; //write in (This is I am trying to put data here from  database)<br>fwrite($fh, $stringData);<br>$stringData = "New Stuff 2 "; //write in (This is I am trying to put data here from  database)<br><br>fwrite($fh, $stringData);<br>fclose($fh);</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-07-05T21:26:01+00:00'>5 Jul 08, 21:26</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Trcyng:</div>
+              <div class="quote_body">
+              <p>ok you see...</p>
+              <p> </p>
+              <p>SInce</p>
+              <p> </p>
+              <p>$myFile = "testFile.txt"; // is specific the file<br> $fh = fopen($myFile, 'a') or die("can't open file"); //open<br> $stringData = "New Stuff 1 "; //write in (This is I am trying to
+              put data here from  database)<br> fwrite($fh, $stringData);<br> $stringData = "New Stuff 2 "; //write in (This is I am trying to
+              put data here from  database)<br> <br> fwrite($fh, $stringData);<br> fclose($fh);</p>
+              </div>
+              </blockquote>
+              <p>Just a question before we continue, are you developing on PHP 4 or PHP 5?</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-07-06T12:57:14+00:00'>6 Jul 08, 12:57</time>
+            </div>
+            <div class='col-md body'><p>PHP 5</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-07-06T18:50:42+00:00'>6 Jul 08, 18:50</time>
+            </div>
+            <div class='col-md body'>
+              <p>&lt;?php<br><br>$conn = mysql_connect($dbhost, $dbuser, $dbpass) or die ('Error connecting to mysql');<br>mysql_select_db($dbname);<br>$query = "SELECT name,type,MIN(totalprice) FROM transactions GROUP BY name,type";<br>$result = mysql_query($query) or die(mysql_error());<br><br>$data = '';<br>while ($row = mysql_fetch_array($result) {<br>$data .= 'Name: ' . $row['name'] . ', Type: ' . $row['type'] . "
+              ";<br>}<br><br>$myFile = "testFile.txt";<br>file_put_contents($myFile, $data, FILE_APPEND);<br><br>?&gt;<br></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-07-07T09:08:43+00:00'>7 Jul 08, 09:08</time>
+            </div>
+            <div class='col-md body'>
+              <p>&lt;?php<br><br>$conn = mysql_connect($dbhost, $dbuser, $dbpass) or die ('Error connecting to mysql');<br>mysql_select_db($dbname);<br>$query = "SELECT name,type,MIN(totalprice) FROM transactions GROUP BY name,type";<br>$result = mysql_query($query) or die(mysql_error());<br><br>$data = '';<br>while ($row = mysql_fetch_array($result) {<br>$data .= 'Name: ' . $row['name'] . ', Type: ' . $row['type'] . " ";<br>}<br><br>$myFile = "testFile.txt";<br>file_put_contents($myFile, $data, FILE_APPEND);<br><br>?&gt;</p>
+              <p> </p>
+              <p>Based on your codes righht? If I want to like display this</p>
+              <p> </p>
+              <p>Example this is my highest data: (Meaning that this is what I want to add as static)</p>
+              <p>43 (Meaning that this is my SQL codes which the values are dynamic)</p>
+              <p>How can I actually do it based on the codes (Static)</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-07-08T13:25:51+00:00'>8 Jul 08, 13:25</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Trcyng:</div>
+              <div class="quote_body">
+              <p>&lt;?php<br> <br> $conn = mysql_connect($dbhost, $dbuser, $dbpass) or die ('Error
+              connecting to mysql');<br> mysql_select_db($dbname);<br> $query = "SELECT name,type,MIN(totalprice) FROM transactions GROUP
+              BY name,type";<br> $result = mysql_query($query) or die(mysql_error());<br> <br> $data = '';<br> while ($row = mysql_fetch_array($result) {<br> $data .= 'Name: ' . $row['name'] . ', Type: ' . $row['type'] . "
+              ";<br> }<br> <br> $myFile = "testFile.txt";<br> file_put_contents($myFile, $data, FILE_APPEND);<br> <br> ?&gt;</p>
+              <p> </p>
+              <p>Based on your codes righht? If I want to like display this</p>
+              <p> </p>
+              <p>Example this is my highest data: (Meaning that this is what I
+              want to add as static)</p>
+              <p>43 (Meaning that this is my SQL codes which the values are
+              dynamic)</p>
+              <p>How can I actually do it based on the codes (Static)</p>
+              <p> </p>
+              </div>
+              </blockquote>
+              <p>I don't get your question. Do you mean the text to be written into the file is hardcoded in the PHP code instead of being pulled out from a MySQL database? In that case, the code will simply be:</p>
+              <p>&lt;?php<br><br>$text = 'New Stuff 123';<br>$myFile = "testFile.txt";<br><br>//  the line below writes the value in $text into the file specified in $myFile<br>// if the file already exists, it will NOT overwrite the file, but instead append the text to the end of the file<br>file_put_contents($myFile, $text, FILE_APPEND);<br><br>?&gt;</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-07-08T23:27:56+00:00'>8 Jul 08, 23:27</time>
+            </div>
+            <div class='col-md body'>
+              <p>from database itself.</p>
+              <p> </p>
+              <p>&lt;?php<br> <br> $conn = mysql_connect($dbhost, $dbuser, $dbpass) or die ('Error
+                                      connecting to mysql');<br> mysql_select_db($dbname);<br> $query = "SELECT name,type,MIN(totalprice) FROM transactions GROUP
+                                      BY name,type";<br> $result = mysql_query($query) or die(mysql_error());<br> <br> $data = '';<br> while ($row = mysql_fetch_array($result) {<br> $data .= 'Name: ' . $row['name'] . ', Type: ' . $row['type'] . "
+                                      ";<br> }<br> <br> $myFile = "testFile.txt";<br> file_put_contents($myFile, $data, FILE_APPEND);<br> <br> ?&gt;</p>
+              <p> </p>
+              <p>Based on your codes righht? If I want to like display this;</p>
+              <p>------------------------------------------</p>
+              <p>This is SGFORUMS: <strong>(Meaning that this is what I
+                                      want to add as static)</strong></p>
+              <p>43 <strong>(Meaning that this is my SQL codes which the values are
+                                      dynamic)</strong></p>
+              <p>people is viewing this <strong>(Static)</strong></p>
+              <p>-----------------------------------------</p>
+              <p> </p>
+              <p>The words in bold is my question</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-07-08T23:45:07+00:00'>8 Jul 08, 23:45</time>
+            </div>
+            <div class='col-md body'><p>&lt;?php<br><br>$conn = mysql_connect($dbhost, $dbuser, $dbpass) or die ('Error connecting to mysql');<br>mysql_select_db($dbname);<br>$query = "SELECT name,type,MIN(totalprice) FROM transactions GROUP BY name,type";<br>$result = mysql_query($query) or die(mysql_error());<br><br><strong>$data = "This is sgForums.<em>\</em>r<em>\</em>n";</strong><br>while ($row = mysql_fetch_array($result) {<br> $data .= 'Name: ' . $row['name'] . ', Type: ' . $row['type'] . "<em>\</em>r<em>\</em>n";<br>}<br><strong>$data .= "People will be looking at this text file.<em>\</em>r<em>\</em>n";</strong><br><br>$myFile = "testFile.txt";<br>file_put_contents($myFile, $data, FILE_APPEND);<br><br>?&gt;</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-07-11T20:11:52+00:00'>11 Jul 08, 20:11</time>
+            </div>
+            <div class='col-md body'><p>then what about file overwrite? thanks for your help!!!!</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-07-11T20:21:15+00:00'>11 Jul 08, 20:21</time>
+            </div>
+            <div class='col-md body'>
+              <blockquote>
+              <div class="quote_from">Originally posted by Trcyng:</div>
+              <div class="quote_body">
+              <p>then what about file overwrite? thanks for your help!!!!</p>
+              </div>
+              </blockquote>
+              <p>Change the line from:</p>
+              <p>file_put_contents($myFile, $data, FILE_APPEND);</p>
+              <p>to</p>
+              <p>file_put_contents($myFile, $data);</p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

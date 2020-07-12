@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Given a recurrence relation, find u(n) - H2 maths</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2297']).setTargeting('topic', ['469781']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2297']).setTargeting('topic', ['469781']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2297']).setTargeting('topic', ['469781']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2297']).setTargeting('topic', ['469781']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2297/'>Homework Forum</a>
+      <h1>Given a recurrence relation, find u(n) - H2 maths</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Mad Hat</div>
+              <time class='date' datetime='2013-05-22T15:50:10+00:00'>22 May 13, 15:50</time>
+            </div>
+            <div class='col-md body'>
+              <p><strong>A sequence u<sub>0</sub>, u<sub>1</sub>, u<sub>2</sub>, ... is such that <span style="line-height: 1.231;">u<sub>n+1</sub> = 0.9u<sub>n</sub> + 90.<br></span><span style="line-height: 1.231;">Show that u<sub>n</sub> = 0.9<sup>n</sup>(u<sub>0</sub> - 900) + 900.</span></strong></p>
+              <p>A recurrence relation is given, and we are asked to deduce an explicit (closed form) formula for <span style="line-height: 1.231;">u</span><sub>n</sub><span style="line-height: 1.231;">.</span></p>
+              <p><span style="line-height: 1.231;">For this simple kind of example, I would look directly for a pattern:</span></p>
+              <p><span style="line-height: 1.231;">u<sub>0</sub> = <span style="color: #ff0000;">u<sub>0</sub></span><br></span><span style="line-height: 1.231;">u<sub>1</sub> = <span style="color: #ff0000;">0.9</span><span style="color: #ff0000;">(u</span><sub style="color: #ff0000;">0</sub><span style="color: #ff0000;">)</span> + 90<br></span><span style="line-height: 1.231;">u<sub>2</sub> = <span style="color: #ff0000;">0.9<sup>2</sup>(u<sub>0</sub>) + 0.9(90)</span> + 90<br>u<sub>3</sub> = <span style="color: #ff0000;">0.9<sup>3</sup>(u<sub>0</sub>) + </span></span><span style="color: #ff0000;">0.9<sup>2</sup>(90) + 0.9(90)</span> + 90<span style="line-height: 1.231;"><br>...<br></span><span style="line-height: 1.231;">u<sub>n</sub> = <span style="color: #ff0000;">0.9<sup>n</sup>(u<sub>0</sub>) + 0.9<sup>n-1</sup>(90) + </span></span><span style="line-height: 1.231;"><span style="color: #ff0000;">0.9<sup>n-2</sup>(90) + ... + </span></span><span style="line-height: 1.231;"><span style="color: #ff0000;">0.9(90)</span> + 90<br><span style="line-height: 1.231;"><br>= </span><span style="line-height: 1.231;"><span style="color: #ff00ff;">0.9<sup>n</sup></span><span style="color: #ff0000;"><span style="color: #ff00ff;">(u</span><sub style="color: #ff00ff;">0</sub><span style="color: #ff00ff;">)</span><span style="color: #ff0000;"> </span></span>+<span style="color: #ff0000;"> </span><span style="color: #0000ff;">0.9<sup>n-1</sup>(90) + </span></span><span style="color: #0000ff;"><span style="line-height: 1.231;">0.9<sup>n-2</sup>(90) + ... + </span><span style="line-height: 1.231;">0.9(90) + 90</span></span><span style="line-height: 1.231;"><br><br>Therefore:</span></span></p>
+              <p>u<sub>n</sub> = <span style="color: #ff00ff;">0.9<sup>n</sup></span><span style="color: #ff00ff;">(u</span><sub style="color: #ff00ff;">0</sub><span style="color: #ff00ff;">)</span> + <span style="color: #0000ff;">Sum of a certain GP</span><br>= Correct answer<br><span style="line-height: 1.231;"><br>For this particular example, is there a better way to find u<sub>n</sub>, other than by spotting the pattern? For teaching purposes, I wonder if there is a common and elegant technique that I am not aware of. </span><span style="line-height: 1.231;">I don't mean math induction, method of differences, or anything like that, which I don't think is needed for a simple example like this one. I mean a straightforward algebraic way to get a formula for </span><span style="line-height: 1.231;">u</span><sub>n</sub><span style="line-height: 1.231;"> from the given recurrence relation.</span></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>eagle</div>
+              <time class='date' datetime='2013-05-23T02:02:58+00:00'>23 May 13, 02:02</time>
+            </div>
+            <div class='col-md body'>
+              <p>I believe looking for the sum of the GP is the most straightforward algebraic method.</p>
+              <p>However, such questions on recurrence has only appeared, I think twice or thrice (I recall vaguely in AJC and SAJC past year prelims), during the past few years of H2 Maths Prelims, and not once in A levels. For the topic of recurrences in H2 Maths, it probably will not appear in A levels.</p>
+              <p> </p>
+              <p>While it may not appear in a recurrence relation question, such question type actually appear in APGP compound interest questions, where students may need to write out a few terms to see the GP pattern as listed above. Notably, the 2008 and 2012 A Level APGP question. </p>
+              <p> </p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Mad Hat</div>
+              <time class='date' datetime='2013-05-23T02:58:30+00:00'>23 May 13, 02:58</time>
+            </div>
+            <div class='col-md body'><p>eagle, thanks for that - and also for the other tips. Much obliged. Yup, I realize that this very same pattern appears in compound interest problems.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>wee_ws</div>
+              <time class='date' datetime='2013-05-23T07:46:09+00:00'>23 May 13, 07:46</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hi,</p>
+              <p>  It is good to expose students to this type of question, to help them establish the intuition to recognise patterns for AP/GP and conjectures :)</p>
+              <p>  A possible A-level question that has yet to appear may be one that gives a real-life situation and the student is to come up with the recurrence relation modeling the situation.</p>
+              <p>  In UK exams, modelling real-life situations via recurrences is common, such as</p>
+              <p>A man plants some trees as a boundary between his house and the house next door. Each year, the trees are expected to grow by 0.5m. To counter this, he decides to trim them by 20% per year.<br><br>(a) To what height will the trees eventually grow?<br><br>(b) His neighbour is unhappy that the trees are too tall, and insists they grow no taller than 2m high. What is the minimum percentage they must be trimmed each year to meet this condition?</p>
+              <p>  Thanks!</p>
+              <p>Cheers,<br>Wen Shih</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Mad Hat</div>
+              <time class='date' datetime='2013-05-24T00:25:03+00:00'>24 May 13, 00:25</time>
+            </div>
+            <div class='col-md body'><p>Ya I like those questions. Simple and yet an effective test of math ability. I'll use them WS, thanks <img style="line-height: 1.231;" src="/images/emoticons/kde-3.5.8/set1/smile.png" alt="smile.png"></p></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

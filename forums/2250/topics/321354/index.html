@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>.XML help needed</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['321354']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['321354']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['321354']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['321354']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>.XML help needed</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-06-18T14:30:30+00:00'>18 Jun 08, 14:30</time>
+            </div>
+            <div class='col-md body'>
+              <p>Hi, I have a problem.
+              I have a webpage in which I need to change language, so I came up with a .XML file with various language like malay, chinese and english.</p>
+              <p> </p>
+              <p>So in my index.php, I have</p>
+              <p>&lt;?php<br>session_start();<br>include 'linkings.php';<br>include 'parseXML.php';<br>?&gt;</p>
+              <p> </p>
+              <p>So the parseXML.php is the instructions for the XML dictionary to work.</p>
+              <p> </p>
+              <p>I could link the index and the parseXML.php and my database, but the problem is that how could I display the values in my webpage?</p>
+              <p> </p>
+              <p>e.g. &lt;?php echo $lang-&gt;login; ?&gt; but the login doesn't display...</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>LatecomerX</div>
+              <time class='date' datetime='2008-06-18T20:17:40+00:00'>18 Jun 08, 20:17</time>
+            </div>
+            <div class='col-md body'><p>What object does the $lang variable contain in the first place? Please don't just show us a few lines of code and expect us to know how does your code works. The least you can do is to upload a sufficient amount of your code to a file host and paste the download URL here.<br></p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-06-19T19:01:19+00:00'>19 Jun 08, 19:01</time>
+            </div>
+            <div class='col-md body'>
+              <p>This is a file:</p>
+              <p>---------------------------------------</p>
+              <p>&lt;?php<br><br>//---------------------------<br>// Parse XML<br>//---------------------------<br><br>if (isset($_COOKIE['cookieLanguage'])) {<br><br>    if (file_exists("lang.xml")) {<br>        $xml = simplexml_load_file("lang.xml");<br>    }<br>    else {<br>        die("Language file not found");<br>    }<br>    <br>    if ($_COOKIE['cookieLanguage'] == "language") {<br>        $lang = $xml-&gt;English;<br>    }<br>    else if ($_COOKIE['cookieLanguage'] == "Malay") {<br>        $lang = $xml-&gt;Malay;<br>    }<br>    else if ($_COOKIE['cookieLanguage'] == "Swedish") {<br>        $lang = $xml-&gt;Swedish;<br>    }<br>}<br>else {<br>    if (file_exists("lang.xml")) {<br>        $xml = simplexml_load_file("lang.xml");<br>        $lang = $xml-&gt;English;<br>    }<br>    else {<br>        die("Language file not found");<br>        /* Cannot be Language File Not found because RP  have secured the FTP vulnerabilities*/<br>    }<br>}<br><br>?&gt;</p>
+              <p>-----------------------------</p>
+              <p>2nd File:</p>
+              <p> </p>
+              <p>&lt;?php<br><br>function showloginForm(){<br>    echo "&lt;table &gt;<br>    &lt;form name='loginform' id='loginform' action='login.php' method='post'&gt;<br>    &lt;tr &gt;<br>        &lt;td align='left'&gt;"; <br>        echo $lang-&gt; language -&gt; username;<br>        echo ":&lt;/td&gt;<br>        &lt;td &gt;&lt;input type='text' name='log' id='log' value='' size='15'tabindex='1' /&gt;&lt;/td&gt;<br>    &lt;/tr&gt;<br>    &lt;tr &gt;<br>        &lt;td&gt;"; $lang-&gt;password; echo "&lt;/td&gt;<br>        &lt;td&gt;&lt;input type='password' name='pwd' id='pwd' value='' size='15' tabindex='2' /&gt;&lt;/td&gt;<br>    &lt;/tr&gt;<br>        &lt;tr&gt;<br>        &lt;td align='center' colspan='2'&gt;&lt;a href='register.php'&gt;Register&lt;/a&gt;|&lt;a href''&gt;Forgot Login&lt;/a&gt; | &lt;input type='submit' name='submit' id='submit' value='Login' tabindex='4' /&gt;&lt;/font&gt;&lt;/td&gt;<br>    &lt;/tr&gt;<br>&lt;/table&gt;";<br><br>}<br>?&gt;</p>
+              <p> </p>
+              <p>------------------------------------</p>
+              <p> </p>
+              <p>3rd file</p>
+              <p> </p>
+              <p>&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;<br>&lt;languages&gt;<br>    &lt;language&gt;<br>        &lt;type&gt;English&lt;/type&gt;<br>        &lt;title&gt;Login Form&lt;/title&gt;<br>        &lt;username&gt;Username&lt;/username&gt;<br>        &lt;password&gt;Password&lt;/password&gt;<br>        &lt;forgot&gt;Forgot your password? Click here&lt;/forgot&gt;</p>
+              <p>    &lt;/language&gt;</p>
+              <p>&lt;/language&gt;</p>
+              <p> </p>
+              <p>-----------------------------------</p>
+              <p> </p>
+              <p>The problem is, why I cannot echo out the username and password?</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-06-19T19:02:07+00:00'>19 Jun 08, 19:02</time>
+            </div>
+            <div class='col-md body'><p>anyway, the lang.xml is just a small part of it.</p></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-06-19T21:42:24+00:00'>19 Jun 08, 21:42</time>
+            </div>
+            <div class='col-md body'>
+              <p>Don't know if it will work but you can try to modify your XML file to below:</p>
+              <p>&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;<br> &lt;languages&gt;<br>     &lt;<span style="color: #ff0000;">english</span>&gt;<br>        &lt;title&gt;Login
+                                              Form&lt;/title&gt;<br>        
+                                              &lt;username&gt;Username&lt;/username&gt;<br>        
+                                              &lt;password&gt;Password&lt;/password&gt;<br>        &lt;forgot&gt;Forgot your
+                                              password? Click here&lt;/forgot&gt;<br>    &lt;/<span style="color: #ff0000;">english</span>&gt;<br>     &lt;<span style="color: #ff0000;">malay</span>&gt;<br>        &lt;title&gt;Malay Login
+                                              Form&lt;/title&gt;<br>        
+                                              &lt;username&gt;Malay Username&lt;/username&gt;<br>        
+                                              &lt;password&gt;Malay Password&lt;/password&gt;<br>         &lt;forgot&gt;Malay Forgot your
+                                              password? Click here&lt;/forgot&gt;<br>    &lt;/<span style="color: #ff0000;">malay</span>&gt;<br>&lt;/language<span style="color: #ff0000;">s</span>&gt;</p>
+              <p>Then change this part</p>
+              <p>if ($_COOKIE['cookieLanguage'] == "language")
+                                              {<br>         $lang =
+                                              $xml-&gt;English;<br>     }<br>     else if ($_COOKIE['cookieLanguage'] == "Malay")
+                                              {<br>         $lang = $xml-&gt;Malay;<br>     }<br>     else if ($_COOKIE['cookieLanguage'] ==
+                                              "Swedish") {<br>         $lang =
+                                              $xml-&gt;Swedish;<br>     }</p>
+              <p>to</p>
+              <p>if ($_COOKIE['cookieLanguage'] == "language")
+                                              {<br>         $lang =
+                                              $xml-&gt;<span style="color: #ff0000;">e</span>nglish;<br>     }<br><span style="color: #ff0000;">else {<br>         $lang =
+                      eval("\$xml-&gt;" . strtolower($_COOKIE['cookieLanguage']) . ";");<br>}</span></p>
+              <p>Change</p>
+              <p>echo $lang-&gt; language
+                                              -&gt; username;</p>
+              <p>to</p>
+              <p><span style="color: #ff0000;">echo $lang-&gt;username;</span></p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Trcyng</div>
+              <time class='date' datetime='2008-06-21T15:27:25+00:00'>21 Jun 08, 15:27</time>
+            </div>
+            <div class='col-md body'>
+              <p>Ok, I have tried to modify the codes but it still cannot work... anyway;</p>
+              <p>------------------------------------------------------------------------------------------</p>
+              <p> </p>
+              <p>1st file; ParseXML.php (This file displayed errors ; <strong>Parse error</strong>:  parse error, unexpected T_ELSE in <strong>C:\Program Files\xampp\htdocs\plaincart\parseXML.php</strong> on line <strong>22)</strong></p>
+              <p> </p>
+              <p>&lt;?php<br><br>//---------------------------<br>// Parse XML<br>//---------------------------<br><br>if (isset($_COOKIE['cookieLanguage'])) {<br><br>    if (file_exists("lang.xml")) {<br>        $xml = simplexml_load_file("lang.xml");<br>    }<br>    else {<br>        die("Language file not found");<br>    }<br>    <br>    if ($_COOKIE['cookieLanguage'] == "language") {<br>        $lang = $xml-&gt;english;<br>    }<br>    else {<br>        $lang = eval("\$xml-&gt;" . strtolower($_COOKIE['cookieLanguage']) . ";");<br>}<br>    else if ($_COOKIE['cookieLanguage'] == "malay") {<br>        $lang = $xml-&gt;malay;<br>    }<br>    else if ($_COOKIE['cookieLanguage'] == "swedish") {<br>        $lang = $xml-&gt;swedish;<br>    }<br>}<br>else {<br>    if (file_exists("lang.xml")) {<br>        $xml = simplexml_load_file("lang.xml");<br>        $lang = $xml-&gt;english;<br>    }<br>    else {<br>        die("Language file not found");<br>    }<br>}<br><br>?&gt;</p>
+              <p> </p>
+              <p>------------------------------------------------</p>
+              <p> </p>
+              <p>2nd file: linkings;</p>
+              <p> </p>
+              <p>function showloginForm(){<br>    echo "&lt;table &gt;<br>    &lt;form name='loginform' id='loginform' action='login.php' method='post'&gt;<br>    &lt;tr &gt;<br>        &lt;td align='left'&gt;"; <br>        echo $lang-&gt;username;<br>        echo ":&lt;/td&gt;<br>        &lt;td &gt;&lt;input type='text' name='log' id='log' value='' size='15'tabindex='1' /&gt;&lt;/td&gt;<br>    &lt;/tr&gt;<br>    &lt;tr &gt;<br>        &lt;td&gt;"; $lang-&gt;password; echo "&lt;/td&gt;<br>        &lt;td&gt;&lt;input type='password' name='pwd' id='pwd' value='' size='15' tabindex='2' /&gt;&lt;/td&gt;<br>    &lt;/tr&gt;<br>        &lt;tr&gt;<br>        &lt;td align='center' colspan='2'&gt;&lt;a href='register.php'&gt;Register&lt;/a&gt;|&lt;a href''&gt;Forgot Login&lt;/a&gt; | &lt;input type='submit' name='submit' id='submit' value='Login' tabindex='4' /&gt;&lt;/font&gt;&lt;/td&gt;<br>    &lt;/tr&gt;<br>&lt;/table&gt;";<br><br>}</p>
+              <p> </p>
+              <p> </p>
+              <p>---------------------------------------------</p>
+              <p> </p>
+              <p>3rd file;</p>
+              <p> </p>
+              <p>&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;<br>&lt;languages&gt;<br>    &lt;english&gt;<br>        &lt;type&gt;English&lt;/type&gt;<br>        &lt;title&gt;Login Form&lt;/title&gt;<br>        &lt;username&gt;Username&lt;/username&gt;<br>        &lt;password&gt;Password&lt;/password&gt;</p>
+              <p> </p>
+              <p>......................</p>
+              <p> </p>
+              <p>so that will be it, any help??</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GIB</div>
+              <time class='date' datetime='2008-06-21T19:09:46+00:00'>21 Jun 08, 19:09</time>
+            </div>
+            <div class='col-md body'>
+              <p>if (isset($_COOKIE['cookieLanguage'])) {<br> <br>     if (file_exists("lang.xml")) {<br>         $xml =
+                                          simplexml_load_file("lang.xml");<br>     }<br>     else {<br>         die("Language file not
+                                          found");<br>     }<br>    <br>     if ($_COOKIE['cookieLanguage'] == "language")
+                                          {<br>         $lang =
+                                          $xml-&gt;english;<br>     }<br>     else {<br>         $lang =
+                                          eval("\$xml-&gt;" . strtolower($_COOKIE['cookieLanguage']) .
+                                          ";");<br>  
+                                          }<br> <span style="color: #ff0000;">    else if ($_COOKIE['cookieLanguage'] == "malay")
+                                          {<br>         $lang = $xml-&gt;malay;<br>     }<br>     else if ($_COOKIE['cookieLanguage'] ==
+                                          "swedish") {<br>         $lang =
+                                          $xml-&gt;swedish;<br>     }<br> </span>}<br> else {<br>     if (file_exists("lang.xml")) {<br>         $xml =
+                                          simplexml_load_file("lang.xml");<br>         $lang =
+                                          $xml-&gt;english;<br>     }<br>     else {<br>         die("Language file not
+                                          found");<br>     }<br> }</p>
+              <p>Remove the part that is in red. The eval code will handle all your language cases.</p>
+              <p>function showloginForm(){<br>     echo "&lt;table &gt;<br>     &lt;form name='loginform' id='loginform'
+                                      action='login.php' method='post'&gt;<br>     &lt;tr &gt;<br>         &lt;td
+                                      align='left'&gt;";<br>         echo
+                                      $lang-&gt;username;<br>         echo ":&lt;/td&gt;<br>         &lt;td &gt;&lt;input
+                                      type='text' name='log' id='log' value='' size='15'tabindex='1'
+                                      /&gt;&lt;/td&gt;<br>     &lt;/tr&gt;<br>     &lt;tr &gt;<br>         &lt;td&gt;"; <span style="color: #ff0000;">echo</span> $lang-&gt;password; echo "&lt;/td&gt;<br>         &lt;td&gt;&lt;input
+                                      type='password' name='pwd' id='pwd' value='' size='15' tabindex='2'
+                                      /&gt;&lt;/td&gt;<br>     &lt;/tr&gt;<br>         &lt;tr&gt;<br>         &lt;td align='center'
+                                      colspan='2'&gt;&lt;a
+                                      href='register.php'&gt;Register&lt;/a&gt;|&lt;a href''&gt;Forgot
+                                      Login&lt;/a&gt; | &lt;input type='submit' name='submit' id='submit'
+                                      value='Login' tabindex='4' /&gt;&lt;/font&gt;&lt;/td&gt;<br>     &lt;/tr&gt;<br> &lt;/table&gt;";<br> <br> }</p>
+              <p>Added the part in red.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

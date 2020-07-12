@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>Guide: Restore a computer to a previous Windows installation</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['1940']).setTargeting('topic', ['240620']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['1940']).setTargeting('topic', ['240620']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['1940']).setTargeting('topic', ['240620']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['1940']).setTargeting('topic', ['240620']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/1940/'>FX Technology</a>
+      <h1>Guide: Restore a computer to a previous Windows installation</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GSL</div>
+              <time class='date' datetime='2007-03-04T16:48:01+00:00'>4 Mar 07, 16:48</time>
+            </div>
+            <div class='col-md body'>How to restore a computer to a previous Windows installation after you install Windows Vista:<br><br>INTRODUCTION<br>You can perform a clean installation of Windows Vista on a hard disk partition that contains an existing Microsoft Windows installation. If you do not format the hard disk, all the following items will be saved automatically in the Windows.OLD folder after Windows Vista is installed:<br><br>Â• The previous operating system<br><br>Â• User data<br><br>Â• Program files<br><br>To confirm that these items have been saved, make sure that the Windows.OLD folder exists in the root folder of the Windows hard disk. Typically, the Windows hard disk is the C drive. If the Windows.OLD folder exists on this drive, files from the previous Windows installation are saved during the Windows Vista installation process. Therefore, you can restore the computer to the previous Windows installation.<br><br>MORE INFORMATION:<br><br>To restore a computer to a previous Windows installation after you install Windows Vista, follow these steps:<br><br>1. Determine whether you have sufficient free space on the Windows hard disk to copy the contents of the Windows.OLD folder. To do this, determine the size of the Windows.OLD folder, and then compare the size to the total amount of free space on the hard disk. You will need this information in step 5.<br><br>2. Start the Windows Recovery Environment (Windows RE), and then open a command prompt. To do this, follow these steps:a.  Put the Windows Vista installation disc in the disc drive, and then restart the computer.<br>b.  Press a key when you are prompted to restart from the disc.<br>c.  Select a language, a time, a currency, and a keyboard or other input method, and then click Next.<br>d.  Click Repair your computer.<br>e.  Click the operating system that you want to repair, and then click Next.<br>f.  In the System Recovery Options dialog box, click Command Prompt.<br><br>3. Rename the Windows folder and the Program Files folder. To do this, type the following commands. Press ENTER after you type each command.<br>c:<br>cd\<br>ren Windows Windows.Vista<br>ren "Program Files" "Program Files.Vista"<br><br>4. Remove the Documents and Settings junction point.<br><br>Note A junction point is a pointer to another folder.<br><br>If the Windows Vista installation was a clean installation, the Documents and Settings folder will be empty. To remove the Documents and Settings junction point, type the following command, and then press ENTER:<br><br>rd "Documents and Settings"<br><br>Important After you type this command, you may receive the following error message:<br><br>The directory is not empty.<br><br>If you receive this error message, the Documents and Settings folder contains data and is not a junction point. Back up the data in this folder by copying the folder to another drive on the computer. Alternatively, you can rename the folder by using the ren command.<br><br>5. Copy or move the content of the Windows.OLD folder to the root folder. To do this, follow one of these steps, as appropriate for the situation:<br><br>Â• If there is sufficient space on the hard disk to copy the Windows.OLD folder, type the following command, and then press ENTER:<br>xcopy /s /h c:\windows.old\*.* c:\<br><br>Â• If there is insufficient space on the hard disk to copy the Windows.OLD folder, type the following commands. Press ENTER after you type each command.<br>move /y c:\windows.old\windows c:\<br><br>move /y "c:\windows.old\program files" c:\<br><br>move /y "c:\windows.old\documents and settings" c:\<br><br>move /y c:\windows.old\users c:\<br><br>Note When the previous Windows such as Windows 2000, Windows XP or Windows 2003 is installed, skip the fourth command move /y c:\windows.old\users c:\. When the previous Windows installation is Microsoft Windows Vista, skip the third command move /y "c:\windows.old\documents and settings" c:\.<br><br>6. Restore the boot sector for the previous Windows installation. To do this, follow one of these steps, as appropriate for the situation:Â• If the previous Windows installation was Microsoft Windows XP or Microsoft Windows 2000, type the following command, and then press ENTER:<br><br>E:\boot\bootsect /nt52 c:<br><br>Â• If the previous Windows installation was Windows Vista, type the following command, and then press ENTER:<br><br>E:\boot\bootsect /nt60 c:<br><br>Note In the previous commands, drive E is the ROM drive, and drive C is the system partition. The system partition contains the Boot Configuration Data (BCD) store and the Windows Boot Manager files.<br><br>7. Restore the Boot.ini file for the previous Windows installation.<br><br>If the previous Windows installation was Microsoft Windows XP or Microsoft Windows 2000, type the following commands, and then press ENTER:<br><br>c:<br>cd\<br>attrib boot.ini.saved -s -h -r<br>ren "boot.ini.saved" "boot.ini"<br>attrib boot.ini +s +h +r<br><br>Note: During the clean installation of Windows Vista on a drive on which a previous operating system is present, the boot.ini file is renamed to boot.ini.saved. This is a hidden system file. Therefore, you cannot see it unless you use the "dir /ah" command. If you do not follow these steps, you may encounter the following error message when you restart the computer:<br><br><span style="color: red;">Windows could not start because the following file is missing or corrupt. \system32\hal.dll </span><br><br>8. Close the Command Prompt window, and then click Restart.<br></div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Kenashi</div>
+              <time class='date' datetime='2007-03-04T16:57:02+00:00'>4 Mar 07, 16:57</time>
+            </div>
+            <div class='col-md body'>????<br>just reformat yr "C" drive n reinstall yr old window using a CD rom may be faster n less complicated lah  <img src="/images/emoticons/classic/icon_mrgreen.gif" alt="Mr. Green" title="Mr. Green"></div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GSL</div>
+              <time class='date' datetime='2007-03-04T17:27:32+00:00'>4 Mar 07, 17:27</time>
+            </div>
+            <div class='col-md body'>The above method is for windows Vista and for those who don't want to reinstall all the program, software , etc.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>ndmmxiaomayi</div>
+              <time class='date' datetime='2007-03-05T01:06:57+00:00'>5 Mar 07, 01:06</time>
+            </div>
+            <div class='col-md body'>Originally from TC.</div>
+          </div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>GSL</div>
+              <time class='date' datetime='2007-03-05T17:02:14+00:00'>5 Mar 07, 17:02</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by ndmmxiaomayi:</div><div class="quote_body">Originally from TC.</div></blockquote>The above guide is from microsoft KB.</div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

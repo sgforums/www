@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>The Joy Of Awk</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['1170']).setTargeting('topic', ['485677']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['1170']).setTargeting('topic', ['485677']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['1170']).setTargeting('topic', ['485677']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['1170']).setTargeting('topic', ['485677']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/1170/'>Programmers' Haven</a>
+      <h1>The Joy Of Awk</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>The Code</div>
+              <time class='date' datetime='2014-07-10T16:17:08+00:00'>10 Jul 14, 16:17</time>
+            </div>
+            <div class='col-md body'>
+              <p> </p>
+              <p><span style="line-height: 115%; color: #7030a0; font-size: 32pt;"><span style="font-family: Calibri;">The Joy Of Awk</span></span></p>
+              <p> </p>
+              <p><span style="font-family: Calibri;"><span style="line-height: 115%; color: #7030a0; font-size: 22pt;">Awk</span><span style="line-height: 115%; font-size: 22pt;"> How much can you do with just one line of code?</span></span></p>
+              <p class="MsoNormal" style="margin: 0cm 0cm 10pt;"><span style="line-height: 115%; font-size: 22pt;"><span style="font-family: Calibri;">The Doctor shows off his favourite little language ...</span></span></p>
+              <p class="MsoNormal" style="margin: 0cm 0cm 10pt;"> </p>
+              <p class="MsoNormal" style="margin: 0cm 0cm 10pt;">Let's deal with the strange name first. Awk is named after the surnames of its inventors - Alfred Aho, Peter Weinberger and Brian Kernighan. For me, Awk is quintessential Linux. Why? Well, it's a text filter and plays very nicely in pipelines, but most importantly, it lets you do Really Useful Stuff with very little code.</p>
+              <p>   Awk is a fully-fledged programming language. lt has variables, arithmetic, arrays, loops, branches, functions and all the other stuff you'd expect a regular programming language to have. But I have made no attempt to deliver a systematic description of the language here: rather, my purpose is to show and explain a few simple examples of how you can do useful things in a just line or two of code. A 'small is beautiful' celebration, if you like.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Basic instinct</span></span></p>
+              <p> </p>
+              <p>Awk's basic instinct is to read its input stream line by line and parse the line apart into fields. Within your Awk program, the fields are referenced as $1, $2, and so on. By default the fields are separated by whites pace characters, but you can change that, as we'll see shortly. The example in the figure shows a structured 'shopping list' and how Awk splits it apart into fields.</p>
+              <p>   An Awk program consists of a series of patterns and actions like this:</p>
+              <p><strong>pattern { action }<br>pattern { action }</strong></p>
+              <p>   The pattern selects the lines to be processed, and the action describes what's to be done on the lines that match the pattern. Since at this point we don't know what either a pattern or an action might look like, this probably doesn't help much, so here's a simple example to get us started. This Awk command will display the mount points (the second field) of all the lines in <strong>/etc/fstab</strong>:</p>
+              <p>$ awk '{ print $2 }' /etc/fstab</p>
+              <p>   Here,<strong>'{ print $2 }'</strong> is the action part (print the second field). So where's the pattern, you ask? Good question! There isn't one, and in this case, (which is very common), Awk will perform the action on every line.</p>
+              <p>   If you try this on your own <strong>fstab </strong>you'll probably get some spurious output from the comment lines in the file. The command lines begin with a <strong>#</strong> and we can use the pattern (in this case a regular expression match enclosed in slashes) to filter these out, like this:</p>
+              <p>$ awk ' /^ [^#]/ { print $2 }' /etc/fstab</p>
+              <p>   In case you don't speak regex, the regular expression (between the slashes) says "lines that begin with something that isn't a #". Here's another example of simply picking off a specified field. The output from the date command is structured like this:</p>
+              <p>Mon Aug 5 19:12:42 BST 2013</p>
+              <p>and we can print the time field like this:</p>
+              <p>$date | awk '{ print $4 }'</p>
+              <p>   The important difference here is that Awk is processing the data stream from a pipe, not a file. (In this particular case, the stream only contains one line - this is quite common in Awk usage examples). To make an obvious (but important) point, using Awk to process text requires you to understand how your input data is structured- specifically, what data appears in each field.</p>
+              <p>   Now there are lots of structured text files in Linux that use : as the field separator - <strong>/etc/passwd</strong> comes to mind - so sometimes we need to be able to tell Awk to use a different character as the field separator, as in this example, that prints just the usernames (first field) from the password file:</p>
+              <p>$ awk -F: '{ print $1 }' /etc/passwd</p>
+              <p>   Notice the use of the<strong> -F</strong> option to set the field separator. (There are other ways of splitting fields, including fixed-width fields and fancier methods based on regular expression matches.)</p>
+              <p>   Let's go a step further and print just the usernames that correspond to ordinary user accounts. On a Red Hat system these can be identified by having a UID (third field) of at least 500, and we can select these lines with an Awk pattern like this:</p>
+              <p>$ awk -F: '$3 &gt;= 500 {print $1}' /etc/passwd</p>
+              <p>   This innocent looking example actually starts to hint at the real power of Awk. lt can do arithmetic, something that's beyond tools like grep and sed.</p>
+              <p>   Here's another one-line program that also does arithmetic. This one displays the average of numbers entered on a line:</p>
+              <p>$ awk '{ sum=0; for (i=1; i&lt;=NF; i++) sum += $i; print sum/NF;<br>}'                                                             <span style="color: #800080;">&gt;&gt;</span></p>
+              <p>4 6 14<br>8<br>72 123 45 17<br>64.25</p>
+              <p>   I didn't specify an input file, so in true filter style, Awk is taking input from the keyboard and I'm entering the data manually. Look carefully, and you'll see that input is interspersed with output on alternate lines. The program uses a classic C-style <strong>for</strong> loop to process each field on the line, adding them up. The built-in variable <strong>NF</strong> is set to the number of fields on the current input line. Keep in mind that this one-liner has no <strong>PATTERN</strong>, so our little program runs on every line of input.</p>
+              <p> </p>
+              <p>  <span style="color: #ff0000;"> $1</span>                    <span style="color: #ff0000;">$2</span>        <span style="color: #ff0000;">$3</span>                <span style="color: #ff0000;">  $4</span>       <br>                                                                         <br><span style="font-family: Calibri;"><span style="line-height: 115%; background: red; font-size: 14pt;">Supermarket </span><span style="line-height: 115%; font-size: 14pt;"><span> </span><span> </span><span style="background: red;">1</span><span>  </span><span> </span><span style="background: red;">Chicken</span>        <span> </span><span style="background: red;">4.55</span></span></span><br>Supermarket     50  Clothespegs       1.25       <br>Bakers                3    Bread                2.40       <br>DIY                      1    Hosepipe        15.00      <br>                                                                         <br>←-------------------     <span style="color: #ff0000;">NF</span>   --------------------→                 <br>                                                              <span style="color: #ff0000;">  NR</span>                   <br>                                                                      ↓</p>
+              <p><span style="color: #ff0000;">&gt;</span> <strong>Awk's basic behaviour is to split input lines into fields. NF is the number of fields. NR is the record number.</strong></p>
+              <p> </p>
+              <p><span style="line-height: 115%; color: #7030a0; font-size: 18pt;"><span style="font-family: Calibri;">Command substitution</span></span></p>
+              <p> </p>
+              <p>Command substitution is a shell programming trick that is not directly related to Awk, but is often used around Awk commands. Suppose I have a file called <strong>hostlist</strong> that contains a list of machine names, one per line.</p>
+              <p>$ ping 'cat hostlist'</p>
+              <p>will run the <strong>cat</strong> command inside the backquotes, collect its output, and substitute it back on to the command line, forming the arguments to the <strong>ping</strong> command. There's an alternative syntax (which I prefer because my aging eyes have trouble distinguishing the various sorts of quotes) that looks like this:</p>
+              <p>$ ping $(cat hostlist)</p>
+              <p>Command substitution is often used in shell scripts to assign the output from a command to a variable in a shell script, something like this:</p>
+              <p>me=$(whoami)</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Awk in the real world</span></span></p>
+              <p> </p>
+              <p>Awk finds widespread use in Linux sysadmin scripts, and the majority of them are simple one-liners. Here's one from <strong>/etc/init/mounted-tmp.conf</strong> on my Ubuntu 12.04 system. I've left in the surrounding lines, so that you can see the context:</p>
+              <p># Check if we have enough space in /tmp, and if not, mount<br>a tmpfs there</p>
+              <p>avail='df -kP /tmp | awk 'NR 2 { print $4 }''<br>if [ "$avail" -It 1000 ]; then</p>
+              <p>   mount -t tmpfs -o size=1048576,mode=1777 overflow /tmp<br>fi</p>
+              <p>   This is classic usage, where Awk appears inside a command substitution (see the boxout) to set the value of a variable within a script. Here, Awk is selecting the fourth field from the second line of the output from <strong>df</strong>. This isn't some arbitrary decision; whoever wrote the script clearly knew exactly what the output of the <strong>df</strong> command was going to look like.</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Beyond one-liners</span></span></p>
+              <p> </p>
+              <p>As our Awk programs get longer, typing them in on the command line becomes distinctly tedious, so before we go any further let's see how we can put them into an external script file. it's easy: you just put your Awk statements into a file, then reference it on the command line with the <strong>-f</strong> option. Here's a program that will find the largest UID in the password file:</p>
+              <p>BEGIN { maxuid = 0; PS= ":" }<br>{ if ($3 &gt; maxuid) maxuid = $3 }<br>END { print "the largest UID is ", maxuid }</p>
+              <p>   If I put these three lines into a file called <strong>maxuid</strong>, I can run it like this:</p>
+              <p>$ awk -f maxuid /etc/passwd</p>
+              <p>   Let's dissect the program. lt has three statements. The special <strong>BEGIN</strong> pattern matches just before we process the first line of the file. Here we use it to initialise a couple of variables including the built-in variable <strong>FS</strong> that defines the field separator. This provides an alternative to using the <strong>-F</strong> option on the command line. Sometimes the <strong>BEGIN</strong> pattern is also used to print headings. The second statement has no <strong>PATTERN</strong> so the action is performed for every line. This is the logic that tracks the largest UID (in the third field). Finally, the <strong>END</strong> pattern matches after we've processed the last line and is often used to print out final results, as we do here.</p>
+              <p>   Notice that we do not have to pre-declare variable or give them a type. They spring into existence at the mere mention of their name, and their type will be inferred from whatever type you assign to them. This is very different from more traditional languages like C that require you to declare all variables, and specify their type, before you use them. But this "dynamic typing" is common in more modern languages like PHP and Python.</p>
+              <p>   If you run this program you'll probably find that the answer is 65534. This UID belongs to a rather spurious account called <strong>"nobody</strong>". To ignore this line we could<br>modify our program to add a <strong>PATTERN</strong> to the second statement like this:</p>
+              <p>BEGIN { maxuid = 0; PS = ":"}<br>$1 != "nobody" { if ($3 &gt; maxuid) maxuid = $3 }<br>END { print "the largest UID is ", maxuid }</p>
+              <p>   Here's another example captured from the wild on Ubuntu, from the file <strong>/etc/init.d/vmware</strong>:</p>
+              <p>count='/sbin/lsmod | awk 'BEGIN {n = 0} {if ($1 =<br>"'"$driver"'") n = $3} END {print n}''</p>
+              <p>   Again, it's an example of command substitution, and there's some tricksy quoting going on around the variable <strong>$driver</strong> (defined earlier in the script).</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Emulating other tools</span></span></p>
+              <p> </p>
+              <p>Awk is a general-purpose tool that can emulate all sorts of special-purpose programs. For example, this one-liner prepends line numbers to the file <strong>foo</strong> and is equivalent to</p>
+              <p><strong>cat -n</strong></p>
+              <p>$ awk '{print NR, $0 }' foo</p>
+              <p>   This example counts the words in its input, equivalent to</p>
+              <p><strong>wc-w</strong>:</p>
+              <p>$ awk' { w += NF} END {print w}' foo</p>
+              <p>   And this example is basically equivalent to grep:</p>
+              <p>$ awk '/^chris/' /etc/passwd<br>chris:x:1000:1000:Chris Brown,,,:/home/chris:/bin/bash</p>
+              <p>   In this example the program has a pattern (the regular expression match '^<strong>chris</strong>' but no action. Awk's default action is simply to print the line, like <em>grep</em> does.</p>
+              <p>   The following examples are all based around a 'shopping list', shown in the figure. This file is purposefully structured, and is exactly the sort of thing that Awk loves to pick apart. Take a moment to look at the file, otherwise the examples won't make sense.</p>
+              <p>   First, let's display the total number of items we want to buy. We just have to add up the values in the second column:</p>
+              <p>$ awk '{ items += $2 } END { print items }' shopping</p>
+              <p>   Next, we'll display the total shopping bill. This involves multiplying the quantity by the unit price for each item, then adding them up:</p>
+              <p>$ awk '{ cost += $2 * $4} END { print cost }' shopping</p>
+              <p>   Suppose we wanted to add up only the spending on DIY items. Adding a simple regex pattern does the trick:</p>
+              <p>$ awk '/^DIY/ { cost += $2 * $4} END { print cost }' shopping</p>
+              <p>   Now let's find the most expensive item:</p>
+              <p>$ awk '{ if ($4 &gt; max) max = $4 } END { print max }' shopping</p>
+              <p>   Here, <strong>max</strong> is just a variable name I made up. it's not a built-in function or anything. Notice again the dynamic typing - I don't need to pre-declare max or initialise it to zero.</p>
+              <p>   Next, we'll obtain a list (in the file "<strong>lotsofthem</strong>") of all items that we need 10 or more of. This example is mainly here to show you how to redirect output to a file:</p>
+              <p>$ awk '$2 &gt;= 10 { print $3 &gt; "lotsofthem" }' shopping</p>
+              <p>   Be clear here, the &gt; is not being interpreted by the shell but by Awk. lt says "write the output to this file".</p>
+              <p>   Now here's a really neat example that splits the data out into multiple files, one per category:</p>
+              <p>$ awk '{ print &gt; $1 }' shopping</p>
+              <p>   Here, <strong>$1</strong> (the shopping category) defines the output file name. You end up with files called Bakers, DIY and so on. I love this example! If you're not convinced by the power of one-liners yet, I give up!</p>
+              <p>   This next example breaks down the expenditure by category. Here, I've put the Awk program into an external file called <strong>catcost</strong>:</p>
+              <p>{ cost[$1] += $2 * $4}<br>END { for (cat in cost) print cat, cost[ cat]}</p>
+              <p>... and I ran the program like this:</p>
+              <p>$ awk -f catcost shopping<br>Bakers 39.7<br>Clothes 134.99<br>DIY 283.3<br>Supermarket 69.55</p>
+              <p>   This example uses an associative array (an array whose subscripts are strings); the array is called <strong>cost </strong>and the subscripts are the shopping category names.</p>
+              <p>   Here's one last example that uses our shopping file. lt extends the previous example to determine which shopping category we spent the most money on. Here's the script; I've added line numbers for reference:</p>
+              <p>1.   # Calculate the most expensive category<br>2.   { cost[$1] += $2 * $4 }<br>3.   END {<br>4.   max=0;<br>5.   for (cat in cost) {<br>6.   if (cost[cat] &gt; max) {<br>7.   max = cost[cat];<br>8.   maxcat = cat;<br>9.        }<br>10.    }<br>11. print maxcat;<br>12.  }</p>
+              <p>   Some explanation is in order: line 1 is a comment. Line two accumulates the category costs into an associative array, as in the previous example. Lines 3-12 are all part of the <strong>END</strong> action. Notice it's starting to look more like a regular program now, and we see ; used as a statement terminator. Lines 5-10 loop over the categories, scanning for the largest cost. In case you're starting to hyperventilate, you can breathe easy - that's the longest Awk program I'm going to show!</p>
+              <p> </p>
+              <p><span style="line-height: 115%; font-size: 18pt;"><span style="font-family: Calibri;">Writing self-contained scripts</span></span></p>
+              <p> </p>
+              <p>You can also create self-contained Awk scripts that run directly from the shell. This is slightly more convenient than typing <strong>awk -f</strong> on the command line each time. Here's how:</p>
+              <p>   First, add a 'shebang' line at the top of your Awk script file so that Linux knows which interpreter to use, something like this:</p>
+              <p>#!/usrlbin/awk -f<br>{ cost[$1] += $2 * $4 }<br>END { for (cat in cost) print cat, cost[ cat]}</p>
+              <p>Now make the script executable as you would any other:</p>
+              <p>$ chmod u+x catscript</p>
+              <p>Now you can run the script directly as a command:</p>
+              <p>$ ./catscript shopping</p>
+              <p>   If you like the one-liners, take a look at <a href="http://www.pement.org/awk/awk1line.txt">www.pement.org/awk/awk1line.txt</a>. lf you'd like to see some much longer Awk programs, download the gawk manual at <a href="http://www.gnu.org/software/gawk/manual">www.gnu.org/software/gawk/manual</a>. The classic text is The Awk Programming Language by Aho, Weinberger and Kernighan. it's worth hunting one down on eBay because of the exquisite clarity of the writing. Bye for now!</p>
+              <p> </p>
+              <p><span style="line-height: 115%; color: #7030a0; font-size: 18pt;"><span style="font-family: Calibri;">Wait - there's more</span></span></p>
+              <p> </p>
+              <p>Awk has lots of built-in functions. There are mathematical functions such as <strong>sin()</strong>, <strong>cos()</strong>, <strong>log()</strong> and <strong>sqrt()</strong>, which you may never use, and string-handling functions you may find more useful, ranging from <strong>length()</strong> which simply returns the length of a string, to <strong>split()</strong> which divides a string into pieces, and <strong>gsub()</strong> which does text replacement based on a regex match. You can also define your own functions.</p>
+              <p><br>Chris@m1530-1204: ~/Linux Format Article</p>
+              <p>Supermarket     1     Chicken           4.55</p>
+              <p>Supermarket   50    Clothespegs    1.25</p>
+              <p>Bakers               3     Bread               2.40</p>
+              <p>DIY                     1      Hosepipe      15.00</p>
+              <p>Clothes              1      Trousers        24.99</p>
+              <p>DIY                     2      Doorknob        8.40</p>
+              <p>Supermarket     2     Milk                 1.25</p>
+              <p>Clothes              6      Socks             9.00</p>
+              <p>DIY                     2     Screwdriver    2.00</p>
+              <p>Clothes              2      Skirt               28.00</p>
+              <p>DIY                   20      Sandpaper   10.00</p>
+              <p>Bakers            10       Muffin              1.95</p>
+              <p>Bakers              2       Quiche            6.50</p>
+              <p>DIY                   50       Nails               0.95</p>
+              <p>$ â–‹</p>
+              <p> </p>
+              <p><span style="color: #ff0000;">&gt;</span> <strong>The structured shopping list file used in some of the examples.</strong></p>
+              <p> </p>
+              <p><strong>Variable               Meaning</strong></p>
+              <p> </p>
+              <p><span style="color: #ff0000;">ARGC, ARGV     Provide access to the command line arguments passed to an awk program</span></p>
+              <p><span style="color: #ff0000;">NF                         Number of fields in the current line</span></p>
+              <p><span style="color: #ff0000;">NR                         The current record number (line number)</span></p>
+              <p><span style="color: #ff0000;">ENVIRON             An associative array that provides access to the program's environment variables</span></p>
+              <p> </p>
+              <p><span style="color: #008000;">FS                         The input field separator (default is a space)</span></p>
+              <p><span style="color: #008000;">RS                         The record separator (newline by default, but can be a regex)</span></p>
+              <p><span style="color: #008000;">OFS                       Output field separator - used to separate the fields printed by a print statement. Default is a space</span></p>
+              <p><span style="color: #008000;">IGNORECASE      If set, regex matches in awk are not case-sensitive</span></p>
+              <p><span style="color: #008000;">FIELDWIDTHS     A comma-separated list of field width for splitting input with fixed colum boundaries</span></p>
+              <p> </p>
+              <p><span style="color: #ff0000;">&gt; </span><strong>A few of Awk's built-in variables. The ones in red provide information, the green ones control behaviour.</strong></p>
+              <p> </p>
+              <p><span style="line-height: 115%; color: #7030a0; font-size: 18pt;"><span style="font-family: Calibri;">The history of Awk</span></span></p>
+              <p> </p>
+              <p>Awk was originally written in 1977 and released into Version 7 Unix in 1978. In keeping with the spirit of this tutorial the authors wrote: "We knew how the language was supposed to be used, and so we only wrote one-liners." The original authors extended the language in 1985, adding user-defined functions amongst other things. Their classic book The AWK Programming Language was written in 1988. The language was formally defined in a POSIX standard in 1992. Gawk (the version you'll find on Linux) comes from the GNU project and adds many extensions.</p>
+              <p> </p>
+              <p>Dr Brown's Administeria, The Linux Format, December 2013, Pg 56-59</p>
+            </div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PK63DK');</script>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' rel='stylesheet'>
+    <link href='/styles.css' rel='stylesheet'>
+    <title>J2EE, IBM rational, DB2</title>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag=googletag ||{}; googletag.cmd=googletag.cmd || [];</script><script>googletag.cmd.push(function(){googletag.defineSlot('\/1010898\/sgforums_interstitial', [ 1.0 , 1.0], 'div-gpt-ad-1528181032761-0').setTargeting('forum', ['2250']).setTargeting('topic', ['199513']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_leaderboard', [[ 728.0 , 90.0], [ 970.0 , 250.0]], 'div-gpt-ad-1528181032761-1').setTargeting('forum', ['2250']).setTargeting('topic', ['199513']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_mpu', [ 300.0 , 250.0], 'div-gpt-ad-1528181032761-2').setTargeting('forum', ['2250']).setTargeting('topic', ['199513']).addService(googletag.pubads()); googletag.defineSlot('\/1010898\/sgforums_supersky', [ 160.0 , 600.0], 'div-gpt-ad-1528181032761-3').setTargeting('forum', ['2250']).setTargeting('topic', ['199513']).addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();});</script>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK63DK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class='container'>
+      <a href='/'>Home</a>
+      >
+      <a href='/forums/2250/'>IT Support and Tech Corner</a>
+      <h1>J2EE, IBM rational, DB2</h1>
+      <nav class='pagination'>
+      </nav>
+      <ul class='list-group posts'>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>Herroin</div>
+              <time class='date' datetime='2006-07-10T11:53:32+00:00'>10 Jul 06, 11:53</time>
+            </div>
+            <div class='col-md body'>Anyone have any idea how to retrieve data from db2 using j2ee ? I kind of clueless. I am doing a web services for J2EE using rational and db2 as my database</div>
+          </div>
+        </li>
+        <li class='list-group-item'>
+          <div id='div-gpt-ad-1528181032761-2' style='height:250px; width:300px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-2');});</script></div>
+        </li>
+        <li class='list-group-item post'>
+          <div class='row'>
+            <div class='col-md-2 meta'>
+              <div class='author'>MosPosterior</div>
+              <time class='date' datetime='2006-07-10T12:42:29+00:00'>10 Jul 06, 12:42</time>
+            </div>
+            <div class='col-md body'><blockquote><div class="quote_from">Originally posted by Herroin:</div><div class="quote_body">Anyone have any idea how to retrieve data from db2 using j2ee ? I kind of clueless. I am doing a web services for J2EE using rational and db2 as my database </div></blockquote>Hi, I only know how to query from from a local ODBC DSN<br>Go Start&gt;Run&gt;type "odbcad32"<br>(This is to open your Open DataBase Connectivity 32 bit Adminstrator panel.)<br>Add the datasource into the System DSN (Data Source Name).<br><br>From java, you code like this:<br>(Just a skeleta form)<br><br><div>code:<pre>import javax.sql.*; <span style="color: green;">//must</span><br><br>try {<br>Class.forName("sun.jdbc.odbc.JdbcOdbcDriver"<span style="text-decoration: underline;"></span>);<br>} catch (ClassNotFoundException e) {<br>System.out.println("anything thing here"<span style="text-decoration: underline;"></span>);<br>}<br>Connection connection1 = DriverManager.getConnection("jdbc:<span style="text-decoration: underline;"></span>odbc:<span style="font-style: italic;">dataBaseName</span>"<span style="text-decoration: underline;"></span>)<span style="text-decoration: underline;"></span>;<br><span style="color: green;">//Replace dataBaseName with the name you saved in your system DNS</span><br>Connection connection1 = null;<br>try {<br>connection1 = DriverManager.getConnection("jdbc:<span style="text-decoration: underline;"></span>odbc:<span style="font-style: italic;">dataBaseName</span>"<span style="text-decoration: underline;"></span>);<br>//Do your query here.<br>}<br>finally {<br>if (connection1 != null)<br>connection1.close();<br>}</pre></div><br><br><span style="color: red;"><span class="small">Edited: Due to the stupid smiley...  <img src="/images/emoticons/classic/icon_evil.gif" alt="Evil or Very Mad" title="Evil or Very Mad"> </span></span></div>
+          </div>
+        </li>
+      </ul>
+      <nav class='pagination'>
+      </nav>
+      <footer>
+        <nav class='nav'>
+          <a class='nav-link' href='/'>Home</a>
+          <a class='nav-link' href='/privacy/'>Privacy</a>
+          <a class='nav-link' href='/terms/'>Terms</a>
+        </nav>
+      </footer>
+    </div>
+    <div id='div-gpt-ad-1528181032761-0' style='height:1px; width:1px;'><script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1528181032761-0');});</script></div>
+  </body>
+</html>
